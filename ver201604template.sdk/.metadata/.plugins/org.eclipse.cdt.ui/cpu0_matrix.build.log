@@ -1,0 +1,31 @@
+11:03:10 **** Auto Build of configuration Debug for project cpu0_matrix ****
+make all 
+'Building file: ../src/cpu0_sum_test.c'
+'Invoking: ARM v7 Linux gcc compiler'
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cpu0_sum_test.o" -MMD -MP -MF"src/cpu0_sum_test.d" -MT"src/cpu0_sum_test.o" -o "src/cpu0_sum_test.o" "../src/cpu0_sum_test.c"
+../src/cpu0_sum_test.c: In function 'main':
+../src/cpu0_sum_test.c:151:7: warning: unused variable 'write_result' [-Wunused-variable]
+   int write_result = write(fd, &send_data,
+       ^
+../src/cpu0_sum_test.c:79:24: warning: unused variable 'bytes_sent' [-Wunused-variable]
+  int size, bytes_rcvd, bytes_sent;
+                        ^
+../src/cpu0_sum_test.c:78:19: warning: variable 'expect_rnum' set but not used [-Wunused-but-set-variable]
+  int cmd, ret, i, expect_rnum;
+                   ^
+'Finished building: ../src/cpu0_sum_test.c'
+' '
+'Building target: cpu0_matrix.elf'
+'Invoking: ARM v7 Linux gcc linker'
+arm-linux-gnueabihf-gcc  -o "cpu0_matrix.elf"  ./src/cpu0_sum_test.o   
+'Finished building target: cpu0_matrix.elf'
+' '
+'Invoking: ARM v7 Linux Print Size'
+arm-linux-gnueabihf-size cpu0_matrix.elf  |tee "cpu0_matrix.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3506	    340	    192	   4038	    fc6	cpu0_matrix.elf
+'Finished building: cpu0_matrix.elf.size'
+' '
+
+11:03:12 Build Finished (took 1s.53ms)
+

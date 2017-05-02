@@ -1,0 +1,6 @@
+1493632580652	Delete resource 'standalone_bsp_cpu1/system_1.mss'
+1493632872036	Delete resource 'standalone_bsp_cpu1'
+1493648009565	Delete resource 'cpu1_bsp'
+1493685809539	Delete resource 'cpu1_matrix_bsp'
+1493694211175	Rename resource 'cpu0_matrix'
+1493694307441	Rename resource 'cpu1_echo'

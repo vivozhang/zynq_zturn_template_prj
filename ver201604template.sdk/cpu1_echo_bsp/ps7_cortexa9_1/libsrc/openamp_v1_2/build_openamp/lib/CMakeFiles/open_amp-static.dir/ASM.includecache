@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.sdk/cpu1_echo_bsp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/remoteproc/drivers/zynq_a9_trampoline.S
+

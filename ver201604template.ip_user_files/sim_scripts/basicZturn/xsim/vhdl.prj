@@ -1,0 +1,7 @@
+vhdl xil_defaultlib "../../../bd/basicZturn/ip/basicZturn_axi_gpio_0_0/sim/basicZturn_axi_gpio_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/basicZturn/ip/basicZturn_rst_ps7_0_100M_0/sim/basicZturn_rst_ps7_0_100M_0.vhd" 
+vhdl xil_defaultlib "../../../bd/basicZturn/ip/basicZturn_axi_gpio_1_0/sim/basicZturn_axi_gpio_1_0.vhd" 
+vhdl xil_defaultlib "../../../bd/basicZturn/ip/basicZturn_axi_gpio_2_0/sim/basicZturn_axi_gpio_2_0.vhd" 
+vhdl xil_defaultlib "../../../bd/basicZturn/ip/basicZturn_axi_iic_0_0/sim/basicZturn_axi_iic_0_0.vhd" 
+
+nosort

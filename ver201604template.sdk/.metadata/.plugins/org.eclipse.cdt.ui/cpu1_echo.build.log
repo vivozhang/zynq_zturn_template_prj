@@ -1,0 +1,23 @@
+11:02:31 **** Auto Build of configuration Debug for project cpu1_echo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/echo_test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/echo_test.d" -MT"src/echo_test.o" -o "src/echo_test.o" "../src/echo_test.c"
+'Finished building: ../src/echo_test.c'
+' '
+'Building target: cpu1_echo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cpu1_echo_bsp/ps7_cortexa9_1/lib -o "cpu1_echo.elf"  ./src/echo_test.o ./src/helper.o ./src/platform_info.o ./src/rsc_table.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+'Finished building target: cpu1_echo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cpu1_echo.elf  |tee "cpu1_echo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100308	   4576	  50288	 155172	  25e24	cpu1_echo.elf
+'Finished building: cpu1_echo.elf.size'
+' '
+
+11:02:32 Build Finished (took 1s.222ms)
+

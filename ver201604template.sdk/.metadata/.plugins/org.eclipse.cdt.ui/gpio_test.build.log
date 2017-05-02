@@ -1,0 +1,38 @@
+17:55:53 **** Auto Build of configuration Debug for project gpio_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIOTEST.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIOTEST.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../gpio_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIOTEST.d" -MT"src/GPIOTEST.o" -o "src/GPIOTEST.o" "../src/GPIOTEST.c"
+../src/GPIOTEST.c: In function 'main':
+../src/GPIOTEST.c:190:6: warning: unused variable 'buzzer_on' [-Wunused-variable]
+  int buzzer_on = 0;
+      ^
+../src/GPIOTEST.c:159:15: warning: unused variable 'Delay' [-Wunused-variable]
+  volatile int Delay;
+               ^
+../src/GPIOTEST.c:157:6: warning: variable 'Data' set but not used [-Wunused-but-set-variable]
+  u32 Data;
+      ^
+'Finished building: ../src/GPIOTEST.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../gpio_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: gpio_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../gpio_test_bsp/ps7_cortexa9_0/lib -o "gpio_test.elf"  ./src/GPIOTEST.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size gpio_test.elf  |tee "gpio_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76468	   2632	  23376	 102476	  1904c	gpio_test.elf
+'Finished building: gpio_test.elf.size'
+' '
+
+17:55:55 Build Finished (took 2s.721ms)
+

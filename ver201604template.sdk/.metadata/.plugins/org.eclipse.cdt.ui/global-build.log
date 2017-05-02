@@ -1,0 +1,125 @@
+12:10:44 **** Incremental Build of configuration Debug for project cpu1_baremetal_app_matrix ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:13:12 **** Auto Build of configuration Debug for project cpu1_baremetal_app_matrix ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/matrix_multiply.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_multiply.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/matrix_multiply.d" -MT"src/matrix_multiply.o" -o "src/matrix_multiply.o" "../src/matrix_multiply.c"
+../src/matrix_multiply.c:139:13: warning: 'Matrix_Multiply' defined but not used [-Wunused-function]
+ static void Matrix_Multiply(const matrix *m, const matrix *n, matrix *r)
+             ^
+'Finished building: ../src/matrix_multiply.c'
+' '
+'Building target: cpu1_baremetal_app_matrix.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cpu1_echo_bsp/ps7_cortexa9_1/lib -o "cpu1_baremetal_app_matrix.elf"  ./src/helper.o ./src/matrix_multiply.o ./src/platform.o ./src/platform_info.o ./src/rsc_table.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+'Finished building target: cpu1_baremetal_app_matrix.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cpu1_baremetal_app_matrix.elf  |tee "cpu1_baremetal_app_matrix.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101836	   4576	  50352	 156764	  2645c	cpu1_baremetal_app_matrix.elf
+'Finished building: cpu1_baremetal_app_matrix.elf.size'
+' '
+12:13:26 **** Auto Build of configuration Debug for project cpu1_baremetal_app_matrix ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/matrix_multiply.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_multiply.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/matrix_multiply.d" -MT"src/matrix_multiply.o" -o "src/matrix_multiply.o" "../src/matrix_multiply.c"
+../src/matrix_multiply.c:139:13: warning: 'Matrix_Multiply' defined but not used [-Wunused-function]
+ static void Matrix_Multiply(const matrix *m, const matrix *n, matrix *r)
+             ^
+'Finished building: ../src/matrix_multiply.c'
+' '
+'Building target: cpu1_baremetal_app_matrix.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cpu1_echo_bsp/ps7_cortexa9_1/lib -o "cpu1_baremetal_app_matrix.elf"  ./src/helper.o ./src/matrix_multiply.o ./src/platform.o ./src/platform_info.o ./src/rsc_table.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+'Finished building target: cpu1_baremetal_app_matrix.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cpu1_baremetal_app_matrix.elf  |tee "cpu1_baremetal_app_matrix.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101836	   4576	  50352	 156764	  2645c	cpu1_baremetal_app_matrix.elf
+'Finished building: cpu1_baremetal_app_matrix.elf.size'
+' '
+12:17:13 **** Auto Build of configuration Debug for project cpu1_baremetal_app_matrix ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/matrix_multiply.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_multiply.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/matrix_multiply.d" -MT"src/matrix_multiply.o" -o "src/matrix_multiply.o" "../src/matrix_multiply.c"
+../src/matrix_multiply.c:139:13: warning: 'Matrix_Multiply' defined but not used [-Wunused-function]
+ static void Matrix_Multiply(const matrix *m, const matrix *n, matrix *r)
+             ^
+'Finished building: ../src/matrix_multiply.c'
+' '
+'Building target: cpu1_baremetal_app_matrix.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cpu1_echo_bsp/ps7_cortexa9_1/lib -o "cpu1_baremetal_app_matrix.elf"  ./src/helper.o ./src/matrix_multiply.o ./src/platform.o ./src/platform_info.o ./src/rsc_table.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+'Finished building target: cpu1_baremetal_app_matrix.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cpu1_baremetal_app_matrix.elf  |tee "cpu1_baremetal_app_matrix.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101836	   4576	  50352	 156764	  2645c	cpu1_baremetal_app_matrix.elf
+'Finished building: cpu1_baremetal_app_matrix.elf.size'
+' '
+12:20:59 **** Auto Build of configuration Debug for project cpu1_baremetal_app_matrix ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/matrix_multiply.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_multiply.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/matrix_multiply.d" -MT"src/matrix_multiply.o" -o "src/matrix_multiply.o" "../src/matrix_multiply.c"
+../src/matrix_multiply.c:139:13: warning: 'Matrix_Multiply' defined but not used [-Wunused-function]
+ static void Matrix_Multiply(const matrix *m, const matrix *n, matrix *r)
+             ^
+'Finished building: ../src/matrix_multiply.c'
+' '
+'Building target: cpu1_baremetal_app_matrix.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cpu1_echo_bsp/ps7_cortexa9_1/lib -o "cpu1_baremetal_app_matrix.elf"  ./src/helper.o ./src/matrix_multiply.o ./src/platform.o ./src/platform_info.o ./src/rsc_table.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+'Finished building target: cpu1_baremetal_app_matrix.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cpu1_baremetal_app_matrix.elf  |tee "cpu1_baremetal_app_matrix.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101836	   4576	  50352	 156764	  2645c	cpu1_baremetal_app_matrix.elf
+'Finished building: cpu1_baremetal_app_matrix.elf.size'
+' '
+12:25:04 **** Auto Build of configuration Debug for project cpu0_linux_app_matrix ****
+make all 
+'Building file: ../src/cpu0_sum_test.c'
+'Invoking: ARM v7 Linux gcc compiler'
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cpu0_sum_test.o" -MMD -MP -MF"src/cpu0_sum_test.d" -MT"src/cpu0_sum_test.o" -o "src/cpu0_sum_test.o" "../src/cpu0_sum_test.c"
+../src/cpu0_sum_test.c: In function 'main':
+../src/cpu0_sum_test.c:151:7: warning: unused variable 'write_result' [-Wunused-variable]
+   int write_result = write(fd, &send_data,
+       ^
+../src/cpu0_sum_test.c:79:24: warning: unused variable 'bytes_sent' [-Wunused-variable]
+  int size, bytes_rcvd, bytes_sent;
+                        ^
+../src/cpu0_sum_test.c:78:19: warning: variable 'expect_rnum' set but not used [-Wunused-but-set-variable]
+  int cmd, ret, i, expect_rnum;
+                   ^
+'Finished building: ../src/cpu0_sum_test.c'
+' '
+'Building target: cpu0_linux_app_matrix.elf'
+'Invoking: ARM v7 Linux gcc linker'
+arm-linux-gnueabihf-gcc  -o "cpu0_linux_app_matrix.elf"  ./src/cpu0_sum_test.o   
+'Finished building target: cpu0_linux_app_matrix.elf'
+' '
+'Invoking: ARM v7 Linux Print Size'
+arm-linux-gnueabihf-size cpu0_linux_app_matrix.elf  |tee "cpu0_linux_app_matrix.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3542	    340	    192	   4074	    fea	cpu0_linux_app_matrix.elf
+'Finished building: cpu0_linux_app_matrix.elf.size'
+' '

@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+ 100308	   4576	  50288	 155172	  25e24	cpu1_baremetal_app_echo.elf

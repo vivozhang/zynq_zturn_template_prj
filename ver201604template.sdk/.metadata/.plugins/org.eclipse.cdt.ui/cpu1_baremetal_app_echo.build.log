@@ -1,0 +1,38 @@
+11:05:07 **** Build of configuration Debug for project cpu1_baremetal_app_echo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/echo_test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/echo_test.d" -MT"src/echo_test.o" -o "src/echo_test.o" "../src/echo_test.c"
+'Finished building: ../src/echo_test.c'
+' '
+'Building file: ../src/helper.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/helper.d" -MT"src/helper.o" -o "src/helper.o" "../src/helper.c"
+'Finished building: ../src/helper.c'
+' '
+'Building file: ../src/platform_info.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_info.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/platform_info.d" -MT"src/platform_info.o" -o "src/platform_info.o" "../src/platform_info.c"
+'Finished building: ../src/platform_info.c'
+' '
+'Building file: ../src/rsc_table.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rsc_table.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/rsc_table.d" -MT"src/rsc_table.o" -o "src/rsc_table.o" "../src/rsc_table.c"
+'Finished building: ../src/rsc_table.c'
+' '
+'Building target: cpu1_baremetal_app_echo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cpu1_echo_bsp/ps7_cortexa9_1/lib -o "cpu1_baremetal_app_echo.elf"  ./src/echo_test.o ./src/helper.o ./src/platform_info.o ./src/rsc_table.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
+'Finished building target: cpu1_baremetal_app_echo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cpu1_baremetal_app_echo.elf  |tee "cpu1_baremetal_app_echo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100308	   4576	  50288	 155172	  25e24	cpu1_baremetal_app_echo.elf
+'Finished building: cpu1_baremetal_app_echo.elf.size'
+' '
+
+11:05:10 Build Finished (took 2s.485ms)
+
