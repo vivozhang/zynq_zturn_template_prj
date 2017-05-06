@@ -105,10 +105,10 @@ XStatus PWM_Reg_SelfTest(void * baseaddr_p)
 
 static void delay(int dly)
 {
-	int i, j;
+	unsigned int i, j;
 	for (i = 0; i < dly; i++) {
 		for (j = 0; j < 0xffff; j++) {
-			;
+			sleep(1000);
 		}
 	}
 }
@@ -120,14 +120,18 @@ int main()
     u32 baseaddr_p = (u32)XPAR_PWM_0_PWM_AXI_BASEADDR;
     u32 baseaddr_d = (u32)PWM_DUTYBASEADD;
 
-    print("Start test\n\r");
-
+    unsigned int ii=0;
+    while(ii<5)
+    {
+    printf("Start test, %d\n\r",ii);
+    ii++;
+    sleep(1);
+    }
     //PWM_Reg_SelfTest(baseaddr_d);
 
-
+    printf("PWM test start\n\r");
     //enable PWM output
     PWM_mWriteReg (baseaddr_p, 0, 1);
-    delay(1);
     //set PWM period
     PWM_mWriteReg (baseaddr_p, 8, 100);
 
@@ -152,8 +156,8 @@ int main()
     	k = i+sign_k;
 
 
-    	delay(1);
-
+    	sleep(1);
+printf("one more test\n");
     	if(i>100||i<0)
     		sign_i=sign_i*(-1);
     	if(j>100||j<30)

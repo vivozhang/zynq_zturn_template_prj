@@ -1,0 +1,6 @@
+02:30:22 **** Auto Build of project TEST_AXIUARTLITE_bsp ****
+make -k all 
+make: *** No rule to make target `all'.
+
+02:30:22 Build Finished (took 116ms)
+

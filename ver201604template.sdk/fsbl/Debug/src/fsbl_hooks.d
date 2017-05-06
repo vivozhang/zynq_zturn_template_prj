@@ -15,7 +15,7 @@ src/fsbl_hooks.o src/fsbl_hooks.o: ../src/fsbl_hooks.c ../src/fsbl.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_io.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xstatus.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_assert.h ../src/fsbl_debug.h \
- C:\Users\vivoz\Documents\WORK_FPGA\Xilinx\Vivado_project_on_Zturn\with_new_board_def_file\ver201604template\ver201604template.sdk\basicZturn_wrapper_hw_platform_0/ps7_init.h \
+ C:\Users\vivoz\Documents\WORK_FPGA\Xilinx\ver201604template\ver201604template.sdk\basicZturn_wrapper_hw_platform_0/ps7_init.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xstatus.h ../src/fsbl_hooks.h
 
 ../src/fsbl.h:
@@ -56,7 +56,7 @@ src/fsbl_hooks.o src/fsbl_hooks.o: ../src/fsbl_hooks.c ../src/fsbl.h \
 
 ../src/fsbl_debug.h:
 
-C:\Users\vivoz\Documents\WORK_FPGA\Xilinx\Vivado_project_on_Zturn\with_new_board_def_file\ver201604template\ver201604template.sdk\basicZturn_wrapper_hw_platform_0/ps7_init.h:
+C:\Users\vivoz\Documents\WORK_FPGA\Xilinx\ver201604template\ver201604template.sdk\basicZturn_wrapper_hw_platform_0/ps7_init.h:
 
 ../../fsbl_bsp/ps7_cortexa9_0/include/xstatus.h:
 

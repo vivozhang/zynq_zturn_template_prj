@@ -4,3 +4,5 @@
 1493685809539	Delete resource 'cpu1_matrix_bsp'
 1493694211175	Rename resource 'cpu0_matrix'
 1493694307441	Rename resource 'cpu1_echo'
+1493922612613	Delete resource 'TEST_AXIUARTLITE'
+1493922628224	Delete resource 'TEST_AXIUARTLITE_bsp'

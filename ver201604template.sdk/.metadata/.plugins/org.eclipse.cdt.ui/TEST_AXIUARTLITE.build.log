@@ -1,0 +1,28 @@
+02:23:04 **** Build of configuration Debug for project TEST_AXIUARTLITE ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TEST_AXIUARTLITE_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TEST_AXIUARTLITE_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: TEST_AXIUARTLITE.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../TEST_AXIUARTLITE_bsp/ps7_cortexa9_0/lib -o "TEST_AXIUARTLITE.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TEST_AXIUARTLITE.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size TEST_AXIUARTLITE.elf  |tee "TEST_AXIUARTLITE.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22324	   1148	  22568	  46040	   b3d8	TEST_AXIUARTLITE.elf
+'Finished building: TEST_AXIUARTLITE.elf.size'
+' '
+
+02:23:06 Build Finished (took 1s.937ms)
+

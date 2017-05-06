@@ -708,6 +708,18 @@
 </instance>
 <instance id="xilinx.gnu.armv7.exe.debug.72459878;xilinx.gnu.armv7.exe.debug.72459878.;xilinx.gnu.armv7.c.toolchain.compiler.debug.570289874;xilinx.gnu.armv7.c.compiler.input.1821257251">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="#undef __ARM_FEATURE_DSP" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_QBIT" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_SAT" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_LDREX" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_CLZ" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_SIMD32" removed="true"/>
+<includePath path="#undef __thumb__" removed="true"/>
+<includePath path="#undef __thumb2__" removed="true"/>
+<includePath path="#undef __THUMBEL__" removed="true"/>
+<includePath path="#undef __ARM_ARCH_EXT_IDIV__" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_IDIV" removed="true"/>
+<includePath path="#undef __ARM_ASM_SYNTAX_UNIFIED__" removed="true"/>
 <includePath path="c:\xilinx\sdk\2016.4\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/5.2.1/include"/>
 <includePath path="c:\xilinx\sdk\2016.4\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/5.2.1/include-fixed"/>
 <includePath path="c:\xilinx\sdk\2016.4\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/include"/>

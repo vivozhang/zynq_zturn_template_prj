@@ -1,0 +1,8 @@
+02:32:18 **** Auto Build of configuration Debug for project test_axiurat_bsp_xuartlite_polled_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+
+02:32:19 Build Finished (took 443ms)
+

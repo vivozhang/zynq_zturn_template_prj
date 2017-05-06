@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="basicZturn_xbar_0_synth_1" LaunchDir="C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="basicZturn_axi_uartlite_0_0_synth_1" LaunchDir="C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/basicZturn_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="basicZturn_xbar_0_synth_1"/>
+		<Parent Id="basicZturn_axi_uartlite_0_0_synth_1"/>
+	</Run>
+</Runs>
+

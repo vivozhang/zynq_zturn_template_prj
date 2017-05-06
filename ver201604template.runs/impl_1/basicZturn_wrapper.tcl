@@ -49,9 +49,8 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param xicom.use_bs_reader 1
   open_checkpoint basicZturn_wrapper_routed.dcp
-  set_property webtalk.parent_dir C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/Vivado_project_on_Zturn/with_new_board_def_file/ver201604template/ver201604template.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.cache/wt [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   catch { write_mem_info -force basicZturn_wrapper.mmi }
   write_bitstream -force -no_partial_bitfile basicZturn_wrapper.bit 

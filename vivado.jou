@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri May 05 02:17:03 2017
+# Process ID: 9236
+# Current directory: C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26056 C:\Users\vivoz\Documents\WORK_FPGA\Xilinx\ver201604template\ver201604template.xpr
+# Log file: C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/vivado.log
+# Journal file: C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.xpr
+file copy -force C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper.sysdef C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.sdk/basicZturn_wrapper.hdf
+
+file copy -force C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper.sysdef C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.sdk/basicZturn_wrapper.hdf
+
+launch_sdk -workspace C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.sdk -hwspec C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.sdk/basicZturn_wrapper.hdf

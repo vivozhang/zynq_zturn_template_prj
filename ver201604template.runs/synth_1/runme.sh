@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/Vivado_project_on_Zturn/with_new_board_def_file/ver201604template/ver201604template.runs/synth_1'
+HD_PWD='C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

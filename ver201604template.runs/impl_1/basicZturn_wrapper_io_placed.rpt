@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Sun Apr 23 16:43:15 2017
+| Date         : Fri May 05 02:00:35 2017
 | Host         : DESKTOP-UTEFEFF running 64-bit major release  (build 9200)
 | Command      : report_io -file basicZturn_wrapper_io_placed.rpt
 | Design       : basicZturn_wrapper
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           143 |
+|           145 |
 +---------------+
 
 
@@ -52,7 +52,7 @@ Table of Contents
 | A17        | FIXED_IO_mio[20]   |            | PS_MIO20_501            | BIDIR       | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |
 | A18        |                    |            | GND                     | GND         |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
 | A19        | FIXED_IO_mio[16]   |            | PS_MIO16_501            | BIDIR       | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |
-| A20        |                    | High Range | IO_L2N_T0_AD8N_35       | User IO     |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |
+| A20        | uart_rtl_txd       | High Range | IO_L2N_T0_AD8N_35       | OUTPUT      | LVCMOS33          |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | B1         |                    |            | GND                     | GND         |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
 | B2         | DDR_dqs_n[0]       |            | PS_DDR_DQS_N0_502       | BIDIR       | DIFF_SSTL15_T_DCI |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
 | B3         | DDR_dq[1]          |            | PS_DDR_DQ1_502          | BIDIR       | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
@@ -71,7 +71,7 @@ Table of Contents
 | B16        |                    |            | VCCO_MIO1_501           | VCCO        |                   |         |            |      |                     |                      |   any** |            |           |          |      |                  |
 | B17        | FIXED_IO_mio[22]   |            | PS_MIO22_501            | BIDIR       | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |
 | B18        | FIXED_IO_mio[18]   |            | PS_MIO18_501            | BIDIR       | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |
-| B19        |                    | High Range | IO_L2P_T0_AD8P_35       | User IO     |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |
+| B19        | uart_rtl_rxd       | High Range | IO_L2P_T0_AD8P_35       | INPUT       | LVCMOS33          |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | B20        |                    | High Range | IO_L1N_T0_AD0N_35       | User IO     |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |
 | C1         | DDR_dq[6]          |            | PS_DDR_DQ6_502          | BIDIR       | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
 | C2         | DDR_dqs_p[0]       |            | PS_DDR_DQS_P0_502       | BIDIR       | DIFF_SSTL15_T_DCI |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |

@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-//Date        : Sun Apr 23 16:38:58 2017
+//Date        : Fri May 05 01:54:04 2017
 //Host        : DESKTOP-UTEFEFF running 64-bit major release  (build 9200)
 //Command     : generate_target basicZturn_wrapper.bd
 //Design      : basicZturn_wrapper
@@ -36,7 +36,9 @@ module basicZturn_wrapper
     i2c0_sda_io,
     pwm,
     rgb_led_tri_o,
-    sws_4bits_tri_i);
+    sws_4bits_tri_i,
+    uart_rtl_rxd,
+    uart_rtl_txd);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -64,6 +66,8 @@ module basicZturn_wrapper
   output [2:0]pwm;
   output [2:0]rgb_led_tri_o;
   input [3:0]sws_4bits_tri_i;
+  input uart_rtl_rxd;
+  output uart_rtl_txd;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -98,6 +102,8 @@ module basicZturn_wrapper
   wire [2:0]pwm;
   wire [2:0]rgb_led_tri_o;
   wire [3:0]sws_4bits_tri_i;
+  wire uart_rtl_rxd;
+  wire uart_rtl_txd;
 
   basicZturn basicZturn_i
        (.DDR_addr(DDR_addr),
@@ -130,7 +136,9 @@ module basicZturn_wrapper
         .i2c0_sda_t(i2c0_sda_t),
         .pwm(pwm),
         .rgb_led_tri_o(rgb_led_tri_o),
-        .sws_4bits_tri_i(sws_4bits_tri_i));
+        .sws_4bits_tri_i(sws_4bits_tri_i),
+        .uart_rtl_rxd(uart_rtl_rxd),
+        .uart_rtl_txd(uart_rtl_txd));
   IOBUF i2c0_scl_iobuf
        (.I(i2c0_scl_o),
         .IO(i2c0_scl_io),

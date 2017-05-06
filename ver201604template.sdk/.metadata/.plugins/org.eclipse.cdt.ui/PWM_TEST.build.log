@@ -1,4 +1,4 @@
-17:55:56 **** Auto Build of configuration Debug for project PWM_TEST ****
+02:25:17 **** Build of configuration Debug for project PWM_TEST ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -9,6 +9,14 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PWMTEST.o" -mcpu=c
 ../src/PWMTEST.c:76:6: warning: unused variable 'Index' [-Wunused-variable]
   int Index;
       ^
+../src/PWMTEST.c: In function 'delay':
+../src/PWMTEST.c:111:4: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+    sleep(1000);
+    ^
+../src/PWMTEST.c: At top level:
+../src/PWMTEST.c:106:13: warning: 'delay' defined but not used [-Wunused-function]
+ static void delay(int dly)
+             ^
 'Finished building: ../src/PWMTEST.c'
 ' '
 'Building file: ../src/platform.c'
@@ -24,9 +32,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size PWM_TEST.elf  |tee "PWM_TEST.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  25924	   1148	  22568	  49640	   c1e8	PWM_TEST.elf
+  78084	   2580	  23328	 103992	  19638	PWM_TEST.elf
 'Finished building: PWM_TEST.elf.size'
 ' '
 
-17:55:57 Build Finished (took 1s.808ms)
+02:25:19 Build Finished (took 1s.718ms)
 

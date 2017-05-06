@@ -36,3 +36,13 @@ set_property PACKAGE_PIN M14 [get_ports {rgb_led_tri_o[0]}]
 set_property PACKAGE_PIN Y16 [get_ports {pwm[0]}]
 set_property PACKAGE_PIN Y17 [get_ports {pwm[1]}]
 set_property PACKAGE_PIN R14 [get_ports {pwm[2]}]
+
+
+set_property PACKAGE_PIN B19 [get_ports uart_rtl_rxd]
+set_property IOSTANDARD LVCMOS33 [get_ports uart_rtl_rxd]
+set_property PACKAGE_PIN A20 [get_ports uart_rtl_txd]
+set_property IOSTANDARD LVCMOS33 [get_ports uart_rtl_txd]
+set_input_delay -clock [get_clocks clk_fpga_0] -min -add_delay 0.200 [get_ports uart_rtl_rxd]
+set_input_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.200 [get_ports uart_rtl_rxd]
+set_output_delay -clock [get_clocks clk_fpga_0] -min -add_delay 0.000 [get_ports uart_rtl_txd]
+set_output_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.200 [get_ports uart_rtl_txd]

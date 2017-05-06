@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1492936353">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1493920727">
   <File Type="RDS-PROPCONSTRS" Name="basicZturn_wrapper_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="basicZturn_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="basicZturn_wrapper.vds"/>
@@ -46,13 +46,14 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="basicZturn_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="basicZturn_addition_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="basicZturn_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="basicZturn_axi_uartlite_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="basicZturn_rst_ps7_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="basicZturn_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="basicZturn_PWM_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="basicZturn_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="basicZturn_axi_iic_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="basicZturn_axi_gpio_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="basicZturn_auto_pc_0"/>
 </GenRun>

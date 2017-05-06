@@ -36,6 +36,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==basicZturn_PWM_
 # IP: bd/basicZturn/ip/basicZturn_addition_0_0/basicZturn_addition_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==basicZturn_addition_0_0 || ORIG_REF_NAME==basicZturn_addition_0_0}]
 
+# IP: bd/basicZturn/ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==basicZturn_axi_uartlite_0_0 || ORIG_REF_NAME==basicZturn_axi_uartlite_0_0}]
+
 # IP: bd/basicZturn/ip/basicZturn_auto_pc_0/basicZturn_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==basicZturn_auto_pc_0 || ORIG_REF_NAME==basicZturn_auto_pc_0}]
 
