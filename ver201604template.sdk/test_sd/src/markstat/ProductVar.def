@@ -1,0 +1,5 @@
+// VAR_ENTRY( Class, OrigClass, BaseName, PublishedName, C_Name, Uniquifier, DataType, LadrDataType )
+
+// need to include proper external references to resolve display variable
+// ======================================================================
+

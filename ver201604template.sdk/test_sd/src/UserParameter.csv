@@ -1,0 +1,14 @@
+Net_Type,none
+SimModeReq,1
+XSimModeReq,0
+DsimModeReq,0
+FltRstAdr,IScratch4
+SoftwareIPN,10
+GenTypeCfg,19
+CableConfig,80
+GmCfgSel,5
+WBAclfuILim1,580.052
+LclSpdRefSim,1200
+L_FrqInput,60
+PwrLimSpdRatLcl,1800
+TurbNpRatLcl,2330

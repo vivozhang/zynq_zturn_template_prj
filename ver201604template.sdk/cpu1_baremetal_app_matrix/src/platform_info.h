@@ -38,6 +38,7 @@
 #define VRING0_IPI_INTR_VECT              15
 #define VRING1_IPI_INTR_VECT              14
 
+//can not change the name of the channel, 'casue the user driver uses the same name
 #define RPMSG_CHAN_NAME         "rpmsg-openamp-demo-channel"
 
 struct hil_proc *platform_create_proc(int proc_index);

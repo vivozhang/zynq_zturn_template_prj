@@ -3,7 +3,7 @@
 	<name>cpu1_baremetal_app_matrix</name>
 	<comment></comment>
 	<projects>
-		<project>cpu1_echo_bsp</project>
+		<project>cpu1_amp</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

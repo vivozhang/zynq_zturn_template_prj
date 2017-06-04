@@ -1,0 +1,31 @@
+23:32:13 **** Auto Build of configuration Debug for project cpu0_linux_app ****
+make all 
+'Building file: ../src/linux_app.c'
+'Invoking: ARM v7 Linux gcc compiler'
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/linux_app.o" -MMD -MP -MF"src/linux_app.d" -MT"src/linux_app.o" -o "src/linux_app.o" "../src/linux_app.c"
+../src/linux_app.c: In function 'main':
+../src/linux_app.c:133:7: warning: unused variable 'write_result' [-Wunused-variable]
+   int write_result = write(fd, &send_data,
+       ^
+../src/linux_app.c:54:24: warning: unused variable 'bytes_sent' [-Wunused-variable]
+  int size, bytes_rcvd, bytes_sent;
+                        ^
+../src/linux_app.c:53:19: warning: variable 'expect_rnum' set but not used [-Wunused-but-set-variable]
+  int cmd, ret, i, expect_rnum;
+                   ^
+'Finished building: ../src/linux_app.c'
+' '
+'Building target: cpu0_linux_app.elf'
+'Invoking: ARM v7 Linux gcc linker'
+arm-linux-gnueabihf-gcc  -o "cpu0_linux_app.elf"  ./src/linux_app.o   
+'Finished building target: cpu0_linux_app.elf'
+' '
+'Invoking: ARM v7 Linux Print Size'
+arm-linux-gnueabihf-size cpu0_linux_app.elf  |tee "cpu0_linux_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3662	    340	    192	   4194	   1062	cpu0_linux_app.elf
+'Finished building: cpu0_linux_app.elf.size'
+' '
+
+23:32:15 Build Finished (took 1s.357ms)
+

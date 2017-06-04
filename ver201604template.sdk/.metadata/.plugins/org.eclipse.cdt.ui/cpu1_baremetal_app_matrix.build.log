@@ -1,29 +1,58 @@
-02:23:45 **** Build of configuration Debug for project cpu1_baremetal_app_matrix ****
+11:18:50 **** Auto Build of configuration Debug for project cpu1_baremetal_app_matrix ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/helper.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/helper.d" -MT"src/helper.o" -o "src/helper.o" "../src/helper.c"
-'Finished building: ../src/helper.c'
-' '
 'Building file: ../src/matrix_multiply.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_multiply.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/matrix_multiply.d" -MT"src/matrix_multiply.o" -o "src/matrix_multiply.o" "../src/matrix_multiply.c"
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_multiply.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_amp/ps7_cortexa9_1/include -MMD -MP -MF"src/matrix_multiply.d" -MT"src/matrix_multiply.o" -o "src/matrix_multiply.o" "../src/matrix_multiply.c"
+In file included from ../../cpu1_amp/ps7_cortexa9_1/include/xscugic.h:175:0,
+                 from ../../cpu1_amp/ps7_cortexa9_1/include/metal/system/generic/./zynq7/sys.h:40,
+                 from ../../cpu1_amp/ps7_cortexa9_1/include/metal/system/generic/sys.h:52,
+                 from ../../cpu1_amp/ps7_cortexa9_1/include/metal/sys.h:108,
+                 from ../../cpu1_amp/ps7_cortexa9_1/include/metal/dma.h:47,
+                 from ../../cpu1_amp/ps7_cortexa9_1/include/openamp/virtqueue.h:37,
+                 from ../../cpu1_amp/ps7_cortexa9_1/include/openamp/virtio.h:34,
+                 from ../../cpu1_amp/ps7_cortexa9_1/include/openamp/rpmsg_core.h:35,
+                 from ../../cpu1_amp/ps7_cortexa9_1/include/openamp/rpmsg.h:39,
+                 from ../../cpu1_amp/ps7_cortexa9_1/include/openamp/open_amp.h:33,
+                 from ../src/matrix_multiply.c:77:
+../src/matrix_multiply.c: In function 'rpmsg_read_cb':
+../../cpu1_amp/ps7_cortexa9_1/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/matrix_multiply.c:357:37: note: in expansion of macro 'XST_FAILURE'
+  if (Status != XST_SUCCESS) {return XST_FAILURE; }
+                                     ^
+../../cpu1_amp/ps7_cortexa9_1/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/matrix_multiply.c:373:37: note: in expansion of macro 'XST_FAILURE'
+  if (Status != XST_SUCCESS) {return XST_FAILURE;}
+                                     ^
 ../src/matrix_multiply.c: In function 'ScuTimerIntrExample':
-../src/matrix_multiply.c:475:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+../src/matrix_multiply.c:481:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
   int LastTimerExpired = 0;
       ^
-../src/matrix_multiply.c: In function 'TimerIntrHandler':
-../src/matrix_multiply.c:658:35: error: 'rp_chnl' undeclared (first use in this function)
-   if (RPMSG_SUCCESS != rpmsg_send(rp_chnl, &Send_data, 3*sizeof(unsigned))) {
-                                   ^
-../src/matrix_multiply.c:658:35: note: each undeclared identifier is reported only once for each function it appears in
 ../src/matrix_multiply.c: At top level:
-../src/matrix_multiply.c:176:13: warning: 'Matrix_Multiply' defined but not used [-Wunused-function]
+../src/matrix_multiply.c:178:13: warning: 'Matrix_Multiply' defined but not used [-Wunused-function]
  static void Matrix_Multiply(const matrix *m, const matrix *n, matrix *r)
              ^
-make: *** [src/matrix_multiply.o] Error 1
+../src/matrix_multiply.c:194:13: warning: 'delay' defined but not used [-Wunused-function]
+ static void delay(int dly)
+             ^
+'Finished building: ../src/matrix_multiply.c'
+' '
+'Building target: cpu1_baremetal_app_matrix.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cpu1_amp/ps7_cortexa9_1/lib -o "cpu1_baremetal_app_matrix.elf"  ./src/helper.o ./src/matrix_multiply.o ./src/platform.o ./src/platform_info.o ./src/rsc_table.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group
+'Finished building target: cpu1_baremetal_app_matrix.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cpu1_baremetal_app_matrix.elf  |tee "cpu1_baremetal_app_matrix.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102228	   4600	  74976	 181804	  2c62c	cpu1_baremetal_app_matrix.elf
+'Finished building: cpu1_baremetal_app_matrix.elf.size'
+' '
 
-02:23:46 Build Finished (took 1s.18ms)
+11:18:52 Build Finished (took 1s.484ms)
 

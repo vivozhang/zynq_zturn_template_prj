@@ -1,38 +1,8 @@
-02:23:46 **** Build of configuration Debug for project cpu1_baremetal_app_ipc ****
+20:58:29 **** Auto Build of configuration Debug for project cpu1_baremetal_app_ipc ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/helper.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/helper.d" -MT"src/helper.o" -o "src/helper.o" "../src/helper.c"
-'Finished building: ../src/helper.c'
-' '
-'Building file: ../src/platform_info.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_info.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/platform_info.d" -MT"src/platform_info.o" -o "src/platform_info.o" "../src/platform_info.c"
-'Finished building: ../src/platform_info.c'
-' '
-'Building file: ../src/rpc_demo.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rpc_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/rpc_demo.d" -MT"src/rpc_demo.o" -o "src/rpc_demo.o" "../src/rpc_demo.c"
-'Finished building: ../src/rpc_demo.c'
-' '
-'Building file: ../src/rsc_table.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rsc_table.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_echo_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/rsc_table.d" -MT"src/rsc_table.o" -o "src/rsc_table.o" "../src/rsc_table.c"
-'Finished building: ../src/rsc_table.c'
-' '
-'Building target: cpu1_baremetal_app_ipc.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cpu1_echo_bsp/ps7_cortexa9_1/lib -o "cpu1_baremetal_app_ipc.elf"  ./src/helper.o ./src/platform_info.o ./src/rpc_demo.o ./src/rsc_table.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group
-'Finished building target: cpu1_baremetal_app_ipc.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size cpu1_baremetal_app_ipc.elf  |tee "cpu1_baremetal_app_ipc.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 154652	   4576	  50288	 209516	  3326c	cpu1_baremetal_app_ipc.elf
-'Finished building: cpu1_baremetal_app_ipc.elf.size'
-' '
+make: Nothing to be done for `main-build'.
 
-02:23:49 Build Finished (took 2s.859ms)
+20:58:29 Build Finished (took 349ms)
 

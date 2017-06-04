@@ -84,6 +84,7 @@
 #include "Xscugic.h"
 #include "Xil_exception.h"
 #include "xscutimer.h"
+#include "sleep.h"
 
 #define	MAX_SIZE		6
 #define NUM_MATRIX		2
@@ -111,7 +112,7 @@ u32 baseaddr_d = (u32)PWM_DUTYBASEADD;
 #define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
 #define TIMER_IRPT_INTR		XPAR_SCUTIMER_INTR
 
-#define TIMER_LOAD_VALUE 0xffff
+#define TIMER_LOAD_VALUE 0x4fffffff
 
 // timer related function prototype
 int ScuTimerIntrExample(XScuGic *IntcInstancePtr, XScuTimer *TimerInstancePtr,
@@ -125,10 +126,10 @@ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
 static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
 
 
-#ifndef TESTAPP_GEN
+
 XScuTimer TimerInstance;	/* Cortex A9 Scu Private Timer Instance */
 XScuGic IntcInstance;		/* Interrupt Controller Instance */
-#endif
+
 
 /*
  * The following variables are shared between non-interrupt processing and
@@ -146,12 +147,9 @@ typedef struct DATA_ARRAY{
 	unsigned int size;
 	unsigned int elements[MAX_SIZE];
 }data_array;
+
 static data_array Recieved_data;
 static data_array Send_data;
-
-/* Local variables */
-//static matrix matrix_array[NUM_MATRIX];
-//static matrix matrix_result;
 
 static struct rpmsg_endpoint *rp_ept;
 static struct remote_proc *proc = NULL;
@@ -165,6 +163,10 @@ static void rpmsg_channel_created(struct rpmsg_channel *rp_chnl);
 static void rpmsg_channel_deleted(struct rpmsg_channel *rp_chnl);
 static void rpmsg_read_cb(struct rpmsg_channel *, void *, int, void *,
 			  unsigned long);
+
+XScuTimer Timer;
+XScuTimer_Config *ConfigPtr;
+static unsigned FirstTime = 1;
 
 /* External functions */
 extern int init_system(void);
@@ -215,7 +217,7 @@ int app(struct hil_proc *hproc)
 
 	/* Initialize framework */
 
-	LPRINTF("Try to init remoteproc resource\n");
+	LPRINTF("Try to init remoteproc resource\r\n");
 	status = remoteproc_resource_init(&rsc_info, hproc,
 				     rpmsg_channel_created,
 				     rpmsg_channel_deleted, rpmsg_read_cb,
@@ -223,19 +225,18 @@ int app(struct hil_proc *hproc)
 
 
 	if (RPROC_SUCCESS != status) {
-		LPERROR("Failed  to initialize remoteproc resource.\n");
+		LPERROR("Failed  to initialize remoteproc resource.\r\n");
 		return -1;
 	}
 
+
+
+	LPRINTF("Init remoteproc resource done\r\n");
+
+	LPRINTF("Waiting for events...\r\n");
+
+	/*
 	counter = 0;
-
-	LPRINTF("Init remoteproc resource done\n");
-
-	LPRINTF("Waiting for events...\n");
-
-
-
-	delay(100);
 
 	int i=0;
 	int j=0;
@@ -245,27 +246,14 @@ int app(struct hil_proc *hproc)
 	int sign_j = 1;
 	int sign_k = 1;
 
-	//main control/running loop goes here...
-	//hil_poll(proc->proc, 1);
-
-	int Status;
-	//init timer
-
-	Status = ScuTimerIntrExample(&IntcInstance, &TimerInstance,
-					TIMER_DEVICE_ID, TIMER_IRPT_INTR);
-		if (Status != XST_SUCCESS) {
-			xil_printf("SCU Timer Interrupt Example Test Failed\r\n");
-			return XST_FAILURE;
-			counter =10;
-		}else
-			counter = 2;
+	PWM_mWriteReg (baseaddr_p, 0, 1);
+	PWM_mWriteReg (baseaddr_p, 8, 100);	    //set PWM period
 
 	while(!evt_chnl_deleted)
 	{
 		//vivo:remember to set it to non-blocking mode
 		//or, it will stop here until a data is received
 
-		//
 		hil_poll(proc->proc, 1);
 
 		PWM_mWriteReg (baseaddr_d, 0, i);
@@ -276,9 +264,9 @@ int app(struct hil_proc *hproc)
 		j = i+sign_j;
 		k = i+sign_k;
 
-
-		delay(counter);
-
+		LPRINTF("Flashing the led!...\r\n");
+		sleep(1);
+		counter++;
 
 		if(i>100||i<0)
 			sign_i=sign_i*(-1);
@@ -301,9 +289,8 @@ int app(struct hil_proc *hproc)
 			k=0;
 		else if(k>100)
 			k=100;
-
 	}
-
+	*/
 
 	do {
 		hil_poll(proc->proc, 0);
@@ -340,31 +327,75 @@ static void rpmsg_read_cb(struct rpmsg_channel *rp_chnl, void *data, int len,
 	(void)priv;
 	(void)src;
 
-
-
-
 	if ((*(unsigned int *)data) == SHUTDOWN_MSG) {
 		evt_chnl_deleted = 1;
 		return;
 	}
 
+	LPRINTF("In rpmsg callback!!\r\n");
+	//init timer
+	int Status;
 
-	//memcpy(matrix_array, data, len);
+
 	memcpy(&Recieved_data, data, len);
-	/* Process received data and multiple matrices. */
-	//Matrix_Multiply(&matrix_array[0], &matrix_array[1],
-	//		&matrix_result);
-	Send_data.elements[0]=SUM_ALL(&Recieved_data);
+	Send_data.elements[0] = SUM_ALL(&Recieved_data);
 	Send_data.elements[1] = counter;
 	Send_data.size = 2;
 
 
 	/* Send the result of matrix multiplication back to master. */
-	if (RPMSG_SUCCESS != rpmsg_send(rp_chnl, &Send_data, 3*sizeof(unsigned))) {
+	if (RPMSG_SUCCESS != rpmsg_send(rp_chnl, &Send_data, 3*sizeof(unsigned)))
+	{  LPERROR("rpmsg_send failed\n"); }
+
+	FirstTime += 1;
+
+	if(FirstTime == 5)
+	{
+	ConfigPtr = XScuTimer_LookupConfig(TIMER_DEVICE_ID);
+	Status = XScuTimer_CfgInitialize(&Timer, ConfigPtr,
+						ConfigPtr->BaseAddr);
+	if (Status != XST_SUCCESS) {return XST_FAILURE;	}
+
+		//Status = XScuTimer_SelfTest(&Timer);
+		//if (Status != XST_SUCCESS) {return XST_FAILURE;}
+
+		//LPRINTF("Self-test finish ok...\r\n");
+
+	XScuTimer_EnableAutoReload(&Timer);
+	XScuTimer_LoadTimer(&Timer, (u32)TIMER_LOAD_VALUE);
+
+	XScuGic_Config *IntcConfig;
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+
+	Status = XScuGic_CfgInitialize(&IntcInstance, IntcConfig,
+					IntcConfig->CpuBaseAddress);
+
+	if (Status != XST_SUCCESS) {return XST_FAILURE;}
+
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_IRQ_INT,
+					(Xil_ExceptionHandler)XScuGic_InterruptHandler,
+					&IntcInstance);
+
+	Status = XScuGic_Connect(&IntcInstance, (u16)TIMER_IRPT_INTR,
+					(Xil_ExceptionHandler)TimerIntrHandler,
+					&Timer);
+
+	XScuGic_Enable(&IntcInstance, (u16)TIMER_IRPT_INTR);
+	XScuTimer_EnableInterrupt(&Timer);
+	Xil_ExceptionEnable();
+
+	XScuTimer_Start(&Timer);
+	LPRINTF("Timer init done!! \r\n");
+	}
+
+
+	/* Send the result of matrix multiplication back to master. */
+	/*
+    if (RPMSG_SUCCESS != rpmsg_send(rp_chnl, &Send_data, 3*sizeof(unsigned))) {
 		LPERROR("rpmsg_send failed\n");
 	}
 
-	int temp = Send_data.elements[0];
 
 	while(temp>0)
 	{
@@ -375,8 +406,7 @@ static void rpmsg_read_cb(struct rpmsg_channel *rp_chnl, void *data, int len,
 		delay(10);
 		temp--;
 	}
-
-
+	*/
 }
 
 /*-----------------------------------------------------------------------------*
@@ -389,17 +419,14 @@ int main(void)
 	struct hil_proc *hproc;
 	int status = -1;
 
-
-	LPRINTF("Starting application...\n");
+	LPRINTF("Starting application...\r\n");
 
 	/* Initialize HW system components */
 	init_system();
 
 	//PWM initialization
 	//enable PWM output
-	PWM_mWriteReg (baseaddr_p, 0, 1);
-	    //set PWM period
-	PWM_mWriteReg (baseaddr_p, 8, 100);
+
 
 	/* Create HIL proc */
 	hproc = platform_create_proc(proc_id);
@@ -414,29 +441,8 @@ int main(void)
 		}
 	}
 
-	LPRINTF("Stopping application...\n");
+	LPRINTF("Stopping application...\r\n");
 
-	//while (1) {
-			/*
-			 * Wait for the first timer counter to expire as indicated by
-			 * the shared variable which the handler will increment.
-			 */
-	//		while (TimerExpired == LastTimerExpired) {
-	//		}
-
-	//		LastTimerExpired = TimerExpired;
-			/*
-			 * If it has expired a number of times, then stop the timer
-			 * counter and stop this example.
-			 */
-	//		if (TimerExpired == 13) {
-	//			XScuTimer_Stop(TimerInstancePtr);
-	//			break;
-	//		}
-	//	}
-		/*
-		 * Disable and disconnect the interrupt system.
-		 */
 	TimerDisableIntrSystem(&IntcInstance, (u16)TIMER_IRPT_INTR);
 
 	cleanup_system();
@@ -497,6 +503,8 @@ int ScuTimerIntrExample(XScuGic *IntcInstancePtr, XScuTimer * TimerInstancePtr,
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
+
+	LPRINTF("Self-test finish ok...\r\n");
 
 	/*
 	 * Connect the device to interrupt subsystem so that interrupts
@@ -598,18 +606,15 @@ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
 	 * Enable the interrupt for the device.
 	 */
 	XScuGic_Enable(IntcInstancePtr, TimerIntrId);
-
 	/*
 	 * Enable the timer interrupts for timer mode.
 	 */
 	XScuTimer_EnableInterrupt(TimerInstancePtr);
-
-#ifndef TESTAPP_GEN
 	/*
 	 * Enable interrupts in the Processor.
 	 */
 	Xil_ExceptionEnable();
-#endif
+
 
 	return XST_SUCCESS;
 }
@@ -641,23 +646,12 @@ static void TimerIntrHandler(void *CallBackRef)
 	 */
 	if (XScuTimer_IsExpired(TimerInstancePtr)) {
 		XScuTimer_ClearInterruptStatus(TimerInstancePtr);
-		TimerExpired++;
-		counter--;
-		if(counter<2)
-			counter = 100;
+		counter++;
+		if(counter>10000)
+			counter = 0;
 
-		//if (TimerExpired == 10) {
-		//	XScuTimer_DisableAutoReload(TimerInstancePtr);
-		//}
-		Send_data.elements[0]= TimerExpired;
-		Send_data.elements[1] = counter;
-		Send_data.size = 2;
+		xil_printf("Timer interrupt once %d!!\r\n",counter);
 
-
-		/* Send the result of matrix multiplication back to master. */
-		if (RPMSG_SUCCESS != rpmsg_send(rp_chnl, &Send_data, 3*sizeof(unsigned))) {
-			LPERROR("rpmsg_send failed\n");
-		}
 	}
 }
 

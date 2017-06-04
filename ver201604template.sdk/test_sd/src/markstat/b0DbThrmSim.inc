@@ -1,0 +1,4 @@
+struct DtmTempSimTyp
+{
+    float               DtmTrJncTemp;
+};

@@ -1,0 +1,13 @@
+21:21:48 **** Auto Build of configuration Debug for project test_echo_new_hardware ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/echo_test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_echo_new_hardware_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/echo_test.d" -MT"src/echo_test.o" -o "src/echo_test.o" "../src/echo_test.c"
+../src/echo_test.c:76:24: fatal error: xil_printf.h: No such file or directory
+compilation terminated.
+make: *** [src/echo_test.o] Error 1
+
+21:21:52 Build Finished (took 3s.102ms)
+

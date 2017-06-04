@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;cpu0_linux_app/src/linux_app&apos; to &apos;linux_app.c&apos;" description="Rename resource &apos;linux_app&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/linux_app" name="linux_app.c" stamp="1495293269364" updateReferences="true"/>
+</session>

@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+ 100768	   4600	  50400	 155768	  26078	cpu1_baremetal_app_matrix.elf

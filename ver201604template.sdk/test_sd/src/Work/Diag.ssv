@@ -1,0 +1,676 @@
+Class;Name;Description;Init;Type;Locked;Bridge 1;Bridge 2;Categories;Enumerations
+;DependentRule;A final value parameter rule is dependent on an indeterminate value.;yes;Trip;yes;;;Mis-configuration by Parameter;66
+;TripErrorLogged;Problem entered into Error Log.;yes;Trip;yes;;;Markstat Process;69
+;AlarmErrorLogged;Problem entered into Error Log.;yes;Alarm;;;; ;0
+
+;TestB1Alm;Test Diagnostic Bridge 1 Alarm.;;Alarm;;yes;; ;0
+;TestB1Trip;Test Diagnostic Bridge 1 Trip.;;Trip;;yes;;Spare;9
+;TestB2Alm;Test Diagnostic Bridge 2 Alarm.;;Alarm;;;yes; ;0
+;TestB2Trip;Test Diagnostic Bridge 2 Trip.;;Trip;;;yes;Spare;9
+;TestAlarm;Test Diagnostic No Bridge Alarm .;;Alarm;;;; ;0
+;TestAlarmLock;Test Diagnostic No Bridge Alarm Locked.;;Alarm;yes;;; ;0
+;TestTrip;Test Diagnostic No Bridge Trip.;;Trip;;;;Spare;9
+;TestTripLock;Test Diagnostic No Bridge Trip Locked.;;Trip;yes;;;Spare;9
+;TestSoe;.;;SOE;;;; ;0
+;VerMisMatch;Product ID / Version mismatch trip;yes;Trip;yes;yes;yes;Mis-configuration by Parameter;66
+;ParmFileReadError;Parameter file read error trip;yes;Trip;yes;yes;yes;Markstat Process;69
+;ParmFileCrcError;Parameter file read CRC error trip;yes;Trip;yes;yes;yes;Markstat Process;69
+;ParmFileCrcAlarm;Parameter file read CRC alarm;;Alarm;;yes;yes; ;0
+
+;Tsk1OverRunTrp;Task 1 overrun.;;Trip;;yes;yes;Markstat Process;69
+;Tsk2OverRunTrp;Task 2 overrun.;;Trip;;yes;yes;Markstat Process;69
+;Tsk3OverRunTrp;Task 3 overrun.;;Trip;;yes;yes;Markstat Process;69
+
+;XopsIsrErrTrp;Xops interrupt service error.;;Trip;;yes;yes;MarkStat Process;69
+
+;UtcUnLock;UTC time not locked.;;Alarm;;yes;yes; ;0
+
+cMarkStatWdog;WdogFailStartTrp;Watchdog - %R has failed to start tickling.;;Trip;;yes;yes;MarkStat Process;69
+cMarkStatWdog;WdogStoppedTrp;Watchdog - %R has stopped running.;;Trip;;yes;yes;MarkStat Process;69
+cMarkStatWdog;WdogPeriodMaxTrp;Watchdog - %R period has exceeded the maximum.;;Trip;;yes;yes;MarkStat Process;69
+cMarkStatWdog;WdogPeriodMinTrp;Watchdog - %R period is below the minimum.;;Trip;;yes;yes;MarkStat Process;69
+;R_SyncIOCFlt;Instantaneous rotor over-current during synchronization;;Trip;;;yes;IOC, Rotor Converter;1071
+;S_CTFlt;Stator current transformer (CT) failure during startup;;Trip;;;yes;Wiring Issue, Rotor Converter or Stator;17
+;S_SyncGroundFlt;Stator ground current during synchronization;;Trip;;yes;yes;Ground Fault, Stator;45
+;R_TachLooseTrp;Rotor tachometer assembly is loose;;Trip;;;yes;Tachometer;22
+;R_BadCCTsk;An illegal crowbar contactor sequencer task request trip;yes;Trip;;;yes;Code Sequencing;4
+;R_BadSCTsk;An illegal Synchronous Switch contactor sequencer task request trip;yes;Trip;;;yes;Code Sequencing;4
+;R_BadSyncTsk;An illegal synchronization sequencer task request alarm;yes;Alarm;;;yes; ;0
+;R_CCClsTmout;Crowbar contactor did not close within allotted time trip;yes;Trip;;;yes;Contactor or Breaker ;2
+;R_CCFbkOpen;Crowbar contactor feedback is opened trip;yes;Trip;;;yes;Contactor or Breaker ;2
+;R_CCOpnTmout;Crowbar contactor did not open within allotted time trip;yes;Trip;;;yes;Contactor or Breaker ;2
+;R_CCweldAlm;Crowbar contactor is potentially welding alarm;;Alarm;;;yes; ;0
+;R_RevPhsRot;Reverse phase sequence detected from sequence converter trip;;Trip;;;yes;Wiring Issue, Rotor Converter or Stator;17
+;R_RtrConFlt;Rotor connection fault trip;;Trip;;;yes;Wiring Issue, Rotor Converter or Stator;17
+;R_RunWhlInit;Rotor run request while power-up initialization sequence alarm;yes;Alarm;;;yes; ;0
+;R_VOffsInvld;Rotor converter started without valid voltage feedback offset alarm;yes;Alarm;;;yes; ;0
+;S_FrqLinFlt;Stator frequency line fault trip;;Trip;;;yes;Wiring Issue, Rotor Converter or Stator;17
+;S_K1ClsTmout;Generator stator synchronous switch did not close within allotted time trip;yes;Trip;;;yes;Contactor or Breaker ;2
+;S_K1OpnTmout;Generator stator synchronous switch did not open within allotted time trip;yes;Trip;;yes;yes;Contactor or Breaker ;2
+;S_K1StuckClose;Generator stator synchronous switch remained incorrectly closed trip;yes;Trip;;yes;yes;Contactor or Breaker ;2
+;S_PhsSyncFlt;Stator phase synchronization fault trip;;Trip;;;yes;Tachometer;22
+;S_PllRotFlt;Stator phase-locked loop (PLL) rotor fault trip;;Trip;;;yes;Wiring Issue, Rotor Converter or Stator;17
+;S_PllTacFlt;Stator phase-locked loop (PLL) tachometer fault trip;;Trip;;;yes;Tachometer;22
+;S_RevPhsRot;Stator reverse phase rotor fault trip;;Trip;;;yes;Wiring Issue, Rotor Converter or Stator;17
+;S_VfbAbsent;Generator stator voltage feedback absent trip;;Trip;;;yes;Wiring Issue, Rotor Converter or Stator;17
+;S_VltSyncFlt;Generator stator voltage synchronization sequence fault trip;;Trip;;;yes;Synchronization;43
+;GenOnLine;Generator online with grid SOE;;SOE;;yes;yes; ;0
+;S_VMagFlt;Generator stator voltage magnitude fault trip;;Trip;;;yes;Synchronization;43
+;R_MrkLossAlm;Marker not seen alarm;;Alarm;;;yes; ;0
+;R_MrkLossFlt;Marker not seen fault trip;;Trip;;;yes;Tachometer;22
+;R_TachBadAlm;Lost/gained tachometer pulse alarm;;Alarm;;;yes; ;0
+;R_TachBadFlt;Lost/gained tachometer pulses fault trip;;Trip;;;yes;Tachometer;22
+;R_TrqErrAlm;Torque error alarm;;Alarm;;;yes; ;0
+;R_TrqErrFlt;Torque error fault trip;;Trip;;;yes;Torque Regulation;60
+;S_AcLineTran;Stator voltage transients;;Alarm;;;yes; ;0
+;S_AcLineWdog;Stator voltage watch dog;;Trip;;;yes;Grid Transient;38
+;R_PwrDipFlt;Power Dip timer expire fault;yes;Trip;;;yes;DC Link Under-voltage;27
+;R_IregSatAlm;Current regulator saturation alarm;;Alarm;;;yes; ;0
+;R_VregSatAlm;Voltage regulator saturation alarm;;Alarm;;;yes; ;0
+
+cRotorBrgFbkOffs;IaOffsTrp;%R excessive offset current feedback on Phase A;;Trip;;yes;;Current offset, Line Bridge;1020
+cRotorBrgFbkOffs;IbOffsTrp;%R excessive offset current feedback on Phase B;;Trip;;yes;;Current offset, Line Bridge;1020
+cRotorBrgFbkOffs;IcOffsTrp;%R excessive offset current feedback on Phase C;;Trip;;yes;;Current offset, Line Bridge;1020
+
+cRotorBrgFbkOffs;VaxOffsTrp;%R excessive offset voltage between Phase A and a reference voltage;;Trip;;yes;;Voltage  offset, Line Bridge;1030
+cRotorBrgFbkOffs;VbxOffsTrp;%R excessive offset voltage between Phase B and a reference voltage;;Trip;;yes;;Voltage  offset, Line Bridge;1030
+cRotorBrgFbkOffs;VcxOffsTrp;%R excessive offset voltage between Phase C and a reference voltage;;Trip;;yes;;Voltage  offset, Line Bridge;1030
+cLineBrgFbkOffs;IaOffsTrp;%R excessive offset current feedback on Phase A;;Trip;;yes;;Current offset, Line Bridge;1020
+cLineBrgFbkOffs;IbOffsTrp;%R excessive offset current feedback on Phase B;;Trip;;yes;;Current offset, Line Bridge;1020
+cLineBrgFbkOffs;IcOffsTrp;%R excessive offset current feedback on Phase C;;Trip;;yes;;Current offset, Line Bridge;1020
+cLineBrgFbkOffs;VaxOffsTrp;%R excessive offset voltage between Phase A and a reference voltage;;Trip;;yes;;Voltage  offset, Line Bridge;1030
+cLineBrgFbkOffs;VbxOffsTrp;%R excessive offset voltage between Phase B and a reference voltage;;Trip;;yes;;Voltage  offset, Line Bridge;1030
+cLineBrgFbkOffs;VcxOffsTrp;%R excessive offset voltage between Phase C and a reference voltage;;Trip;;yes;;Voltage  offset, Line Bridge;1030
+
+cBrgThrmModel;BtmAjncOtAlm;%R phase A junction over temp alarm;;Alarm;;?;?; ;0
+cBrgThrmModel;BtmAjncOtDlyTrp;%R phase A junction delayed over temp;;Alarm;;?;?; ;0
+cBrgThrmModel;BtmAjncOtTrp;%R phase A junction over temperature;;Trip;;?;?;IGBT or Diode Junction Over-temperature, Line Converter;1000
+
+cBrgThrmModel;BtmBjncOtAlm;%R phase B junction over temp alarm;;Alarm;;?;?; ;0
+cBrgThrmModel;BtmBjncOtDlyTrp;%R phase B junction delayed over temp;;Alarm;;?;?; ;0
+cBrgThrmModel;BtmBjncOtTrp;%R phase B junction over temperature;;Trip;;?;?;IGBT or Diode Junction Over-temperature, Line Converter;1000
+
+cBrgThrmModel;BtmCjncOtAlm;%R phase C junction over temp alarm;;Alarm;;?;?; ;0
+cBrgThrmModel;BtmCjncOtDlyTrp;%R phase C junction delayed over temp;;Alarm;;?;?; ;0
+cBrgThrmModel;BtmCjncOtTrp;%R phase C junction over temperature;;Trip;;?;?;IGBT or Diode Junction Over-temperature, Line Converter;1000
+
+cBrgThrm5pModel;BtmAjncOtAlm;The %R phase A junction over-temperature alarm;;Alarm;;?;?; ;0
+cBrgThrm5pModel;BtmAjncOtDlyTrp;The %R phase A junction delayed over-temperature trip;;Alarm;;?;?; ;0
+cBrgThrm5pModel;BtmAjncOtTrp;The %R phase A junction over-temperature trip;;Trip;;?;?;IGBT or Diode Junction Over-temperature, Line Converter;1000
+
+cBrgThrm5pModel;BtmBjncOtAlm;The %R phase B junction over-temperature alarm;;Alarm;;?;?; ;0
+cBrgThrm5pModel;BtmBjncOtDlyTrp;The %R phase B junction delayed over-temperature trip;;Alarm;;?;?; ;0
+cBrgThrm5pModel;BtmBjncOtTrp;The %R phase B junction over-temperature trip;;Trip;;?;?;IGBT or Diode Junction Over-temperature, Line Converter;1000
+
+cBrgThrm5pModel;BtmCjncOtAlm;The %R phase C junction over-temperature alarm;;Alarm;;?;?; ;0
+cBrgThrm5pModel;BtmCjncOtDlyTrp;The %R phase C junction delayed over-temperature;;Alarm;;?;?; ;0
+cBrgThrm5pModel;BtmCjncOtTrp;The %R phase C junction over-temperature;;Trip;;?;?;IGBT or Diode Junction Over-temperature, Line Converter;1000
+
+cBrgThrmstr;BthtrAphsUtAlm;%R thermistor Phase A under-temperature alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrBphsUtAlm;%R thermistor Phase B under-temperature alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrCphsUtAlm;%R thermistor Phase C under-temperature alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrDbUtAlm;%R dynamic brake (DB) thermistor under-temperature alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrUtTrp;%R thermistor under-temperature trip;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBrgThrmstr;BthtrAphTopUtTrp;%R Phase A top thermistor under-temperature trip;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBrgThrmstr;BthtrAphBotUtTrp;%R Phase A bottom thermistor under-temperature trip;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBrgThrmstr;BthtrBphTopUtTrp;%R Phase B top thermistor under-temperature trip;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBrgThrmstr;BthtrBphBotUtTrp;%R Phase B bottom thermistor under-temperature trip;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBrgThrmstr;BthtrCphTopUtTrp;%R Phase C top thermistor under-temperature trip;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBrgThrmstr;BthtrCphBotUtTrp;%R Phase C bottom thermistor under-temperature trip;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBrgThrmstr;BthtrDbTopUtTrp;%R dynamic break (DB) top thermistor under-temperature trip;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBrgThrmstr;BthtrDbBotUtTrp;%R dynamic break (DB) bottom thermistor under-temperature trip;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+
+cBrgThrmstr;BthtrAphsOtAlm;%R thermistor Phase A over-temperature alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrBphsOtAlm;%R thermistor Phase B over-temperature alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrCphsOtAlm;%R thermistor Phase C over-temperature alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrDbOtAlm;%R dynamic brake (DB) thermistor over-temperature alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrAphsOtDlyTrp;%R thermistor Phase A over-temperature delay trip;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrBphsOtDlyTrp;%R thermistor Phase B over-temperature delay trip;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrCphsOtDlyTrp;%R thermistor Phase C over-temperature delay trip;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrOtTrp ;%R thermistor over-temperature instantaneous trip;;Trip;;?;?;IGBT or Diode Junction Over-temperature, Line Converter;1000
+cBrgThrmstr;BthtrDbOtDlyTrp;%R dynamic brake (DB) thermistor over-temperature delay trip;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrAphsImbAlm;%R out-voted Phase A thermistor imbalance alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrBphsImbAlm;%R out-voted Phase B thermistor imbalance alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrCphsImbAlm;%R out-voted Phase C thermistor imbalance alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrAdelImbAlm;%R thermistor within Phase A imbalance alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrBdelImbAlm;%R thermistor within Phase B imbalance alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrCdelImbAlm;%R thermistor within Phase C imbalance alarm;;Alarm;;?;?; ;0
+cBrgThrmstr;BthtrDbDelImbAlm;%R thermistor within dynamic-brake imbalance alarm;;Alarm;;?;?; ;0
+
+cBridgeRebf;DesatFltAL;Desaturation condition trip on the lower IGBT on Phase A of the %R;;Trip;;?;?;IGBT Desat, Line Bridge;1040
+cBridgeRebf;DesatFltBL;Desaturation condition trip on the lower IGBT on Phase B of the %R;;Trip;;?;?;IGBT Desat, Line Bridge;1040
+cBridgeRebf;DesatFltCL;Desaturation condition trip on the lower IGBT on Phase C of the %R;;Trip;;?;?;IGBT Desat, Line Bridge;1040
+cBridgeRebf;DesatFltAU;Desaturation condition trip on the upper IGBT on Phase A of the %R;;Trip;;?;?;IGBT Desat, Line Bridge;1040
+cBridgeRebf;DesatFltBU;Desaturation condition trip on the upper IGBT on Phase B of the %R;;Trip;;?;?;IGBT Desat, Line Bridge;1040
+cBridgeRebf;DesatFltCU;Desaturation condition trip on the upper IGBT on Phase C of the %R;;Trip;;?;?;IGBT Desat, Line Bridge;1040
+cBridgeRebf;DesatFltD;Desaturation condition trip on the (upper or lower) IGBT on Phase D  of the %R;;Trip;;?;?;IGBT Desat, Line Bridge;1040
+
+cBridgeRebf;IocPhsA1;The %R  instantaneous over-current (IOC) on Phase A;;Trip;;?;?;IOC, Line Converter;1070
+cBridgeRebf;IocPhsB1;The %R  instantaneous over-current (IOC) on Phase B;;Trip;;?;?;IOC, Line Converter;1070
+cBridgeRebf;IocPhsC1;The %R  instantaneous over-current (IOC) on Phase C;;Trip;;?;?;IOC, Line Converter;1070
+cBridgeRebf;IocPhsD;The %R  instantaneous over-current (IOC) on Phase D;;Trip;;?;?;IOC, Line Converter;1070
+
+cBridgeRebf;GdPwrSup1Fail;The %R gate drive power supply DRPC failure;;Trip;;?;?;Gate Drive Power Supply Under-voltage, Line AEDB or AEBI;1080
+cBridgeRebf;GdPwrSup3Fail;The %R gate drive power supply DRVP5 failure;;Trip;;?;?;Gate Drive Power Supply Under-voltage, Rotor AEBI;1081
+
+cBridgeRebf;RebfCtlPwrFlt;The %R REBF control power supply fault;;Trip;;?;?;REBF Control Power Supply Under-voltage, Line;1090
+cBridgeRebf;IoCtlPwrFlt;The I/O control power supply fault;;Trip;;?;?;Power Supply;15
+cBridgeRebf;IoRlyPwrFlt;The I/O relay power supply fault;;Trip;;?;?;Power Supply;15
+
+cBridgeRebf;HsslCommErr;The %R high-speed serial link (HSSL) communication error;;Trip;;?;?;HSSL / HSLA, Line converter;1100
+cBridgeRebf;HsslCommAlm;The %R high-speed serial link (HSSL) communication alarm;;Alarm;;;; ;0
+cBridgeRebf;HsslBrgEnbFailTrp;The %R failed to enable when commanded;;Trip;;;;HSSL / HSLA, Line converter;1100
+cBridgeRebf;HsslInvCfgEnbTrp;The %R invalid enabling of target configuration changes;;Trip;;;;HSSL / HSLA, Line converter;1100
+
+cBridgeRebf;HsslDscFail;The %R discovering high-speed serial link (HSSL) target failure;;Trip;;?;?;HSSL / HSLA, Line converter;1100
+cBridgeRebf;HsslIniFail;The %R initializing high-speed serial link (HSSL) target failure;;Trip;;?;?;HSSL / HSLA, Line converter;1100
+
+cBridgeRebf;HsslOpnFail;The %R failure to open host resources for the high-speed serial link (HSSL);;Trip;;?;?;HSSL / HSLA, Line converter;1100
+cBridgeRebf;HsslLdPls2Alm;The %R high-speed serial link (HSSL) load pulse contingency alarm;;Alarm;;?;?; ;0
+cBridgeRebf;HsslLdPls2Trp;The %R high-speed serial link (HSSL) load pulse contingency trip;;Trip;;?;?;HSSL / HSLA, Line converter;1100
+cBridgeRebf;HslaClkFlt;The %R  high-speed link assembly (HSLA) clock fault;;Trip;;?;?;HSSL / HSLA, Line converter;1100
+cBridgeRebf;HslaPwrFlt;The %R  high-speed link assembly (HSLA) power supply fault;;Trip;;?;?;HSSL / HSLA, Line converter;1100
+
+cBridgeRebf;BrgFirXlateFlt;The %R firing translation fault;;Trip;;?;?;MarkStat Process;69
+
+cBridgeRebf;TargFrcErrFlt;The %R high-speed serial link (HSSL) target free running counter (FRC) error fault;;Trip;;?;?;HSSL / HSLA, Line converter;1100
+cBridgeRebf;TargFrameErrFlt;The %R high-speed serial link (HSSL) target frame error fault;;Trip;;?;?;HSSL / HSLA, Line converter;1100
+cBridgeRebf;TargLdPlsAlm;The %R high-speed serial link (HSSL) target load pulse time less than free running counter (FRC) time alarm;;Alarm;;?;?; ;0
+
+cBridgeRebf;UnresolvedBrgFlt;The %R unresolved bridge fault;;Trip;;?;?;MarkStat Process;69
+cBridgeRebf;RdytrLoopShtdwn;The %R ready to run loop shutdown;;Trip;;?;?;HSSL / HSLA, Line converter;1100
+cBridgeRebf;RdytrLoopShtdwnBr;The %R ready to run loop shutdown;;Trip;;?;?;HSSL / HSLA, Line converter;1100
+
+cBridgeRebf;PwaInvHslaTrp;The %R high-speed link assembly (HSLA) reported an inventory trip;;Trip;;?;?;Invalid HSLA, Line or Rotor Board;72
+cBridgeRebf;PwaInvRebfTrp;The %R renewable bridge interface module revision F (REBF) reported an inventory trip;;Trip;;?;?;Invalid REFB Board;73
+cBridgeRebf;PwaInvRebfJ1Trp;The renewable bridge interface module revision F (REBF) J1 connected to the Line Bridge Interface board (AEBI or AEDB) has an inventory problem.;;Trip;;?;?;Invalid PWA, Line Bridge Board;10
+cBridgeRebf;PwaInvRebfJ2Trp;The renewable bridge interface module revision F (REBF) J2 connected to the Rotor Bridge Interface board (AEBI) has an inventory problem.;;Trip;;?;?;Invalid PWA, Rotor Bridge Board;11
+cBridgeRebf;PwaInvRebfP1Trp;The renewable bridge interface module revision F (REBF) P1 connected to the Line I/O board (AEAD) has an inventory problem.;;Trip;;?;?;Invalid PWA, Line I/O Board;70
+cBridgeRebf;PwaInvRebfP2Trp;The renewable bridge interface module revision F (REBF) P2 connected to the Generator I/O board (AEAA or AEAD) has an inventory problem.;;Trip;;?;?;Invalid PWA, Rotor I/O Board;71
+
+cBridgeRebf;PwaInvHslaSiteTrp;The %R high-speed link assembly (HSLA) has reported an installation site trip;;Trip;;?;?;Invalid HSLA, Line or Rotor Board;72
+
+cBridgeRebf;IoPwaGainTrp;The I/O board has reported an ID gain trip;;Trip;;?;?;I/O Board Gain or Offset out of Tolerance, Line ;1110
+cBridgeRebf;IoPwaGainAlm;The I/O board has reported an ID gain alarm;;Alarm;;?;?; ;0
+cBridgeRebf;IoPwaOffsTrp;The I/O board has reported an ID offset trip;;Trip;;?;?;I/O Board Gain or Offset out of Tolerance, Line ;1110
+cBridgeRebf;IoPwaOffsAlm;The I/O board has reported an ID offset alarm;;Alarm;;?;?; ;0
+cBridgeRebf;IoAeadDsrBadTrp;The I/O board design records has reported a malfunction trip;;Trip;;?;?;I/O Board Gain or Offset out of Tolerance, Line ;1110
+cBridgeRebf;DisCmdNotFuncTrp;Disable gating command is not working trip;;Trip;;?;?;MarkStat Process;69
+cBridgeRebf;PwaInvRebhTrp;The %R renewable bridge interface module revision H (REBH) reported an inventory trip;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;PwaInvRebhP1Trp;The renewable bridge interface module revision H (REBH) P1 connected to the Line I/O board (AEAD) has an inventory problem.;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;PwaInvRebhP2Trp;The renewable bridge interface module revision H (REBH) P2 connected to the Line I/O board (AEAD) has an inventory problem.;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;PwaInvRebhJ01Trp;The renewable bridge interface module revision H (REBH) J01 connected to the Line Bridge Interface board (RGIB) has an inventory problem.;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;PwaInvRebhJ02Trp;The renewable bridge interface module revision H (REBH) J02 connected to the Line Bridge Interface board (RGIB) has an inventory problem.;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;PwaInvRebhJ03Trp;The renewable bridge interface module revision H (REBH) J03 connected to the Line Bridge Interface board (RGIB) has an inventory problem.;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;PwaInvRebhJ04Trp;The renewable bridge interface module revision H (REBH) J04 connected to the Line Bridge Interface board (RGIB) has an inventory problem.;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;PwaInvRebhJ06Trp;The renewable bridge interface module revision H (REBH) J06 connected to the Line Bridge Interface board (RGIB) has an inventory problem.;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;PwaInvRebhJ07Trp;The renewable bridge interface module revision H (REBH) J07 connected to the Line Bridge Interface board (RGIB) has an inventory problem.;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;PwaInvRebhJ08Trp;The renewable bridge interface module revision H (REBH) J08 connected to the Line Bridge Interface board (RGIB) has an inventory problem.;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;P5OkFlt;P5 power supply on REBH;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;Sdl1BrgErr;SDL error between RGIB and REBH;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;Sdl2BrgErr;SDL error between RGIB and REBH;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;Sdl3BrgErr;SDL error between RGIB and REBH;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cBridgeRebf;Sdl4BrgErr;SDL error between RGIB and REBH;;Trip;;?;?;IGBT or Diode Junction Under-temperature, Line Converter;1010
+cCellTest;CelTstMsgStkTrp;%R ADL message stack has failed trip;;Trip;;?;?;Toolbox Communication Error;65
+cCellTest;CelTstScNoDoneTrp;%R auto cell test short-circuit test incomplete trip;;Trip;;?;?;Cell Test Failure at startup, Line converter;1060
+cCellTest;CelTstScFailTrp;%R auto cell test short-circuit test has failed trip;;Trip;;?;?;Cell Test Failure at startup, Line converter;1060
+cCellTest;CelTstOcNoDoneTrp;%R auto cell test open-circuit test incomplete trip;;Trip;;?;?;Cell Test Failure at startup, Line converter;1060
+cCellTest;CelTstOcCcPassTrp;%R auto cell test open-circuit wrongly passed with ROVC open trip;;Trip;;?;?;Cell Test Failure at startup, Line converter;1060
+cCellTest;CelTstOcCcCurTrp;%R auto cell test open-circuit detected current with ROVC open trip;;Trip;;?;?;Cell Test Failure at startup, Line converter;1060
+cCellTest;CelTstOcFailTrp;%R auto cell test open-circuit test has failed trip;;Trip;;?;?;Cell Test Failure at startup, Line converter;1060
+cCellTest;CelTstVtNoDoneTrp;%R auto cell test voltage feedback test incomplete trip;;Trip;;?;?;Cell Test Failure at startup, Line converter;1060
+cCellTest;CelTstVtFailTrp;%R auto cell test failed voltage feedback evaluation trip;;Trip;;?;?;Cell Test Failure at startup, Line converter;1060
+
+cDbCelTst;DbResHigh;The DB resistance measured too high;;Trip;;;yes;Dynamic-Brake Fault;24
+cDbCelTst;DbResLow;Dynamic brake (DB) resistance measured too low trip;;Trip;;;yes;Dynamic-Brake Fault;24
+cDbCelTst;DbCelTstMsgStkTrp;Allocation of ADL message stack memory failed trip;;Trip;;;yes;Toolbox Communication Error;65
+cDbCelTst;DbCapMsTmOut;Wait too long before DC Link voltage drops trip;;Trip;;yes;;Dynamic-Brake Fault;24
+
+cDbCtl;DbcOpnLoopAlm;The %R dynamic brake (DB) open loop operation warning alarm;;Alarm;;;; ;0
+cDbCtl;DbcVdbVdcTrp;The %R dynamic brake (DB) voltage mismatch between expected and feedback values trip;;Trip;;;yes;Dynamic-Brake Fault;24
+cDbCtl;DbcDbMisOffTrp;The %R dynamic brake (DB) remained in an OFF-state when commanded to turn ON trip;;Trip;;;yes;Dynamic-Brake Fault;24
+cDbCtl;DbcDbMisOnTrp;The %R dynamic brake (DB) remained in an ON-state when commanded to turn OFF trip;;Trip;;;yes;Dynamic-Brake Fault;24
+
+cDbThrmModel;DtmOvldAlm;The line bridge dynamic brake (DB) resistor thermal model (DTM) overload trip alarm;;Alarm;;yes;yes; ;0
+cDbThrmModel;DtmOvldTrp;The line bridge dynamic brake (DB) resistor thermal model (DTM) overload trip;;Trip;;yes;yes;Dynamic-Brake Fault;24
+cDbThrmModel;DtmOvldDsbTrp;The line bridge dynamic brake (DB) resistor thermal model (DTM) overload disable trip;;Trip;;yes;yes;Dynamic-Brake Fault;24
+cDbThrmModel;DtmJncOtTrp;The line bridge dynamic brake (DB) resistor thermal model (DTM) junction transistor over-temperature trip;;Trip;;yes;yes;IGBT or Diode Junction Over-temperature, DB circuit;50
+cDbThrmModel;DtmJncOtLockTrp;The line bridge dynamic brake (DB) resistor thermal model (DTM) junction transistor over-temperature lock-on trip;;Trip;;yes;yes;IGBT or Diode Junction Over-temperature, DB circuit;50
+cDbThrmModel;DtmJncOtDiscAlm;%R transistor over-temperature request grid disconnect alarm;;Alarm;;yes;yes; ;0
+cDbThrmModel;DtmOvldDiscAlm;The line bridge dynamic brake (DB) resistor thermal model (DTM) overload disable alarm;;Alarm;;yes;yes; ;0
+cRotorPulseTest;PlsTstBadCfgAlm;%R bad pulse test configuration.;;Alarm;;yes;; ;0
+cLinePulseTest;PlsTstBadCfgAlm;%R bad pulse test configuration.;;Alarm;;yes;; ;0
+
+cChopPulseTest;PlsTstBadCfgAlm;%R bad pulse test configuration.;;Alarm;;yes;yes; ;0
+
+;R_CrowBarFlt;Rotor Bridge DC Link voltage exceeding crowbar fault threshold trip;;Trip;;;yes;DC Link Over-voltage;5
+
+
+cBrgCurShrReg;CshRegLimAlm;%R current share regulator in limit alarm;;Alarm;;;yes; ;0
+
+cLegTestLowFrq;IxRegLegTstSatAlm;%R Leg Test Low Frequency Ix-reg has saturated.;;Alarm;;;yes; ;0
+cLegTestLowFrq;IyRegLegTstSatAlm;%R Leg Test Low Frequency Iy-reg has saturated.;;Alarm;;;yes; ;0
+cLegTestLowFrq;IlegTstMaxAlm;%R Leg Test Low Frequency current setup is too high.;;Alarm;;;yes; ;0
+cLegTestLowFrq;FrqLegTstMaxAlm;%R Leg Test Frequency setup is too high.;;Alarm;;;yes; ;0
+cLegTestLowFrq;IyErrLegTstTrp;%R Leg Test Y-current error was too high for too long.;;Trip;;;yes;Cell Test Failure at Startup, Line Converter;1060
+;GmLnVanMatchTrp;Phase A grid monitor (GM) to calculated line voltage mismatch;yes;Trip;;yes;yes;Blown Fuses;1
+;GmLnVbnMatchTrp;Phase B grid monitor (GM) to calculated line voltage mismatch;yes;Trip;;yes;yes;Blown Fuses;1
+;GmLnVcnMatchTrp;Phase C grid monitor (GM) to calculated line voltage mismatch;yes;Trip;;yes;yes;Blown Fuses;1
+;LnStrVmatchTrp;Line voltage to stator voltage mismatch;yes;Trip;;yes;yes;Blown Fuses;1
+;GmStrVanMatchTrp;Phase A grid monitor (GM) voltage to stator voltage mismatch;yes;Trip;;yes;yes;Contactor or Breaker ;2
+;GmStrVbnMatchTrp;Phase B grid monitor (GM) voltage to stator voltage mismatch;yes;Trip;;yes;yes;Contactor or Breaker ;2
+;GmStrVcnMatchTrp;Phase C grid monitor (GM) voltage to stator voltage mismatch;yes;Trip;;yes;yes;Contactor or Breaker ;2
+;IslandAlm;Islanding alarm;yes;Alarm;;yes;yes; ;0
+;IslandFlt;Islanding fault;yes;Trip;;yes;yes;Grid Islanding;35
+;FastBlockFlt;Fast Blocking fault;yes;Trip;;yes;yes;Grid Fast Blocking;42
+;FastDistFlt;Fast Disconnect fault;yes;Trip;;yes;yes;Grid Fast Disconnect;41
+
+;OpnPhsADiscAlm;Open Phase A secondary Q1 disconnect alarm;yes;Alarm;;yes;yes; ;0
+;OpnPhsBDiscAlm;Open Phase B secondary Q1 disconnect alarm;yes;Alarm;;yes;yes; ;0
+;OpnPhsCDiscAlm;Open Phase C secondary Q1 disconnect alarm;yes;Alarm;;yes;yes; ;0
+;OpnPhsA2DiscAlm;Open Phase A primary Q1 disconnect alarm;yes;Alarm;;yes;yes; ;0
+;OpnPhsB2DiscAlm;Open Phase B primary Q1 disconnect alarm;yes;Alarm;;yes;yes; ;0
+;OpnPhsC2DiscAlm;Open Phase C primary Q1 disconnect alarm;yes;Alarm;;yes;yes; ;0
+;FastDistDiscAlm;Fast disconnect Q1 disconnect alarm;yes;Alarm;;yes;yes; ;0
+;FastBlockDiscAlm;Fast blocking Q1 disconnect alarm;yes;Alarm;;yes;yes; ;0
+;PllPhaseDiscAlm;PLL Phase error Q1 disconnect alarm;yes;Alarm;;yes;yes; ;0
+;OpnGrdDiscAlm;Open grid all Phases Q1 disconnect alarm;yes;Alarm;;yes;yes; ;0
+;R_TorTrqDiscAlm;Torsional torque error Q1 disconnect alarm;yes;Alarm;;yes;yes; ;0
+;IslandDiscAlm;Islanding event Q1 disconnect alarm.;yes;Alarm;;yes;yes; ;0
+;DFTocAlm;Distortion filter timed overcurrent alarm;;Alarm;;yes;; ;0
+;DFTocFlt;Distortion filter timed overcurrent fault;;Trip;;yes;;Grid Distortion;74
+;GmSLIaErrFlt;Phase A current error fault;;Trip;;yes;yes;Wiring Issue, Grid or Line Converter ;18
+;GmSLIbErrFlt;Phase B current error fault;;Trip;;yes;yes;Wiring Issue, Grid or Line Converter ;18
+;GmSLIcErrFlt;Phase C current error fault;;Trip;;yes;yes;Wiring Issue, Grid or Line Converter ;18
+;OpnGrdFlt;Open grid monitor (GM) fault;yes;Trip;;yes;yes;Grid Single Phase Open ;33
+;OpnPhsAFlt1;Open Phase A fault at secondary of the main transformer;yes;Trip;;yes;yes;Grid - 690V Three Phase Open ;32
+;OpnPhsAFlt2;Open Phase A fault at primary of the main transformer;yes;Trip;;yes;yes;Grid Single Phase Open ;33
+;OpnPhsANFlt2;Open Phase A trip at primary of the main transformer in RPNW mode;yes;Trip;;yes;;Grid Single Phase Open ;33
+;OpnPhsBFlt1;Open Phase B fault at secondary of the main transformer;yes;Trip;;yes;yes;Grid - 690V Single Phase Open ;31
+;OpnPhsBFlt2;Open Phase B fault at primary of the main transformer;yes;Trip;;yes;yes;Grid Single Phase Open ;33
+;OpnPhsBNFlt2;Open Phase B trip at primary of the main transformer in RPNW mode;yes;Trip;;yes;;Grid Single Phase Open ;33
+;OpnPhsCFlt1;Open Phase C fault at secondary of the main transformer;yes;Trip;;yes;yes;Grid - 690V Single Phase Open ;31
+;OpnPhsCFlt2;Open Phase C fault at primary of the main transformer;yes;Trip;;yes;yes;Grid Single Phase Open ;33
+;OpnPhsCNFlt2;Open Phase C trip at primary of the main transformer in RPNW mode;yes;Trip;;yes;;Grid Single Phase Open ;33
+;PllPhaseFlt;Phase-Lock-Loop (PLL) Phase fault;yes;Trip;;yes;yes;Grid Transient;38
+;R_TorTrqAlm;Torsional torque alarm;;Alarm;;yes;yes; ;0
+;R_TorTrqFlt;Torsional torque fault;;Trip;;yes;yes;Drive Train Torsional ;28
+;GmGndFlt;Discriminated grid monitor ground fault;;Trip;;yes;yes;Ground Fault, Transformer Secondary ;46
+;GmGndAlm;Discriminated grid monitor ground alarm;;Alarm;;yes;yes; ;0
+
+;HdwBadAeadLnVvco1Alm;Line AEAD voltage Phase A VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadAeadLnVvco2Alm;Line AEAD voltage Phase B VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadAeadLnVvco3Alm;Line AEAD voltage Phase C VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadAeadLnIvco5Alm;Line AEAD current Phase A VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadAeadLnIvco6Alm;Line AEAD current Phase B VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadAeadLnIvco7Alm;Line AEAD current Phase C VCO is bad;yes;Alarm;;yes;yes; ;0
+
+;HdwBadAedbLnVvcoabAlm;Line AEDB voltage Phase (A-B) VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadAedbLnVvcobcAlm;Line AEDB voltage Phase (B-C) VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadAedbLnIaSfbAlm;Line AEDB current Phase A VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadAedbLnIbSfbAlm;Line AEDB current Phase B VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadAedbLnIcSfbAlm;Line AEDB current Phase C VCO is bad;yes;Alarm;;yes;yes; ;0
+
+;HdwBadGenIoVvco1Alm;Generator I/O board voltage Phase A VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadGenIoVvco2Alm;Generator I/O board voltage Phase B VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadGenIoVvco3Alm;Generator I/O board voltage Phase C VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadGenIoIvco5Alm;Generator I/O board current Phase A VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadGenIoIvco6Alm;Generator I/O board current Phase B VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadGenIoIvco7Alm;Generator I/O board current Phase C VCO is bad;yes;Alarm;;yes;yes; ;0
+
+;HdwBadAebiGVvcoabAlm;Rotor Bridge Interface board (AEBI) voltage Phase (A-B) VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadAebiGVvcobcAlm;Rotor Bridge Interface board (AEBI) voltage Phase (B-C) VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadAebiGnIaSfbAlm;Rotor Bridge Interface board (AEBI) current Phase A VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadAebiGnIbSfbAlm;Rotor Bridge Interface board (AEBI) current Phase B VCO is bad;yes;Alarm;;yes;yes; ;0
+;HdwBadAebiGnIcSfbAlm;Rotor Bridge Interface board (AEBI) current Phase C VCO is bad;yes;Alarm;;yes;yes; ;0
+
+;HdwBadIGBTTrp;An IGBT failed trip;yes;Trip;;yes;yes;IGBT Damage;8
+;HdwBadDtaFanTrp;Down tower assembly (DTA) fan is not functioning properly;yes;Trip;;yes;yes;DTA Fan;6
+;HdwBadDtaPumpTrp;Down tower assembly (DTA) pump is not functioning properly;yes;Trip;;yes;yes;DTA Pump;30
+;HdwBadVsecLossTrp;Loss of main transformer secondary voltage;yes;Trip;;yes;yes;Grid Loss ;36
+;HdwBadAcfluPhATrp;ACFLU Phase A fuse blown;yes;Trip;;yes;yes;Blown Fuses;1
+;HdwBadAcfluPhBTrp;ACFLU Phase B fuse blown;yes;Trip;;yes;yes;Blown Fuses;1
+;HdwBadAcfluPhCTrp;ACFLU Phase C fuse blown;yes;Trip;;yes;yes;Blown Fuses;1
+
+
+
+;PrmPssHdsFlt;Parameter passing handshake timeout.;;Trip;;yes;yes;C to C Communication ;25
+;GmCnvOFFlt;Grid monitor converter over-frequency fault trip;;Trip;;yes;yes;Grid Frequency;20
+;GmCnvOv1DiscAlm;Grid monitor converter over-voltage disconnected with alarm level 1;;Alarm;;yes;yes; ;0
+;GmCnvOv1Flt;Grid monitor converter over-voltage fault 1 trip;;Trip;;yes;yes;Grid Over-voltage ;37
+;GmCnvOv2DiscAlm;Grid monitor converter over-voltage disconnected with alarm level 2;;Alarm;;yes;yes; ;0
+;GmCnvOv2Flt;Grid monitor converter over-voltage fault 2 trip;;Trip;;yes;yes;Grid Over-voltage ;37
+;GmCnvOv3DiscAlm;Grid monitor converter over-voltage disconnected with alarm level 3;;Alarm;;yes;yes; ;0
+;GmCnvOv3Flt;Grid monitor converter over-voltage fault 3 trip;;Trip;;yes;yes;Grid Over-voltage ;37
+;GmCnvOv4DiscAlm;Grid monitor converter over-voltage disconnected with alarm level 4;;Alarm;;yes;yes; ;0
+;GmCnvOv4Flt;Grid monitor converter over-voltage fault 4 trip;;Trip;;yes;yes;Grid Over-voltage ;37
+;GmCnvUFFlt;Grid monitor converter under-frequency fault trip;;Trip;;yes;yes;Grid Frequency;20
+;GmCnvUVFlt;Grid monitor converter under-voltage fault trip;;Trip;;yes;yes;Grid Under-voltage;39
+;GmCnvVAsmAlm;Grid monitor converter voltage asymmetric alarm;yes;Alarm;;yes;yes; ;0
+;GmCnvVAsmFlt;Converter voltage asymmetric fault trip;yes;Trip;;yes;yes;Grid Voltage Imbalance;40
+;GmExPwrAlm;Grid monitor excessive power alarm;;Alarm;;yes;yes; ;0
+;GmExPwrTrp;Grid monitor excessive power trip;;Trip;;yes;yes;Grid Transient;38
+;GmFastOvDiscAlm;Grid monitor fast over-voltage Q1 disconnect alarm.;;Alarm;;yes;yes; ;0
+;GmFastOverV;Grid monitor fast over-voltage trip;;Trip;;yes;yes;Grid Over-voltage ;37
+;GmFrqVltStop;Grid monitor frequency voltage stop alarm;;Alarm;;yes;yes; ;0
+;GmOF1Trp  ;Grid monitor over-frequency delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmOF2Trp;Grid monitor over-frequency delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmOFAlm;Grid monitor over-frequency alarm;;Alarm;;yes;yes; ;0
+;GmOFCfgTrp;Grid monitor over-frequency protection configuration trip;yes;Trip;;yes;yes;Mis-configuration by Parameter;66
+;GmOV1Trp12;Grid monitor over-voltage 1-2 delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmOV1Trp1N;Grid monitor over-voltage 1-N delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmOV1Trp23;Grid monitor over-voltage 2-3 delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmOV1Trp2N;Grid monitor over-voltage 2-N delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmOV1Trp31;Grid monitor over-voltage 3-1 delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmOV1Trp3N;Grid monitor over-voltage 3-N delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmOV1TrpLL;Grid monitor over-voltage L-L delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmOV1TrpLN;Grid monitor over-voltage L-N delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmOV2Trp12;Grid monitor over-voltage 1-2 delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmOV2Trp1N;Grid monitor over-voltage 1-N delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmOV2Trp23;Grid monitor over-voltage 2-3 delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmOV2Trp2N;Grid monitor over-voltage 2-N delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmOV2Trp31;Grid monitor over-voltage 3-1 delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmOV2Trp3N;Grid monitor over-voltage 3-N delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmOV2TrpLL;Grid monitor over-voltage L-L delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmOV2TrpLN;Grid monitor over-voltage L-N delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmOV3Trp12;Grid monitor over-voltage 1-2 delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmOV3Trp1N;Grid monitor over-voltage 1-N delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmOV3Trp23;Grid monitor over-voltage 2-3 delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmOV3Trp2N;Grid monitor over-voltage 2-N delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmOV3Trp31;Grid monitor over-voltage 3-1 delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmOV3Trp3N;Grid monitor over-voltage 3-N delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmOV3TrpLL;Grid monitor over-voltage L-L delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmOV3TrpLN;Grid monitor over-voltage L-N delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmOV4Trp12;Grid monitor over-voltage 1-2 delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmOV4Trp1N;Grid monitor over-voltage 1-N delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmOV4Trp23;Grid monitor over-voltage 2-3 delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmOV4Trp2N;Grid monitor over-voltage 2-N delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmOV4Trp31;Grid monitor over-voltage 3-1 delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmOV4Trp3N;Grid monitor over-voltage 3-N delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmOV4TrpLL;Grid monitor over-voltage L-L delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmOV4TrpLN;Grid monitor over-voltage L-N delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmOVAlm12;Grid monitor over-voltage 1-2 alarm;;Alarm;;yes;yes; ;0
+;GmOVAlm1N;Grid monitor over-voltage 1-N alarm;;Alarm;;yes;yes; ;0
+;GmOVAlm23;Grid monitor over-voltage 2-3 alarm;;Alarm;;yes;yes; ;0
+;GmOVAlm2N;Grid monitor over-voltage 2-N alarm;;Alarm;;yes;yes; ;0
+;GmOVAlm31;Grid monitor over-voltage 3-1 alarm;;Alarm;;yes;yes; ;0
+;GmOVAlm3N;Grid monitor over-voltage 3-N alarm;;Alarm;;yes;yes; ;0
+;GmOVAlmLL;Grid monitor over-voltage L-L alarm;;Alarm;;yes;yes; ;0
+;GmOVAlmLN;Grid monitor over-voltage L-N alarm;;Alarm;;yes;yes; ;0
+;GmOVCfgTrp;Grid monitor over-voltage protection configuration trip;yes;Trip;;yes;yes;Mis-configuration by Parameter;66
+;GmRevPhSeq;Grid reverse phase sequence trip;;Trip;yes;yes;;Wiring Issue, Grid or Line Converter ;18
+;GmRevPwrTrp;Grid monitor reverse power trip;;Trip;;yes;yes;Grid Transient;38
+;GmTocAlm;Grid monitor timed over-current alarm;;Alarm;;yes;; ;0
+;GmTocFlt;Grid monitor timed over-current fault trip;;Trip;;yes;;Timed Over-Current, Line converter or Grid;56
+;GmUF1Trp  ;Grid monitor under-frequency delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmUF2Trp;Grid monitor under-frequency delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmUF3Trp;Grid monitor under-frequency Trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmUFAlm;Grid monitor under-frequency alarm;;Alarm;;yes;yes; ;0
+;GmUFCfgTrp;Grid monitor under-frequency protection configuration trip;yes;Trip;;yes;yes;Mis-configuration by Parameter;66
+;GmUV1Trp12;Grid monitor under-voltage 1-2 delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmUV1Trp1N;Grid monitor under-voltage 1-N delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmUV1Trp23;Grid monitor under-voltage 2-3 delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmUV1Trp2N;Grid monitor under-voltage 2-N delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmUV1Trp31;Grid monitor under-voltage 3-1 delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmUV1Trp3N;Grid monitor under-voltage 3-N delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmUV1TrpLL;Grid monitor under-voltage L-L delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmUV1TrpLN;Grid monitor under-voltage L-N delayed trip, level 1 alarm;;Alarm;;yes;yes; ;0
+;GmUV2Trp12;Grid monitor under-voltage 1-2 delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmUV2Trp1N;Grid monitor under-voltage 1-N delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmUV2Trp23;Grid monitor under-voltage 2-3 delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmUV2Trp2N;Grid monitor under-voltage 2-N delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmUV2Trp31;Grid monitor under-voltage 3-1 delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmUV2Trp3N;Grid monitor under-voltage 3-N delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmUV2TrpLL;Grid monitor under-voltage L-L delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmUV2TrpLN;Grid monitor under-voltage L-N delayed trip, level 2 alarm;;Alarm;;yes;yes; ;0
+;GmUV3Trp12;Grid monitor under-voltage 1-2 delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmUV3Trp1N;Grid monitor under-voltage 1-N delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmUV3Trp23;Grid monitor under-voltage 2-3 delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmUV3Trp2N;Grid monitor under-voltage 2-N delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmUV3Trp31;Grid monitor under-voltage 3-1 delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmUV3Trp3N;Grid monitor under-voltage 3-N delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmUV3TrpLL;Grid monitor under-voltage L-L delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmUV3TrpLN;Grid monitor under-voltage L-N delayed trip, level 3 alarm;;Alarm;;yes;yes; ;0
+;GmUV4Trp12;Grid monitor under-voltage 1-2 delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmUV4Trp1N;Grid monitor under-voltage 1-N delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmUV4Trp23;Grid monitor under-voltage 2-3 delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmUV4Trp2N;Grid monitor under-voltage 2-N delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmUV4Trp31;Grid monitor under-voltage 3-1 delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmUV4Trp3N;Grid monitor under-voltage 3-N delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmUV4TrpLL;Grid monitor under-voltage L-L delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmUV4TrpLN;Grid monitor under-voltage L-N delayed trip, level 4 alarm;;Alarm;;yes;yes; ;0
+;GmUV5Trp12;Grid monitor under-voltage 1-2 delayed trip, level 5 alarm;;Alarm;;yes;yes; ;0
+;GmUV5Trp1N;Grid monitor under-voltage 1-N delayed trip, level 5 alarm;;Alarm;;yes;yes; ;0
+;GmUV5Trp23;Grid monitor under-voltage 2-3 delayed trip, level 5 alarm;;Alarm;;yes;yes; ;0
+;GmUV5Trp2N;Grid monitor under-voltage 2-N delayed trip, level 5 alarm;;Alarm;;yes;yes; ;0
+;GmUV5Trp31;Grid monitor under-voltage 3-1 delayed trip, level 5 alarm;;Alarm;;yes;yes; ;0
+;GmUV5Trp3N;Grid monitor under-voltage 3-N delayed trip, level 5 alarm;;Alarm;;yes;yes; ;0
+;GmUV5TrpLL;Grid monitor under-voltage L-L delayed trip, level 5 alarm;;Alarm;;yes;yes; ;0
+;GmUV5TrpLN;Grid monitor under-voltage L-N delayed trip, level 5 alarm;;Alarm;;yes;yes; ;0
+;GmUV6Trp12;Grid monitor under-voltage 1-2 delayed trip, level 6 alarm;;Alarm;;yes;yes; ;0
+;GmUV6Trp1N;Grid monitor under-voltage 1-N delayed trip, level 6 alarm;;Alarm;;yes;yes; ;0
+;GmUV6Trp23;Grid monitor under-voltage 2-3 delayed trip, level 6 alarm;;Alarm;;yes;yes; ;0
+;GmUV6Trp2N;Grid monitor under-voltage 2-N delayed trip, level 6 alarm;;Alarm;;yes;yes; ;0
+;GmUV6Trp31;Grid monitor under-voltage 3-1 delayed trip, level 6 alarm;;Alarm;;yes;yes; ;0
+;GmUV6Trp3N;Grid monitor under-voltage 3-N delayed trip, level 6 alarm;;Alarm;;yes;yes; ;0
+;GmUV6TrpLL;Grid monitor under-voltage L-L delayed trip, level 6 alarm;;Alarm;;yes;yes; ;0
+;GmUV6TrpLN;Grid monitor under-voltage L-N delayed trip, level 6 alarm;;Alarm;;yes;yes; ;0
+;GmUVAlm12;Grid monitor under-voltage 1-2 alarm;;Alarm;;yes;yes; ;0
+;GmUVAlm1N;Grid monitor under-voltage 1-N alarm;;Alarm;;yes;yes; ;0
+;GmUVAlm23;Grid monitor under-voltage 2-3 alarm;;Alarm;;yes;yes; ;0
+;GmUVAlm2N;Grid monitor under-voltage 2-N alarm;;Alarm;;yes;yes; ;0
+;GmUVAlm31;Grid monitor under-voltage 3-1 alarm;;Alarm;;yes;yes; ;0
+;GmUVAlm3N;Grid monitor under-voltage 3-N alarm;;Alarm;;yes;yes; ;0
+;GmUVAlmLL;Grid monitor under-voltage L-L alarm;;Alarm;;yes;yes; ;0
+;GmUVAlmLN;Grid monitor under-voltage L-N alarm;;Alarm;;yes;yes; ;0
+;GmUVCfgTrp;Grid monitor under-voltage protection configuration trip;yes;Trip;;yes;yes;Mis-configuration by Parameter;66
+;GmUVCvTrp12;Grid monitor under-voltage 1-2 delayed trip, time curve alarm;;Alarm;;yes;yes; ;0
+;GmUVCvTrp1N;Grid monitor under-voltage 1-N delayed trip, time curve alarm;;Alarm;;yes;yes; ;0
+;GmUVCvTrp23;Grid monitor under-voltage 2-3 delayed trip, time curve alarm;;Alarm;;yes;yes; ;0
+;GmUVCvTrp2N;Grid monitor under-voltage 2-N delayed trip, time curve alarm;;Alarm;;yes;yes; ;0
+;GmUVCvTrp31;Grid monitor under-voltage 3-1 delayed trip, time curve alarm;;Alarm;;yes;yes; ;0
+;GmUVCvTrp3N;Grid monitor under-voltage 3-N delayed trip, time curve alarm;;Alarm;;yes;yes; ;0
+;GmUVCvTrpLL;Grid monitor under-voltage L-L delayed trip, time curve alarm;;Alarm;;yes;yes; ;0
+;GmUVCvTrpLN;Grid monitor under-voltage L-N delayed trip, time curve alarm;;Alarm;;yes;yes; ;0
+;GmUVFstTrp12;Grid monitor fast filter under-voltage 1-2 AC grid Trip;;Trip;;yes;yes;Grid Under-voltage;39
+;GmUVFstTrp1N;Grid monitor fast filter under-voltage 1-N AC grid Trip;;Trip;;yes;yes;Grid Under-voltage;39
+;GmUVFstTrp23;Grid monitor fast filter under-voltage 2-3 AC grid Trip;;Trip;;yes;yes;Grid Under-voltage;39
+;GmUVFstTrp2N;Grid monitor fast filter under-voltage 2-N AC grid Trip;;Trip;;yes;yes;Grid Under-voltage;39
+;GmUVFstTrp31;Grid monitor fast filter under-voltage 3-1 AC grid Trip;;Trip;;yes;yes;Grid Under-voltage;39
+;GmUVFstTrp3N;Grid monitor fast filter under-voltage 3-N AC grid Trip;;Trip;;yes;yes;Grid Under-voltage;39
+;GmUVFstTrpLL;Grid monitor fast filter under-voltage L-L AC grid Trip;;Trip;;yes;yes;Grid Under-voltage;39
+;GmUVFstTrpLN;Grid monitor fast filter under-voltage L-N AC grid Trip;;Trip;;yes;yes;Grid Under-voltage;39
+;GmVAsy2Alm;Grid monitor voltage asymmetry level 2 alarm ;;Alarm;;yes;yes; ;0
+;GmVAsy2Trp;Grid monitor voltage asymmetry level 2 delayed trip ;;Alarm;;yes;yes; ;0
+;GmVAsyAlm;Grid monitor voltage asymmetry alarm;;Alarm;;yes;yes; ;0
+;GmVAsyTrp;Grid monitor voltage asymmetry delayed trip alarm;;Alarm;;yes;yes; ;0
+;L_AcLineTran;AC line transient alarm;;Alarm;;yes;; ;0
+;L_AcLineWdog;AC line watch dog trip;;Trip;;yes;;Grid Transient;38
+;L_FixFrqTOut;Fix frequency timeout trip;yes;Trip;;yes;;Grid Under-voltage;39
+;NoGenFileTrp;No generator tre file provided;yes;Trip;;;yes;Mis-configuration by Parameter;66
+;FrqSelMisMtchTrp;Grid / generator / transformer frequency mismatch trip;yes;Trip;;yes;yes;Grid Frequency;20
+
+;CaptureBufSavFail;Capture Buffer Non-Volatile (NV) Save Failed SOE;;SOE;;;; ;0
+;TripBufSavFail;Trip Buffer Non-Volatile (NV) Save Failed SOE;;SOE;;;; ;0
+;InvIPNPwr;Invalid Intelligent Part Number (IPN) Power trip;;Trip;;yes;yes;Mis-configuration by Parameter;66
+;NoCabFile;No Cable File trip;;Trip;;yes;yes;Mis-configuration by Parameter;66
+;CbFrqMisMtch;Cable configuration selection frequency mismatch trip;;Trip;;yes;yes;Mis-configuration by Parameter;66
+;InvPLCPwrNP;Invalid PLC Turbine Power trip;;Trip;;yes;yes;MarkStat Process;69
+;TbGnPMisMtch;Turbine rated power and generator power mismatch trip;;Trip;;yes;yes;Mis-configuration by Parameter;66
+;CabReqPrmBad;Unspecified cable configuration trip;;Trip;;yes;yes;Mis-configuration by Parameter;66
+;PwrLimLnCnvCurAlm;Power limiter, line converter current alarm;;Alarm;;yes;; ;0
+;PwrLimFuseCurAlm;Power limiter, ACLFU current alarm;;Alarm;;yes;; ;0
+;PwrLimFuseTempAlm;Power limiter, ACLFU temperature alarm;;Alarm;;yes;; ;0
+;PwrLimRtrVltAlm;Power limiter, rotor voltage alarm;;Alarm;;;yes; ;0
+;PwrLimLnBpImbAlm;Power limiter, line converter baseplate temperature imbalance alarm;;Alarm;;yes;; ;0
+;PwrLimLnBpRiseAlm;Power limiter, line converter baseplate temperature rise alarm;;Alarm;;yes;; ;0
+;PwrLimGmCurAlm;Power limiter, grid monitor current alarm;;Alarm;;yes;yes; ;0
+;PwrLimRtrCnvCurAlm;Power limiter, rotor converter current alarm;;Alarm;;;yes; ;0
+;PwrLimRtrCabCurAlm;Power limiter, rotor cable current alarm;;Alarm;;;yes; ;0
+;PwrLimRtrGenCurAlm;Power limiter, generator rotor current alarm;;Alarm;;;yes; ;0
+;PwrLimStrDtaCurAlm;Power limiter, stator down tower assembly (DTA) current alarm;;Alarm;;;yes; ;0
+;PwrLimStrCabCurAlm;Power limiter, stator cable current alarm;;Alarm;;;yes; ;0
+;PwrLimStrGenCurAlm;Power limiter, generator stator current alarm;;Alarm;;;yes; ;0
+;PwrLimRtrBpRiseAlm;Power limiter, rotor converter baseplate temperature rise alarm;;Alarm;;;yes; ;0
+;PwrLimRtrBpImbAlm;Power limiter, rotor converter baseplate temperature imbalance alarm;;Alarm;;;yes; ;0
+;PwrLimDnTwrTempAlm;Power limiter, down tower temperature alarm;;Alarm;;yes;yes; ;0
+;PwrLimClntTempAlm;Power limiter, coolant temperature alarm;;Alarm;;yes;yes; ;0
+;PwrLimPdcCabEnTmpAlm;Power limiter, power distribution cabinet (PDC) cable entry temperature alarm;;Alarm;;;yes; ;0
+;PwrLimCfcTempAlm;Power limiter, converter filter cabinet (CFC) temperature alarm;;Alarm;;yes;yes; ;0
+;PwrLimPdcTempAlm;Power limiter, power distribution cabinet (PDC) temperature alarm;;Alarm;;yes;yes; ;0
+;R_VacOVFlt;Rotor voltage over-voltage fault trip;;Trip;;yes;yes;Rotor Timed Over-voltage;75
+;TcSpdRatInvalid;Invalid rated speed input for power limiter trip;;Trip;;yes;yes;Mis-configuration by Parameter;66
+
+;IpcInfcNotOkTrp;Trip due to IPC interface not being OK. This only occurs when IPC interface becomes unhealthy while converter is running in non-local mode.;;Trip;;yes;yes;C to C Communication ;25
+;WemaPicVerBad;WEMA PIC version does not match IPN trip;;Trip;;yes;yes;Invalid WEMA PIC Version;76
+;GmOvTrpDiscAlm;Grid monitor (GM) over-voltage trip and disconnect alarm;;Alarm;;yes;yes; ;0
+;GmOvStpDiscAlm;Grid monitor (GM) over-voltage stop and disconnect alarm;;Alarm;;yes;yes; ;0
+;WEMACommAlm  ;WEMA communication alarm;;Alarm;;yes;yes; ;0
+;Starting;Converter starting;;SOE;;yes;yes; ;0
+;BadSeqSt    ;Bad sequencer state trip;;Trip;;yes;yes;Code Sequencing;4
+;GmSyncIniTm;Grid monitor (GM) phase-locked loop (PLL) synchronize initialization timeout trip;;Trip;;yes;yes;Grid Voltage or Frequency out of Tolerance;77
+;OffLine;OffLine;yes;SOE;;yes;yes; ;0
+;RPNWInvalid;Reactive Power No Wind (RPNW) invalid trip;yes;Trip;;yes;yes;Mis-configuration by Parameter;66
+;RpnwOnLine;RPNW OnLine;yes;SOE;;yes;yes; ;0
+;RunWhlNotRdy;Converter run command while not ready trip;yes;Trip;;yes;yes;Improper Turbine Control Sequencing;78
+;SafetyChnOpn;Tower safety chain open trip;;Trip;;yes;yes;Safety Chain Trip;79
+;SftyChnStop;Safety chain stop state;yes;SOE;;yes;yes; ;0
+;TempShtDwn;Temperature shut down alarm;yes;Alarm;;yes;yes; ;0
+;ZVGtOfTOut;Zero Voltage gate off timeout line trip;yes;Trip;;yes;yes;Grid Under-voltage;39
+;ZVGtOfTOutSt;Zero Voltage gate off timeout stator trip;yes;Trip;;yes;yes;Grid Under-voltage;39
+
+cThrmstr;IOThrm1DlAlm;%R board DIN 1 thermistor hi/low range resistance delta error alarm;;Alarm;;?;?; ;0
+cThrmstr;IOThrm2DlAlm;%R board DIN 2 thermistor hi/low range resistance delta error alarm;;Alarm;;?;?; ;0
+cThrmstr;IOThrm7DlAlm;%R board DIN 7 thermistor hi/low range resistance delta error alarm;;Alarm;;?;?; ;0
+cThrmstr;IOThrm8DlAlm;%R board DIN 8 thermistor hi/low range resistance delta error alarm;;Alarm;;?;?; ;0
+
+cThrmstr;Thrm1OpenAlm;%R board DIN 1 thermistor open alarm (low range) alarm;;Alarm;;?;?; ;0
+cThrmstr;Thrm2OpenAlm;%R board DIN 2 thermistor open alarm (low range) alarm;;Alarm;;?;?; ;0
+cThrmstr;Thrm7OpenAlm;%R board DIN 7 thermistor open alarm (low range) alarm;;Alarm;;?;?; ;0
+cThrmstr;Thrm8OpenAlm;%R board DIN 8 thermistor open alarm (low range) alarm;;Alarm;;?;?; ;0
+
+cThrmstr;Thrm1ShrtAlm;%R board DIN 1 thermistor short alarm (high range) alarm;;Alarm;;?;?; ;0
+cThrmstr;Thrm2ShrtAlm;%R board DIN 2 thermistor short alarm (high range) alarm;;Alarm;;?;?; ;0
+cThrmstr;Thrm7ShrtAlm;%R board DIN 7 thermistor short alarm (high range) alarm;;Alarm;;?;?; ;0
+cThrmstr;Thrm8ShrtAlm;%R board DIN 8 thermistor short alarm (high range) alarm;;Alarm;;?;?; ;0
+
+;R_BrgPwrEnbUnhandTrp;Rotor side bridge power enable unhandled test mode case;;Trip;;;yes;Code Sequencing;4
+;R_BthtrDbphsImbAlm;Rotor dynamic brake (DB) thermistor temp imbalance;;Alarm;;;yes; ;0
+;S_VcomTrp;Stator common mode (zero seq) voltage fault;;Trip;;;yes;Wiring Issue, Rotor Converter or Stator;17
+;R_OverSpeed;Sreg: Over Speed Trip Fault;;Trip;;;yes;Overspeed;80
+;R_RevRotate;Reverse rotation;;Alarm;;;yes; ;0
+;R_UnderSpeed;Sreg: Under Speed Trip Fault;;Trip;;;yes;Underspeed;81
+
+;R_SpdLowAlm;Rotor mechanical speed too low for running converter;yes;Alarm;;;yes; ;0
+;R_SpdHighAlm;Rotor mechanical speed too high for running converter;yes;Alarm;;;yes; ;0
+;R_RunPrmOpen;Seq: Run permissive open;yes;Alarm;;;yes; ;0
+;R_SpdFbkRev;Sreg: Speed feedback reversed Trip Fault;;Trip;;;yes;Tachometer;22
+;R_StrtPrmOpn;Seq: Start permissive open;yes;Alarm;;;yes; ;0
+
+;L_BrgPwrEnbUnhandTrp;Line bridge power enable unhandled test mode case trip;;Trip;;;yes;Firmware Process Error ;68
+;GmVcomTrp;Grid monitor (GM) common mode (zero sequence) voltage fault trip;;Trip;;;yes;Wiring Issue, Grid or Line Converter ;18
+;Q1Tripped;Q1 breaker is tripped by over-current.;;Trip;;yes;;Contactor or Breaker ;2
+;L_RunWhlInit;Run generated during initialization;yes;Alarm;;yes;; ;0
+;MsgStkFail;ADL message stack failure;;Alarm;;yes;yes; ;0
+
+;S_TocAlm;Stator time over-current alarm;;Alarm;;;yes; ;0
+;S_TocFlt;Stator time over-current trip fault;;Trip;;;yes;Timed Over-current, Rotor Converter or Stator;57
+;S_IaOffsFlt;Stator current Phase A offset trip fault;;Trip;;;yes;Generator I/O Board;19
+;S_IbOffsFlt;Stator current Phase B offset trip fault;;Trip;;;yes;Generator I/O Board;19
+;S_IcOffsFlt;Stator current Phase C offset trip fault;;Trip;;;yes;Generator I/O Board;19
+;S_IOCFlt;Stator instantaneous over-current (IOC);;Trip;;yes;yes;IOC, Rotor Converter;1071
+;S_SyncIOC2Flt;Stator synchronization instantaneous over-current (IOC) level 2 trip fault;;Trip;;;yes;IOC, Rotor Converter;1071
+;S_VabOffsFlt;DC voltage offset on the generator stator between Phases (A-B) trip fault ;;Trip;;;yes;Generator I/O Board;19
+;S_VbcOffsFlt;DC voltage offset on the generator stator between Phases (B-C) trip fault ;;Trip;;;yes;Generator I/O Board;19
+;L_RegLimAlm;Regulator clamp in limit (brief);;Alarm;;yes;; ;0
+;L_RegLimFlt;Regulator clamp in limit (trip);;Trip;;yes;;Regulator Saturation, Line converter;58
+
+;L_BadChgTsk;Bad sequencer charger task call;;Trip;;yes;;Code Sequencing;4
+;L_BadSyncTsk;Bad sequencer synchronization  task call;;Trip;;yes;;Code Sequencing;4
+;L_BadEnbTsk;Bad sequencer regulator enable task call;;Trip;;yes;;Code Sequencing;4
+;L_BadKdfTsk;Bad sequencer distortion filter contactor (KDF) task call;;Trip;;yes;;Code Sequencing;4
+;KdfOpnTmOut;Distortion filter contactor (KDF) did not open on time;;Trip;;yes;;Contactor or Breaker ;2
+;KdfClsTmOut;Distortion filter contactor (KDF) did not close on time;;Trip;;yes;;Contactor or Breaker ;2
+;KdfFbkBad;Distortion filter contactor (KDF) feedback is incorrect;;Trip;;yes;;Contactor or Breaker ;2
+;L_BadQ1Tsk;Bad sequencer Q1 breaker task call;;Trip;;yes;;Code Sequencing;4
+;GLVxyImbFlt;Grid and line volt X-Y do not agree;;Trip;;yes;;Wiring Issue, Grid or Line Converter ;18
+;L_BrdgOpen;Line bridge does not connect via circuit breaker Q1;;Trip;;yes;;Wiring Issue, Grid or Line Converter ;18
+;DFiltPhAOpen;Distortion Filter contactor (KDF) on Phase A is opened;;Trip;;yes;;Wiring Issue, Grid or Line Converter ;18
+;DFiltPhAFlt;Distortion Filter contactor (KDF) on Phase A has failed;;Trip;;yes;;Wiring Issue, Grid or Line Converter ;18
+;DFiltPhBOpen;Distortion Filter contactor (KDF) on  Phase B is opened;;Trip;;yes;;Wiring Issue, Grid or Line Converter ;18
+;DFiltPhBFlt;Distortion Filter contactor (KDF) on  Phase B has failed;;Trip;;yes;;Wiring Issue, Grid or Line Converter ;18
+;DFiltPhCOpen;Distortion Filter contactor (KDF) on  Phase C is opened;;Trip;;yes;;Wiring Issue, Grid or Line Converter ;18
+;DFiltPhCFlt;Distortion Filter contactor (KDF) on  Phase C has failed;;Trip;;yes;;Wiring Issue, Grid or Line Converter ;18
+;Q1OpnTmOut;Q1 breaker did not open;;Trip;;yes;;Contactor or Breaker ;2
+;LinePhAOpen;Line Bridge Phase A is opened;;Trip;;yes;;Blown Fuses;1
+;LinePhBOpen;Line bridge Phase B is opened;;Trip;;yes;;Blown Fuses;1
+;LinePhCOpen;Line bridge Phase C is opened;;Trip;;yes;;Blown Fuses;1
+;LineConnFlt;Line failed to disconnect from grid;;Trip;;yes;;Wiring Issue, Grid or Line Converter ;18
+;L_LinkChgFlt;DC Link charger fault;;Trip;;yes;;DC Link Under-voltage;27
+;L_ChgSyncFlt;DC Link charger synchronization fault;;Trip;;yes;;Wiring Issue, Grid or Line Converter ;18
+;L_SyncIniTm;PLL synchronize initialization Timeout;;Trip;;yes;;Wiring Issue, Grid or Line Converter ;18
+
+;HwTstVoltHighAlm;Voltage in transformer secondary too high for hardware test mode;;Alarm;;yes;yes; ;0
+;AclfuOtAlmDly;AC line fuse (ACFLU) over-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;AclfuOtTrpDly ;AC line fuse (ACLFU) over-temperature delayed trip;;Alarm;;yes;yes; ;0
+;CfcOtAlm;Converter filter cabinet (CFC) over-temperature alarm;;Alarm;;yes;yes; ;0
+;CfcOtAlmDly;Converter filter cabinet (CFC) over-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;CfcOtDly;Converter filter cabinet (CFC) over-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;CfcOtTrpDly;Converter filter cabinet (CFC) over-temperature delayed trip;;Alarm;;yes;yes; ;0
+;CfcUtAlmDly;Converter filter cabinet (CFC) under-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;CoolantOtAlm;Bridge liquid coolant inlet over-temperature alarm;;Alarm;;yes;yes; ;0
+;CoolantOtDly;Bridge liquid coolant inlet over-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;CoolantOtTrp;Bridge liquid coolant inlet over-temperature trip;;Trip;;yes;yes;Cooling System ;3
+;CoolantUtAlm;Bridge liquid coolant inlet  under-temperature alarm;;Alarm;;yes;yes; ;0
+;CoolantUtDly;Bridge liquid coolant inlet under-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;InletAirOtAlmDly;Inlet air over-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;InletAirOtTrpDly;Inlet air over-temperature delayed trip;;Alarm;;yes;yes; ;0
+;InletAirUtAlmDly;Inlet air under-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;LhslaOtAlmDly;Line side high-speed link assembly (HSLA) over-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;LhslaOtTrpDly;Line side high-speed link assembly (HSLA) over-temperature delayed trip;;Alarm;;yes;yes; ;0
+;LhslaUtAlmDly;Line side high-speed link assembly (HSLA) under-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;LhslaUtTrpDly;Line side high-speed link assembly (HSLA) under-temperature delayed trip;;Alarm;;yes;yes; ;0
+;PdcCabEnOtAlmDly;Power distribution cabinet (PDC) cable entry over-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;PdcCabEnOtTrpDly;Power distribution cabinet (PDC) cable entry over-temperature delayed trip;;Alarm;;yes;yes; ;0
+;PdcCabEnUtAlmDly;Power distribution cabinet (PDC) Cable Entry under-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;PdcOtAlm;Power distribution cabinet (PDC) over-temperature alarm;;Alarm;;yes;yes; ;0
+;PdcOtAlmDly;Power distribution cabinet (PDC) over-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;PdcOtDly;Power distribution cabinet (PDC) over-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;PdcOtTrpDly;Power distribution cabinet (PDC) over-temperature delayed trip;;Alarm;;yes;yes; ;0
+;PdcUtAlmDly;Power distribution cabinet (PDC) under-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;PdcUtTrpDly;Power distribution cabinet (PDC) under-temperature delayed trip;;Alarm;;;; ;0
+;RhslaOtAlmDly;Generator side high-speed link assembly (HSLA) over-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;RhslaOtTrpDly;Generator side high-speed link assembly (HSLA) over-temperature delayed trip;;Alarm;;yes;yes; ;0
+;RhslaUtAlmDly;Generator side high-speed link assembly (HSLA) under-temperature delayed alarm;;Alarm;;yes;yes; ;0
+;RhslaUtTrpDly;Generator side high-speed link assembly (HSLA) under-temperature delayed trip;;Alarm;;yes;yes; ;0
+;TempDlyFlt;General temperature delayed fault;;Trip;;yes;yes;Thermal Turbine Shutdown;49
+
+;InvIPN;Invalid Intelligent Part Number (IPN) trip;;Trip;yes;yes;yes;Mis-configuration by Parameter;66
+;R_IabcGndFlt;Rotor Bridge Phase A, B, C ground fault trip;;Trip;;yes;yes;Ground Fault, Rotor;47
+;R_TocAlm;Rotor Bridge combined timed over-current alarm;;Alarm;;;yes; ;0
+;R_TocFlt;Rotor Bridge combined timed over-current fault;;Trip;;;yes;Timed Over-current, Rotor Converter or Stator;57
+;R_InvGndAlm;Discriminate inverter ground alarm;;Alarm;;;yes; ;0
+;R_InvGndFlt;Discriminate inverter ground fault;;Trip;;yes;yes;Ground Fault, Rotor;47
+;R_VdcUvAlm;Rotor Bridge DC under-voltage alarm;;Alarm;;;yes; ;0
+;R_VdcErrAlm;Rotor Bridge DC voltage and the Line bridge DC voltage had a mismatch alarm;;Alarm;;;yes; ;0
+;R_VdcUnderV;Rotor Bridge DC under-voltage trip;;Trip;;;yes;DC Link Under-voltage;27
+;L_VdcOverV;Line Bridge DC Link feedback is too large causing a trip;;Trip;;yes;;DC Link Over-voltage;5
+;L_VdcUnderV;Line Bridge DC Link feedback is too low causing a trip;;Trip;;yes;;DC Link Under-voltage;27
+;L_InstOverI;Line Bridge instantaneous over-current trip;;Trip;;yes;;IOC, Line Converter;1070
+
+;Ps24NokTrp;24 Volt Power supply not OK trip;;Trip;;yes;yes;Power Supply;15
+;L_IocPhsA;Line bridge Phase A hardware instantaneous over-current (IOC);;Trip;;yes;;IOC, Line Converter;1070
+;L_IocPhsB;Line bridge Phase B hardware instantaneous over-current (IOC);;Trip;;yes;;IOC, Line Converter;1070
+;L_IocPhsC;Line bridge Phase C hardware instantaneous over-current (IOC);;Trip;;yes;;IOC, Line Converter;1070
+;PowerDown;T3 (24 V dc power supply) being buffered because of a power-down event;;Trip;;yes;yes;Power Supply;15
+;L_IabcGndFlt;Line Bridge Phase A, B, C ground fault;;Trip;;yes;yes;Ground Fault, Line Converter;44
+;L_IabcDcGndFlt;Line Bridge DC Link Phase A, B, C ground fault;;Trip;;yes;yes;Ground Fault, Line Converter;44
+;L_InvGndAlm;Discriminate inverter ground alarm;;Alarm;;yes;; ;0
+;L_InvGndFlt;Discriminate inverter ground fault;;Trip;;yes;yes;Ground Fault, Line Converter;44
+;L_IocThrsHi;IOC high threshold;;Trip;;yes;;IOC, Line Converter;1070
+;L_TocAlm;Timed overcurrent alarm;;Alarm;;yes;; ;0
+;L_TocFlt;Timed overcurrent fault trip;;Trip;;yes;;Timed Over-Current, Line converter or Grid;56
+;L_FuseTocAlm;ACLFU Timed overcurrent alarm;;Alarm;;yes;; ;0
+;L_FuseTocFlt;ALCFU Timed overcurrent fault trip;;Trip;;yes;;Blown Fuses;1
+
+;NvInitAlm;Non-volatile memory initialization alarm.;;Alarm;;yes;yes; ;0

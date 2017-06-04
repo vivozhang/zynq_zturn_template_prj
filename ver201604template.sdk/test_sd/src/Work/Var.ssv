@@ -1,0 +1,3769 @@
+Class;Name;Description;Enumeration;Unit;Precision;;;Help
+
+;True;Force True;TrueFalseEnum
+;False;Force False;TrueFalseEnum
+
+;FZero;Constant float 0.0
+;FNegOne;Constant float -1.0
+;FPosOne;Constant float 1.0
+;IZero;Constant integer0
+;INegOne;Constant integer -1
+;IPosOne;Constant integer1
+
+;UnusedBool;Unused boolean;TrueFalseEnum
+;UnusedFloat;Unused float
+;UnusedInt;Unused integer
+;UnusedUInt;Unused unsigned integer
+;UnusedWord;Unused word (hex unsigned int)
+
+;Const1;General purpose constant 1
+;Const2;General purpose constant 2
+;Const3;General purpose constant 3
+
+;FScratch1;General purpose float 1
+;FScratch2;General purpose float 2
+;FScratch3;General purpose float 3
+;FScratch4;General purpose float 4
+
+;IScratch1;General purpose integer 1
+;IScratch2;General purpose integer 2
+;IScratch3;General purpose integer 3
+;IScratch4;General purpose integer 4
+
+;InitDone;Initialization complete;TrueFalseEnum
+
+;SimMode;Simulate mode act;TrueFalseEnum
+;LocalMode;Local mode active;TrueFalseEnum
+
+;CtrlStat;Control status word
+
+;DelTm1;Task 1 delta time;;sec
+;DelTm1A;Task 1A delta time;;sec
+;DelTm2;Task 2 delta time;;sec
+;DelTm3;Task 3 delta time;;sec
+
+;DelTm1Rcp;Task 1 delta time reciprocal
+;DelTm1ARcp;Task 1A delta time reciprocal
+;DelTm2Rcp;Task 2 delta time reciprocal
+;DelTm3Rcp;Task 3 delta time reciprocal
+
+;Stopped;Converters stopped;TrueFalseEnum
+;Running;Converters running;TrueFalseEnum
+;RunReq;Global run request;TrueFalseEnum
+;RunRdy;Ready to run;TrueFalseEnum
+;NoFlt;No faults active;TrueFalseEnum
+;TripFlt;Trip fault active;TrueFalseEnum
+;Brg1NoFlt;No bridge 1 faults active;TrueFalseEnum
+;Brg2NoFlt;No bridge 2 faults active;TrueFalseEnum
+;Brg1TripFlt;Bridge 1 trip fault active;TrueFalseEnum
+;Brg2TripFlt;Bridge 2 trip fault active;TrueFalseEnum
+
+;TripTypeWord1;Trip category word 1
+;TripTypeWord2;Trip category word 2
+;TripTypeWord3;Trip category word 3
+;TripTypeWord4;Trip category word 4
+;TripTypeWord5;Trip category word 5
+;TripWordCnt;Trip Word Counter
+;TripLostWordCnt;Trip Lost Word Counter
+;NoTripFlt;No trip fault;TrueFalseEnum
+;Brg1NoFlt;No brg 1 flts active;TrueFalseEnum
+;Brg2NoFlt;No brg 2 flts active;TrueFalseEnum
+cGpDiagFilter;Filter1Out;%R general purpose filter 1 output
+cGpDiagFilter;Filter2Out;%R general purpose filter 2 output
+cGpDiagFilter;Filter3Out;%R general purpose filter 3 output
+cGpDiagFilter;Filter4Out;%R general purpose filter 4 output
+cGpDiagFilter;NaNDetected;%R NaN detection indicator;TrueFalseEnum
+;QuantsPerMod;Number of quants per modulator frame
+;QuantsPerMod1A;Number of quants per modulator 1A frame
+;DelTmQuant;Delta time in one quant;;Sec
+;FNegOne;Constant float -1.0
+;FPosOne;Constant float 1.0
+;INegOne;Constant integer -1
+;IPosOne;Constant integer1
+;IZero;Constant integer0
+;UnusedBool;Unused boolean;TrueFalseEnum
+;UnusedFloat;Unused float
+;UnusedInt;Unused integer
+;ParmCRC32;Parameter CRC check
+;OscOut;Test oscillator output
+;OscTmr;Test oscillator timer;;Sec
+;Const1;GP Constant 1
+;Const2;GP Constant 2
+;Const3;GP Constant 3
+;OscOut;Sqr wave osc output
+;OscTmr;Oscillator timer;;Sec
+;LogAddrErr;Last logical address outside the address table
+;LogAddrErrCnt;Logical address error counter
+
+;SysTmSec;Time since boot;;sec
+;SysTmMsec;Time since boot (fraction);;msec
+
+;EventTmSec;Event timestamp (wall clock time);;sec
+;EventTmMsec;Event timestamp (fraction) (wall clock time);;msec
+;EventOffSec;Event time offset from boot time;;sec
+;EventOffNsec;Event time offset from boot time (fraction);;nsec
+
+;DelSysTm;System time increment;;nsec
+;SysTmSec;Time since boot;;Sec
+;EventTmMsec;ion timestamp msec;;msec
+;EventTmSec;System time stamp;;Sec
+;SysTmMsec;Time since boot frct;;msec
+;R_SyncIOCAct;TBD_R_SyncIOCAct;TrueFalseEnum
+;R_ImxCalc;TBD_R_ImxCalc;;A pk
+;R_ImyCalc;TBD_R_ImyCalc;;A pk
+;S_IxCalc;TBD_S_IxCalc;;Apk
+;S_IyCalc;TBD_S_IyCalc;;Apk
+;R_AngSlwCor;Rotor angle correction for Dc to Ac transition;;Rad
+;R_AngElecLin;Rotor compensated line electrical angle;;Rad
+;R_AngElecSta;Rotor control stator angle;;Rad
+;R_AngElecFbk;Rotor electric angle feedback;;Rad
+;R_AngElecCmd;Rotor electric angle command;;Rad
+;R_WElecFil;Rotor filtered electrical angular frequency;;Rad/S
+;R_WElec;Rotor electrical angular frequency;;Rad/S
+;R_WElecFf;Rotor electrical omega feed-forward;;Rad/S
+;R_SpdCalInt;Rotor filtered electrical angular freq fbk in task2;;Rad/S
+;R_WRtr;Rotor electrical angular speed feedback;;Rad/S
+;R_IxFbkZ1;Rotor delayed X-axis current feedback;;Amps
+;R_VxFbkZ1;Rotor delayed X-axis voltage feedback;;Volts
+;R_AngEstErr;Rotor angle estimate error;;Rad
+;R_WRtrSlowT1;Rotor slow electrical angular speed in task1;;Rad/S
+;R_TachPosEst;Rotor tachometer position estimate;;Rad
+;R_RtrPosn;Rotor electrical position;;Rad
+;R_SyncAngErr;Rotor synchronization angle error;;Rad
+;R_AngErrInt;Rotor synchronization angle error scaled integral;;Rad
+;R_TachZero;Rotor tach marker offset respect to zero;;Rad
+;R_TachZeroT3;Rotor tach marker offset in task3;;Rad
+;R_TachZeroRef;Rotor tach offset reference for detecting excessive delta;;Rad
+;R_TachZeroDel;Rotor tach marker offset delta between 1st and last sync events;;Rad
+;R_AngTach;Rotor tach electrical angle;;Rad
+;R_TachPosn;Rotor electrical position reported by tachometer;;Rad
+;R_AngRotStat;TBD_R_AngRotStat;TrueFalseEnum
+;R_TachPosEst;TBD_R_TachPosEst;;Rad
+;R_AngEstErT2;TBD_R_AngEstErT2;;Rad
+;R_TachLsDone;Rotor tach-loose check has been done;TrueFalseEnum
+;R_TachLsDoneT2;Rotor tach-loose check done in task2;TrueFalseEnum
+
+;S_MaxCurOut;Stator max current for power limiter;;Arms
+;S_MxCurOutSq;Squared stator max current for power limiter;;Arms^2
+;R_MaxCurOut;Rotor max current for power limiter;;Arms
+;R_FlxCmd;Flux reference;;Webers
+;S_FlxMtr;TBD_S_FlxMtr
+;S_IMagLim;Stator current magnitude limit;;Apk;1
+;S_IyMagnEst;TBD_S_IyMagnEst;;Apk
+;IyMaxLim;TBD_IyMaxLim;;A pk;1
+;IyMinLim;TBD_IyMinLim;;A pk;1
+;L_IReserveGn;TBD_L_IReserveGn;;Pu
+;L_IReserveSS;Ln resrv cur stdy st;;A pk
+;L_IReservSpl;TBD_L_IReservSpl;;A pk
+;L_IxFbkSqFil;;;Apsq
+;R_IMagMax;Rtr cur mag max;;A rms;1
+;R_IMagMaxUc;Rotor max curr uc;;A rms;1
+;R_IyCmd;Reactiv current ref;;A pk;1
+;R_IyCmd0;Iy regulator ref;;A pk
+;R_IyCmdFil;TBD_R_IyCmdFil;;A pk
+;R_IyCmdOffLn;Iy ref on-line;;A pk
+;R_IyCmdOnLn;Iy ref off-line;;A pk
+;S_FlxVMag;Stator flux volt mag;;Vln
+;S_IMagMax;Str cur mag max;;Arms
+;S_IMagMaxUc;Stator max curr uc;;Arms;1
+;S_IyBase;TBD_S_IyBase;;Apk
+;S_IyCmd;Stator react cur cmd;;Apk;1
+;S_IyFfOffLn;Str Iy fdfwd offline;;Apk;1
+;S_IyFfOnLn;Str Iy fdfwd online;;Apk;1
+;S_IyLim;Stator Iy limit;;Apk;1
+;S_IyMagnetiz;Str magnetizing cur;;Apk
+;S_IyregErr;Stator cur reg error;;Apk;1
+;S_IyregOut;Stator cur reg react;;Apk;1
+;S_IyRegTot;Stator cur reg total;;Apk;1
+;S_IyScl;TBD_S_IyScl;;Pu
+;S_IySpilCmd;Stator Iy spillover;;Apk;1
+;S_IySpillLim;Stator reactive current spill limit;;Apk;1
+;S_VrefScl;Stator volt reg scl;;Pu
+;S_VrefSclFil;Stator vreg scl fil;;Pu
+;S_VregCmd;Stator volt reg cmd;;Vln;1
+;S_VregErr;TBD_S_VregErr;;Apk
+;S_VregInt;Stator volt reg int;;Apk
+;S_VregOut;Stator volt reg out;;Apk
+;WBLnIMagSpil;Turbine power limiterline Imag spill;;A pk
+;WBLnIyMinSel;Turbine power limiterline Iy min sel;;A rms
+;RtrLnXfrMld;TBD_RtrLnXfrMld
+;LineIyPFCmd;Line Iy cmd,pwr fact;;A pk;1
+;QregMaxDyn;VAR reg cmd max dyn;;Var
+;QregMinDyn;VAR reg cmd min dyn;;Var
+;S_Pwr;Stator power,unfil;;Watts
+;R_FlxFil;Rotor flux;;Webers
+;R_IdcFil;R DC bus current;;A dc;1
+;R_IMagFil;Rotor current;;A pk;1
+;R_IxFil;Torque current fbk;;A pk
+;R_IyFil;Flux current fbk;;A pk
+;R_IZeroSeq;R Ground current;;Amps
+;R_QPwr;TBD_R_QPwr;;Var
+;R_TrqFbk;Torque fdbk,unfil;;N*m;0
+;R_TrqFil;Torque fbk,calced;;N*m;0
+;R_VdcFil;R DC bus voltage;;Vdc
+;R_VMag;Rotor Conv Volt Magn;;Vln;1
+;R_VMagFil;Rotor Conv Volt Magn, Filt;;Vln;1
+;R_VxFil;R Vx,X-axis voltage;;Vln
+;R_VyFil;R Vy,Y-axis voltage;;Vln
+;S_IMag;Stator current unfil;;Apk;1
+;S_IMagFil;Stator current;;Apk;1
+;S_IxFil;Stator torq cur fbk;;Apk
+;S_IyFil;Stator flux cur fbk;;Apk
+;S_PwrFil;Stator real power;;Watts
+;S_QPwr;Stator VARs,unfil;;Vars
+;S_VMagFil;Stator voltage;;Vlnpk;1
+;S_VxFil;Stator X-axis volts;;Vln
+;S_VyFil;Stator Y-axis volts;;Vln
+;R_CnvOutPwr;ion Convtr term pwr;;kW
+;R_CnvPwrFil;R conv output power;;Watts
+;R_DcBusPwr;R DC bus power;;Watts
+;R_ElecFrq;ion Output frequency;;Hz
+;R_ElecFrqFil;Output frequency;;Hz
+;R_QPwrFil;R conv reactive pwr;;Var
+;R_SpdFbkFil;Speed feedback;;RPM
+;R_SpdGenFil;Generator speed;;RPM
+;R_TrqFbkFil;Torque feedback;;N*m;0
+;S_QPwrFil;Stator reactive pwr;;Vars
+;R_IMag;Rotor current,unfil;;A pk;1
+;R_IyCmd1;TBD_R_IyCmd1;;A pk;1
+;R_IyVdc;TBD_R_IyVdc;;A pk
+;R_TrqCmdIn;Torque ref post lim;;N*m;0
+;R_IxCmdZ;R Ix command delayed;;A pk
+;TrqPwrTrimT1;Torq trim,pwr rg T1;;N*m;2
+;R_ITrqCmd;Trq cur ref pre lim;;A pk
+;R_IxCmd;Torque current ref;;A pk
+;R_IxCmd0;Slewed trq cur ref;;A pk
+;R_IxCmdReqDl;TBD_R_IxCmdReqDl;;Apk/S
+;R_IxCmdRtLim;TBD_R_IxCmdRtLim;;A pk
+;R_IxCmdRtMax;TBD_R_IxCmdRtMax;;Apk/S
+;R_IxCmdRtMin;TBD_R_IxCmdRtMin;;Apk/S
+;R_IxVdc;TBD_R_IxVdc;;A pk
+;R_TrqCmdInTr;Trq cmd in xfmr;;N*m;0
+;S_IxCmd;Stator real cur cmd;;Apk
+;S_IxregOut;Stator real cur reg;;Apk
+;R_IyCmdZ;R Iy command delayed;;A pk
+;R_IxFbk;Torque cur fbk unfil;;A pk
+;R_IyFbk;Flux cur fbk unfil;;A pk
+;R_TrqCal;Torque calced,unfil;;N*m;0
+;R_VxFbk;Torque axis volt fbk;;Vln
+;R_VyFbk;Flux axis volt fbk;;Vln
+;R_TrqLimAct;In cur or trq limit;TrueFalseEnum
+;S_VxFbk;Stator X-axis v fbk;;Vln
+;S_VyFbk;Stator Y-axis v fbk;;Vln
+;S_IxFbk;Stator real cur fbk;;Apk
+;S_IyFbk;Stator cur fbk react;;Apk
+;R_IxRat;100% Torque current;;A pk
+;R_IyRat;100% Flux current;;A pk
+;R_TrqRat;100% Generator torq;;N*m;0
+;S_IMgK1StkGn;S K1 stuck curr gain
+;R_FlxRat;100% Flux;;Webers
+;S_VlnIn;Stator nominal volts;;Vlnpk
+;R_AmpsRat;100% Rotor current;;A pk
+;R_KPoles;2/3* pole pairs
+;R_PowerRat;100% Rotor power;;Watts
+;R_RPMRat;100% Applied RPM
+;R_VoltsRat;100% Rotor voltage;;Vln
+;S_RRatioRcp;S_Rratio reciprocal
+;R_BrgPwrEnb;Rotor bridge power enable;TrueFalseTyp
+;R_Stopped;Rotor sequencer stop state;TrueFalseTyp
+;R_StoppedT3;Rotor stop indication passed to task3;TrueFalseTyp
+;R_CCOpnCmd;Rotor brg1 crowbar contactor open command;TrueFalseTyp
+;R_CCOpnEcn;Rotor brg1 economizer resistor open command;TrueFalseTyp
+;R_CCOpnFbk;Rotor brg1 crowbar contactor status feedback;TrueFalseTyp
+;R_CCEnbStat;Rotor brg1 crowbar contactor enable status;TrueFalseTyp
+;R_CTChkEnb;Rotor enable checking of stator current transformer;TrueFalseTyp
+;R_InitDone;Rotor indication of complete initialization ;TrueFalseTyp
+;R_InnrRegEnb;Rotor inner regulator enable;TrueFalseTyp
+;R_ParkReq;Rotor request for park state;TrueFalseTyp
+;R_SpdFbkVld;Rotor indication of speed validity;TrueFalseTyp
+;R_CelTstDisab;Rotor cell test disable;TrueFalseTyp
+;R_CCEcnTmr;Rotor brg1 economizer resistor timer;;Sec
+;R_CCEcnTmr;Rotor brg2 economizer resistor timer;;Sec
+;R_CCvoltThrsSqr;Rotor squared volt threshold across crowbar contactor;;Volt^2
+
+;S_K1ClsCmd;Stator synch switch close command;TrueFalseTyp
+;S_K1Status;Stator synch switch contactor status;TrueFalseTyp
+;S_K1VmgErrPrm;Stator volt across synch switch error permissive;TrueFalseTyp
+;S_K1VacrossTol;Stator volt across synch switch tolerance;;Volts
+;S_K1VerrTime;Stator voltage error duration;;Sec
+;S_K1VmgErrTmr;Stator volt across synch switch error timer;;Sec
+
+;R_DbTestTypSt;Rotor Db seq-test req/status/active state
+;R_DbTestTskSt;Rotor Db seq-test task state
+;R_DbTstTskTmr;Rotor Db seq-test task timer;;Sec
+;R_DbTstPwrInit;Rotor Db seq-test initial sensed power;;Watts
+;R_DbTstPwrFinal;Rotor Db seq-test final sensed power;;Watts
+;R_DbTstVdc;Rotor Db seq-test Dc-link volt while gating;;Vdc
+;R_DbTstDutyRes;Rotor Db seq-test duty cycle for testing resistance
+;R_DbTstPwrDelta;Rotor Db seq-test resistance power variation due gating;;Watts
+;R_DbTstRpwrMin;Rotor Db seq-test min tolerable for resistance power;;Watts
+;R_DbTstRpwrMax;Rotor Db seq-test max tolerable resistance power;;Watts
+;R_DbTstPwrGn;Rotor Db seq-test gain for filtering power
+
+;R_TskInfcRdy;Rotor Task interface ready;TrueFalseTyp
+;R_SCEnbStat;Sync cont task-enable status;TrueFalseEnum
+;R_SyncStat;Synchronize sequencer task status;TrueFalseEnum
+;R_TrqEnbStat;Torque enable status;TrueFalseEnum
+;S_K1VmgErrTmr;Stator across K1 volt err timer;TrueFalseEnum
+;S_PhsSync;Stator phase sync
+;S_VltSync;S_VltSync
+
+;R_SpdFbkAvg;Rotor average feedback speed in task3;;RPM
+;R_SpdFbkT2;Rotor average speed feedback in task2;;Rad/S
+;R_SpdFbk;Speed reg fbk;;RPM
+;R_SpdT2RAF;TBD_R_SpdT2RAF;;Rad/S
+;R_DelMrkrPls;TBD_R_DelMrkrPls;;CNTS
+;R_MrkrPosOld;TBD_R_MrkrPosOld;;CNTS
+;R_PosRaw;TBD_R_PosRaw;;CNTS
+;R_SpdSlowT2;Tach speed slow,T2;;Rad/S
+;R_SpdT1;Speed,T1 instr.;;RPM
+;R_SpdTCtlT2;TBD_R_SpdTCtlT2;;RPM
+;R_SuperSync;TBD_R_SuperSync;TrueFalseEnum
+;R_TachBadCnt;TBD_R_TachBadCnt;;CNTS
+;R_TachFrac;tics since tach pulse;;TICS
+;R_TachLtTmDt;Del tics tach latch;;TICS
+;R_TachTs1;TBD_R_TachTs1;;Sec
+;R_TrqCalT3;Torque calced,T3;;N*m;0
+;R_AngCorr;TBD_R_AngCorr;;Rad/S
+;R_AngEstInt;TBD_R_AngEstInt;;Rad/S
+;R_AngRaw;TBD_R_AngRaw;;CNTS
+;R_MrkPosInit;TBD_R_MrkPosInit;;CNTS
+;R_MrkrErr;TBD_R_MrkrErr;;CNTS
+;R_MrkrKnown;TBD_R_MrkrKnown;TrueFalseEnum
+;R_MrkrPos;TBD_R_MrkrPos;;CNTS
+;R_SpdFbkPLC;Speed fbk PLC;;RPM
+;R_SpdGen;Gen speed,unfil;;RPM
+;R_SpdRaw;Tach counts T1
+;R_SpdRawT2;Tach counts T2
+;R_SpdT2;Tach speed,unfil;;Rad/S
+;R_SpdTach;Tach speed;;RPM
+;R_SpdTcFFFil;TBD_R_SpdTcFFFil;;RPM
+;R_SpdTcRAF;TBD_R_SpdTcRAF;;Rad/S
+;R_SpdTcRAF2;TBD_R_SpdTcRAF2;;RPM
+;R_TachDt;TBD_R_TachDt;;Sec
+;R_TachDtRcp;TBD_R_TachDtRcp;;Hz
+;R_TachE0;TBD_R_TachE0;;pulses
+;R_TachE1;TBD_R_TachE1;;pulses
+;R_TachIntgrl;TBD_R_TachIntgrl;;CNTS
+;R_TachLtchTm;tics last tach latch;;TICS
+;R_TachMode;Tach mode;R_TachModeEnum
+;R_TachNs0;TBD_R_TachNs0;;pulses
+;R_TachNs1;TBD_R_TachNs1;;pulses
+;R_TachPulses;TBD_R_TachPulses;;CNTS
+;R_TachT0;TBD_R_TachT0;;Sec
+;R_TachT1;TBD_R_TachT1;;Sec
+;R_TachTs1Rcp;TBD_R_TachTs1Rcp;;Hz
+;R_TrqErrFil;Torque error;;Pu
+;R_TrqTrkErr;TBD_R_TrqTrkErr;;N*m
+;R_TrqTrkFil;TBD_R_TrqTrkFil;;N*m
+;R_WRtrRAFT2;TBD_R_WRtrRAFT2;;Rad/S
+;R_WRtrSlowT2;TBD_R_WRtrSlowT2;;Rad/S
+;R_WRtrT2;Spd,in elec freq T2;;Rad/S
+;R_AngEstFF;TBD_R_AngEstFF;;Rad/S
+;R_TachPosInt;TBD_R_TachPosInt;;Rad
+;R_Spd;Tach speed,instr.;;Rad/S
+;R_RtrHssPos;Rotor high speed shaft position for turbine control ;;Deg
+;S_PllProven;Stator PLL proven;TrueFalseEnum
+;S_PllWInt;Stator PLL int;;Rad/S
+;S_PllEnb;TBD_S_PllEnb;TrueFalseEnum
+;S_PllErr;S PLL error
+;S_PllIntGn;S PLL integral gain
+;S_PllPrpGn;S PLL prop gain
+;S_PllWMax;S PLL max frequency;;Rad/S
+;S_PllWMaxInt;S PLL max int freq;;Rad/S
+;S_PllWMin;S PLL min frequency;;Rad/S
+;S_PllWMinInt;S PLL min int freq;;Rad/S
+;S_IMagK1Stck;Stator K1 stuck curr;;Apk
+;S_PllAllowCl;TBD_S_PllAllowCl;TrueFalseEnum
+;S_PllErInLim;TBD_S_PllErInLim;TrueFalseEnum
+;S_PllErrInt;Stator pll err int;;Vsqr
+;S_PllErrRef;Stator pll err ref;;Vsqr
+;S_PllVyErr;S PLL y error;;Vln
+;S_PllW;Stator PLL freq;;Rad/S
+;S_VMag;Stator voltage unfil;;Vlnpk;1
+;S_VxyImbFil;Stator phs imb sqr;;Vsqr
+;S_VMagPU;Stator volt mag PU;;Pu
+;S_AngElecFbk;Stator fdbk angle;;Rad
+;R_IyLimCal;Reactive cur limit;;A pk
+;R_PdNegLim;Ix command neg limit;;A pk
+;R_PdPosLim;Ix command pos limit;;A pk
+;R_PwrCmd;TBD_R_PwrCmd;;Watts
+;R_SpdRngRed;TBD_R_SpdRngRed;TrueFalseEnum
+;R_TrqLimNeg;Torque cmd neg limit;;N*m;0
+;R_TrqLimPos;Torque cmd pos limit;;N*m;0
+;R_FreqMaxSpd;TBD_R_FreqMaxSpd;;Rad/S
+;R_FreqMinSpd;TBD_R_FreqMinSpd;;Rad/S
+;R_PwrDipEnb;Power dip sensed;R_PwrDipEnbEnum
+;R_VMaxSpd;TBD_R_VMaxSpd;;Vln
+;R_VMaxSpdHi;TBD_R_VMaxSpdHi;TrueFalseEnum
+;R_VMinSpd;TBD_R_VMinSpd;;Vln
+;R_VMinSpdHi;TBD_R_VMinSpdHi;TrueFalseEnum
+;R_VxMaxSpd;TBD_R_VxMaxSpd;;Vln
+;R_VxMinSpd;TBD_R_VxMinSpd;;Vln
+;R_VyMaxSpd;TBD_R_VyMaxSpd;;Vln
+;R_VyMinSpd;TBD_R_VyMinSpd;;Vln
+;SpdPwrPllFil;TBD_SpdPwrPllFil;;Rad/S
+;TrqLimVMag;Torque volt limit;;N*m;2
+;R_IxVdcGnDyn;TBD_R_IxVdcGnDyn;;Amp/V
+;S_IxFilIyLim;Str real cur,Ilim;;Asqr
+;SRVRatio;TBD_SRVRatio;;V/V
+
+;R_UxCmdUc;rotor voltage reg. x component output unclamped;;Pu
+;R_UyCmdUc;rotor voltage reg. y component output unclamped;;Pu
+;R_UxCmd;R X axis modulation;;Pu
+;R_UyCmd;R Y axis modulation;;Pu
+
+cRotorBrgFbkOffs;VOffsVld;%R offset calculation is valid;TrueFalseTyp
+
+cBrgThrmModel;BtmDPwrLoss;%R total diode power loss;;Watts
+cBrgThrmModel;BtmTrPwrLoss;%R total transistor power loss;;Watts
+cBrgThrmModel;BtmJncTemp;%R peak transistor junction temperature;;degC
+cBrgThrmModel;BtmDJncTemp;%R peak diode junction temperature;;degC
+cBrgThrmModel;BtmOtFaultSum;%R over temperature fault summary;TrueFalseEnum
+cBrgThrmModel;BtmOtFaultDlySum;%R over temperature delayed fault summary;TrueFalseEnum
+cBrgThrmModel;BtmOtAlarmSum   ;%R over temperature alarm summary;TrueFalseEnum
+cBrgThrmModel;BtmAlarmStPhsA;%R transistor alarm state PhsA;EnableDisableEnum
+cBrgThrmModel;BtmAlarmStPhsB;%R transistor alarm state PhsB;EnableDisableEnum
+cBrgThrmModel;BtmAlarmStPhsC;%R transistor alarm state PhsC;EnableDisableEnum
+cBrgThrmModel;BtmAlarmStDphsA;%R diode alarm state PhsA;EnableDisableEnum
+cBrgThrmModel;BtmAlarmStDphsB;%R diode alarm state PhsB;EnableDisableEnum
+cBrgThrmModel;BtmAlarmStDphsC;%R diode alarm state PhsC;EnableDisableEnum
+cBrgThrmModel;BtmIaAbs;%R absolute current fbk PhsA;;Amps
+cBrgThrmModel;BtmIbAbs;%R absolute current fbk PhsB;;Amps
+cBrgThrmModel;BtmIcAbs;%R absolute current fbk PhsC;;Amps
+cBrgThrmModel;BtmIaSqr;%R square current fbk PhsA;;Amp^2
+cBrgThrmModel;BtmIbSqr;%R square current fbk PhsB;;Amp^2
+cBrgThrmModel;BtmIcSqr;%R square current fbk PhsC;;Amp^2
+cBrgThrmModel;BtmUaOld;%R scaled modulator transition cmd PhsA;;Pu
+cBrgThrmModel;BtmUbOld;%R scaled modulator transition cmd PhsB;;Pu
+cBrgThrmModel;BtmUcOld;%R scaled modulator transition cmd PhsC;;Pu
+cBrgThrmModel;BtmUOldThrHi;%R high validation treshold for modulator cmd;;Pu
+cBrgThrmModel;BtmUOldThrLo;%R low validation treshold for modulator cmd;;Pu
+cBrgThrmModel;BtmTrSwPwr;%R transistor switching pwr loss;;Watts
+cBrgThrmModel;BtmTrCondPwr;%R transistor condution pwr loss;;Watts
+cBrgThrmModel;BtmDSwPwr;%R diode switching pwr loss;;Watts
+cBrgThrmModel;BtmDCondPwr;%R diode condution pwr loss;;Watts
+cBrgThrmModel;BtmTrSwGn;%R transistor approx rate of change of volt;;Volt/S
+cBrgThrmModel;BtmTrSwGnT1;%R transtr approx rate of change of volt task1;;Volt/S
+cBrgThrmModel;BtmDSwGn;%R diode approx rate of change of volt;;Volt/S
+cBrgThrmModel;BtmDSwGnT1;%R diode approx rate of change of volt task1;;Volt/S
+cBrgThrmModel;BtmTrPwrAL;%R lower transistor pwr loss in PhsA;;Watts
+cBrgThrmModel;BtmTrPwrAU;%R upper transistor pwr loss in PhsA;;Watts
+cBrgThrmModel;BtmTrPwrBL;%R lower transistor pwr loss in PhsB;;Watts
+cBrgThrmModel;BtmTrPwrBU;%R upper transistor pwr loss in PhsB;;Watts
+cBrgThrmModel;BtmTrPwrCL;%R lower transistor pwr loss in PhsC;;Watts
+cBrgThrmModel;BtmTrPwrCU;%R upper transistor pwr loss in PhsC;;Watts
+cBrgThrmModel;BtmDPwrAL;%R lower diode pwr loss in PhsA;;Watts
+cBrgThrmModel;BtmDPwrAU;%R upper diode pwr loss in PhsA;;Watts
+cBrgThrmModel;BtmDPwrBL;%R lower diode pwr loss in PhsB;;Watts
+cBrgThrmModel;BtmDPwrBU;%R upper diode pwr loss in PhsB;;Watts
+cBrgThrmModel;BtmDPwrCL;%R lower diode pwr loss in PhsC;;Watts
+cBrgThrmModel;BtmDPwrCU;%R upper diode pwr loss in PhsC;;Watts
+cBrgThrmModel;BtmTempAAL;%R lower transtr die (point-A) temp PhsA;;degC
+cBrgThrmModel;BtmTempAAU;%R upper transtr die (point-A) temp PhsA;;degC
+cBrgThrmModel;BtmTempABL;%R lower transtr die (point-A) temp PhsB;;degC
+cBrgThrmModel;BtmTempABU;%R upper transtr die (point-A) temp PhsB;;degC
+cBrgThrmModel;BtmTempACL;%R lower transtr die (point-A) temp PhsC;;degC
+cBrgThrmModel;BtmTempACU;%R upper transtr die (point-A) temp PhsC;;degC
+cBrgThrmModel;BtmDTempAAL;%R lower diode die (point-A) temp PhsA;;degC
+cBrgThrmModel;BtmDTempAAU;%R upper diode die (point-A) temp PhsA;;degC
+cBrgThrmModel;BtmDTempABL;%R lower diode die (point-A) temp PhsB;;degC
+cBrgThrmModel;BtmDTempABU;%R upper diode die (point-A) temp PhsB;;degC
+cBrgThrmModel;BtmDTempACL;%R lower diode die (point-A) temp PhsC;;degC
+cBrgThrmModel;BtmDTempACU;%R upper diode die (point-A) temp PhsC;;degC
+cBrgThrmModel;BtmABPwrA;%R total transtr pwr loss into baseplate PhsA;;Watts
+cBrgThrmModel;BtmABPwrAL;%R lower transtr pwr loss into baseplate PhsA;;Watts
+cBrgThrmModel;BtmABPwrAU;%R upper transtr pwr loss into baseplate PhsA;;Watts
+cBrgThrmModel;BtmABPwrB;%R total transtr pwr loss into baseplate PhsB;;Watts
+cBrgThrmModel;BtmABPwrBL;%R lower transtr pwr loss into baseplate PhsB;;Watts
+cBrgThrmModel;BtmABPwrBU;%R upper transtr pwr loss into baseplate PhsB;;Watts
+cBrgThrmModel;BtmABPwrC;%R total transtr pwr loss into baseplate PhsC;;Watts
+cBrgThrmModel;BtmABPwrCL;%R lower transtr pwr loss into baseplate PhsC;;Watts
+cBrgThrmModel;BtmABPwrCU;%R upper transtr pwr loss into baseplate PhsC;;Watts
+cBrgThrmModel;BtmDABPwrA;%R total diode pwr loss into baseplate PhsA;;Watts
+cBrgThrmModel;BtmDABPwrAL;%R lower diode pwr loss into baseplate PhsA;;Watts
+cBrgThrmModel;BtmDABPwrAU;%R upper diode pwr loss into baseplate PhsA;;Watts
+cBrgThrmModel;BtmDABPwrB;%R total diode pwr loss into baseplate PhsB;;Watts
+cBrgThrmModel;BtmDABPwrBL;%R lower diode pwr loss into baseplate PhsB;;Watts
+cBrgThrmModel;BtmDABPwrBU;%R upper diode pwr loss into baseplate PhsB;;Watts
+cBrgThrmModel;BtmDABPwrC;%R total diode pwr loss into baseplate PhsC;;Watts
+cBrgThrmModel;BtmDABPwrCL;%R lower diode pwr loss into baseplate PhsC;;Watts
+cBrgThrmModel;BtmDABPwrCU;%R upper diode pwr loss into baseplate PhsC;;Watts
+cBrgThrmModel;BtmTempJncAL;%R lower transistor junct temperature PhsA;;degC
+cBrgThrmModel;BtmTempJncAU;%R upper transistor junct temperature PhsA;;degC
+cBrgThrmModel;BtmTempJncBL;%R lower transistor junct temperature PhsB;;degC
+cBrgThrmModel;BtmTempJncBU;%R upper transistor junct temperature PhsB;;degC
+cBrgThrmModel;BtmTempJncCL;%R lower transistor junct temperature PhsC;;degC
+cBrgThrmModel;BtmTempJncCU;%R upper transistor junct temperature PhsC;;degC
+cBrgThrmModel;BtmDTempJncAL;%R lower diode junct temperature PhsA;;degC
+cBrgThrmModel;BtmDTempJncAU;%R upper diode junct temperature PhsA;;degC
+cBrgThrmModel;BtmDTempJncBL;%R lower diode junct temperature PhsB;;degC
+cBrgThrmModel;BtmDTempJncBU;%R upper diode junct temperature PhsB;;degC
+cBrgThrmModel;BtmDTempJncCL;%R lower diode junct temperature PhsC;;degC
+cBrgThrmModel;BtmDTempJncCU;%R upper diode junct temperature PhsC;;degC
+cBrgThrmModel;BtmJncTempMax;%R max of all transistor junct temperatures;;degC
+cBrgThrmModel;BtmJncTempErr;%R error betwn max and filter transtr junct temp;;degC
+cBrgThrmModel;BtmDJncTempMx;%R max of all diode junct temperatures;;degC
+cBrgThrmModel;BtmDJncTempErr;%R error betwn max and filter diode junct temp;;degC
+cBrgThrmModel;BtmJncTempUpGn;%R filter gain for positive junct temp errors
+cBrgThrmModel;BtmJncTempDnGn;%R filter gain for negative junct temp errors
+cBrgThrmModel;BtmJncOvrTempThr ;%R transistor junction over-temp trip setting;;degC
+cBrgThrmModel;BtmJncOvrTempOn  ;%R transistor junction over-temp alarm On setting;;degC
+cBrgThrmModel;BtmJncOvrTempOff ;%R transistor junction over-temp alarm Off setting;;degC
+cBrgThrmModel;BtmDjncOvrTempThr;%R diode junction over-temp trip setting;;degC
+cBrgThrmModel;BtmDjncOvrTempOn ;%R diode junction over-temp alarm On setting;;degC
+cBrgThrmModel;BtmDjncOvrTempOff;%R diode junction over-temp alarm Off setting;;degC
+
+cBrgThrmModel;BtmTrSwchPwrAU;%R upper transistor switching power loss in PhsA;;Watts
+cBrgThrmModel;BtmTrSwchPwrAL;%R lower transistor switching power loss in PhsA;;Watts
+cBrgThrmModel;BtmTrSwchPwrBU;%R upper transistor switching power loss in PhsB;;Watts
+cBrgThrmModel;BtmTrSwchPwrBL;%R lower transistor switching power loss in PhsB;;Watts
+cBrgThrmModel;BtmTrSwchPwrCU;%R upper transistor switching power loss in PhsC;;Watts
+cBrgThrmModel;BtmTrSwchPwrCL;%R lower transistor switching power loss in PhsC;;Watts
+cBrgThrmModel;BtmTrCondPwrAU;%R upper transistor conduction power loss in PhsA;;Watts
+cBrgThrmModel;BtmTrCondPwrAL;%R lower transistor conduction power loss in PhsA;;Watts
+cBrgThrmModel;BtmTrCondPwrBU;%R upper transistor conduction power loss in PhsB;;Watts
+cBrgThrmModel;BtmTrCondPwrBL;%R lower transistor conduction power loss in PhsB;;Watts
+cBrgThrmModel;BtmTrCondPwrCU;%R upper transistor conduction power loss in PhsC;;Watts
+cBrgThrmModel;BtmTrCondPwrCL;%R lower transistor conduction power loss in PhsC;;Watts
+cBrgThrmModel;BtmDswchPwrAU;%R upper diode switching power loss in PhsA;;Watts
+cBrgThrmModel;BtmDswchPwrAL;%R lower diode switching power loss in PhsA;;Watts
+cBrgThrmModel;BtmDswchPwrBU;%R upper diode switching power loss in PhsB;;Watts
+cBrgThrmModel;BtmDswchPwrBL;%R lower diode switching power loss in PhsB;;Watts
+cBrgThrmModel;BtmDswchPwrCU;%R upper diode switching power loss in PhsC;;Watts
+cBrgThrmModel;BtmDswchPwrCL;%R lower diode switching power loss in PhsC;;Watts
+cBrgThrmModel;BtmDcondPwrAU;%R upper diode conduction power loss in PhsA;;Watts
+cBrgThrmModel;BtmDcondPwrAL;%R lower diode conduction power loss in PhsA;;Watts
+cBrgThrmModel;BtmDcondPwrBU;%R upper diode conduction power loss in PhsB;;Watts
+cBrgThrmModel;BtmDcondPwrBL;%R lower diode conduction power loss in PhsB;;Watts
+cBrgThrmModel;BtmDcondPwrCU;%R upper diode conduction power loss in PhsC;;Watts
+cBrgThrmModel;BtmDcondPwrCL;%R lower diode conduction power loss in PhsC;;Watts
+cBrgThrmModel;BtmTrCondPwrLoss;%R total transistor conduction power loss;;Watts
+cBrgThrmModel;BtmTrSwchPwrLoss;%R total transistor switching power loss;;Watts
+cBrgThrmModel;BtmDcondPwrLoss;%R total diode conduction power loss;;Watts
+cBrgThrmModel;BtmDswchPwrLoss;%R total diode switching power loss;;Watts
+
+cBrgThrm5pModel;BtmDpwrLoss     ;%R total diode power loss;;Watts
+cBrgThrm5pModel;BtmTrPwrLoss    ;%R total transistor power loss;;Watts
+cBrgThrm5pModel;BtmTrJncTemp    ;%R max transistor junction temperature;;degC
+cBrgThrm5pModel;BtmDjncTemp     ;%R max diode junction temperature;;degC
+cBrgThrm5pModel;BtmOtFaultSum   ;%R over temperature fault summary;TrueFalseEnum
+cBrgThrm5pModel;BtmOtFaultDlySum;%R over temperature delayed fault summary;TrueFalseEnum
+cBrgThrm5pModel;BtmOtAlarmSum   ;%R over temperature alarm summary;TrueFalseEnum
+
+cBrgThrm5pModel;BtmAlarmStPhsA;%R transistor alarm state phs-A;EnableDisableEnum
+cBrgThrm5pModel;BtmAlarmStPhsB;%R transistor alarm state phs-B;EnableDisableEnum
+cBrgThrm5pModel;BtmAlarmStPhsC;%R transistor alarm state phs-C;EnableDisableEnum
+cBrgThrm5pModel;BtmAlarmStDphsA;%R diode alarm state phs-A;EnableDisableEnum
+cBrgThrm5pModel;BtmAlarmStDphsB;%R diode alarm state phs-B;EnableDisableEnum
+cBrgThrm5pModel;BtmAlarmStDphsC;%R diode alarm state phs-C;EnableDisableEnum
+cBrgThrm5pModel;BtmIaAbs;%R absolute current feedback phs-A;;Amps
+cBrgThrm5pModel;BtmIbAbs;%R absolute current  feedback phs-B;;Amps
+cBrgThrm5pModel;BtmIcAbs;%R absolute current  feedback phs-C;;Amps
+cBrgThrm5pModel;BtmIaSqr;%R square current  feedback phs-A;;Amp^2
+cBrgThrm5pModel;BtmIbSqr;%R square current feedback phs-B;;Amp^2
+cBrgThrm5pModel;BtmIcSqr;%R square current feedback phs-C;;Amp^2
+cBrgThrm5pModel;BtmUaOld;%R scaled modulator transition cmd phs-A;;Pu
+cBrgThrm5pModel;BtmUbOld;%R scaled modulator transition cmd phs-B;;Pu
+cBrgThrm5pModel;BtmUcOld;%R scaled modulator transition cmd phs-C;;Pu
+cBrgThrm5pModel;BtmUOldThrHi;%R high validation treshold for modulator cmd;;Pu
+cBrgThrm5pModel;BtmUOldThrLo;%R low validation treshold for modulator cmd;;Pu
+cBrgThrm5pModel;BtmTrSwPwr  ;%R transistor switching power loss;;Watts
+cBrgThrm5pModel;BtmTrCondPwr;%R transistor conduction power loss;;Watts
+cBrgThrm5pModel;BtmDswPwr   ;%R diode switching power loss;;Watts
+cBrgThrm5pModel;BtmDcondPwr ;%R diode condution power loss;;Watts
+cBrgThrm5pModel;BtmTrBondPwr;%R transistor bond-wire power loss;;Watts
+cBrgThrm5pModel;BtmDbondPwr ;%R diode bond-wire power loss;;Watts
+cBrgThrm5pModel;BtmTrSwGn;%R transistor approx rate of change of volt;;Volt/S
+cBrgThrm5pModel;BtmTrSwGnT1;%R transtr approx rate of change of volt task1;;Volt/S
+cBrgThrm5pModel;BtmDswGn;%R diode approx rate of change of volt;;Volt/S
+cBrgThrm5pModel;BtmDswGnT1;%R diode approx rate of change of volt task1;;Volt/S
+cBrgThrm5pModel;BtmTrPwrAL;%R lower transistor pwr loss in phs-A;;Watts
+cBrgThrm5pModel;BtmTrPwrAU;%R upper transistor pwr loss in phs-A;;Watts
+cBrgThrm5pModel;BtmTrPwrBL;%R lower transistor pwr loss in phs-B;;Watts
+cBrgThrm5pModel;BtmTrPwrBU;%R upper transistor pwr loss in phs-B;;Watts
+cBrgThrm5pModel;BtmTrPwrCL;%R lower transistor pwr loss in phs-C;;Watts
+cBrgThrm5pModel;BtmTrPwrCU;%R upper transistor pwr loss in phs-C;;Watts
+cBrgThrm5pModel;BtmDpwrAL;%R lower diode pwr loss in phs-A;;Watts
+cBrgThrm5pModel;BtmDpwrAU;%R upper diode pwr loss in phs-A;;Watts
+cBrgThrm5pModel;BtmDpwrBL;%R lower diode pwr loss in phs-B;;Watts
+cBrgThrm5pModel;BtmDpwrBU;%R upper diode pwr loss in phs-B;;Watts
+cBrgThrm5pModel;BtmDpwrCL;%R lower diode pwr loss in phs-C;;Watts
+cBrgThrm5pModel;BtmDpwrCU;%R upper diode pwr loss in phs-C;;Watts
+cBrgThrm5pModel;BtmTrJncTempAUT3;%R upper transistor junction temp phs-A in task3;;degC
+cBrgThrm5pModel;BtmTrJncTempALT3;%R lower transistor junction temp phs-A in task3;;degC
+cBrgThrm5pModel;BtmTrJncTempBUT3;%R upper transistor junction temp phs-B in task3;;degC
+cBrgThrm5pModel;BtmTrJncTempBLT3;%R lower transistor junction temp phs-B in task3;;degC
+cBrgThrm5pModel;BtmTrJncTempCUT3;%R upper transistor junction temp phs-C in task3;;degC
+cBrgThrm5pModel;BtmTrJncTempCLT3;%R lower transistor junction temp phs-C in task3;;degC
+cBrgThrm5pModel;BtmDjncTempAUT3;%R upper diode junction temp phs-A in task3;;degC
+cBrgThrm5pModel;BtmDjncTempALT3;%R lower diode junction temp phs-A in task3;;degC
+cBrgThrm5pModel;BtmDjncTempBUT3;%R upper diode junction temp phs-B in task3;;degC
+cBrgThrm5pModel;BtmDjncTempBLT3;%R lower diode junction temp phs-B in task3;;degC
+cBrgThrm5pModel;BtmDjncTempCUT3;%R upper diode junction temp phs-C in task3;;degC
+cBrgThrm5pModel;BtmDjncTempCLT3;%R lower diode junction temp phs-C in task3;;degC
+cBrgThrm5pModel;BtmCnd1Gn;%R node1 integral thermal gain;;degC/W
+cBrgThrm5pModel;BtmRthNd1ClnRcp;%R reciprocal node1 to coolant thermal resistance;;W/degC
+cBrgThrm5pModel;BtmTrCnd4Gn;%R transistor node4 integral thermal gain;;degC/W
+cBrgThrm5pModel;BtmTrRthNd4Nd3Rcp;%R recip transistor node4 to node3 thermal resistance;;W/degC
+cBrgThrm5pModel;BtmTrRthNd4Nd2Rcp;%R recip transistor node4 to node2 thermal resistance;;W/degC
+cBrgThrm5pModel;BtmDcnd4Gn;%R diode node4 integral thermal gain;;degC/W
+cBrgThrm5pModel;BtmDrthNd4Nd3Rcp;%R reciprocal diode node4 to node3 thermal resistance;;W/degC
+cBrgThrm5pModel;BtmDrthNd4Nd2Rcp;%R reciprocal diode node4 to node2 thermal resistance;;W/degC
+cBrgThrm5pModel;BtmTrJnGn;%R transistor junction RC network thermal gain
+cBrgThrm5pModel;BtmTrRthJnNd4Rcp;%R recip transistor junct to node4 thermal resistance;;W/degC
+cBrgThrm5pModel;BtmDjnGn;%R diode junction RC network thermal gain
+cBrgThrm5pModel;BtmDrthJnNd4Rcp;%R recip diode junct to node4 thermal resistance;;W/degC
+cBrgThrm5pModel;BtmRthNd4Nd2Prll;%R parallel trans and diode therm res betwn node4 and node2 ;;degC/W
+cBrgThrm5pModel;BtmNd2Divider;%R thermal resistance divider ratio onto node2
+cBrgThrm5pModel;BtmRthNd2Nd1Rcp;%R reciprocal node2 to node1 thermal resistance;;W/degC
+cBrgThrm5pModel;BtmTrNd4TempAU;%R upper transistor phs-A node4 temperature;;degC
+cBrgThrm5pModel;BtmTrNd4TempAL;%R lower transistor phs-A node4 temperature;;degC
+cBrgThrm5pModel;BtmTrNd4TempBU;%R upper transistor phs-B node4 temperature;;degC
+cBrgThrm5pModel;BtmTrNd4TempBL;%R lower transistor phs-B node4 temperature;;degC
+cBrgThrm5pModel;BtmTrNd4TempCU;%R upper transistor phs-C node4 temperature;;degC
+cBrgThrm5pModel;BtmTrNd4TempCL;%R lower transistor phs-C node4 temperature;;degC
+cBrgThrm5pModel;BtmDnd4TempAU;%R upper diode phs-A node4 temperature;;degC
+cBrgThrm5pModel;BtmDnd4TempAL;%R lower diode phs-A node4 temperature;;degC
+cBrgThrm5pModel;BtmDnd4TempBU;%R upper diode phs-B node4 temperature;;degC
+cBrgThrm5pModel;BtmDnd4TempBL;%R lower diode phs-B node4 temperature;;degC
+cBrgThrm5pModel;BtmDnd4TempCU;%R upper diode phs-C node4 temperature;;degC
+cBrgThrm5pModel;BtmDnd4TempCL;%R lower diode phs-C node4 temperature;;degC
+cBrgThrm5pModel;BtmTrPwrJnNd4AU;%R upper transtr pwr loss flow btwn junct and node4 phs-A;;Watts
+cBrgThrm5pModel;BtmTrPwrJnNd4AL;%R lower transtr pwr loss flow btwn junct and node4 phs-A;;Watts
+cBrgThrm5pModel;BtmTrPwrJnNd4BU;%R upper transtr pwr loss flow btwn junct and node4 phs-B;;Watts
+cBrgThrm5pModel;BtmTrPwrJnNd4BL;%R lower transtr pwr loss flow btwn junct and node4 phs-B;;Watts
+cBrgThrm5pModel;BtmTrPwrJnNd4CU;%R upper transtr pwr loss flow btwn junct and node4 phs-C;;Watts
+cBrgThrm5pModel;BtmTrPwrJnNd4CL;%R lower transtr pwr loss flow btwn junct and node4 phs-C;;Watts
+cBrgThrm5pModel;BtmDpwrJnNd4AU;%R upper diode pwr loss flow btwn junct and node4 phs-A;;Watts
+cBrgThrm5pModel;BtmDpwrJnNd4AL;%R lower diode pwr loss flow btwn junct and node4 phs-A;;Watts
+cBrgThrm5pModel;BtmDpwrJnNd4BU;%R upper diode pwr loss flow btwn junct and node4 phs-B;;Watts
+cBrgThrm5pModel;BtmDpwrJnNd4BL;%R lower diode pwr loss flow btwn junct and node4 phs-B;;Watts
+cBrgThrm5pModel;BtmDpwrJnNd4CU;%R upper diode pwr loss flow btwn junct and node4 phs-C;;Watts
+cBrgThrm5pModel;BtmDpwrJnNd4CL;%R lower diode pwr loss flow btwn junct and node4 phs-C;;Watts
+cBrgThrm5pModel;BtmTrPwrAUT2;%R upper transtr pwr flow into junct phs-A in task2;;Watts
+cBrgThrm5pModel;BtmTrPwrALT2;%R lower transtr pwr flow into junct phs-A in task2;;Watts
+cBrgThrm5pModel;BtmTrPwrBUT2;%R upper transtr pwr flow into junct phs-B in task2;;Watts
+cBrgThrm5pModel;BtmTrPwrBLT2;%R lower transtr pwr flow into junct phs-B in task2;;Watts
+cBrgThrm5pModel;BtmTrPwrCUT2;%R upper transtr pwr flow into junct phs-C in task2;;Watts
+cBrgThrm5pModel;BtmTrPwrCLT2;%R lower transtr pwr flow into junct phs-C in task2;;Watts
+cBrgThrm5pModel;BtmDpwrAUT2;%R upper diode pwr flow into junct phs-A in task2;;Watts
+cBrgThrm5pModel;BtmDpwrALT2;%R lower diode pwr flow into junct phs-A in task2;;Watts
+cBrgThrm5pModel;BtmDpwrBUT2;%R upper diode pwr flow into junct phs-B in task2;;Watts
+cBrgThrm5pModel;BtmDpwrBLT2;%R lower diode pwr flow into junct phs-B in task2;;Watts
+cBrgThrm5pModel;BtmDpwrCUT2;%R upper diode pwr flow into junct phs-C in task2;;Watts
+cBrgThrm5pModel;BtmDpwrCLT2;%R lower diode pwr flow into junct phs-C in task2;;Watts
+cBrgThrm5pModel;BtmTrJncTempAL;%R lower transistor junction temperature phs-A;;degC
+cBrgThrm5pModel;BtmTrJncTempAU;%R upper transistor junction temperature phs-A;;degC
+cBrgThrm5pModel;BtmTrJncTempBL;%R lower transistor junction temperature phs-B;;degC
+cBrgThrm5pModel;BtmTrJncTempBU;%R upper transistor junction temperature phs-B;;degC
+cBrgThrm5pModel;BtmTrJncTempCL;%R lower transistor junction temperature phs-C;;degC
+cBrgThrm5pModel;BtmTrJncTempCU;%R upper transistor junction temperature phs-C;;degC
+cBrgThrm5pModel;BtmDjncTempAL;%R lower diode junction temperature phs-A;;degC
+cBrgThrm5pModel;BtmDjncTempAU;%R upper diode junction temperature phs-A;;degC
+cBrgThrm5pModel;BtmDjncTempBL;%R lower diode junction temperature phs-B;;degC
+cBrgThrm5pModel;BtmDjncTempBU;%R upper diode junction temperature phs-B;;degC
+cBrgThrm5pModel;BtmDjncTempCL;%R lower diode junction temperature phs-C;;degC
+cBrgThrm5pModel;BtmDjncTempCU;%R upper diode junction temperature phs-C;;degC
+cBrgThrm5pModel;BtmTrJncTempMax ;%R state of max transistor junction temp filter;;degC
+cBrgThrm5pModel;BtmTrJncTempErr;%R error beteewn max and filtered transistor junct temp;;degC
+cBrgThrm5pModel;BtmDjncTempMx;%R state of max diode junction temp filter;;degC
+cBrgThrm5pModel;BtmDjncTempErr;%R error beteewn max and filtered diode junct temp;;degC
+cBrgThrm5pModel;BtmJncTempUpGn ;%R filter gain for positive junct temp errors
+cBrgThrm5pModel;BtmJncTempDnGn ;%R filter gain for negative junct temp errors
+cBrgThrm5pModel;BtmTrJncOvrTmpThr;%R transistor junction over-temp trip threshold;;degC
+cBrgThrm5pModel;BtmTrJncOvrTmpOn;%R transistor junction over-temp alarm On level;;degC
+cBrgThrm5pModel;BtmTrJncOvrTmpOff;%R transistor junction diagnostic over-temp alarm Off level;;degC
+cBrgThrm5pModel;BtmDjncOvrTempThr;%R diode junction over-temp trip threshold;;degC
+cBrgThrm5pModel;BtmDjncOvrTempOn;%R diode junction over-temp alarm On level;;degC
+cBrgThrm5pModel;BtmDjncOvrTempOff;%R diode junction diagnostic over-temp alarm Off level;;degC
+cBrgThrm5pModel;BtmTrPwrNd3Nd2AU;%R upper transtr pwr loss flow btwn node3 and node2 phs-A;;Watts
+cBrgThrm5pModel;BtmTrPwrNd3Nd2AL;%R lower transtr pwr loss flow btwn node3 and node2 phs-A;;Watts
+cBrgThrm5pModel;BtmTrPwrNd3Nd2BU;%R upper transtr pwr loss flow btwnnode4 and node3 phs-B;;Watts
+cBrgThrm5pModel;BtmTrPwrNd3Nd2BL;%R lower transtr pwr loss flow btwn node3 and node2 phs-B;;Watts
+cBrgThrm5pModel;BtmTrPwrNd3Nd2CU;%R upper transtr pwr loss flow btwn node3 and node2 phs-C;;Watts
+cBrgThrm5pModel;BtmTrPwrNd3Nd2CL;%R lower transtr pwr loss flow btwn node3 and node2 phs-C;;Watts
+cBrgThrm5pModel;BtmDpwrNd3Nd2AU;%R upper diode pwr loss flow btwn node3 and node2 phs-A;;Watts
+cBrgThrm5pModel;BtmDpwrNd3Nd2AL;%R lower diode pwr loss flow btwn node3 and node2 phs-A;;Watts
+cBrgThrm5pModel;BtmDpwrNd3Nd2BU;%R upper diode pwr loss flow btwn node3 and node2 phs-B;;Watts
+cBrgThrm5pModel;BtmDpwrNd3Nd2BL;%R lower diode pwr loss flow btwn node3 and node2 phs-B;;Watts
+cBrgThrm5pModel;BtmDpwrNd3Nd2CU;%R upper diode pwr loss flow btwn node3 and node2 phs-C;;Watts
+cBrgThrm5pModel;BtmDpwrNd3Nd2CL;%R lower diode pwr loss flow btwn node3 and node2 phs-C;;Watts
+cBrgThrm5pModel;BtmTrBondPwrAU;%R upper transistor bond-wire power loss phs-A;;Watts
+cBrgThrm5pModel;BtmTrBondPwrBU;%R upper transistor bond-wire power loss phs-B;;Watts
+cBrgThrm5pModel;BtmTrBondPwrCU;%R upper transistor bond-wire power loss phs-C;;Watts
+cBrgThrm5pModel;BtmTrBondPwrAL;%R lower transistor bond-wire power loss phs-A;;Watts
+cBrgThrm5pModel;BtmTrBondPwrBL;%R lower transistor bond-wire power loss phs-B;;Watts
+cBrgThrm5pModel;BtmTrBondPwrCL;%R lower transistor bond-wire power loss phs-C;;Watts
+cBrgThrm5pModel;BtmDbondPwrAU;%R upper diode bond-wire power loss phs-A;;Watts
+cBrgThrm5pModel;BtmDbondPwrBU;%R upper diode bond-wire power loss phs-B;;Watts
+cBrgThrm5pModel;BtmDbondPwrCU;%R upper diode bond-wire power loss phs-C;;Watts
+cBrgThrm5pModel;BtmDbondPwrAL;%R lower diode bond-wire power loss phs-A;;Watts
+cBrgThrm5pModel;BtmDbondPwrBL;%R lower diode bond-wire power loss phs-B;;Watts
+cBrgThrm5pModel;BtmDbondPwrCL;%R lower diode bond-wire power loss phs-C;;Watts
+cBrgThrm5pModel;BtmTrBondPwrAUT2;%R upper transtr bond-wire power loss phs-A in task2;;Watts
+cBrgThrm5pModel;BtmTrBondPwrALT2;%R lower transtr bond-wire power loss phs-A in task2;;Watts
+cBrgThrm5pModel;BtmDbondPwrAUT2;%R upper diode bond-wire power loss phs-A in task2;;Watts
+cBrgThrm5pModel;BtmDbondPwrALT2;%R lower diode bond-wire power loss phs-A in task2;;Watts
+cBrgThrm5pModel;BtmTrBondPwrBUT2;%R upper transtr bond-wire power loss phs-B in task2;;Watts
+cBrgThrm5pModel;BtmTrBondPwrBLT2;%R lower transtr bond-wire power loss phs-B in task2;;Watts
+cBrgThrm5pModel;BtmDbondPwrBUT2;%R upper diode bond-wire power loss phs-B in task2;;Watts
+cBrgThrm5pModel;BtmDbondPwrBLT2;%R lower diode bond-wire power loss phs-B in task2;;Watts
+cBrgThrm5pModel;BtmTrBondPwrCUT2;%R upper transtr bond-wire power loss phs-C in task2;;Watts
+cBrgThrm5pModel;BtmTrBondPwrCLT2;%R lower transtr bond-wire power loss phs-C in task2;;Watts
+cBrgThrm5pModel;BtmDbondPwrCUT2;%R upper diode bond-wire power loss phs-C in task2;;Watts
+cBrgThrm5pModel;BtmDbondPwrCLT2;%R lower diode bond-wire power loss phs-C in task2;;Watts
+cBrgThrm5pModel;BtmPwrNd2Nd1AU;%R upper pwr loss flow between node2 and node1 phs-A;;Watts
+cBrgThrm5pModel;BtmPwrNd2Nd1AL;%R lower pwr loss flow between node2 and node1 phs-A;;Watts
+cBrgThrm5pModel;BtmNd2TempAU;%R upper node2 temperature phs-A;;degC
+cBrgThrm5pModel;BtmNd2TempAL;%R lower node2 temperature phs-A;;degC
+cBrgThrm5pModel;BtmPwrNd2Nd1BU;%R upper pwr loss flow between node2 and node1 phs-B;;Watts
+cBrgThrm5pModel;BtmPwrNd2Nd1BL;%R lower pwr loss flow between node2 and node1 phs-B;;Watts
+cBrgThrm5pModel;BtmNd2TempBU;%R upper node2 temperature phs-B;;degC
+cBrgThrm5pModel;BtmNd2TempBL;%R lower node2 temperature phs-B;;degC
+cBrgThrm5pModel;BtmPwrNd2Nd1CU;%R upper pwr loss flow between node2 and node1 phs-C;;Watts
+cBrgThrm5pModel;BtmPwrNd2Nd1CL;%R lower pwr loss flow between node2 and node1 phs-C;;Watts
+cBrgThrm5pModel;BtmNd2TempCU;%R upper node2 temperature phs-C;;degC
+cBrgThrm5pModel;BtmNd2TempCL;%R lower node2 temperature phs-C;;degC
+cBrgThrm5pModel;BtmTrNd3TempAL;%R lower transistor node3 temperature phs-A;;degC
+cBrgThrm5pModel;BtmTrNd3TempAU;%R upper transistor node3 temperature phs-A;;degC
+cBrgThrm5pModel;BtmTrNd3TempBL;%R lower transistor node3 temperature phs-B;;degC
+cBrgThrm5pModel;BtmTrNd3TempBU;%R upper transistor node3 temperature phs-B;;degC
+cBrgThrm5pModel;BtmTrNd3TempCL;%R lower transistor node3 temperature phs-C;;degC
+cBrgThrm5pModel;BtmTrNd3TempCU;%R upper transistor node3 temperature phs-C;;degC
+cBrgThrm5pModel;BtmDnd3TempAL;%R lower diode node3 temperature phs-A;;degC
+cBrgThrm5pModel;BtmDnd3TempAU;%R upper diode node3 temperature phs-A;;degC
+cBrgThrm5pModel;BtmDnd3TempBL;%R lower diode node3 temperature phs-B;;degC
+cBrgThrm5pModel;BtmDnd3TempBU;%R upper diode node3 temperature phs-B;;degC
+cBrgThrm5pModel;BtmDnd3TempCL;%R lower diode node3 temperature phs-C;;degC
+cBrgThrm5pModel;BtmDnd3TempCU;%R upper diode node3 temperature phs-C;;degC
+cBrgThrm5pModel;BtmPwrNd2Nd1ALT3;%R lower pwr flow btwn node2 and node1 phs-A in task3;;Watts
+cBrgThrm5pModel;BtmPwrNd2Nd1AUT3;%R upper pwr flow btwn node2 and node1 phs-A in task3;;Watts
+cBrgThrm5pModel;BtmPwrNd2Nd1BLT3;%R lower pwr flow btwn node2 and node1 phs-B in task3;;Watts
+cBrgThrm5pModel;BtmPwrNd2Nd1BUT3;%R upper pwr flow btwn node2 and node1 phs-B in task3;;Watts
+cBrgThrm5pModel;BtmPwrNd2Nd1CLT3;%R lower pwr flow btwn node2 and node1 phs-C in task3;;Watts
+cBrgThrm5pModel;BtmPwrNd2Nd1CUT3;%R upper pwr flow btwn node2 and node1 phs-C in task3;;Watts
+cBrgThrm5pModel;BtmNd1TempAL;%R lower node1 temperature phs-A;;degC
+cBrgThrm5pModel;BtmNd1TempAU;%R upper node1 temperature phs-A;;degC
+cBrgThrm5pModel;BtmNd1TempBL;%R lower node1 temperature phs-B;;degC
+cBrgThrm5pModel;BtmNd1TempBU;%R upper node1 temperature phs-B;;degC
+cBrgThrm5pModel;BtmNd1TempCL;%R lower node1 temperature phs-C;;degC
+cBrgThrm5pModel;BtmNd1TempCU;%R upper node1 temperature phs-C;;degC
+cBrgThrm5pModel;BtmNd1TempALT2;%R lower node1 temperature phs-A in task2;;degC
+cBrgThrm5pModel;BtmNd1TempAUT2;%R upper node1 temperature phs-A in task2;;degC
+cBrgThrm5pModel;BtmNd1TempBLT2;%R lower node1 temperature phs-B in task2;;degC
+cBrgThrm5pModel;BtmNd1TempBUT2;%R upper node1 temperature phs-B in task2;;degC
+cBrgThrm5pModel;BtmNd1TempCLT2;%R lower node1 temperature phs-C in task2;;degC
+cBrgThrm5pModel;BtmNd1TempCUT2;%R upper node1 temperature phs-C in task2;;degC
+cBrgThrm5pModel;BtmPwrNd1ClnAL;%R lower pwr flow btwn node1 and coolant phs-A;;Watts
+cBrgThrm5pModel;BtmPwrNd1ClnAU;%R upper pwr flow btwn node1 and coolant phs-A ;;Watts
+cBrgThrm5pModel;BtmPwrNd1ClnBL;%R lower pwr flow btwn node1 and coolant phs-B ;;Watts
+cBrgThrm5pModel;BtmPwrNd1ClnBU;%R upper pwr flow btwn node1 and coolant phs-B ;;Watts
+cBrgThrm5pModel;BtmPwrNd1ClnCL;%R lower pwr flow btwn node1 and coolant phs-C ;;Watts
+cBrgThrm5pModel;BtmPwrNd1ClnCU;%R upper pwr flow btwn node1 and coolant phs-C ;;Watts
+cBrgThrm5pModel;BtmTrSwchPwrAL;%R lower transtr switching power loss phs-A;;Watts
+cBrgThrm5pModel;BtmTrSwchPwrAU;%R upper transtr switching power loss phs-A;;Watts
+cBrgThrm5pModel;BtmTrSwchPwrBL;%R lower transtr switching power loss phs-B;;Watts
+cBrgThrm5pModel;BtmTrSwchPwrBU;%R upper transtr switching power loss phs-B;;Watts
+cBrgThrm5pModel;BtmTrSwchPwrCL;%R lower transtr switching power loss phs-C;;Watts
+cBrgThrm5pModel;BtmTrSwchPwrCU;%R upper transtr switching power loss phs-C;;Watts
+cBrgThrm5pModel;BtmTrCondPwrAL;%R lower transtr conduction power loss phs-A;;Watts
+cBrgThrm5pModel;BtmTrCondPwrAU;%R upper transtr conduction power loss phs-A;;Watts
+cBrgThrm5pModel;BtmTrCondPwrBL;%R lower transtr conduction power loss phs-B;;Watts
+cBrgThrm5pModel;BtmTrCondPwrBU;%R upper transtr conduction power loss phs-B;;Watts
+cBrgThrm5pModel;BtmTrCondPwrCL;%R lower transtr conduction power loss phs-C;;Watts
+cBrgThrm5pModel;BtmTrCondPwrCU;%R upper transtr conduction power loss phs-C;;Watts
+cBrgThrm5pModel;BtmDswchPwrAL;%R lower diode switching power loss phs-A;;Watts
+cBrgThrm5pModel;BtmDswchPwrAU;%R upper diode switching power loss phs-A;;Watts
+cBrgThrm5pModel;BtmDswchPwrBL;%R lower diode switching power loss phs-B;;Watts
+cBrgThrm5pModel;BtmDswchPwrBU;%R upper diode switching power loss phs-B;;Watts
+cBrgThrm5pModel;BtmDswchPwrCL;%R lower diode switching power loss phs-C;;Watts
+cBrgThrm5pModel;BtmDswchPwrCU;%R upper diode switching power loss phs-C;;Watts
+cBrgThrm5pModel;BtmDcondPwrAL;%R lower diode conduction power loss phs-A;;Watts
+cBrgThrm5pModel;BtmDcondPwrAU;%R upper diode conduction power loss phs-A;;Watts
+cBrgThrm5pModel;BtmDcondPwrBL;%R lower diode conduction power loss phs-B;;Watts
+cBrgThrm5pModel;BtmDcondPwrBU;%R upper diode conduction power loss phs-B;;Watts
+cBrgThrm5pModel;BtmDcondPwrCL;%R lower diode conduction power loss phs-C;;Watts
+cBrgThrm5pModel;BtmDcondPwrCU;%R upper diode conduction power loss phs-C;;Watts
+
+cBrgThrm5pModel;BtmTrCondPwrLoss;%R total transistor conduction power loss;;Watts
+cBrgThrm5pModel;BtmTrSwchPwrLoss;%R total transistor switching power loss;;Watts
+cBrgThrm5pModel;BtmDcondPwrLoss;%R total diode conduction power loss;;Watts
+cBrgThrm5pModel;BtmDswchPwrLoss;%R total diode switching power loss;;Watts
+cBrgThrm5pModel;BtmBondPwrLoss;%R total bond-wire power loss;;Watts
+cBrgThrm5pModel;BtmRefTempValid;%R reference temperature validation;TrueFalseEnum
+cBrgThrm5pModel;BtmRefTempValidT2;%R reference temperature validation in task2;TrueFalseEnum
+
+cBrgThrmstr;BthtrTempMaxA;%R max thermistor temp phase-A;;degC
+cBrgThrmstr;BthtrTempMaxB;%R max thermistor temp phase-B;;degC
+cBrgThrmstr;BthtrTempMaxC;%R max thermistor temp phase-C;;degC
+cBrgThrmstr;BthtrTempMaxDb;%R max thermistor temp dynamic brake;;degC
+cBrgThrmstr;BthtrTempMax;%R max thermistor temp out of phase A-B-C;;degC
+cBrgThrmstr;BthtrOtAlarmSum;%R thermistor over temp alarm summary;TrueFalseEnum
+cBrgThrmstr;BthtrOtFltDlySum;%R thermistor over temp trip summary;TrueFalseEnum
+cBrgThrmstr;BthtrPhsImblncOn;Bridge thermistor imbalance alarm On setting;;degC
+cBrgThrmstr;BthtrPhsImblncOff;Bridge thermistor imbalance alarm Off setting;;degC
+
+cBrgThrmstr;BthtrTemp1;%R thermistor 1 temp phase-A top;;degC
+cBrgThrmstr;BthtrTemp2;%R thermistor 2 temp phase-B top;;degC
+cBrgThrmstr;BthtrTemp3;%R thermistor 3 temp phase-C top;;degC
+cBrgThrmstr;BthtrTemp4;%R thermistor 4 temp phase-A bottom;;degC
+cBrgThrmstr;BthtrTemp5;%R thermistor 5 temp phase-B bottom;;degC
+cBrgThrmstr;BthtrTemp6;%R thermistor 6 temp phase-C bottom;;degC
+
+cBrgThrmstr;BthtrVtempFil1;%R filtered thermistor 1 voltage;;Volts
+cBrgThrmstr;BthtrVtempFil2;%R filtered thermistor 2 voltage;;Volts
+cBrgThrmstr;BthtrVtempFil3;%R filtered thermistor 3 voltage;;Volts
+cBrgThrmstr;BthtrVtempFil4;%R filtered thermistor 4 voltage;;Volts
+cBrgThrmstr;BthtrVtempFil5;%R filtered thermistor 5 voltage;;Volts
+cBrgThrmstr;BthtrVtempFil6;%R filtered thermistor 6 voltage;;Volts
+cBrgThrmstr;BthtrVtempFil7;%R filtered thermistor 7 voltage;;Volts
+cBrgThrmstr;BthtrVtempFil8;%R filtered thermistor 8 voltage;;Volts
+cBrgThrmstr;BthtrTempMinA;%R min thermistor temperature phase-A;;degC
+cBrgThrmstr;BthtrTempMinB;%R min thermistor temperature phase-B;;degC
+cBrgThrmstr;BthtrTempMinC;%R min thermistor temperature phase-C;;degC
+cBrgThrmstr;BthtrTempMinD;%R min thermistor temperature dynamic brake;;degC
+
+cBrgThrmstr;BthtrUtFlgA;%R under temperature flag phase-A;TrueFalseEnum
+cBrgThrmstr;BthtrUtFlgB;%R under temperature flag phase-B;TrueFalseEnum
+cBrgThrmstr;BthtrUtFlgC;%R under temperature flag phase-C;TrueFalseEnum
+cBrgThrmstr;BthtrUtFlgD;%R under temperature flag dynamic brake;TrueFalseEnum
+
+cBrgThrmstr;BthtrOtFlgA;%R over temperature flag phase-A;TrueFalseEnum
+cBrgThrmstr;BthtrOtFlgB;%R over temperature flag phase-B;TrueFalseEnum
+cBrgThrmstr;BthtrOtFlgC;%R over temperature flag phase-C;TrueFalseEnum
+cBrgThrmstr;BthtrOtFlgD;%R over temperature flag dynamic brake;TrueFalseEnum
+
+cBrgThrmstr;BthtrImbFlgAB;%R imbalance flag between phases A and B;TrueFalseEnum
+cBrgThrmstr;BthtrImbFlgBC;%R imbalance flag between phases B and C;TrueFalseEnum
+cBrgThrmstr;BthtrImbFlgCA;%R imbalance flag between phases C and A;TrueFalseEnum
+cBrgThrmstr;BthtrImbFlgA;%R imbalance flag within phase-A;TrueFalseEnum
+cBrgThrmstr;BthtrImbFlgB;%R imbalance flag within phase-B;TrueFalseEnum
+cBrgThrmstr;BthtrImbFlgC;%R imbalance flag within phase-C;TrueFalseEnum
+cBrgThrmstr;BthtrImbFlgD;%R imbalance flag within dynamic brake;TrueFalseEnum
+
+cBrgThrmstr;BthtrVltGn;Bridge filter gain for thermistor voltages
+cBrgThrmstr;BthtrFilStlTm;Bridge settle time for thermistor voltage filters;;Sec
+
+cBrgThrmstr;BthtrFilStlTmr;%R filter settling timer;;Sec
+
+cBrgThrmstr;BthtrImbMax;%R Maximum phase-phase imblance current;;Amp
+;Ver_BrgTst;Bridge test base class functional version
+
+cBridgeRebf;CurSensorSclBrg1;%R current sensor scale, bridge 1;;Amp/V
+cBridgeRebf;CurSensorSclPhD;%R current sensor scale, phase-D;;Amp/V
+
+cBridgeRebf;SclLinkVoltsBrg1;%R dc link voltage scale at VCO input, bridge 1;;V/Hz
+
+cBridgeRebf;SclPhsVoltsBrg1;%R phase voltage scale at VCO input, bridge 1;;V/Hz
+
+cBridgeRebf;SclPhsCurBrg1;%R phase current scale at VCO input, bridge 1;;Amp/Hz
+cBridgeRebf;SclPhsCurPhD;%R phase current scale at VCO input, phase-D;;Amp/Hz
+
+cBridgeRebf;HsslFbkWait;%R Wait time for HSSL feedback packet;;uSecs
+cBridgeRebf;HsslFbkWaitMax;%R Max wait time for HSSL feedback packet;;uSecs
+cBridgeRebf;HsslFbkWaitMin;%R Min wait time for HSSL feedback packet;;uSecs
+
+cBridgeRebf;FpgaFltLatch;%R fpga fault has disabled gating;YesNoEnum
+
+cBridgeRebf;BrgFan1SpdRef;%R fan 1 speed reference
+cBridgeRebf;BrgFan2SpdRef;%R fan 2 speed reference
+
+cBridgeRebf;BrgHdwDataVld;%R interface data is valid;TrueFalseEnum
+
+cBridgeRebf;IaBrg1Hdw;%R interface bridge-1 phsA current;;Amps
+cBridgeRebf;IbBrg1Hdw;%R interface bridge-1 phsB current;;Amps
+cBridgeRebf;IcBrg1Hdw;%R interface bridge-1 phsC current;;Amps
+cBridgeRebf;IdBrg1Hdw;%R interface bridge-1 phsD current;;Amps
+
+cBridgeRebf;VabBrg1Hdw;%R interface bridge-1 phsA to phsB voltage;;Volts
+cBridgeRebf;VbcBrg1Hdw;%R interface bridge-1 phsB to phsC voltage;;Volts
+
+cBridgeRebf;VdBrg1Hdw;%R interface bridge-1 pos bus to phsD voltage;;Vdc
+cBridgeRebf;VdcFiberBrgHdw;%R interface pos bus to phsD volt thru fiber-optic;;Vdc
+
+cBridgeRebf;AmbientTemp;%R interface ambient temperature;;degC
+
+cBridgeRebf;Brg1Enabled;%R interface bridge-1 enable;TrueFalseEnum
+cBridgeRebf;Brg1PhDenabled;%R interface bridge-1 phase-D enable;TrueFalseEnum
+
+cBridgeRebf;ActiveDigIn1;%R Rebf 24-Vdc digital input state;TrueFalseEnum
+
+cBridgeRebf;PhsDdsatFltLatch;%R hssl fpga latched individual phs-D dsat fault;TrueFalseEnum
+
+cBridgeRebf;SimSpdEncLatchCnt;%R simulated tach vco counter;;Count
+cBridgeRebf;SimSpdEncDelCntRes;%R simulated tach vco fractional value;;Count
+cBridgeRebf;SimSclSpdEnc;%R simulated tach speed scale
+cBridgeRebf;SimSclSpdEncRcp;%R simulated tach speed scale reciprocal
+cBridgeRebf;SimBrgFbkTachV;%R simulated tach velocity one frame average;;rad/s
+
+cBridgeRebf;TachValue;%R tach AB counter value;;Cnts
+cBridgeRebf;TachMrkrValue;%R tach counter at marker;;Cnts
+cBridgeRebf;TachPhases;%R tach ABM inputs
+cCellTest;CelTstBrgOff;Cell test has turned off %R;TrueFalseEnum
+cCellTest;CelTstStat;%R cell test task status indication;TrueFalseEnum
+cCellTest;CelTstAct;%R cell test task active indication;TrueFalseEnum
+cCellTest;CelTstProtEnab;%R cell test enables diagnostics;YesNoEnum
+cCellTest;CelTstBrgPwrEnb;%R cell test bridge power enable;YesNoEnum
+cCellTest;Hdw_Tst_Req;%R cell test task request;TrueFalseEnum
+cCellTest;Hdw_Tst_ReqT1;%R cell test task request in task1;TrueFalseEnum
+cCellTest;Hdw_Tst_Stat;%R cell test task status;TrueFalseEnum
+cCellTest;Hdw_Tst_StatT2;%R cell test task status in task2;TrueFalseEnum
+cCellTest;Hdw_Tst_Act;%R cell test task is active;TrueFalseEnum
+cCellTest;Hdw_Tst_ActT2;%R cell test task active in task2;TrueFalseEnum
+cCellTest;CT_BrgEnbCmd;%R cell test bridge enable cmd;TrueFalseEnum
+cCellTest;CT_BrgEnbCmdT2;%R cell test bridge enable cmd in task2;TrueFalseEnum
+cCellTest;Pulse_Tmr;%R cell test timer for pulse rising edge;;Counts
+cCellTest;Pulse_Cnt;%R cell test number of whole task1 periods
+cCellTest;Pulse_Tm;%R cell test pulse width to be scheduled;;Sec
+cCellTest;Pulse_Mod;%R cell test pulse width modifies as per-unit of task1;;Pu
+cCellTest;Pulse_Frac;%R cell test fraction after removing multiples of task1;;Pu
+cCellTest;Loop_Cnt;%R cell test task1 state machine loop counter
+cCellTest;CT_I_Acc_Cnt;%R cell test accumulation counter
+cCellTest;CT_Vab_Intgr;%R cell test volt phA-phB integration over time;;Webers
+cCellTest;CT_Vbc_Intgr;%R cell test volt phB-phC integration over time;;Webers
+cCellTest;CT_Ia_Acc;%R cell test phA current accumulation;;Amps
+cCellTest;CT_Ib_Acc;%R cell test phB current accumulation;;Amps
+cCellTest;CT_Ic_Acc;%R cell test phC current accumulation;;Amps
+cCellTest;CelTstCurThrs;%R cell test single current detection threshold;;Amps
+cCellTest;CT_I_Thrsh;%R cell test curent detection threshold;;Amps
+cCellTest;CT_V_Thrsh;%R cell test voltage detection threshold;;Volts
+
+cDbCelTst;DbCtStat;%R cell test status indication;TrueFalseEnum
+cDbCelTst;DbCtAct;%R cell test active indication;TrueFalseEnum
+cDbCelTst;DbCtBrgPwrEnb;;TrueFalseEnum
+cDbCelTst;DbCtActT1;;TrueFalseEnum
+cDbCelTst;DbCtPktRdy;;TrueFalseEnum
+cDbCelTst;DbCtPktRdyT1;;TrueFalseEnum
+cDbCelTst;DbCtPkts
+cDbCelTst;DbCtPktsT1
+cDbCelTst;DbCtReq;;TrueFalseEnum
+cDbCelTst;DbCtT1St
+cDbCelTst;DbCtT2St
+cDbCelTst;DbCtPktDone;;TrueFalseEnum
+cDbCelTst;DbCtPktDoneT2;;TrueFalseEnum
+cDbCelTst;DbCtPktsRm
+cDbCelTst;DbCtIp;%R cell test in progress;TrueFalseEnum
+cDbCelTst;DbCtRmeas;%R cell test measured resistance;;Ohms
+cDbCelTst;DbCtImeasReq;%R cell test req for line rms currents to be measured;TrueFalseEnum
+cDbCelTst;DbCtStateCmd1;%R cell test module-1 gate command
+cDbCelTst;DbCtStateCmd2;%R cell test module-2 gate command
+cDbCelTst;DbCtPsTstReq;%R cell test request for pulse test to execute;TrueFalseEnum
+
+cDbCtl;DbcMod1Out;%R DB1 modulator switch gate command
+cDbCtl;DbcMod2Out;%R DB2 modulator switch gate command
+
+cDbPlsTst;DbPtStat;%R pulse test status indication;TrueFalseEnum
+cDbPlsTst;DbPtAct;%R pulse test active indication;TrueFalseEnum
+cDbPlsTst;DbPtIp;%R pulse test in progress;TrueFalseEnum
+cDbPlsTst;DbPtStateCmd1;%R pulse test gate cmd 1;TrueFalseEnum
+cDbPlsTst;DbPtStateCmd2;%R pulse test gate cmd 2;TrueFalseEnum
+
+cDbPlsTst;DbPtActT1;%R pulse test status passed to task1;TrueFalseEnum
+cDbPlsTst;DbPtPktRdy;%R pulse test packet ready for task1;TrueFalseEnum
+cDbPlsTst;DbPtPktRdyT1;%R pulse test packet ready passed to task1;TrueFalseEnum
+cDbPlsTst;DbPtPkts;%R number of pulse test packets ready
+cDbPlsTst;DbPtPktsT1;%R number of pulse test packets passed to task1
+cDbPlsTst;DbPtReq;%R pulse test request;TrueFalseEnum
+cDbPlsTst;DbPtT1St;%R pulse test task1 state;T1StEnum
+cDbPlsTst;DbPtT2St;%R pulse test task2 state;T2StEnum
+cDbPlsTst;DbPtPktDone;%R pulse test packet done;TrueFalseEnum
+cDbPlsTst;DbPtPktDoneT2;%R pulse test packet done passed to task2;TrueFalseEnum
+cDbPlsTst;DbPtPktsRm;%R number of pulse test packets remaining
+cDbPlsTst;DbPtTypeSt;%R pulse test req-stat-act summary
+
+cDbThrmModel;DtmIavg;%R average current over one execution period;;Amps
+cDbThrmModel;DtmPdisspt;%R average rate of energy dissipation;;Watts;1
+cDbThrmModel;DtmTrJncTemp;%R transistor junction temperature;;degC
+cDbThrmModel;DtmOverload;%R overload alarm indication;TrueFalseEnum
+cDbThrmModel;DtmTrpOverload;%R overload trip indication;TrueFalseEnum
+cDbThrmModel;DtmDsbOverload;%R disabling overload indication;TrueFalseEnum
+cDbThrmModel;DtmSwSt;%R transistor state;EnableDisableEnum
+cDbThrmModel;DtmOtLock;%R transistor to lock-on due to junct over temperature;TrueFalseEnum
+cDbThrmModel;DtmTrTmpRdy;%R transistor thermal model settling indication;TrueFalseEnum
+cDbThrmModel;DtmCoolingReq;%R transistor request for cooling;TrueFalseEnum
+
+cDbThrmModel;DtmSwLoss;%R transistor switching losses;;Watts
+cDbThrmModel;DtmTrSw0Gn;%R transistor current independent gain for switching losses;;Amps
+cDbThrmModel;DtmTrSw1Gn;%R transistor current linear-dependency gain for switching losses
+cDbThrmModel;DtmTrSw2Gn;%R transistor current quadratic-dependemcy gain for switching losses;;1/Amp
+cDbThrmModel;DtmTrCondPwr;%R transistor condution power loss;;Watts
+cDbThrmModel;DtmTrPwrLoss;%R total transistor power loss;;Watts
+cDbThrmModel;DtmTrPwrJnNd3;%R transistor junction to node-3 power flow ;;Watts
+cDbThrmModel;DtmTrPwrJnNd3T2;%R transistor junction to node-3 power passed to task2;;Watts
+cDbThrmModel;DtmTrCjnGn;%R transistor junction integral thermal gain;;degC/W
+cDbThrmModel;DtmTrNd3Temp;%R transistor node-3 temperature;;degC
+cDbThrmModel;DtmTrNd3TempT1;%R transistor node-3 temperature passed to task1;;degC
+cDbThrmModel;DtmTrCnd3Gn;%R transistor node-3 integral thermal gain;;degC/W
+cDbThrmModel;DtmTrPwrNd3Nd2;%R transistor node-3 to node-2 power flow;;Watts
+cDbThrmModel;DtmTrPwrNd3Nd2T3;%R transistor node-3 to node-2 power passed to task3;;Watts
+cDbThrmModel;DtmTrPwrNd2Nd1;%R transistor node-2 to node-1 power flow;;Watts
+cDbThrmModel;DtmTrPwrNd1Clnt;%R transistor node-1 to coolant power flow;;Watts
+cDbThrmModel;DtmRthJnNd3Rcp;%R transtr junction to node-3 reciprocal thermal resistance;;W/degC
+cDbThrmModel;DtmRthNd3Nd2Rcp;%R transtr node-3 to node-2 reciprocal  thermal resistance;;W/degC
+cDbThrmModel;DtmTrJncTempT3;%R transistor junction temperature passed to task3;;degC
+cDbThrmModel;DtmTrNd2Temp;%R transistor node-2 temperature;;degC
+cDbThrmModel;DtmTrNd2TempT2;%R transistor node-2 temperature passed to task2;;degC
+cDbThrmModel;DtmTrNd1Temp;%R transistor node-1 temperature;;degC
+cDbThrmModel;DtmRefTemp;%R transistor thermal model reference temperature;;degC
+
+cDbThrmModel;DtmIo; ;;Amps
+cDbThrmModel;DtmIdel;%R change in induced current from existing estimate;;Amps
+cDbThrmModel;DtmIest;%R estimated current based on RL model;;Amps
+cDbThrmModel;DtmEdtTau;%R 1st-order exponential response per unit of execution period
+cDbThrmModel;DtmE2DtTau;%R half time-constant 1st-order exp response per unit of exec period
+cDbThrmModel;DtmIsqrInt;%R integral of estimated current squared over one exec period;;A^2Sec
+cDbThrmModel;DtmIint;%R integral of estimated current over one execution period;;AmpSec
+cDbThrmModel;DtmAvgIsqr;%R average current squared over one execution period;;Amp^2
+cDbThrmModel;DtmPavg;%R average thermal energy change over one execution period;;Watts
+cDbThrmModel;DtmPavgT3;%R avg thermal energy change passed to task3;;Watts
+cDbThrmModel;DtmTrpTau;%R thermal time constant;;Sec
+cDbThrmModel;DtmOvldTrpTm;%R time for worst thermal overload;;Sec
+cDbThrmModel;DtmDsbTm;%R time for disabling circuit due to continuous overload;;Sec
+cDbThrmModel;DtmIr;%R forcing current when Dc bus voltage is applied;;Amps
+cDbThrmModel;DtmLinkVdcT3;%R Dc-link voltage fbk passed to task3;;Volts
+cDbThrmModel;DtmVdbComp;%R compensated volt feedback for switch state determination;;Volts
+cDbThrmModel;DtmSwStZ1;%R previous transistor state;EnableDisableEnum
+cDbThrmModel;DtmOtLockT3;%R transistor to lock-on indication passed to task3;TrueFalseEnum
+cDbThrmModel;DtmClearOtLock;%R transistor clearing the lock-on condition;TrueFalseEnum
+cDbThrmModel;DtmClearOtLockT1;%R transistor clearing the lock-on condition passed to task1;TrueFalseEnum
+;Ver_PlsTst;Bridge pulse test class functional version
+cPulseTest;PlsTstBrgOff;Pulse test has turned off %R;TrueFalseEnum
+cPulseTest;PlsTstBrgPwrEnb;%R pulse test power enable;TrueFalseEnum
+cPulseTest;PlsTstStat;%R pulse test completion status;TrueFalseEnum
+cPulseTest;PlsTstAct;%R pulse test active indication;TrueFalseEnum
+
+cPulseTest;PlsTstParkStA;%R phase-A sched for park state;PtStateEnum
+cPulseTest;PlsTstParkStB;%R phase-B sched for park state;PtStateEnum
+cPulseTest;PlsTstParkStC;%R phase-C sched for park state;PtStateEnum
+cPulseTest;PlsTstPulseStA;%R phase-A scheduled to pulse;PtStateEnum
+cPulseTest;PlsTstPulseStB;%R phase-B scheduled to pulse;PtStateEnum
+cPulseTest;PlsTstPulseStC;%R phase-C scheduled to pulse;PtStateEnum
+
+cPulseTest;PlsTstMakePls1;%R 1st pulse is being made;TrueFalseEnum
+cPulseTest;PlsTstMakePls2;%R 2nd pulse is being made;TrueFalseEnum
+cPulseTest;PlsTstPreOffCnt1;%R counter for 1st preamble park time
+cPulseTest;PlsTstOnTmr1;%R Pwm timer for rising edge of 1st pulse;;Counts
+cPulseTest;PlsTstOnCnt1;%R counter for scheduling 1st pulse
+cPulseTest;PlsTstOffTmr1;%R Pwm timer for falling edge of 1st pulse;;Counts
+cPulseTest;PlsTstOffCnt1;%R counter for scheduling 1st park time
+cPulseTest;PlsTstPreOffCnt2;%R counter for 2nd preamble park time
+cPulseTest;PlsTstOnTmr2;%R Pwm timer for rising edge of 2nd pulse;;Counts
+cPulseTest;PlsTstOnCnt2;%R counter for scheduling 2nd pulse
+cPulseTest;PlsTstOffTmr2;%R Pwm timer for falling edge of 2nd pulse;;Counts
+cPulseTest;PlsTstOffCnt2;%R counter for scheduling 2nd park time
+
+cPulseTest;PlsTstOnMod1;%R number of task-frames for 1st pulse
+cPulseTest;PlsTstOnFrac1;%R fraction of task-frame for 1st pulse
+cPulseTest;PlsTstOffMod1;%R number of task-frames for 1st park
+cPulseTest;PlsTstOffFrc1;%R fraction of task-frame for 1st park
+cPulseTest;PlsTstOnMod2;%R number of task-frames for 2nd pulse
+cPulseTest;PlsTstOnFrac2;%R fraction of task-frame for 2nd pulse
+cPulseTest;PlsTstOffMod2;%R number of task-frames for 2nd park
+cPulseTest;PlsTstOffFrc2;%R fraction of task-frame for 2nd park
+cPulseTest;PlsTstPreOffMod2;%R number of task-frames for 2nd preamble park
+cPulseTest;PlsTstPreOffFrc2;%R fraction of task-frame for 2nd preamble park
+
+cPulseTest;PlsTstStatus;%R task1 state-machine completion status;TrueFalseEnum
+cPulseTest;PlsTstActive;%R task1 state-machine active indication;TrueFalseEnum
+cPulseTest;PlsTstStMch1State;%R task1 state-machine state variable;PtStMach1Enum
+cPulseTest;PlsTstInReq;%R copy of external pls-test request input;TrueFalseEnum
+cPulseTest;PlsTstStMch2State;%R task2 state-machine state variable;PtStMach2Enum
+cPulseTest;PlsTstStatusT2;%R state-machine status from task1 to task2;TrueFalseEnum
+cPulseTest;PlsTstActiveT2;%R state-machine active from task1 to task2;TrueFalseEnum
+cPulseTest;PlsTstParkCnt;%R counter for scheduling park time
+cPulseTest;PlsTstCheckCnt;%R counter for check-configuration state
+cPulseTest;PlsTstDeactCnt;%R counter for deactivate state
+cPulseTest;PlsTstReq;%R pls-test request for internal use;TrueFalseEnum
+cPulseTest;PlsTstReqT1;%R task1 state-machine request;TrueFalseEnum
+cPulseTest;PlsTstReqT1Z1;%R task1 state-machine request delayed;TrueFalseEnum
+cPulseTest;PlsTstReqT2Z1;%R task2 state-machine request delayed;TrueFalseEnum
+
+cRotorPulseTest;PlsTstOnTime1;Rotor time duration of 1st pulse;;Sec
+cRotorPulseTest;PlsTstOffTime1;Rotor park time duration after 1st pulse;;Sec
+cRotorPulseTest;PlsTstOnTime2;Rotor time duration of 2nd pulse;;Sec
+cRotorPulseTest;PlsTstOffTime2;Rotor park time duration after 2nd pulse;;Sec
+cRotorPulseTest;PlsTstOnTm1Dly;Rotor time duration of 1st delayed pulse;;Sec
+cRotorPulseTest;PlsTstOffTm1Dly;Rotor park time duration after 1st delayed pulse;;Sec
+cRotorPulseTest;PlsTstOnTm2Dly;Rotor time duration of 2nd delayed pulse;;Sec
+cRotorPulseTest;PlsTstOffTm2Dly;Rotor park time duration after 2nd delayed pulse;;Sec
+
+cLinePulseTest;PlsTstOnTime1;%R time duration of 1st pulse;;Sec
+cLinePulseTest;PlsTstOffTime1;%R park time duration after 1st pulse;;Sec
+cLinePulseTest;PlsTstOnTime2;%R time duration of 2nd pulse;;Sec
+cLinePulseTest;PlsTstOffTime2;%R park time duration after 2nd pulse;;Sec
+;Ver_PwmMod2Async;Modulator Class Functional Version Code
+
+cPwmMod2Async;ModCountPerQuant;%R Modulator Count per Quant        (PwmQuant)
+cPwmMod2Async;ModQuantPerFrame;%R Modulator Quant per Frame        (UFull)
+cPwmMod2Async;ModHalfQPerFrame;%R Modulator Half Quant per Frame (UHalf)
+cPwmMod2Async;ModCountPerFrame;%R Modulator Count per Frame        (PwmFull)
+cPwmMod2Async;ModFramePerQuant;%R Modulator Frame per Count
+cPwmMod2Async;ModCountPerAdj;%R Modulator Count per Adjust
+cPwmMod2Async;ModCountMargin;%R Modulator Count Margin from Frame boundaries
+
+cPwmMod2Async;ModPwmChopAct;%R Modulator PWM Chops (Transitions) Actual per Task1;PwmChopEnum
+cPwmMod2Async;ModPwmN;%R Modulator PWM Pulses (Up AND Down) per Task1;;pulses
+
+cPwmMod2Async;ModCroBarAct;%R Modulator CroBar Active;TrueFalseEnum
+
+cPwmMod2Async;ModLkoutIThr;%R Modulator LkoutComp Current for Full Compensation;;A L-N
+cPwmMod2Async;ModLkoutGain;%R Modulator Lkout Comp Gain;;perAmp
+cPwmMod2Async;ModLkoutLim;%R Modulator Lkout Comp +/-Limit;;PU L-N
+
+cPwmMod2Async;ModUaCmd1;%R Modulator PhaseA Internal L-N  Command;;PU L-N
+cPwmMod2Async;ModUbCmd1;%R Modulator PhaseB Internal L-N  Command;;PU L-N
+cPwmMod2Async;ModUcCmd1;%R Modulator PhaseC Internal L-N Command;;PU L-N
+cPwmMod2Async;ModUaCmd2;%R Modulator PhaseA LkoutComp'd Command;;PU L-N
+cPwmMod2Async;ModUbCmd2;%R Modulator PhaseB LkoutComp'd Command;;PU L-N
+cPwmMod2Async;ModUcCmd2;%R Modulator PhaseC LkoutComp'd Command;;PU L-N
+cPwmMod2Async;ModUaCmdLkout;%R Modulator PhaseA LkoutCompensation;;PU L-N
+cPwmMod2Async;ModUbCmdLkout;%R Modulator PhaseB LkoutCompensation;;PU L-N
+cPwmMod2Async;ModUcCmdLkout;%R Modulator PhaseC LkoutCompensation;;PU L-N
+cPwmMod2Async;ModUaCnt;%R Modulator PhaseA Command Counts;;Count
+cPwmMod2Async;ModUbCnt;%R Modulator PhaseB Command Counts;;Count
+cPwmMod2Async;ModUcCnt;%R Modulator PhaseC Command Counts;;Count
+cPwmMod2Async;ModUaCntBrg1;%R Modulator PhaseA  Bridge1  Adjd Cmd Counts;;Count
+cPwmMod2Async;ModUbCntBrg1;%R Modulator PhaseB  Bridge1  Adjd Cmd Counts;;Count
+cPwmMod2Async;ModUcCntBrg1;%R Modulator PhaseC  Bridge1  Adjd Cmd Counts;;Count
+cPwmMod2Async;ModUaCntBrg2;%R Modulator PhaseA  Bridge2  Adjd Cmd Counts;;Count
+cPwmMod2Async;ModUbCntBrg2;%R Modulator PhaseB  Bridge2  Adjd Cmd Counts;;Count
+cPwmMod2Async;ModUcCntBrg2;%R Modulator PhaseC  Bridge2  Adjd Cmd Counts;;Count
+
+cPwmMod2Async;ModUcmCmdExtrn;%R Modulator CommMode Command Externally-Sourced;;PU L-L
+cPwmMod2Async;ModUcmCmdIntrn;%R Modulator CommMode Command Internally-Sourced;;PU L-L
+
+cPwmMod2Async;ModUaCmdM;%R Modulator PhaseA Legacy Modulation Output;;PU L-N
+cPwmMod2Async;ModUbCmdM;%R Modulator PhaseB Legacy Modulation Output;;PU L-N
+cPwmMod2Async;ModUcCmdM;%R Modulator PhaseC Legacy Modulation Output;;PU L-N
+;Ver_BrgCroBarCtl;Crowbar Class Functional Version Code
+
+cBrgCroBarCtl;CroBarSt;CroBar State;CroBarStEnum
+cBrgCroBarCtl;CroBarVdc;CroBar Vdc FIR Filter Output;;Volts;1
+cBrgCroBarCtl;CroBarAct;CroBar Active;TrueFalseEnum
+cBrgCroBarCtl;CroBarUpDn;CroBar Req UpDown;TrueFalseEnum
+cBrgCroBarCtl;CroBarFlt;CroBar Fault Detected;TrueFalseEnum
+cBrgCroBarCtl;CroBarMskIoc;CroBar Req to FPGA to Mask IOC;TrueFalseEnum
+cBrgCroBarCtl;CroBarMskDsat;CroBar Req to FPGA to Mask DeSat;TrueFalseEnum
+cBrgCroBarCtl;CroBarOpnSync;CroBar Req Open Sync Contactor;TrueFalseEnum
+cBrgCroBarCtl;CroBarPE;CroBar Req Power Enable;TrueFalseEnum
+cBrgCroBarCtl;CroBarRst;CroBar Req Reset Faults;TrueFalseEnum
+
+cBrgCroBarCtl;CroBarVdcLvlOn;CroBar Vdc ON   Level in use;;Volts;0
+cBrgCroBarCtl;CroBarVdcLvlOff;CroBar Vdc OFF Level in use;;Volts;0
+cBrgCroBarCtl;CroBarTmr;CroBar Timer for toggling;;sec;3
+cBrgCroBarCtl;CroBarTmr2;CroBar Timer for elapsed time;;sec;3
+
+cBrgCroBarCtl;CroBarIocMskTmr;CroBar Timer for IOC Mask ON duration;;sec;3
+
+cBrgCroBarCtl;CroBarOffPrm;Crowbar turn off permissive;TrueFalseEnum
+cBrgCroBarCtl;CroBarImagOffSq;Crowbar squared current threshold for turn off permissive;;Amp^2
+cBrgCroBarCtl;CroBarImagFilGn;Crowbar filter gain for current
+cBrgCroBarCtl;CroBarImagSqrFil;Crowbar filtered squared current for turn off permissive;;Amp^2
+cBrgCroBarCtl;CroBarImagSqrDel;Crowbar delta of squared current for turn off permissive;;Amp^2
+
+cBrgCurShrReg;CshUaDelRef;Per-unit volt phs-A delta reference;;PU
+cBrgCurShrReg;CshUbDelRef;Per-unit volt phs-B delta reference;;PU
+cBrgCurShrReg;CshUcDelRef;Per-unit volt phs-C delta reference;;PU
+
+cBrgCurShrReg;CshI0Brg1;Common-mode current brg 1;;Amp
+cBrgCurShrReg;CshIalBrg1;Alpha component current brg 1;;Amp
+cBrgCurShrReg;CshIbeBrg1;Beta component current brg 1;;Amp
+
+cBrgCurShrReg;CshI0Brg2;Common-mode current brg 2;;Amp
+cBrgCurShrReg;CshIalBrg2;Alpha component current brg 2;;Amp
+cBrgCurShrReg;CshIbeBrg2;Beta component current brg 2;;Amp
+
+cBrgCurShrReg;CshI0Del;Common-mode current diff between brgs;;Amp
+cBrgCurShrReg;CshIalDel;Alpha current diff between brgs;;Amp
+cBrgCurShrReg;CshIbeDel;Beta current diff between brgs;;Amp
+
+cBrgCurShrReg;CshUaDelRes;Per-unit volt phs-A delta residual;;PU
+cBrgCurShrReg;CshUbDelRes;Per-unit volt phs-B delta residual;;PU
+cBrgCurShrReg;CshUcDelRes;Per-unit volt phs-C delta residual;;PU
+
+
+cBrgCurShrReg;CshI0DelRef;Common-mode delta current residual;;Amp
+cBrgCurShrReg;CshIalDelRef;Alpha component delta current residual;;Amp
+cBrgCurShrReg;CshIbeDelRef;Beta component delta current residual;;Amp
+
+cBrgCurShrReg;CshResGnW ;Resonant regulators gain
+
+cBrgCurShrReg;CshI0DelErr;Common-mode current reg error;;Amp
+cBrgCurShrReg;CshI0DelInt;Common-mode current reg integral term
+cBrgCurShrReg;CshI0DelPrp;Common-mode current reg proportional term
+cBrgCurShrReg;CshI0DelRsnSinInt;Common-mode current resonant reg sin
+cBrgCurShrReg;CshI0DelRsnCosInt;Common-mode current resonant reg cos
+cBrgCurShrReg;CshI0DelRsnOut ;Common-mode current resonant reg output
+cBrgCurShrReg;CshV0DelRef;Common-mode reg ouput reference;;Volt
+
+cBrgCurShrReg;CshIalDelErr;Alpha  current reg error ;;Amp
+cBrgCurShrReg;CshIalDelInt;Alpha  current reg integral term
+cBrgCurShrReg;CshIalDelPrp;Alpha  current reg proportional term
+cBrgCurShrReg;CshIalDelRsnSinInt;Alpha  current resonant reg sin
+cBrgCurShrReg;CshIalDelRsnCosInt;Alpha  current resonant reg cos
+cBrgCurShrReg;CshIalDelRsnOut;Alpha  current resonant reg output
+cBrgCurShrReg;CshValDelRef;Alpha  reg ouput reference ;;Volt
+
+cBrgCurShrReg;CshIbeDelErr;Beta  current reg error ;;Amp
+cBrgCurShrReg;CshIbeDelInt;Beta  current reg integral term
+cBrgCurShrReg;CshIbeDelPrp;Beta  current reg proportional term
+cBrgCurShrReg;CshIbeDelRsnSinInt;Beta  current resonant reg sin
+cBrgCurShrReg;CshIbeDelRsnCosInt;Beta  current resonant reg cos
+cBrgCurShrReg;CshIbeDelRsnOut;Beta  current resonant reg output
+cBrgCurShrReg;CshVbeDelRef;Beta  reg ouput reference ;;Volt
+
+cBrgCurShrReg;CshVaDelRef;Voltage phs-A delta reference ;;Volt
+cBrgCurShrReg;CshVbDelRef;Voltage phs-B delta reference ;;Volt
+cBrgCurShrReg;CshVcDelRef;Voltage phs-C delta reference ;;Volt
+
+cLegTestLowFrq;UxOutLegTstLf;Leg Tst Low Frq x-axis volt cmd;;pu
+cLegTestLowFrq;UyOutLegTstLf;Leg Tst Low Frq y-axis volt cmd;;pu
+cLegTestLowFrq;AngElecLegTstLf;Elec ang btween xy and abc frames;;rad
+cLegTestLowFrq;UcmOutLegTstLf;Leg Tst Low Frq cmm-mode volt cmd;;pu
+cLegTestLowFrq;RegStatLegTstLf;Leg Tst Low Frq reg enb status;EnableDisableEnum
+cLegTestLowFrq;BrgEnbLegTstLf;Leg Tst Low Frq power enable;TrueFalseEnum
+;L_SftyChnOpn;Line bridge safety chain open;TrueFalseTyp
+;R_SftyChnOpn;Rotor bridge safety chain open;TrueFalseTyp
+;R_SyncSwHwSt;Sync switch hardware status
+;SftyChnOpn;Safety chain open;TrueFalseTyp
+;Ps24vOk;Controller PS-24V health indicator;TrueFalseTyp
+;FastBlkReqHw;Fast Blocking request by hardware;TrueFalseTyp
+
+;CCUDiag1;CCU Diagnostic 1
+;CCUDiag2;CCU Diagnostic 2
+;CCUDiag3;CCU Diagnostic 3
+;CCUDiag4;CCU Diagnostic 4
+;CCUDiag5;CCU Diagnostic 5
+;CCUDiag6;CCU Diagnostic 6
+;CCUDiag7;CCU Diagnostic 7
+;CCUDiag8;CCU Diagnostic 8
+;CCUDiag9;CCU Diagnostic 9
+;CCUDiag10;CCU Diagnostic 10
+;CCUDiag11;CCU Diagnostic 11
+;CCUDiag12;CCU Diagnostic 12
+;CCUDiag13;CCU Diagnostic 13
+;PLCDiag1;PLC Diagnostic 1
+;PLCDiag2;PLC Diagnostic 2
+
+;GpSum1Out;General purpose sum 1 output
+;GpSum2Out;General purpose sum 2 output
+;GpMult1Out;General purpose multiply 1 output
+;GpMult2Out;General purpose multiply 2 output
+;PulseCycCtr;Pulse gen cycle ctr
+;PulsePassCtr;Pulse gen pass ctr
+;PulseRptTmr;Pulse gen repeat tmr
+;PulseWaitTmr;Pulse gen wait tmr
+;PeakDetMax;Peak Det max out
+;PeakDetMin;Peak Det min out
+;PulseBrstCtr;Pulse gen burst ctr
+;PulseGenAng;;;Rad
+;PulseGenInit;Pulse generator init
+;PulseGenOut;Pulse generator out
+;PulseState;Pulse generator state
+;GmLVabMtchEr  ;Grid monitor to line Vab mismatch error;;Volts
+;GmLVbcMtchEr;Grid monitor to line Vbc mismatch error;;Volts
+;GmLVcaMtchEr ;Grid monitor to line Vca mismatch error;;Volts
+;GmStrVanMtchEr;Grid monitor to stator Van mismatch error;;Volts
+;GmStrVbnMtchEr ;Grid monitor to stator Vbn mismatch error;;Volts
+;GmStrVcnMtchEr;Grid monitor to stator Vcn mismatch error;;Volts
+;GmStrVanMtchSq;Grid monitor to stator phsA squared mismatch error;;Volt^2
+;GmStrVbnMtchSq;Grid monitor to stator phsB squared mismatch error;;Volt^2
+;GmStrVcnMtchSq;Grid monitor to stator phsC squared mismatch error;;Volt^2
+;LSVabMtchEr;Line to sator Vab mismatch error;;Volts
+;LSVbcMtchEr;Line to sator Vbc mismatch error;;Volts
+;LSVcaMtchEr;Line to sator Vca mismatch error;;Volts
+;GmLnVabMtchSqFl;Squared grid monitor to line phases AB volt error filtered;;Volt^2
+;GmLnVbcMtchSqFl;Squared grid monitor to line phases BC volt error filtered;;Volt^2
+;GmLnVcaMtchSqFl;Squared grid monitor to line phases CA volt error filtered;;Volt^2
+;GmSVMtchErSq ;Squared grid monitor to stator avg voltage error;;Volt^2
+;LSVMtchErSq;Squared line to stator voltage error;;Volt^2
+;GmLnVmtchErFl;Filter for squared grid monitor to line avg voltage error;;Volt^2
+;LSVMtchErFl;Filter for squared line to stator voltage error;;Volt^2
+;XfmrSecVanMtchFl;Filter squared mismatch between Xfmr secondary phsA voltages;;Volt^2
+;XfmrSecVbnMtchFl;Filter squared mismatch between Xfmr secondary phsB voltages
+;XfmrSecVcnMtchFl;Filter squared mismatch between Xfmr secondary phsC voltages
+;GmLVmtchThr;Grid monitor to line volt mismatch threshold squared;;Volt^2
+;GmSVmtchThr;Grid monitor to stator volt mismatch threshold squared;;Volt^2
+;LSVmtchThr;Line to sator volt mismatch threshold squared;;Volt^2
+;XfmrSecVmtchThr;Transformer secondary volt mismatch threshold squared;;Volt^2
+;GmLVmtchErGn;Grid monitor to line volt mismatch filter gain
+;LSVmtchErGn;Line to sator volt mismatch filter gain
+;XfmrSecVmtchGn;Transformer secondary volt mismatch filter gain
+
+;R_TorTrqInt;Rotor torsional torque error integration;;N*m*s
+;R_TorTrqMgPk;Rotor peak torsional torque magnitude since started;;N*m
+;R_TorSlipAct;Rotor torsional slip fault active;YesNoEnum
+;R_TorsAlmAct;Rotor torsional slip alarm active;YesNoEnum
+;FastBlkAct;Fast blocking active;YesNoEnum
+;FastDisAct;Fast disconnect active;YesNoEnum
+;PhsJmpFlag;Phase jump flag;TrueFalseEnum
+
+;OpnPhsSat;Grid monitor current saturation detector
+;OpnPhsSatCtr;Open phase saturation counter
+;IGridAbsMin1;Open phase saturation min of abs values;;Amp
+
+;AuxCnvLoss; Converter auxiliary losses;;Watts
+;BpRiseHi;BPlate temp err high;TrueFalseEnum
+;DFTocHiSelSq;TBD_DFTocHiSelSq;;Arms^2;1
+;GmSVMtchErSq;Gm-S v match err sq;;VllSq
+;RtBrgOff1Dt;TBD_RtBrgOff1Dt;YesNoEnum
+;LnBrgOff1Dt;;YesNoEnum
+;OpnPhsEnable;;TrueFalseEnum
+;R_TorFilHpy2;TBD_R_TorFilHpy2;;RPM
+;R_TorFilLpy2;TBD_R_TorFilLpy2;;RPM
+;R_TorSpdFil1;TBD_R_TorSpdFil1;;RPM
+;R_TorSpdRst;TBD_R_TorSpdRst;;RPM
+;S_VMagPUT3;Stator peak line-to-neutral per unit voltage;;Pu;2
+;AuxLoadIaRms;TBD_AuxLoadIaRms;;A rms
+;AuxLoadIbRms;TBD_AuxLoadIbRms;;A rms
+;AuxLoadIcRms;TBD_AuxLoadIcRms;;A rms
+;CoolPwrIn;Coolant put in power;;Watts
+;DFIaRmsMag;DF Ia^2 filtered;;Arms^2
+;DFIbRmsMag;DF Ib^2 filtered;;Arms^2
+;DFIcRmsMag;DF Ic^2 filtered;;Arms^2
+;GmISumAbsT21;TBD_GmISumAbsT21;;APkAbs
+;GmISumAbsT22;TBD_GmISumAbsT22;;APkAbs
+;GridFltLcFlg;Grid fault local flag
+;GridPwrExpct;TBD_GridPwrExpct;;Watts
+;L_BrgLssComp;L tot pwr loss compn;;Watts
+;L_BrgLssFil;L tot powr loss fil;;Watts
+;LSVMtchErFl;L-S v match err fil;;VllSq
+;LSVMtchErSq;L-S v match err sq;;VllSq
+;Opn3PhsDelta;;TrueFalseEnum
+;Opn3PhsOR;;TrueFalseEnum
+;Opn3PhsWye;;TrueFalseEnum
+;OpnGrdDet1Ph;;TrueFalseEnum
+;OpnPhsATmr1;;;Sec
+;OpnPhsATmr2;;;Sec
+;OpnPhsAZrc1;;TrueFalseEnum
+;OpnPhsAZrc2;;TrueFalseEnum
+;OpnPhsBTmr1;;;Sec
+;OpnPhsBTmr2;;;Sec
+;OpnPhsBZrc1;;TrueFalseEnum
+;OpnPhsBZrc2;;TrueFalseEnum
+;OpnPhsCTmr1;;;Sec
+;OpnPhsCTmr2;;;Sec
+;OpnPhsCZrc1;;TrueFalseEnum
+;OpnPhsCZrc2;;TrueFalseEnum
+;PLCRebootCmd;PLC reboot command
+;PLCRebootEnb;PLC reboot enable
+;R_BrgLssComp;R tot pwr loss compn;;Watts
+;R_BrgLssFil;R tot powr loss fil;;Watts
+;R_TorFilHpu1;TBD_R_TorFilHpu1;;RPM
+;R_TorFilHpu2;TBD_R_TorFilHpu2;;RPM
+;R_TorFilHpy1;TBD_R_TorFilHpy1;;RPM
+;R_TorFilLpu1;TBD_R_TorFilLpu1;;RPM
+;R_TorFilLpu2;TBD_R_TorFilLpu2;;RPM
+;R_TorFilLpy1;TBD_R_TorFilLpy1;;RPM
+;R_TorSpdAcel;TBD_R_TorSpdAcel;;RPM/S
+;R_TorSpdBpFl;Tors spd bpf out;;RPM
+;R_TorSpdBpIn;TBD_R_TorSpdBpIn;;RPM
+;R_TorSpdHpFl;Torsionl spd hpf out;;RPM
+;R_TorSpdHpZ1;TBD_R_TorSpdHpZ1;;RPM
+;R_TorSpdLpFl;Torsionl spd lpf out;;RPM
+;R_TorSpdMag;Torsional spd mag;;RPM
+;R_TorSpdRaw;TBD_R_TorSpdRaw;;RPM
+;R_TorSpdSqr;Torsionl spd squared;;RPM
+;R_TorSpHpAvg;TBD_R_TorSpHpAvg;;RPM
+;R_TorSpRstIn;TBD_R_TorSpRstIn;;RPM
+;R_TorSpRstT2;TBD_R_TorSpRstT2;;RPM/S
+;R_TorSRstInt;TBD_R_TorSRstInt;;RPM
+;R_TorTrqErr;TBD_R_TorTrqErr;;N*m
+;R_TorTrqFil;TBD_R_TorTrqFil;;N*m
+;R_TorTrqMag;Torsional torque mag;;N*m
+;R_TorTrqSpd;TBD_R_TorTrqSpd;;RPM
+;R_TorTstAng;TBD_R_TorTstAng;;Rad
+;R_TorTstOut;TBD_R_TorTstOut;;RPM
+;R_TorTstW;TBD_R_TorTstW;;Rad/S
+;R_TTrqErrDel;TBD_R_TTrqErrDel;;Hz
+;RebootPlsTm;PLC reboot pulse tm
+;RebootTmr;PLC reboot timer
+;DFTocHiSel;DF toc max current;;A rms;1
+;S_VanRmsInst;Stator voltage phsA to neutral instrumented rms;;Vlnrms
+;S_VbnRmsInst;Stator voltage phsB to neutral instrumented rms;;Vlnrms
+;S_VcnRmsInst;Stator voltage phsC to neutral instrumented rms;;Vlnrms
+;S_VabRmsInst;Stator voltage phsA to neutral instrumented rms;;Vllrms
+;S_VbcRmsInst;Stator voltage phsB to neutral instrumented rms;;Vllrms
+;S_Van;Stator voltage phsA to neutral;;Vln,pk
+;S_Vbn;Stator voltage phsB to neutral;;Vln,pk
+;S_Vcn;Stator voltage phsC to neutral;;Vln,pk
+;S_IxFbkMet;Xfmr 6K V winding current X-component for RmsMeter;;A,pk;1
+;S_IyFbkMet;Xfmr 6K V winding current Y-component for RmsMeter;;A,pk;1
+;S_VxFbkMet;Xfmr 6K V winding voltage X-component for RmsMeter;;Vln,pk;1
+;S_VyFbkMet;Xfmr 6K V winding voltage Y-component for RmsMeter;;Vln,pk;1
+;S_PllWFilMet;Stator filtered frequency for Meter;;Hz;1
+;R_IxFbkMet;Rotor bridge current X-component for RmsMeter;;A,pk;1
+;R_IyFbkMet;Rotor bridge current Y-component for RmsMeter;;A,pk;1
+;L_IxFbkMet;Line bridge current X-component for RmsMeter;;A,pk;1
+;L_IyFbkMet;Line bridge current Y-component for RmsMeter;;A,pk;1
+;L_VxFbkMet;Line bridge voltage X-component for RmsMeter;;Vln,pk;1
+;L_VyFbkMet;Line bridge voltage Y-component for RmsMeter;;Vln,pk;1
+;S_WxyDtFilMet;Stator x-y filter gain for rms metering
+;L_WxyDtFilMet;Line x-y filter gain for rms metering
+;R_WxyDtFilMet;Rotor x-y filter gain for rms metering
+;WrmsDtFilMet;Averaging filter gain for rms magnitude metering
+;S_IxFilMet;Stator current X-component filtered for RmsMeter;;A,pk;1
+;S_IyFilMet;Stator current Y-component filtered for RmsMeter;;A,pk;1
+;S_VxFilMet;Stator voltage X-component filtered for RmsMeter;;Vln,pk;1
+;S_VyFilMet;Stator voltage Y-component filtered for RmsMeter;;Vln,pk;1
+;GmIxFilMet;Xfmr 690V winding current X-component filtered for RmsMeter;;A,pk;1
+;GmIyFilMet;Xfmr 690V winding current Y-component filtered for RmsMeter;;A,pk;1
+;GmVxFilMet;Xfmr 690V winding voltage X-component filtered for RmsMeter;;Vln,pk;1
+;GmVyFilMet;Xfmr 690V winding voltage Y-component filtered for RmsMeter;;Vln,pk;1
+;L_IxFilMet;Line bridge current X-component filtered for RmsMeter;;A,pk;1
+;L_IyFilMet;Line bridge current Y-component filtered for RmsMeter;;A,pk;1
+;L_VxFilMet;Line bridger voltage X-component filtered for RmsMeter;;Vln,pk;1
+;L_VyFilMet;Line bridge voltage Y-component filtered for RmsMeter;;Vln,pk;1
+;R_IxFilMet;Rotor bridge current X-component filtered for RmsMeter;;A,pk;1
+;R_IyFilMet;Rotor bridge current Y-component filtered for RmsMeter;;A,pk;1
+;S_IrmsMet;Stator current fundamental RMS Meter;;Arms;1
+;S_VrmsMet;Stator voltage fundamental RMS Meter;;Vllrms;1
+;GmIrmsMet;Xfmr 690V winding current fundamental RMS Meter;;Arms;1
+;GmVrmsMet;Xfmr 690V winding voltage fundamental RMS Meter;;Vllrms;1
+;L_IrmsMet;Line bridge current fundamental RMS Meter;;Arms;1
+;L_VrmsMet;Line bridge voltage fundamental RMS Meter;;Vllrms;1
+;R_IrmsMet;RotorConv current fundamental RMS Meter;;Arms;1
+;R_VrmsMet;RotorConv voltage fundamental RMS Meter;;Vllrms;1
+;R_IrmsMetT2;RotorBrg1 Current;;Arms;1
+
+;GmMaxCurOut;690V Gm maximum current;;Arms
+;L_MaxCurOut;Line converter max current;;Arms
+
+;L_ILimCnv;Line converter minimum current limit for dynamic calculation;;Arms
+;GmILimCnv;Grid monitor minimum current limit for dynamic calculation;;Arms
+
+;L_FuseMaxCurOut;ACLFU max current;;Arms
+;L_FuseILimCnv;ACLFU min current limit for dynamic calculation;;Arms
+
+
+
+;R_SpdFbkMet;SigMet OpPoint Speed Feedback;;RPM;1
+;R_TrqCmdMet;SigMet OpPoint Torque Command;;kNm;2
+;R_TrqCmdTtMet;SigMet OpPoint Torque Command Total ;;kNm;2
+;QregCmdMet;SigMet OpPoint Var Command;;kVr;1
+;R_TrqFbkMet;SigMet OpPoint Torque Calc;;kNm;2
+;PwrCmdGridMet;SigMet OpPoint Power Command to Transformer Secondary;;kW;2
+;GmPwrGridMet;SigMet OpPoint Total Grid Power;;kW;2
+;GmQPwrGridMet;SigMet OpPoint Total Grid Vars;;kVr;2
+
+;S_VrmsMetT2;SigMet Stator Voltage;;Vrms;1
+;S_IrmsMetT2;SigMet Stator Current;;Arms;1
+;S_PwrMet;SigMet Stator Power;;kW;1
+;S_QPwrMet;SigMet Stator Vars;;kVr;1
+;GmVrmsMetT2;SigMet 690 GM Voltage;;Vrms;1
+;GmIrmsMetT2;SigMet 690 GM Current;;Arms;1
+;GmPwrMet;SigMet 690 GM Power;;kW;1
+;GmQPwrMet;SigMet 690 GM Vars;;kVr;1
+;GmFrqMet;SigMet 690 GM Freq;;Hz;2
+
+;L_VrmsMetT2;SigMet LineConv Voltage;;Vrms;1
+;L_IrmsMetT2;SigMet LineConv Current;;Arms;1
+;L_PwrMet;SigMet LineConv Power;;kW;1
+;L_QPwrMet;SigMet LineConv Vars;;kVr;1
+;R_VdcMet;SigMet DcLink Voltage;;Volts;1
+;R_VrmsMetT2;SigMet RotorConv Voltage;;Vrms;1
+;R_IrmsMetT2;SigMet RotorConv Current;;Arms;1
+;R_PwrMet;SigMet RotorConv Power;;kW;1
+;R_QPwrMet;SigMet RotorConv Vars;;kVr;1
+;R_FrqMet;SigMet RotorConv Freq;;Hz;1
+;R_IrmsMetT2;SigMet RotorBrg1 Current;;Arms;1
+
+;L_AmbientTempT2;SigMet PcbTemp L Rebf Hsla temp;;deg C;1
+;R_AmbientTempT2;SigMet PcbTemp R Rebf Hsla temp;;deg C;1
+;Fan1DutyMetT2;SigMet FanCtrl1 DutyCommand;;pu;2
+;Fan2DutyMetT2;SigMet FanCtrl2 DutyCommand;;pu;2
+;PdcHtrOnCmdT2;SigMet Heater Conv Ac entry heater ctrl;TrueFalseEnum
+;CccHtrOnCmdT2;SigMet Heater Conv ctrl cab heater ctrl;TrueFalseEnum
+;CfcHtrOnCmdT2;SigMet Heater Conv filter cab heater ctrl;TrueFalseEnum
+
+;CfcTempT2;SigMet Thrmstr Conv filter cabinet temp;;deg C;1
+;PdcTempT2;SigMet Thrmstr Conv AC entry cab temp;;deg C;1
+;LqdTempT2;SigMet Thrmstr Liquid coolant temp;;deg C;1
+;InlAirForHtr;Inlt air for htr ctl;;deg C
+;InletAirTemp;Inlet air temp;;deg C;1
+;InletAirTempT2;SigMet Thrmstr Air inlet temp conv ctrl cab;;deg C;1
+;PdcCabEntryTemp;Pdc Cable Entry Temperature;;degC;1
+;PdcCabEntryTempT2;Pdc Cable Entry Temperature T2;;deg C;1
+;AclfuTempT2;SigMet Thrmstr Ac line fuse bus temp;;deg C;1
+;AirTempGenInlet;Air temp generator inlet;;degC;1
+;AirTempGenIn;Air temp generator inlet for limiter;;degC;1
+;AirTempGenInFil;Air temp generator inlet, filtered;;degC;1
+;AirTempGnSensOk;Air temp sensor generator inlet ok;TrueFalseEnum
+;AirTempGnSensAct;Ari temp generator generator sensor being used;TrueFalseEnum
+;AirTempDripLoop;Air temp drip loop;;degC;1
+;AirTempDlFil;Air temp drip loop, filtered;;degC;1
+;AirTempGenCab;Air temp cable for limiter;;degC;1
+;AirTempDlSensOk;Air temp sensor drip loop ok;TrueFalseEnum
+;AirTempDlSensAct;Ari temp generator sensor being used;TrueFalseEnum
+
+
+;L_BpTemp1T2;SigMet LineConv BpTemp1  Phase A Heatsink Top;;deg C;1
+;L_BpTemp2T2;SigMet LineConv BpTemp2  Phase B Heatsink Top;;deg C;1
+;L_BpTemp3T2;SigMet LineConv BpTemp3  Phase C Heatsink Top;;deg C;1
+;L_BpTemp4T2;SigMet LineConv BpTemp4  Phase A Heatsink Bottom;;deg C;1
+;L_BpTemp5T2;SigMet LineConv BpTemp5  Phase B Heatsink Bottom;;deg C;1
+;L_BpTemp6T2;SigMet LineConv BpTemp6  Phase C Heatsink Bottom;;deg C;1
+;R_BpTemp1T2;SigMet RotorBrg1 BpTemp1  Phase A Heatsink Top;;deg C;1
+;R_BpTemp2T2;SigMet RotorBrg1 BpTemp2  Phase B Heatsink Top;;deg C;1
+;R_BpTemp3T2;SigMet RotorBrg1 BpTemp3  Phase C Heatsink Top;;deg C;1
+;R_BpTemp4T2;SigMet RotorBrg1 BpTemp4  Phase A Heatsink Bottom;;deg C;1
+;R_BpTemp5T2;SigMet RotorBrg1 BpTemp5  Phase B Heatsink Bottom;;deg C;1
+;R_BpTemp6T2;SigMet RotorBrg1 BpTemp6  Phase C Heatsink Bottom;;deg C;1
+;R_BpTemp7T2;SigMet DynBrk1 BpTemp7  Heatsink Top;;deg C;1
+;R_BpTemp8T2;SigMet DynBrk1 BpTemp8  Heatsink Bottom;;deg C;1
+
+;L_BrgTjncTmpMxT2;SigMet LineConv ThermModel Max trans junc temp;;deg C;1
+;L_BrgDjncTmpMxT2;SigMet LineConv ThermModel Max diode junc temp;;deg C;1
+;L_BrgPwrLossMetT2;SigMet LineConv ThermModel Net power loss bridge;;Watts;0
+
+;R_BrgTjncTmpMxT2;SigMet RotorBrg1 ThermModel Max trans junc temp;;deg C;1
+;R_BrgDjncTmpMxT2;SigMet RotorBrg1 ThermModel Max diode junc temp;;deg C;1
+;R_BrgPwrLossMet;SigMet RotorBrg1 ThermModel Net power loss bridge;;Watts;0
+
+
+;S_TocHiSelT2;Stator TOC Hi-Select;;Arms;1
+;S_TocThrDyT2;Stator TOC Trip Point;;Arms;1
+;GmTocHiSelT2;Grid Mon TOC Hi-Sel;;Arms;1
+;GmTocThrDyT2;Grid Mon TOC Trip Pt;;Arms;1
+;DfTocHiSelT2;Distortion Filtr TOC Hi-Sel;;Arms;1
+;L_FuseTocHiSel;ACLFuse TOC Hi-Select;;Arms;1
+;L_FuseTocHiSelT2;ACLFuse TOC Hi-Select task 2;;Arms;1
+;L_FuseTocThrDyT2;ACLFuse TOC Trip Point;;Arms;1
+
+;L_TocHiSelT2;Line Conv TOC Hi-Sel;;Arms;1
+;L_TocThrDyT2;Line Conv TOC Trip Pt;;Arms;1
+;R_TocHiSelT2;Rotor Conv TOC Hi-Sel;;Arms;1
+;R_TocThrDyT2;Rotor Conv Trip Pt;;Arms;1
+;R_TocHiSelT2;Rotor 1 Brg TOC Hi-Sel;;Arms;1
+;R_TocThrDyT2;Rotor 1 Brg TOC Trip Pt;;Arms;1
+
+
+;L_690AeadDin3;Line Aead CIN03-P24Good;TrueFalseEnum
+;L_690AeadDin4;Line Aead CIN04;TrueFalseEnum
+;L_690AeadDin5;Line Aead CIN05;TrueFalseEnum
+;L_690AeadDin6;Line Aead CIN06;TrueFalseEnum
+;L_690AeadDin9;Line Aead CIN09;TrueFalseEnum
+;L_690AeadK1Out;Line Aead relay K1;TrueFalseEnum
+;L_690AeadK2Out;Line Aead relay K2-SyncSw;TrueFalseEnum
+;L_690AeadK3Out;Line Aead relay K3;TrueFalseEnum
+;L_690AeadK4Out;Line Aead relay K4;TrueFalseEnum
+;L_690AeadK5Out;Line Aead relay K5;TrueFalseEnum
+;L_690AeadK6Out;Line Aead relay K6;TrueFalseEnum
+;L_690AeadK7Out;Line Aead relay K7;TrueFalseEnum
+;L_690AeadK8Out;Line Aead relay K8;TrueFalseEnum
+;L_690AeadK9Out;Line Aead relay K9;TrueFalseEnum
+
+;R_6KAeadDin3;6KV Aead CIN03;TrueFalseEnum
+;R_6KAeadDin4;6KV Aead CIN04;TrueFalseEnum
+;R_6KAeadDin5;6KV Aead CIN05;TrueFalseEnum
+;R_6KAeadDin6;6KV Aead CIN06;TrueFalseEnum
+;R_6KAeadDin9;6KV Aead CIN09-PwrEnb;TrueFalseEnum
+;R_6KAeadK1;6KV Aead relay K1;TrueFalseEnum
+;R_6KAeadK2;6KV Aead relay K2;TrueFalseEnum
+;R_6KAeadK3;6KV Aead relay K3;TrueFalseEnum
+;R_6KAeadK4;6KV Aead relay K4;TrueFalseEnum
+;R_6KAeadK5;6KV Aead relay K5-CCCHTRs;TrueFalseEnum
+;R_6KAeadK6;6KV Aead relay K6-CICHTRs;TrueFalseEnum
+;R_6KAeadK7;6KV Aead relay K7-LQDHTR;TrueFalseEnum
+;R_6KAeadK8;6KV Aead relay K8-PdcHTR;TrueFalseEnum
+;R_6KAeadK9;6KV Aead relay K9-Gm/SftyChain;TrueFalseEnum
+
+;R_GenAeadDin3;Generator Aead CIN03;TrueFalseEnum
+;R_GenAeadDin4;Generator Aead CIN04;TrueFalseEnum
+;R_GenAeadDin5;Generator Aead CIN05;TrueFalseEnum
+;R_GenAeadDin6;Generator Aead CIN06;TrueFalseEnum
+;R_GenAeadDin9;Generator Aead CIN09-PwrEnb;TrueFalseEnum
+;R_GenAeadK1;Generator Aead realy K1-R1OVCR1;TrueFalseEnum
+;R_GenAeadK2;Generator Aead realy K2-R1OVCR2;TrueFalseEnum
+;R_GenAeadK3;Generator Aead realy K3-R2OVCR1;TrueFalseEnum
+;R_GenAeadK4;Generator Aead realy K4-R2OVCR2;TrueFalseEnum
+;R_GenAeadK5;Generator Aead realy K5;TrueFalseEnum
+;R_GenAeadK6;Generator Aead realy K6;TrueFalseEnum
+;R_GenAeadK7;Generator Aead realy K7;TrueFalseEnum
+;R_GenAeadK8;Generator Aead realy K8;TrueFalseEnum
+;R_GenAeadK9;Generator Aead realy K9;TrueFalseEnum
+;GmIaRmsVlt;Gm ph a VCO volts;;V rms
+;GmIbRmsVlt;Gm ph b VCO volts;;V rms
+;GmIcRmsVlt;Gm ph c VCO volts;;V rms
+;GmVanRmsIn;TBD_GmVanRmsIn;;V rms
+;GmVbnRmsIn;TBD_GmVbnRmsIn;;V rms
+;GmVcnRmsIn;TBD_GmVcnRmsIn;;V rms
+;L_IaRmsInst;L rms phase A curr;;A rms
+;L_IbRmsInst;L rms phase B curr;;A rms
+;L_IcRmsInst;L rms phase C curr;;A rms
+;PllTrqRed;Torque reduction due to pll error filtered;;Nm
+;PwrPllAng;TBD_PwrPllAng;;Rad
+;PwrPllWFF;TBD_PwrPllWFF;;Rad/s
+;R_IaRmsInst;R rms phase A curr;;A rms
+;R_IbRmsInst;R rms phase B curr;;A rms
+;R_IcRmsInst;R rms phase C curr;;A rms
+;S_IaRmsVolts;S ph A rms VCO volts;;Vrms
+;S_IbRmsVolts;S ph B rms VCO volts;;V rms
+;S_IcRmsVolts;S ph C rms VCO volts;;Vrms
+;S_VabRmsInst;S Vab rms volts;;Vrms
+;S_VbcRmsInst;S Vbc rms volts;;Vrms
+;GmIaRmsIn;Gm rms ph a curr;;A rms
+;GmIbRmsIn;Gm rms ph b curr;;A rms
+;GmIcRmsIn;Gm rms ph c curr;;A rms
+;LvPwrVpuIn;Volt pu in,Pwr red;;Ppu;2
+;LvPwrVpuOut;Pwr pu out trq red;;Tpu;2
+;PllErrPwrIn;TBD_PllErrPwrIn;;V pu
+;PwrCmdPuT2;;;Pwrpu
+;PwrLimVMagPU;Power volt lim pu;;PwrPu;2
+;PwrPllAngFil;TBD_PwrPllAngFil;;Rad
+;PwrPllDelAng;TBD_PwrPllDelAng;;TrqPu
+;PwrPllMod;TBD_PwrPllMod;;Watts
+;S_IaRmsInst;S rms phase A curr;;Arms
+;S_IbRmsInst;S rms phase B curr;;Arms
+;S_IcRmsInst;S rms phase C curr;;Arms
+;TrqPllMeld;TBD_TrqPllMeld;;N*m
+
+;CCUParmRdy;CCU parms ready
+;CoolPwrIn_kW;Total kilowatt power introduced into coolant;;kW;1
+
+;GmPllW_Hz;Line Grid monitor PLL frequency;;Hz;3
+;GmPwr_kW;Line Grid monitor real kilowatt power;;kW;1
+;GmQPwr_kVr;Line Grid monitor reactive kilovar power;;kVar;1
+;GmSPwr_kVA;Line Grid monitor apparent kilovolt-amp power;;kVA;1
+
+;GmTrqFbkFil_kNm;Line Grid monitor effective torque;;kNm;3
+
+;L_PwrLine_kW;Line converter real kilowatt power;;kW;1
+;L_VarHrmF_kVr;Line converter harmonic filter reactive kilovar power;;kVar;1
+;L_VarLine_kVr;Line converter reactive kilovar power;;kVar;1
+
+;PhiCmd_deg;Power factor angle command;;deg;1
+;PLCParmReq;PLC parms sent
+;QregCmd_kVr;Reactive power regulator kilovar command;;kVar;1
+
+;R_CnvOutPwr_kW;Rotor converter real kilowatt power;;kW;1
+;R_TrqCmdIn_kNm;Rotor converter torque command;;kNm;3
+;R_TrqFbk_kNm;Rotor converter torque feedback;;kNm;3
+
+;R_DtmPdisspt_kW;DB Resistor 1 dissipated kilowatt power;;kW;1
+
+;S_PllW_Hz;Stator PLL frequency;;Hz;3
+;S_Pwr_kW;Stator real kilowatt power;;kW;1
+;S_QPwr_kVr;Stator reactive kilovar power;;kVar;1
+
+;VARCmd_kVr;Var-mode reactive kilovar power command;;kVar;1
+
+;WBDelSpdPwr_kW;WindBoost Delta SpeedPower;;kW;1
+;WBDelSpeed;WindBoost Delta Speed;;RPM;0
+;WBDelTorque_kNm;WindBoost Delta Torque;;kNm;3
+;WBDelSpdTrqAct;WindBoost Delta SpeedTorque Active;TrueFalseEnum
+
+;TrqRefRem_kNm;Torque Reference remote;;kNm;3
+;VarRefRem_kVr;Var Reference remote;;kVar;1
+;PhiRefRem_deg;Phi Reference remote;;deg;1
+;R_SpdSimRem;Simulated Rotor Speed remote;;RPM;0
+
+
+;GmOVAlmFlg;Grid Monitor OV Alarm flag;TrueFalseEnum
+;GmPwrFactorGrid;Grid Monitor Power Factor;;;2
+
+;L_VdcFbkT2;DC Link Feedback;;Vdc;1
+
+;SafetyChnStop;Safety chain stop active;TrueFalseEnum
+;OverSpeedTrip;Over-speed trip active;TrueFalseEnum
+;UnderSpeedTrip;Under-speed trip active;TrueFalseEnum
+;RPNWSupportd;ion RPNW supported
+;RPNWSupportd;RPNW mode supported;TrueFalseEnum
+;SyncSwOn;Sync Switch On
+;VarRegSupptd;VAR mode supported
+;TrqRefRem;Remote Torque Ref;;kNm;1
+;VarRefRem;Remote Var Ref;;kVar
+;PhiCmd;System pwr angl cmd;;Rad
+;FastDisReq;Fast disconnect request;TrueFalseTyp
+;GmVAsy2AlmF;GM volt asymm 2 alarm;TrueFalseTyp
+;GmVAsy2TrpF;GM volt asymm 2 trip;TrueFalseTyp
+;GmOV3Cap;GM OV 3 capability;;V pu;2
+;GmOV3CapTm;GM OV 3 capability time;;Sec;2
+;GmOV3Trp12F;GM OV 3,1-2 trip;TrueFalseTyp
+;GmOV3Trp1NF;GM OV 3,1-N trip;TrueFalseTyp
+;GmOV3Trp23F;GM OV 3,2-3 trip;TrueFalseTyp
+;GmOV3Trp2NF;GM OV 3,2-N trip;TrueFalseTyp
+;GmOV3Trp31F;GM OV 3,3-1 trip;TrueFalseTyp
+;GmOV3Trp3NF;GM OV 3,3-N trip;TrueFalseTyp
+;GmOV3TrpFlg;GM OV lev 3 trp summ
+;GmOV3TrpLLF;GM OV 3 all L-L trip;TrueFalseTyp
+;GmOV3TrpLNF;GM OV 3 all L-N trip;TrueFalseTyp
+;GmOV3TrpTmr1;Gm OV lv 3 ph1 tmr;;Sec;1
+;GmOV3TrpTmr2;Gm OV lv 3 ph2 tmr;;Sec;1
+;GmOV3TrpTmr3;Gm OV lv 3 ph3 tmr;;Sec;1
+;GmOV4Cap;GM OV 4 capability;;V pu;2
+;GmOV4CapTm;GM OV 4 capability time;;Sec;2
+;GmOV4Trp12F;GM OV 4,1-2 trip;TrueFalseTyp
+;GmOV4Trp1NF;GM OV 4,1-N trip;TrueFalseTyp
+;GmOV4Trp23F;GM OV 4,2-3 trip;TrueFalseTyp
+;GmOV4Trp2NF;GM OV 4,2-N trip;TrueFalseTyp
+;GmOV4Trp31F;GM OV 4,3-1 trip;TrueFalseTyp
+;GmOV4Trp3NF;GM OV 4,3-N trip;TrueFalseTyp
+;GmOV4TrpFlg;GM OV lev 4 trp summ
+;GmOV4TrpLLF;GM OV 4 all L-L trip;TrueFalseTyp
+;GmOV4TrpLNF;GM OV 4 all L-N trip;TrueFalseTyp
+;GmOV4TrpTmr1;Gm OV lv 4 ph1 tmr;;Sec;1
+;GmOV4TrpTmr2;Gm OV lv 4 ph2 tmr;;Sec;1
+;GmOV4TrpTmr3;Gm OV lv 4 ph3 tmr;;Sec;1
+
+;GmUV5Trp12F;GM UV 5,1-2 trip;TrueFalseTyp
+;GmUV5Trp1NF;GM UV 5,1-N trip;TrueFalseTyp
+;GmUV5Trp23F;GM UV 5,2-3 trip;TrueFalseTyp
+;GmUV5Trp2NF;GM UV 5,2-N trip;TrueFalseTyp
+;GmUV5Trp31F;GM UV 5,3-1 trip;TrueFalseTyp
+;GmUV5Trp3NF;GM UV 5,3-N trip;TrueFalseTyp
+;GmUV5TrpFlg;GM UV lev 5 trp summ
+;GmUV5TrpLLF;GM UV 5 all L-L trip;TrueFalseTyp
+;GmUV5TrpLNF;GM UV 5 all L-N trip;TrueFalseTyp
+;GmUV5TrpTmr1;Gm uv lv 5 ph1 tmr;;Sec;1
+;GmUV5TrpTmr2;Gm uv lv 5 ph2 tmr;;Sec;1
+;GmUV5TrpTmr3;Gm uv lv 5 ph3 tmr;;Sec;1
+;GmUV6Trp12F;GM UV 6,1-2 trip;TrueFalseTyp
+;GmUV6Trp1NF;GM UV 6,1-N trip;TrueFalseTyp
+;GmUV6Trp23F;GM UV 6,2-3 trip;TrueFalseTyp
+;GmUV6Trp2NF;GM UV 6,2-N trip;TrueFalseTyp
+;GmUV6Trp31F;GM UV 6,3-1 trip;TrueFalseTyp
+;GmUV6Trp3NF;GM UV 6,3-N trip;TrueFalseTyp
+;GmUV6TrpFlg;GM UV lev 6 trp summ
+;GmUV6TrpLLF;GM UV 6 all L-L trip;TrueFalseTyp
+;GmUV6TrpLNF;GM UV 6 all L-N trip;TrueFalseTyp
+;GmUV6TrpTmr1;Gm uv lv 6 ph1 tmr;;Sec;1
+;GmUV6TrpTmr2;Gm uv lv 6 ph2 tmr;;Sec;1
+;GmUV6TrpTmr3;Gm uv lv 6 ph3 tmr;;Sec;1
+;GmUVTrpSum;GM under voltage trip summary;TrueFalseTyp
+;GmOVTrpSum;GM over voltage trip summary;TrueFalseTyp
+;GmVAsyTrpSum;GM voltage asymmetry trip summary;TrueFalseTyp
+;GmUFTrpSum;GM under frequency trip summary;TrueFalseTyp
+;GmOFTrpSum;GM over frequency trip summary;TrueFalseTyp
+
+;GmTocThrDy;690 Gm over-current dymanic trip threshold;;Amps
+;GmTocAlmOnDy;690 Gm over-current dymanic alarm on threshold;;Amps
+;GmTocAlmOffDy;690 Gm over-current dymanic alarm off threshold;;Amps
+
+;GmDscmVxPPu;Positive sequence discrimator x-component in per unit;;Pu
+;GmDscmVMgPPu;Positive sequence discrimator magnitude in per unit;;Pu
+;GmDsVMgPPuIn;Positive sequence discrimator magnitude in per unit clampped;;Pu
+;GmDsVMagRcp;Reciprocal of GmDsVMgPPuIn;;1/Pu
+;GmVxVmgRtio;Result of GmDscmVxPT2/GmDscmVMagP
+;ISysCmdSFUc;Command to reduce system current un-clamped;;Pu
+;ISysCmdSF;Command to reduce system current;;Pu
+
+;GmVLoNotTmr;Gm voltage not low timer;;Sec
+;GmVLoPlsTmr;Gm low voltage pulse timer;;Sec
+;GmVLoPlsRdy;Gm low voltage pulse ready;TrueFalseTyp
+;GmVLoPulse;Gm low voltage pulse;TrueFalseTyp
+
+;GmIxFbk;Gm real current fbk;;A pk;1
+;GmIxFbkT2;Gm real current fbk in task2;;A pk;1
+;GmIxFbkT3;Gm real current fbk in task3;;A pk
+;GmIxT3Fil;Gm real current task3 filtered;;A pk;1
+;GmIyFbk;Gm reactive current fbk;;A pk;1
+;GmIyFbkT2;Gm reactive current fbk in task2;;A pk;1
+;GmIyFbkT3;Gm reactive current fbk in task3;;A pk
+;GmIyT3Fil;Gm reactive current task3 filtered;;A pk;1
+;GmVyFbkT2;Gm y-axis vlt fbk T2;;V ln;1
+;GmPwrT2;Gm LineXfmrWdg Active power T2;;Watts;0
+;GmQPwrT2;Gm LineXfmrWdg Reactive power T2;;Vars;0
+;GmDscmVxNFl2;TBD_GmDscmVxNFl2;;V ln
+;GmDscmVyNFl2;TBD_GmDscmVyNFl2;;V ln
+;GmPllWAvg;Gm pll freq t1 avg;;Rad/S
+;GmAngElecCmd;Line ac angle cmd;;Rad
+;GmPllHot;TBD_GmPllHot;TrueFalseEnum
+;GmOF1TrpF;GM OF level 1 trip;TrueFalseEnum
+;GmOF2TrpF;GM OF level 2 trip;TrueFalseEnum
+;GmOV1TrpFlg;GM OV lev 1 trp summ
+;GmOV2TrpFlg;GM OV lev 2 trp summ
+;GmUF1TrpF;GM UF level 1 trip;TrueFalseEnum
+;GmUF2TrpF;GM UF level 2 trip;TrueFalseEnum
+;GmUF3TrpF;GM UF level 3 trip;TrueFalseEnum
+;GmUV1TrpFlg;GM UV lev 1 trp summ
+;GmUV2TrpFlg;GM UV lev 2 trp summ
+;GmUV3TrpFlg;GM UV lev 3 trp summ
+;GmUV4TrpFlg;GM UV lev 4 trp summ
+;GmUVCvTrpF;GM UV curve trip;TrueFalseEnum
+;GmVMagPuT3;Gm volt mag pu t3;;Pu;1
+;GmVxFbkT2;Gm x-axis vlt fbk T2;;V ln;1
+;GmPllFrcIni;TBD_GmPllFrcIni;TrueFalseEnum
+;GmPllW;Gm pll freq t1;;Rad/S
+;GmI1Alpha;TBD_GmI1Alpha;;A rms
+;GmI1Beta;TBD_GmI1Beta;;A rms
+;GmI2Alpha;TBD_GmI2Alpha;;A rms
+;GmI2Beta;TBD_GmI2Beta;;A rms
+;GmI3Alpha;TBD_GmI3Alpha;;A rms
+;GmI3Beta;TBD_GmI3Beta;;A rms
+;GmLineVShort;TBD_GmLineVShort;TrueFalseEnum
+;GmQPwr;Gm LineXfmrWdg Reactive power;;Vars;0
+;GmV1nAlpha;TBD_GmV1nAlpha;;V rms
+;GmV1nBeta;TBD_GmV1nBeta;;V rms
+;GmV2nAlpha;TBD_GmV2nAlpha;;V rms
+;GmV2nBeta;TBD_GmV2nBeta;;V rms
+;GmV3nAlpha;TBD_GmV3nAlpha;;V rms
+;GmV3nBeta;TBD_GmV3nBeta;;V rms
+;GmIGndMag;Grid mon ground curr;;A rms;1
+;GmPllWT2;Gm pll freq t2;;Rad/S
+;GmPllErrHi;TBD_GmPllErrHi;TrueFalseEnum
+;GmPllProven;Grid pll is proven;TrueFalseEnum
+;GmVMagOVFil;TBD_GmVMagOVFil;;V pu
+;GmVMagPkPuT2;TBD_GmVMagPkPuT2;;V pu
+;GmVlnMagAvg;Gm v line-n mag avg;;V rms;1
+;GmAcLineUp;TBD_GmAcLineUp;TrueFalseEnum
+;GmAngFbkInit;TBD_GmAngFbkInit;TrueFalseEnum
+;GmAuxPwr;Gm real aux power;;Watts
+;GmAuxQPwr;Gm aux react pwr;;Var
+;GmCnvOV1Fil;TBD_GmCnvOV1Fil;;V pu
+;GmDscmAngN;TBD_GmDscmAngN;;Rad
+;GmDscmVMagN;TBD_GmDscmVMagN;;V ln
+;GmExPwrAlmF;GM excess power alm;TrueFalseEnum
+;GmFreqMon;GM freq monitor ok;TrueFalseEnum
+;GmGridMonOK;Grid monitor ok;TrueFalseEnum
+;GmIaAl2;Grid monitor phase A alpha current;;A pk
+;GmIaBe2;Grid monitor phase A beta current;;A pk
+;GmIbAl2;Grid monitor phase B alpha current;;A pk
+;GmIbBe2;Grid monitor phase B beta current;;A pk
+;GmIcAl2;Grid monitor phase C alpha current;;A pk
+;GmIcBe2;Grid monitor phase C beta current;;A pk
+;GmIGndAlFil;Gm ground current alpha;;A rms
+;GmIGndBeFil;Gm ground current beta;;A rms
+;GmIMagAvg;Gm curr mag average;;A rms;1
+;GmIyInst;Gm react curr inst.;;A pk;1
+;GmLVRTMon;GM LVRT monitor ok;TrueFalseEnum
+;GmLVRTRcyIp;TBD_GmLVRTRcyIp;TrueFalseEnum
+;GmNSeqVMag;Gm neg seq vlt mag;;V rms;1
+;GmOFAlmF;GM OF all alarm;TrueFalseEnum
+;GmOV1Trp12F;GM OV 1,1-2 trip;TrueFalseEnum
+;GmOV1Trp1NF;GM OV 1,1-N trip;TrueFalseEnum
+;GmOV1Trp23F;GM OV 1,2-3 trip;TrueFalseEnum
+;GmOV1Trp2NF;GM OV 1,2-N trip;TrueFalseEnum
+;GmOV1Trp31F;GM OV 1,3-1 trip;TrueFalseEnum
+;GmOV1Trp3NF;GM OV 1,3-N trip;TrueFalseEnum
+;GmOV1TrpLLF;GM OV 1 all L-L trip;TrueFalseEnum
+;GmOV1TrpLNF;GM OV 1 all L-N trip;TrueFalseEnum
+;GmOV2Trp12F;GM OV 2,1-2 trip;TrueFalseEnum
+;GmOV2Trp1NF;GM OV 2,1-N trip;TrueFalseEnum
+;GmOV2Trp23F;GM OV 2,2-3 trip;TrueFalseEnum
+;GmOV2Trp2NF;GM OV 2,2-N trip;TrueFalseEnum
+;GmOV2Trp31F;GM OV 2,3-1 trip;TrueFalseEnum
+;GmOV2Trp3NF;GM OV 2,3-N trip;TrueFalseEnum
+;GmOV2TrpLLF;GM OV 2 all L-L trip;TrueFalseEnum
+;GmOV2TrpLNF;GM OV 2 all L-N trip;TrueFalseEnum
+;GmOVAlmLLF;GM OV all L-L alarm;TrueFalseEnum
+;GmOVAlmLNF;GM OV all L-N alarm;TrueFalseEnum
+;GmPhShort;TBD_GmPhShort;TrueFalseEnum
+;GmPllErr;TBD_GmPllErr;;V sqr
+;GmPllIntGn;TBD_GmPllIntGn
+;GmPllPrpGn;TBD_GmPllPrpGn
+;GmPllWMax;TBD_GmPllWMax;;Rad/S
+;GmPllWMaxInt;TBD_GmPllWMaxInt;;Rad/S
+;GmPllWMin;TBD_GmPllWMin;;Rad/S
+;GmPllWMinInt;TBD_GmPllWMinInt;;Rad/S
+;GmPosSeqVPct;Gm pos seq per cent;;%;1
+;GmPwrFactor;Gm LineXfmrWdg Power Factor;;;3
+;GmUFAlmF;GM UF alarm;TrueFalseEnum
+;GmUV1Trp12F;GM UV 1,1-2 trip;TrueFalseEnum
+;GmUV1Trp1NF;GM UV 1,1-N trip;TrueFalseEnum
+;GmUV1Trp23F;GM UV 1,2-3 trip;TrueFalseEnum
+;GmUV1Trp2NF;GM UV 1,2-N trip;TrueFalseEnum
+;GmUV1Trp31F;GM UV 1,3-1 trip;TrueFalseEnum
+;GmUV1Trp3NF;GM UV 1,3-N trip;TrueFalseEnum
+;GmUV1TrpLLF;GM UV 1 all L-L trip;TrueFalseEnum
+;GmUV1TrpLNF;GM UV 1 all L-N trip;TrueFalseEnum
+;GmUV2Trp12F;GM UV 2,1-2 trip;TrueFalseEnum
+;GmUV2Trp1NF;GM UV 2,1-N trip;TrueFalseEnum
+;GmUV2Trp23F;GM UV 2,2-3 trip;TrueFalseEnum
+;GmUV2Trp2NF;GM UV 2,2-N trip;TrueFalseEnum
+;GmUV2Trp31F;GM UV 2,3-1 trip;TrueFalseEnum
+;GmUV2Trp3NF;GM UV 2,3-N trip;TrueFalseEnum
+;GmUV2TrpLLF;GM UV 2 all L-L trip;TrueFalseEnum
+;GmUV2TrpLNF;GM UV 2 all L-N trip;TrueFalseEnum
+;GmUV3Trp12F;GM UV 3,1-2 trip;TrueFalseEnum
+;GmUV3Trp1NF;GM UV 3,1-N trip;TrueFalseEnum
+;GmUV3Trp23F;GM UV 3,2-3 trip;TrueFalseEnum
+;GmUV3Trp2NF;GM UV 3,2-N trip;TrueFalseEnum
+;GmUV3Trp31F;GM UV 3,3-1 trip;TrueFalseEnum
+;GmUV3Trp3NF;GM UV 3,3-N trip;TrueFalseEnum
+;GmUV3TrpLLF;GM UV 3 all L-L trip;TrueFalseEnum
+;GmUV3TrpLNF;GM UV 3 all L-N trip;TrueFalseEnum
+;GmUV4Trp12F;GM UV 4,1-2 trip;TrueFalseEnum
+;GmUV4Trp1NF;GM UV 4,1-N trip;TrueFalseEnum
+;GmUV4Trp23F;GM UV 4,2-3 trip;TrueFalseEnum
+;GmUV4Trp2NF;GM UV 4,2-N trip;TrueFalseEnum
+;GmUV4Trp31F;GM UV 4,3-1 trip;TrueFalseEnum
+;GmUV4Trp3NF;GM UV 4,3-N trip;TrueFalseEnum
+;GmUV4TrpLLF;GM UV 4 all L-L trip;TrueFalseEnum
+;GmUV4TrpLNF;GM UV 4 all L-N trip;TrueFalseEnum
+;GmUVAlmFlg;GM UV alarm flag,any
+;GmUVAlmLLF;GM UV all L-L alarm;TrueFalseEnum
+;GmUVAlmLNF;GM UV all L-N alarm;TrueFalseEnum
+;GmUVCVSDyn1;Gm uv crv vsec dyn1;;Sec
+;GmUVCVSDyn2;Gm uv crv vsec dyn2;;Sec
+;GmUVCVSDyn3;Gm uv crv vsec dyn3;;VsecPu
+;GmUVCvTrp12F;GM UV crv,1-2 trip;TrueFalseEnum
+;GmUVCvTrp1NF;GM UV crv,1-N trip;TrueFalseEnum
+;GmUVCvTrp23F;GM UV crv,2-3 trip;TrueFalseEnum
+;GmUVCvTrp2NF;GM UV crv,2-N trip;TrueFalseEnum
+;GmUVCvTrp31F;GM UV crv,3-1 trip;TrueFalseEnum
+;GmUVCvTrp3NF;GM UV crv,3-N trip;TrueFalseEnum
+;GmUVCvTrpLLF;GM UV crv,L-L trip;TrueFalseEnum
+;GmUVCvTrpLNF;GM UV crv,L-N trip;TrueFalseEnum
+;GmVanAl2;TBD_GmVanAl2;;V pk
+;GmVanBe2;TBD_GmVanBe2;;V pk
+;GmVAsyAlmF;GM volt asymm alarm;TrueFalseEnum
+;GmVbnAl2;TBD_GmVbnAl2;;V pk
+;GmVbnBe2;TBD_GmVbnBe2;;V pk
+;GmVcnAl2;TBD_GmVcnAl2;;V pk
+;GmVcnBe2;TBD_GmVcnBe2;;V pk
+;GmVoltMon;GM volt monitor ok;TrueFalseEnum
+;GmFreqT3Fil;TBD_GmFreqT3Fil;;Rad/S;2
+;GmPllWIntT2;TBD_GmPllWIntT2;;Rad/S
+;GmPllWT3;TBD_GmPllWT3;;Rad/S
+;GmVxFbk;Gm x-axis volt fbk;;V ln;1
+;GmVxFbkT3;TBD_GmVxFbkT3;;V ln
+;GmVyFbk;Gm y-axis volt fbk;;V ln;1
+;GmVyFbkT3;TBD_GmVyFbkT3;;V ln
+;GmAcWdogTmr;TBD_GmAcWdogTmr;;Sec
+;GmAngElecFbk;Grid electrical feedback angle;;Rad
+;GmAuxPwrFil;Gm aux power fil;;Watts
+;GmAuxQPwrFil;Gm aux react pwr fil;;Var
+;GmCnvFrqFil;TBD_GmCnvFrqFil;;Fpu
+;GmCnvOV2Fil;TBD_GmCnvOV2Fil;;V pu
+;GmCnvUV1Fil;TBD_GmCnvUV1Fil;;V pu
+;GmCnvUV2Fil;TBD_GmCnvUV2Fil;;V pu
+;GmCVAsmFil1;TBD_GmCVAsmFil1;;%
+;GmCVAsmFil2;TBD_GmCVAsmFil2;;%
+;GmDscmVMagP;TBD_GmDscmVMagP;;V ln
+;GmDscmVMgNPu;TBD_GmDscmVMgNPu;;Pu
+;GmDscmVxNab;TBD_GmDscmVxNab;;V ln
+;GmDscmVxNeg;TBD_GmDscmVxNeg;;V ln
+;GmDscmVxNFil;TBD_GmDscmVxNFil;;V ln
+;GmDscmVxPFil;TBD_GmDscmVxPFil;;V ln
+;GmDscmVxPos;TBD_GmDscmVxPos;;V ln
+;GmDscmVxPxy;TBD_GmDscmVxPxy;;V ln
+;GmDscmVyNab;TBD_GmDscmVyNab;;V ln
+;GmDscmVyNeg;TBD_GmDscmVyNeg;;V ln
+;GmDscmVyNFil;TBD_GmDscmVyNFil;;V ln
+;GmDscmVyPFil;TBD_GmDscmVyPFil;;V ln
+;GmDscmVyPos;TBD_GmDscmVyPos;;V ln
+;GmDscmVyPxy;TBD_GmDscmVyPxy;;V ln
+;GmExPwrFil;Gm exc power filt;;Watts;2
+;GmExPwrTrpF;GM excess power trp;TrueFalseEnum
+;GmFastOverVF;GM fast over volt;TrueFalseEnum
+;GmFixFrqTmr;TBD_GmFixFrqTmr;;Sec
+;GmFreq;Gm frequency;;Hz;1
+;GmFreqPu;Gm frequency pu;;Pu;1
+;GmHotDynTmr;TBD_GmHotDynTmr;;Sec
+;GmI1Mag;Gm ph 1 curr mag;;A rms;1
+;GmI2Mag;Gm ph 2 curr mag;;A rms;1
+;GmI3Mag;Gm ph 3 curr mag;;A rms;1
+;GmIaAl1;TBD_GmIaAl1;;A pk
+;GmIaBe1;TBD_GmIaBe1;;A pk
+;GmIaRms;TBD_GmIaRms;;A rms
+;GmIaRmsMag;Gm Ia^2 filtered;;Arms^2
+;GmIbAl1;TBD_GmIbAl1;;A pk
+;GmIbBe1;TBD_GmIbBe1;;A pk
+;GmIbRms;TBD_GmIbRms;;A rms
+;GmIbRmsMag;Gm Ib^2 filtered;;Arms^2
+;GmIcAl1;TBD_GmIcAl1;;A pk
+;GmIcBe1;TBD_GmIcBe1;;A pk
+;GmIcRms;TBD_GmIcRms;;A rms
+;GmIcRmsMag;Gm Ic^2 filtered;;Arms^2
+;GmIGndAlSum;TBD_GmIGndAlSum;;A rms
+;GmIGndBeSum;TBD_GmIGndBeSum;;A rms
+;GmIGndSqrFil;TBD_GmIGndSqrFil;;A sqr
+;GmIMagT3;Gm curr mag t3;;A pk;1
+;GmLineVHi;TBD_GmLineVHi;TrueFalseEnum
+;GmLineVHiTmr;TBD_GmLineVHiTmr;;Sec
+;GmLineVLoTmr;TBD_GmLineVLoTmr;;Sec
+;GmLineVShTmr;TBD_GmLineVShTmr;;Sec
+;GmLnVShOfTmr;TBD_GmLnVShOfTmr;;Sec
+;GmLnVShOfTr2;TBD_GmLnVShOfTr2;;Sec
+;GmNegSeqVPct;Gm neg seq per cent;;%;1
+;GmOF1TrpTmr;Gm OF lv 1 trp tmr;;Sec;1
+;GmOF2TrpTmr;Gm OF lv 2 trp tmr;;Sec;1
+;GmOFAlmTmr;Gm OF alarm tmr;;Sec;1
+;GmOV1TrpTmr1;Gm OV lv 1 ph1 tmr;;Sec;1
+;GmOV1TrpTmr2;Gm OV lv 1 ph2 tmr;;Sec;1
+;GmOV1TrpTmr3;Gm OV lv 1 ph3 tmr;;Sec;1
+;GmOV2TrpTmr1;Gm OV lv 2 ph1 tmr;;Sec;1
+;GmOV2TrpTmr2;Gm OV lv 2 ph2 tmr;;Sec;1
+;GmOV2TrpTmr3;Gm OV lv 2 ph3 tmr;;Sec;1
+;GmOVAlm12F;Gm OV 1-2 alarm;TrueFalseEnum
+;GmOVAlm1NF;GM OV 1-N alarm;TrueFalseEnum
+;GmOVAlm23F;Gm OV 2-3 alarm;TrueFalseEnum
+;GmOVAlm2NF;GM OV 2-N alarm;TrueFalseEnum
+;GmOVAlm31F;Gm OV 3-1 alarm;TrueFalseEnum
+;GmOVAlm3NF;GM OV 3-N alarm;TrueFalseEnum
+;GmOVAlmFlg1;GM OV alarm flag,ph1
+;GmOVAlmFlg2;GM OV alarm flag,ph2
+;GmOVAlmFlg3;GM OV alarm flag,ph3
+;GmOVAlmTmr1;Gm OV ph1 alarm tmr;;Sec;1
+;GmOVAlmTmr2;Gm OV ph2 alarm tmr;;Sec;1
+;GmOVAlmTmr3;Gm OV ph3 alarm tmr;;Sec;1
+;GmOVAlmTmrO1;Gm OV ph1 alm o tmr;;Sec;1
+;GmOVAlmTmrO2;Gm OV ph2 alm o tmr;;Sec;1
+;GmOVAlmTmrO3;Gm OV ph3 alm o tmr;;Sec;1
+;GmPllDelAng;TBD_GmPllDelAng;;Rad
+;GmPllErInLim;TBD_GmPllErInLim;TrueFalseEnum
+;GmPllErrInt;TBD_GmPllErrInt;;V sqr
+;GmPllErrRef;TBD_GmPllErrRef;;V sqr
+;GmPllPrvFstp;TBD_GmPllPrvFstp;TrueFalseEnum
+;GmPllPrvPrm;TBD_GmPllPrvPrm;TrueFalseEnum
+;GmPllPrvPrm0;TBD_GmPllPrvPrm0;TrueFalseEnum
+;GmPllPrvTmr;TBD_GmPllPrvTmr;;Sec
+;GmPllregStep;TBD_GmPllregStep;;V ln
+;GmPllTrckTmr;TBD_GmPllTrckTmr;;Sec
+;GmPllVyErr;TBD_GmPllVyErr;;V ln
+;GmPllVyErrPu;TBD_GmPllVyErrPu;;V pu
+;GmPllWInt;TBD_GmPllWInt;;Rad/S
+;GmPSeqVMag;Gm pos seq vlt mag;;V rms;1
+;GmPwr;Gm LineXfmrWdg Active power;;Watts;0
+;GmRevPwrFil;Gm rev power filt;;Watts
+;GmRevPwrTrpF;GM reverse power trp;TrueFalseEnum
+;GmSPwr;Gm apparent pwr;;VA;1
+;GmTocHiSelSq;TBD_GmTocHiSelSq;;Arms^2;1
+;GmUF1TrpTmr;Gm UF lv 1 trp tmr;;Sec;1
+;GmUF2TrpTmr;Gm UF lv 2 trp tmr;;Sec;1
+;GmUF3TrpTmr;Gm UF lv 3 trp tmr;;Sec;1
+;GmUFAlmTmr;Gm UF alarm tmr;;Sec;1
+;GmUV1TrpTmr1;Gm uv lv 1 ph1 tmr;;Sec;1
+;GmUV1TrpTmr2;Gm uv lv 1 ph2 tmr;;Sec;1
+;GmUV1TrpTmr3;Gm uv lv 1 ph3 tmr;;Sec;1
+;GmUV3TrpTmr2;Gm uv lv 3 ph2 tmr;;Sec;1
+;GmUV3TrpTmr3;Gm uv lv 3 ph3 tmr;;Sec;1
+;GmUV4TrpTmr1;Gm uv lv 4 ph1 tmr;;Sec;1
+;GmUV4TrpTmr2;Gm uv lv 4 ph2 tmr;;Sec;1
+;GmUV4TrpTmr3;Gm uv lv 4 ph3 tmr;;Sec;1
+;GmUVAlm12F;Gm UV 1-2 alarm;TrueFalseEnum
+;GmUVAlm1NF;GM UV 1-N alarm;TrueFalseEnum
+;GmUVAlm23F;Gm UV 2-3 alarm;TrueFalseEnum
+;GmUVAlm2NF;GM UV 2-N alarm;TrueFalseEnum
+;GmUVAlm31F;Gm UV 3-1 alarm;TrueFalseEnum
+;GmUVAlm3NF;GM UV 3-N alarm;TrueFalseEnum
+;GmUVAlmFlg1;GM UV alarm flag,ph1
+;GmUVAlmFlg2;GM UV alarm flag,ph2
+;GmUVAlmFlg3;GM UV alarm flag,ph3
+;GmUVAlmTmr1;Gm uv ph1 alarm tmr;;Sec;1
+;GmUVAlmTmr2;Gm uv ph2 alarm tmr;;Sec;1
+;GmUVAlmTmr3;Gm uv ph3 alarm tmr;;Sec;1
+;GmUVAlmTmrO1;Gm uv ph1 alm o tmr;;Sec;1
+;GmUVAlmTmrO2;Gm uv ph2 alm o tmr;;Sec;1
+;GmUVAlmTmrO3;Gm uv ph3 alm o tmr;;Sec;1
+;GmUVcVSDel1;Gm uv crv vsec del1;;Sec
+;GmUVcVSDel2;Gm uv crv vsec del2;;Sec
+;GmUVcVSDel3;Gm uv crv vsec del3;;VsecPu
+;GmUVCvVMag1;Gm uv crv uv mag 1;;V pu
+;GmUVCvVMag2;Gm uv crv uv mag 2;;Sec
+;GmUVCvVMag3;Gm uv crv uv mag 3;;V pu
+;GmUVCvVMgFl1;Gm t crv vlt,ph1;;V pu
+;GmUVCvVMgFl2;Gm t crv vlt,ph2;;V pu
+;GmUVCvVMgFl3;Gm t crv vlt,ph3;;V pu
+;GmUVCvVS1;Gm uv crv vsec ph1;;puvsec
+;GmUVCvVS2;Gm uv crv vsec ph2;;puvsec
+;GmUVCvVS3;Gm uv crv vsec ph3;;VsecPu
+;GmV12Mag;Gm v 1-2 magnitude;;V rms;1
+;GmV12MagPu;Gm v l-2 magnitdue;;Pu;2
+;GmV1MagPu;Gm prot v phase 1;;Pu;2
+;GmV1nMag;Gm v 1-n magnitude;;V rms;1
+;GmV1nMagPu;Gm v l-n magnitdue;;Pu;2
+;GmV23Mag;Gm v 2-3 magnitude;;V rms;1
+;GmV23MagPu;Gm v 2-3 magnitdue;;Pu;2
+;GmV2MagPu;Gm prot v phase 2;;Pu;2
+;GmV2nMag;Gm v 2-n magnitude;;V rms;1
+;GmV2nMagPu;Gm v 2-n magnitdue;;Pu;2
+;GmV31Mag;Gm v 3-1 magnitude;;V rms;1
+;GmV31MagPu;Gm v 3-1 magnitdue;;Pu;2
+;GmV3MagPu;Gm prot v phase 3;;Pu;2
+;GmV3nMag;Gm v 3-n magnitude;;V rms;1
+;GmV3nMagPu;Gm v 3-n magnitdue;;Pu;2
+;GmVanAl1;TBD_GmVanAl1;;V pk
+;GmVanBe1;TBD_GmVanBe1;;V pk
+;GmVAsyTrpF;GM volt asymm trip;TrueFalseEnum
+;GmVAsyTrpTmr;Gm vlt asym trp tmr;;Sec;2
+;GmVbnAl1;TBD_GmVbnAl1;;V pk
+;GmVbnBe1;TBD_GmVbnBe1;;V pk
+;GmVcnAl1;TBD_GmVcnAl1;;V pk
+;GmVcnBe1;TBD_GmVcnBe1;;V pk
+;GmVMagT1;Gm LineXfmr Volt mag T1;;Vlnpk;1
+;GmVxT3Fil;Gm x volt t3 fil;;V ln;1
+;GmVxVyImb;TBD_GmVxVyImb;;V sqr
+;GmVyT3Fil;Gm y volt t3 fil;;V ln;1
+;GmUV2TrpTmr1;Gm uv lv 2 ph1 tmr;;Sec;1
+;GmUV2TrpTmr2;Gm uv lv 2 ph2 tmr;;Sec;1
+;GmUV2TrpTmr3;Gm uv lv 2 ph3 tmr;;Sec;1
+;GmUV3TrpTmr1;Gm uv lv 3 ph1 tmr;;Sec;1
+;GmLineVLo;TBD_GmLineVLo;TrueFalseEnum
+;GmNSeqHi;TBD_GmNSeqHi;TrueFalseEnum
+;GmPllVyFbk;TBD_GmPllVyFbk;;V ln
+;GmRevSeq;TBD_GmRevSeq;TrueFalseEnum
+;GmTocHiSel;Gm toc max current;;A rms;1
+;GmVllMagAvg;Gm v ln-ln mag avg;;V rms;1
+;GmVMagPuT2;Gm volt mag pu t2;;Pu;2
+;GmVMagT2;Gm LineXfmr Volt mag T2;;Vlnpk;1
+;GmVMagT3;Gm LineXfmr Volt mag T3;;Vlnpk;1
+
+;SeqSt;Sequencer state;SeqStateEnum
+;BrgLockoutTime;Bridge lockout time between upper and lower switches;;Sec
+;DbResCombined;Parallel combination of DB circuit resistors ;;Ohms
+;BrgDbTauElec;Bridge DB electrical time constant;;Sec
+;L_PwrDisconTm;Line bridge time to disconnect power;;Sec
+
+;S_VlnPeakXfmrSec ;Transformer stator winding peak line-to-neutral voltage;;Volts
+;S_VlnPeakXfmrSecRcp;Reciprocal of xmfr stator winding peak line-to-neutral voltage;;1/Volt
+;XfmrRatioLnStr;Transformer voltage ratio from line to stator windings
+;XfmrRatioLnStrRcp;Reciprocal of xfmr voltage ratio from line to stator windings
+;XfmrType;Three-winding transformer type;XfmrTypeEnum
+
+
+;GenType;Doubly-fed generator type;GenTypeCfgEnum
+;GenNew;Generator file;GenNewEnum
+
+;SysFreqNomx;System nominal freq;;Hz
+;SysIOVLoadx;System curr overload;;%
+;SysIRatLvx;System nominal curr for low-voltage-ride-thru;;Arms
+;SysIRatx;System rated curr step;;Arms
+;SysIyRatx;System nominal reactive curr;;Arms
+;SysPowerx;System nominal pwr;;Watts
+;SysPwrFactx;System nominal pwr factor;;;3
+;SysVARatx;System nominal apparent pwr;;VA
+;SysVoltMaxx;System max  voltage;;Vrms
+;SysVoltMinx;System min  voltage;;Vrms
+;SysVoltNomx;System nominal volt;;Vrms
+;INomx;System nominal curr;;Arms
+;SysWnom;System nominal angular frq;;Rad/S
+;INomGridPk;System nominal peak curr;;Amps
+
+;PwrDnBufSavTrig;Power-down Buffer-Save Trigger;TrueFalseTyp
+;PwrDnBufSavArm;Power-down Buffer-Save Armed;TrueFalseTyp
+;PwrDnBufSavDone;Power-down Buffer-Save attempted indication;TrueFalseTyp
+
+;GmIxGrid;Xfmr primary x-axis current referred to 690V winding;;Amps
+;GmIyGrid;Xfmr primary y-axis current referred to 690V winding;;Amps
+
+;CabCfgType;Cable configuration mirror image;CabTypeCfgEnum
+;CoolantTemp;Bridge coolant temp;;Deg C
+
+
+;L_MxCurOutSq;Line converter max current square;;Amp^2
+
+;AltitudeClmp;Clamped turbine altitude;;Meter
+
+;CabAltDeRtSF;Cable altidude dependent cable derate;;Amp.m
+;WBRtrILimCnv;Generator rotor current limit for converter as a function of termperature;;Amp.m
+;WBStrILimCnv;6k Xfmr current limit for converter as a function of termperature;;Amp.m
+
+
+;DelSpdErr;Turbine power limiterdelta spd err;;RPM
+;DelTrqErr;Turbine power limiterdelta trq err;;Nm
+;DelSpdInt;Turbine power limiterdelta spd int
+;DelTrqInt;Turbine power limiterdelta trq int
+;DelSpdPAct;Turbine power limiterdelta spd active;TrueFalseTyp
+;DelSpdPrp;Turbine power limiterdelta spd prp
+;DelTrqPrp;Turbine power limiterdelta trq prp
+;DelSpIntDt;TBD_WBDelSpIntDt
+;DnTwrPLimF;Turbine power limiterdtwr pwr lim fst
+;DnTwrPLimS;Turbine power limiterdtwr pwr lim slw
+;DnTwrTemp;Turbine power limiterdwn twr est. tmp;;Deg C
+;DnTwrTMrg;Turbine power limiterdtwr temp margin;;Deg C
+
+;PwrLimDelSpeed;Delta speed for turbine power limiter;;RPM
+;PwrLimDelTorque;Delta torque for turbine power limiter;;Nm
+;PwrLimDelTorque_KNm ;Delta torque for turbine power limiter KNm;;KNm
+;DnTwrTempLmOut;Down tower temperature limit;;Nm
+
+;GmIMaxCrvMin;Minimum Gm current capability;;A rms
+;DnTwrTMrg
+
+;GmILimMrg;GM current limit margin ;;A rms
+;GmILimOut;GM current limit;;Nm
+
+;LinILimMrg;Line current limit margin ;;A rms
+;LinILimOut;Line current limit;;RPM
+
+;RtrILimOut;Generator rotor current limit;;Nm
+;RtrILimMrg;Generator rotor current limit margin;;A rms
+
+;StrILimOut;Generator stator current limit;;Nm
+;StrILimMrg;Generator stator current limit margin;;A rms
+
+;RtrVLimMrg;Rotor voltage limit margin;;Volt
+;RtrVLimOut;Rotor voltage limit;;RPM
+
+
+
+;LinImbTempLimOut;Line heat sink imbalance temp rise limit;;RPM
+;R1ImbTempLimOut;Rotor 1 heat sink imbalance temp rise limit;;Nm
+;LinImbTempLimMrg;Line heat sink imbalance temp limit margin;;degC
+;R1ImbTempLimMrg;Rotor 1 heat sink imbalance temp limit margin;;degC
+
+;L_FuseILimMrg;ACLFU current limit margin;;A rms
+;L_FuseILimOut;ACLFU current limit;;RPM
+
+
+;AclfuTempLimMrg;ACLFU temperature limit margin;;degC
+;AclfuTempLimOut;ACLFU temperature limit;;RPM
+
+;CfcTempLimMrg;Converter dist-filter temperature limit margin;;degC
+;CfcTempLimOut;Converter dist-filter  temperature limit;;DNm
+
+;PdcTempLimMrg;Converter Ac entry temperature limit margin;;degC
+;PdcTempLimOut;Converter Ac entry temperature limit;;Nm
+
+
+;LqdTempLimMrg;Liquid temperature limit margin;;degC
+;LqdTempLimOut;Liquid temperature limit;;Nm
+
+;PdcCabEnTempLimMrg;Pdc Cable Entry Temperature limit margin;;degC
+;PdcCabEnTempLimOut;Pdc Cable Entry Temperature limit;;Nm
+
+;L_HtSinkTempILimOut;Line current limit from heat sink temperature ;;RPM
+
+
+
+;LinTempRseLimMrg;Line heat sink temperature rise limit margin;;degC
+;LinTempRseLimOut;Line heat sink temperature rise limit ;;RPM
+
+;R1TempRseLimMrg;Rotor 1 heat sink temperature rise limit margin;;degC
+;R1TempRseLimOut;Rotor 1  heat sink temperature rise limit ;;Nm
+
+
+;R1TempRseFil;Rotor 1 heat sink temperature sink temp rise filted;;degC
+;LinTempRseFil;Line heat sink temperature sink temp rise filted;;degC
+
+;R1BthtrImbMax;Rotor 1 heat sink max imbalance temperature;;degC
+;LinBthtrImbMax;Line heat sink max imbalance temperature;;degC
+
+;LinImbTempFil;Line heat sink imbalance temperature filted;;degC
+;R1ImbTempFil;Rotor 1 heat sink imbalance temperature filted;;degC
+
+;L_SinkTempRse;Lline heat sink temperature rise;;degC
+;L_SinkTempRseFil;Line heat sink temperature rise filtered;;degC
+
+;R1SinkTempRse;Rotor 1 heat sink temperature rise;;degC
+;R1SinkTempRseFil;Rotor 1 heat sink temperature rise filtered;;degC
+
+
+;DelTrqTempILimOut;Delta torque overall minimum temperature for turbine power limiter;;Nm
+
+;DelSpdErrTrq;Delta-torque from delta-speed when sub-sync;;Nm
+
+;GmILimCnv1km;Grid monitor current limit at 1km altitude
+;GmILimTemp;Grid monitor current limit temperature reference
+;LinILimCnv1km;Line current limit at 1km altitude
+;LinILimTemp;Line current limit temperature reference
+;RtrILimCnv1km;Rotor current limit at 1km altitude
+;RtrILimTemp;Rotor current limit temperature reference
+;StrILimCnv1km;Stator current limit at 1km altitude
+;StrILimTemp;Stator current limit temperature reference
+;AclfuILim1km;ACLFU current limit at 1km altitude
+;AclfuILimTemp;ACLFU current limit temperature reference
+
+;PwrLimSpdRatRem;Rated speed for power limiter speed control;;Rpm
+;PwrLimDelSpdUc;Un-clamped de-rating speed for power limiter speed control;;Rpm
+;PwrLimDerateId;Power limiter derating identification word
+;PwrLimSpdRatRem;Rated speed from turbine control;;Rpm
+;PwrLimTrqRatRem;Rated torque from turbine control ;;Nm
+;RpnwRat;Rated reactive power for RPNW;;Kvar
+;WBLimAct;Turbine power limiterlimit act in TC;TrueFalseEnum
+;RtrVLimMrg;Turbine power limiter rotor v margin;;V rms
+;StrILimMrg;Turbine power limiterstator i margin;;A rms
+;GmIMrgSqr;Turbine power limitergm i margin sq;;Isqr
+;LinIMrgSqr;Turbine power limiterline i margin sq;;Isqr
+;R_IMaxCrvCab;TBD_R_IMaxCrvCab;;A rms
+;R_IMaxCrvGen;TBD_R_IMaxCrvGen;;A rms
+;R_IMaxCrvMin;TBD_R_IMaxCrvMin;;A rms
+;R_IMaxCrvSq;TBD_R_IMaxCrvSq;;Asq
+;R_IMaxGnDyn;TBD_R_IMaxGn;;Rad/S
+;R_MxCurOutSq;TBD_R_MxCurOutSq;;Asq
+;RotorVMgFil;Rotor vmag filtered;;Vrms
+;RtrILim;Turbine power limiter rotor i limit;;A rms
+;RtrIMrgSqr;Turbine power limiter rotor i margin sq;;Isqr
+;RtrVLimOut;Turbine power limiter rotor volt limit;;RPM
+;RtrVMrgSqr;Turbine power limiter rotor v margin sq;;V sqr
+;RtrVSqrFil;Turbine power limiter rotor vsqr fil;;V sqr
+;S_IMaxCrvCab;TBD_S_IMaxCrvCab;;Arms
+;S_IMaxCrvGen;TBD_S_IMaxCrvGen;;Arms
+;S_IMaxCrvMin;TBD_S_IMaxCrvMin;;Arms
+;S_IMaxCrvSq;TBD_S_IMaxCrvSq;;Asq
+;S_IMaxGnDyn;TBD_S_IMaxGn;;Rad/S
+;SpdILim;Spd fdbk,for Ilim;;RPM
+;StrILim;Turbine power limiter stator i limit;;A rms
+;StrIMrgSqr;Turbine power limiter stator i margin sq;;Isqr
+;CableLimType;Cable limit type;CableLimTypeEnum
+;AirTempGenClmp;Clamped value for air temp generator inlet for limiter;;degC;1
+;IpcInterfaceDown;Ipc Interface down for 50 msec;;Sec
+;GmCnvOVMinx;TBD_GmCnvOVMinx;;V pu
+;GmCnvOVThrx;TBD_GmCnvOVThrx;;VpuSec
+;DFConvISqr;;;Asq
+;GmConfig;Grid mon config;GmCfgSelEnum
+;GmPhImbTmx;Phs imbalance time;;Sec
+;L_FilSignTm1;TBD_L_FilSignTm1;;Sec
+;L_FilSignTm2;TBD_L_FilSignTm2;;Sec
+;PmpShftPwr;Pump shaft power;;Watts
+;FanOnGth;Fan on therm conduc;;W/degC
+;RPNWReqEgd;ion No wind Var Req
+;RstReqEgd;ion Reset Request
+;RunReqEgd;ion Run Request
+;GmUVCvLCap;TBD_GmUVCvLCap;;V pu;4
+;GmUVCvUCap;TBD_GmUVCvUCap;;V pu;4
+;R_IyMax;Rtr reactive cur max;;A pk
+;GmExPwrFilGn;Gm exc pwr filt gn
+;GmOF1Cap;TBD_GmOF1Cap;;Fpu;2
+;GmOF1CapTm;TBD_GmOF1CapTm;;Sec;2
+;GmOF2Cap;TBD_GmOF2Cap;;Fpu;2
+;GmOF2CapTm;TBD_GmOF2CapTm;;Sec;2
+;GmOFMinLvl;TBD_GmOFMinLvl;;Fpu;2
+;GmOV1Cap;TBD_GmOV1Cap;;V pu;2
+;GmOV1CapTm;TBD_GmOV1CapTm;;Sec;2
+;GmOV2Cap;TBD_GmOV2Cap;;V pu;2
+;GmOV2CapTm;TBD_GmOV2CapTm;;Sec;2
+;GmOVMinLvl;TBD_GmOVMinLvl;;V pu;2
+;GmRvPwrFilGn;Gm rev pwr filt gn
+;GmUF1Cap;TBD_GmUF1Cap;;Fpu;2
+;GmUF1CapTm;TBD_GmUF1CapTm;;Sec;2
+;GmUF2Cap;TBD_GmUF2Cap;;Fpu;2
+;GmUF2CapTm;TBD_GmUF2CapTm;;Sec;2
+;GmUF3Cap;TBD_GmUF3Cap;;Fpu;2
+;GmUF3CapTm;TBD_GmUF3CapTm;;Sec;2
+;GmUFMaxLvl;TBD_GmUFMaxLvl;;Fpu;2
+;GmUV1Cap;TBD_GmUV1Cap;;V pu;2
+;GmUV1CapTm;TBD_GmUV1CapTm;;Sec;2
+;GmUV2Cap;TBD_GmUV2Cap;;V pu;2
+;GmUV2CapTm;TBD_GmUV2CapTm;;Sec;2
+;GmUV3Cap;TBD_GmUV3Cap;;V pu;4
+;GmUV3CapTm;TBD_GmUV3CapTm;;Sec;4
+;GmUV4Cap;TBD_GmUV4Cap;;V pu;4
+;GmUV4CapTm;TBD_GmUV4CapTm;;Sec;4
+;GmUVCvLCapTm;TBD_GmUVCvLCapTm;;Sec;4
+;GmUVCvUCapTm;TBD_GmUVCvUCapTm;;Sec;4
+;GmUVCvVSThr1;Gm uv crv vsec thr1;;puvsec
+;GmUVCvVSThr2;Gm uv crv vsec thr2;;puvsec
+;GmUVCvVSThr3;Gm uv crv vsec thr3;;puvsec
+;GmUVMaxLvl;TBD_GmUVMaxLvl;;V pu;2
+;SpdPllFilGn;TBD_SpdPllFilGn;;Rad/S
+;HdwTstMode;Hardware I/O test mode active;TrueFalseEnum
+;PulseFreqTar;Pulse gen targ freq
+;PulseGenFreq;Pulse gen frequency
+;PulseGenMag;Pulse gen magnitude
+;PulseGenCyc;Pulse gen cycles
+;PulseGenScl;Pulse gen scaling
+
+;LqdPmpHtrCmd;Liquid pump motor command from liquid heater operation status;TrueFalseEnum
+;LqdPmpCnvCmd;Liquid pump motor command from converter operation status;TrueFalseEnum
+;LqdTempOkFlg;flag indicating liquid temperature is ok to run the pump;TrueFalseEnum
+;LqdHtrOnCmdT2;liquid heater on command task2 version;TrueFalseEnum
+;SpinRdy;Converter Ready for SpinUp;TrueFalseTyp
+
+;VdcOkLvl;Vdc Ok level;;Volt
+;LqdPmpMtrCmdT3;pump on command task 3 version;TrueFalseEnum
+;LnkOkWEMA;WEMA link OK
+;PicChksum;PIC check sum
+;RPNWRunning;ion running RPNW
+;RPNWRunning;Line running RPNW;TrueFalseEnum
+;CoolntIsHot;Coolnt is above thrs;TrueFalseEnum
+;RtrLnIyXfer;Rotor-Line iy transfer rquest
+;SafetyStopIp;Safety stop in prog;TrueFalseEnum
+;RPNWRunRdy;Ready to run RPNW;TrueFalseEnum
+;VdcIsOk;Vdc ok while stopped;TrueFalseEnum
+;VgridIsOk;Vgrid ok whle stoppd;TrueFalseEnum
+;SeqSt;Sequencer state;SeqStEnum
+;DtaFanRunning;DTA main fan running indication;TrueFalseEnum
+;PsInrshLimClsCmd;Power supply inrush limiter cls command;TrueFalseEnum
+;CfcIsHot;CFC temp is abve thr;TrueFalseEnum
+;LnRunningSt;Line conv running;TrueFalseEnum
+;LnRunReqSt;Line conv run req.;TrueFalseEnum
+;LnStpReqSt;Line conv stop req;TrueFalseEnum
+;MCCHeatOff;MCC heat off bit;TrueFalseEnum
+;Q1FanCmd;Command to turn on Fan 5;TrueFalseEnum
+;RtRunReqSt;Rotor conv run req;TrueFalseEnum
+;RtStpReqSt;Rotor conv stop req;TrueFalseEnum
+;StopReq;Stop PB request;TrueFalseEnum
+;TempDlyFlag;Temp delay trip flag;TrueFalseEnum
+;AirTempRefLv;Air temp refer level;;Deg C
+;BppbEnable;BPPB Enable
+;CFCIsCool;CFC temp is blow thr;TrueFalseEnum
+;CoolntHeatOn;Coolant heat on bit;TrueFalseEnum
+;CoolntIsCool;Coolnt is below thrs;TrueFalseEnum
+;DTAFanCmd;DTA cooling fan cmd;TrueFalseEnum
+;DTAFanRunReq;DTA fan run request;TrueFalseEnum
+;FanStateTmr;DTA fan state timer;;Sec
+;HeatCtrlOn;Remote heatr ctrl on;TrueFalseEnum
+;LqdAuxTmr;Liquid aux off timer;;Sec
+;PdcCfcForHtr;PDC-CFC for htr ctrl;;Deg C
+;PdcCfcHeatOf;PDC-CFC heat off bit;TrueFalseEnum
+;WEMAOnline;WEMA online status;TrueFalseEnum
+;LqdAuxTmr1;Liquid aux on timer;;Sec
+;LqdPmpMtrCmd;Liquid pump motor cmd;TrueFalseEnum
+;RPNWRunReq;RPNW run request;TrueFalseEnum
+;VARModeCmd;VAR mode command;TrueFalseEnum
+;WEMAPicVersion;ion WEMA PIC version
+;Init1Sec;;TrueFalseEnum
+;Init2Sec;;TrueFalseEnum
+;Init3Sec;;TrueFalseEnum
+;CelTstBrgSel;Cell  test bridge selection;CtBridgeEnum
+;R_OTTrpDlySm;R OT trp dlay summry;TrueFalseEnum
+;L_OTTrpDlySm;L OT trp dlay summry;TrueFalseEnum
+;TmpTrpDlySum;Temp delay trip summ;TrueFalseEnum
+
+cThrmstr;ThrmstrTemp1;%R ThrmstrTemp1
+cThrmstr;ThrmstrTemp2;%R ThrmstrTemp2
+cThrmstr;ThrmstrTemp3;%R ThrmstrTemp3
+cThrmstr;ThrmstrTemp4;%R ThrmstrTemp4
+cThrmstr;IOThrmDlFlg1;%R IOThrmDlFlg1
+cThrmstr;IOThrmDlFlg2;%R IOThrmDlFlg2
+cThrmstr;IOThrmDlFlg3;%R IOThrmDlFlg3
+cThrmstr;IOThrmDlFlg4;%R IOThrmDlFlg4
+cThrmstr;TempVltGnFil;TempVltGnFil
+cThrmstr;TempFilStlTm;TempFilStlTm
+cThrmstr;TempRMldRcp;TempRMldRcp
+cThrmstr;TempFilStlTmr;%R TempFilStlTmr
+cThrmstr;TempVTh1LwFl;%R TempVTh1LwFl
+cThrmstr;TempVTh2LwFl;%R TempVTh2LwFl
+cThrmstr;TempVTh7LwFl;%R TempVTh7LwFl
+cThrmstr;TempVTh8LwFl;%R TempVTh8LwFl
+cThrmstr;TempVTh1HiFl;%R TempVTh1HiFl
+cThrmstr;TempVTh2HiFl;%R TempVTh2HiFl
+cThrmstr;TempVTh7HiFl;%R TempVTh7HiFl
+cThrmstr;TempVTh8HiFl;%R TempVTh8HiFl
+cThrmstr;TempResTh1Lw;%R TempResTh1Lw
+cThrmstr;TempResTh2Lw;%R TempResTh2Lw
+cThrmstr;TempResTh7Lw;%R TempResTh7Lw
+cThrmstr;TempResTh8Lw;%R TempResTh8Lw
+cThrmstr;TempResTh1Hi;%R TempResTh1Hi
+cThrmstr;TempResTh2Hi;%R TempResTh2Hi
+cThrmstr;TempResTh7Hi;%R TempResTh7Hi
+cThrmstr;TempResTh8Hi;%R TempResTh8Hi
+cThrmstr;TempDelTh1;%R TempDelTh1
+cThrmstr;TempDelTh2;%R TempDelTh2
+cThrmstr;TempDelTh7;%R TempDelTh7
+cThrmstr;TempDelTh8;%R TempDelTh8
+cThrmstr;TempDlTmrTh1;%R TempDlTmrTh1
+cThrmstr;TempDlTmrTh2;%R TempDlTmrTh2
+cThrmstr;TempDlTmrTh7;%R TempDlTmrTh7
+cThrmstr;TempDlTmrTh8;%R TempDlTmrTh8
+cThrmstr;TempTh1Lw;%R TempTh1Lw
+cThrmstr;TempTh2Lw;%R TempTh2Lw
+cThrmstr;TempTh7Lw;%R TempTh7Lw
+cThrmstr;TempTh8Lw;%R TempTh8Lw
+cThrmstr;TempTh1Hi;%R TempTh1Hi
+cThrmstr;TempTh2Hi;%R TempTh2Hi
+cThrmstr;TempTh7Hi;%R TempTh7Hi
+cThrmstr;TempTh8Hi;%R TempTh8Hi
+cThrmstr;TempTh1Meld;%R TempTh1Meld
+cThrmstr;TempTh2Meld;%R TempTh2Meld
+cThrmstr;TempTh7Meld;%R TempTh7Meld
+cThrmstr;TempTh8Meld;%R TempTh8Meld
+cThrmstr;TempVTblTh1;%R TempVTblTh1
+cThrmstr;TempVTblTh2;%R TempVTblTh2
+cThrmstr;TempVTblTh7;%R TempVTblTh7
+cThrmstr;TempVTblTh8;%R TempVTblTh8
+cThrmstr;TempIdxF;%R TempIdxF
+cThrmstr;TempIdx;%R TempIdx
+cThrmstr;TempIdxFrc;%R TempIdxFrc
+cThrmstr;TempPt1;%R TempPt1
+cThrmstr;TempPt2;%R TempPt2
+cThrmstr;Test20;%R Test20
+cThrmstr;Test21;%R Test21
+cThrmstr;TempIdxI;%R TempIdxI
+cThrmstr;TestIn20;%R TestIn20
+cThrmstr;TestIn21;%R TestIn21
+cThrmstr;ThrmTempDelMax;%R Dynamic maximum allowed temp delta between high and low range measurement
+
+;TcSpdCmd0;TcSpdCmd0;;RPM
+;TcPwrReqTot;TcPwrReqTot;;kW
+;TcSpdMinVsTrq;TcSpdMinVsTrq
+;TcDelSpd;TcDelSpd;;RPM
+;TcPwrDstb;TcPwrDstb;;kW
+;TcSpdCmd;TcSpdCmd;;RPM
+;TcSpdReq;TcSpdReq;;RPM
+;TcPwrCmd;TcPwrCmd;;kW
+;TcTrqCmd0;TcTrqCmd0;;kNm
+;TcPwrReq;TcPwrReq;;kW
+;TcDelTrq;TcDelTrq;;kNm
+;TcTrqCmd;TcTrqCmd;;kNm
+;TcSpdDstb;TcSpdDstb;;RPM
+;TcTrqReq;TcTrqReq;;kNm
+;TcSeqSt;TcSeqSt
+;TcRunCmd;TcRunCmd;TrueFalseTyp
+;TcCnvRunCmd;TcCnvRunCmd;TrueFalseTyp
+;TcSimMode;TcSimMode;TrueFalseTyp
+;TcSpdOut1;TcSpdOut1;;RPM
+
+;TcDelTrqAct;Delta torque request after hysteresis;;kNm
+;TcDelSpdAct;Delta speed request after hysteresis;;Rpm
+;TcDelTrqMax;Max torque with de-rating;;kNm
+;TcDelSpdMax;Max speed with de-rating;;Rpm
+;LclPfRefx;Lcl power factor reference;; ;2
+
+;IyPFCmdPu;Iy power factor cmd pu;;Ipu
+;IyHrmFFilPu;Harm filter iy fil pu;;Ipu
+;LvIyReserv;Low voltage iy reserve;;Ipu
+;LvIyReservN;Low voltage iy reserve negative;;Ipu
+;LvIyReservP;Low voltage iy reserve positive;;Ipu
+;LvPwrRcyRtDy;LVRT pwr rcy rate dynamic;;Pu/sec
+;QregCmdPu;VAR reg command pu;;VARpu
+;QregFbkPu;VAR reg feedback pu;;VARpu
+;HvIyRatPk;;;Ipu
+;VregCmd;Volt reg command;;Pu;4
+;VregOut;Volt reg output;;Ipu;4
+;VregFbk;Volt reg feedback;;Pu;4
+;VregRfMaxDyn;voltage regulator max dynamic;;V pu
+;IyPFCmd;Iy power factor cmd;;A pk;1
+;LvIyRatPk;;;Ipu
+;QregFrozen;TBD_QregFrozen;TrueFalseEnum
+;R_ModLimAct;TBD_R_ModLimAct;TrueFalseEnum
+;VPRPWSlowTmr;TBD_VPRPWSlowTmr;;;4
+;VregErr;Volt reg error;;Pu
+;VregInt;Volt reg integrator;;Ipu
+;IyAsyIxErr;TBD_IyAsyIxErr;;A pk
+;IyCnvLimMn;TBD_IyCnvLimMn;;Ipu;1
+;IyCnvLimMx;TBD_IyCnvLimMx;;Ipu;1
+;LvIyReserv;;;Ipu;1
+;PwrGridVCFil;Grid power,VAR cntl;;Var
+;QregCmd;VAR reg command;;Var;0
+;QregErr;VAR reg error;;Var;0
+;QregFbk;VAR reg feedback;;Var;0
+;QregIntGnDyn;VAR reg int gn dyn;;Ap/Vpu
+;R_FwkRtLimDn;TBD_R_FwkRtLimDn;;Vpu/S
+;R_ModIndErr;TBD_R_ModIndErr;;Pu
+;R_ModIndFil;Modulation index;;Pu
+;R_ModIndLim;Modulation limit;;Pu
+;R_VmagPuT2;TBD_R_VmagPuT2;;Pu
+;VPRPAct;TBD_VPRPAct;TrueFalseEnum
+;VPRPActHv;TBD_VPRPActHv;TrueFalseEnum
+;VPRPActLv;TBD_VPRPActLv;TrueFalseEnum
+;VPRPFilGnDyn;TBD_VPRPFilGnDyn;;;8
+;VPRPHVsecEr2;TBD_VPRPHVsecEr2;;Vsec;4
+;VPRPHVsecErr;TBD_VPRPHVsecErr;;Vsec;4
+;VPRPIyCmAvg;TBD_VPRPIyCmAvg;;Ipu
+;VPRPIyCmAvg0;TBD_VPRPIyCmAvg0;;Ipu
+;VPRPIyCmAvg1;TBD_VPRPIyCmAvg1;;Ipu
+;VPRPIyCmdFil;TBD_VPRPIyCmdFil;;Ipu
+;VPRPIyDelPu;TBD_VPRPIyDelPu;;Ipu;4
+;VPRPIyMax;TBD_VPRPIyMax;;Ipu;3
+;VPRPIyMin;TBD_VPRPIyMin;;Ipu;3
+;VPRPIyRef;TBD_VPRPIyRef;;Ipu;3
+;VPRPLVsecErr;TBD_VPRPLVsecErr;;Vsec;4
+;VPRPVErr;TBD_VPRPVErr;;V pu;4
+;VPRPVErrHv;TBD_VPRPVErrHv;;V pu;4
+;VPRPVErrLv;TBD_VPRPVErrLv;;V pu;4
+;VPRPVFbkAvg;TBD_VPRPVFbkAvg;;V pu
+;VPRPVFbkAvg0;TBD_VPRPVFbkAvg0;;V pu
+;VPRPVFbkAvg1;TBD_VPRPVFbkAvg1;;V pu
+;VPRPVFbkFil;TBD_VPRPVFbkFil;;V pu;4
+;VPRPWSlowAct;TBD_VPRPWSlowAct;TrueFalseEnum
+;VregCorrErr;TBD_VregCorrErr;;Ipu
+;VregCorrInt;TBD_VregCorrInt;;A pk
+;VregFilIn;Vreg filter input;;V pu;4
+;VregFrzInt;TBD_VregFrzInt;TrueFalseEnum
+;VregFrzVFil;TBD_VregFrzVFil;;Pu
+;VregHvKick;TBD_VregHvKick;;Ipu;4
+;VregIntGnDyn;Volt reg int gn dyn
+;VregIyCmd;TBD_VregIyCmd;;Ipu
+;VregIyCmd0;TBD_VregIyCmd0;;Ipu
+;VregIyNSeq;TBD_VregIyNSeq;;Ipu
+;VregIyStep;TBD_VregIyStep;;Ipu
+;VregLimN;TBD_VregLimN;TrueFalseEnum
+;VregLimP;TBD_VregLimP;TrueFalseEnum
+;VregMaxLim;Volt reg max output;;Ipu;4
+;VregMaxLim0;Volt reg max out 0;;Ipu
+;VregMaxSel0;TBD_VregMaxSel0;;Ipu
+;VregMaxSel1;TBD_VregMaxSel1;;Ipu
+;VregMinLim;Volt reg min output;;Ipu;4
+;VregMinLim0;Volt reg min out 0;;Ipu
+;VregMinSel0;TBD_VregMinSel0;;Ipu
+;VregMinSel1;TBD_VregMinSel1;;Ipu
+;VregNSeqIyIx;TBD_VregNSeqIyIx;;A pk
+;VregNSeqNwA;TBD_VregNSeqNwA;TrueFalseEnum
+;VregNSeqSpdA;TBD_VregNSeqSpdA;TrueFalseEnum
+;VregNSqIyxPu;TBD_VregNSqIyxPu;;Ipu
+;VregOutMax;TBD_VregOutMax;;Ipu
+;VregOutMin;TBD_VregOutMin;;Ipu
+;VregTstCmd;Volt reg test cmd;;Pu
+;VregVpuFil;Vreg Vpu filtered;;V pu
+;VregVpuFlErr;TBD_VregVpuFlErr;;V pu;4
+;VregVpuLimIn;Vreg Vpu lim input;;V pu;4
+;IyMaxLim1;TBD_IyMaxLim1;;A pk;1
+;VARCmd;VAR command;;Var;1
+
+;R_TrqLimGenS;Generat torque lim;;N*m
+;R_TrqLmTtNeg;Torque cmd neg lim T;;N*m
+;R_TrqCmdInTt;Trq cmd in total;;N*m
+;PhiAdj;Phase angle ref;;Rad;2
+;R_ILimAdj;Current limit;;A pk;1
+;R_TrqLimGen;Regen torque limit;;N*m;0
+;R_TrqLimMtr;Motoring torque lim;;N*m;0
+;R_TrefEnbReq;TBD_R_TrefEnbReq
+;R_TrqCmd;Torque ref pre scale;;N*m;0
+;R_TrqCmdAct;Torque ref pre lim;;N*m;0
+;R_TrqRef;Torque ref input;;N*m;0
+
+;DTD1TrqCmd;DTD #1 torque cmd;;N*m
+;DTD2TrqCmd;DTD #2 torque cmd;;N*m
+;DTDTrqCmdTot;DTD torque cmd tot;;N*m
+;R_VabBrg;Rotor bridge-1 phase A to phase B voltage;;Volts
+;R_VbcBrg;Rotor bridge-1 phase B to phase C voltage;;Volts
+;R_IaBrg;Rotor bridge-1 phase A current;;Amps
+;R_IbBrg;Rotor bridge-1 phase B current;;Amps
+;R_IcBrg;Rotor bridge-1 phase C current;;Amps
+;R_VdcBrg;Rotor  bridge-1 DC link voltage;;Volts
+;R_VdcBrgRcp;Rotor  bridge-1 DC link voltage reciprocal;;1/Volt
+;R_VdbBrg;Rotor  bridge-1 voltage across DB resistor;;Volts
+;R_BthtrTemp7;Rotor Brg1 thermistor 7 temp dynamic brake top;;degC
+;R_BthtrTemp8;Rotor Brg1 thermistor 8 temp dynamic brake bottom;;degC
+
+;R_TachZeroT1;Tach zero compensation;;rad
+;R_AngErr;Ang difference between Pll angle and mechanical angle;;rad
+;R_WelecT2;Rotor electric speed  in task 2;;rad
+;R_WelecT3;Rotor electric speed  in task 3;;rad
+
+;R_SpdRpm;Rotor speed in rpm
+
+;R_Rkd;Damper d-axis resistance referred to stator;;Ohms
+;R_Rkq;Damper q-axis resistance referred to stator;;Ohms
+;R_Rr;Rotor resistance referred to stator;;Ohms
+;R_Lr;Rotor inductance referred to stator;;Henrys
+;R_Ls;Stator leakage inductance;;Henrys
+;R_Lmd;Stator d-axis magnetizing inducatance;;Henrys
+;R_Lmq;Stator q-axis magnetizing inducatance;;Henrys
+;R_Ld;Stator d-axis synchronous inducatance;;Henrys
+;R_Lq;Stator q-axis synchronous inducatance;;Henrys
+;R_Ld2;Sub-transient inducance in d-axis;;Henrys
+;R_Lq2;Sub-transient inducance in q-axis;;Henrys
+;R_FlxPmd;Permanent magnet flux;;Webers
+;R_CurLimCal;Rotor calculated current limit;;Amps
+
+;R_VMagBrgFil;Rotor bridge voltage magnitude meter;;Vllrms
+;R_IMagBrgFil;Rotor bridge current  magnitude meter;;Arms
+;R_PwrBrgFil;Rotor bridge active power meter;;KW
+;R_QpwrBrgFil;Rotor bridge reactive power meter;;Kvar
+;R_PllFrqFil;Rotor pll frequency meter;;Hertz
+;R_TrqRat;Rotor rated torque;;Nm
+
+;R_LclTrqRef;Copy of torque reference entered in keypad;;Nm
+;R_TrqCmdIn;Torque command-input after rate limit and clamp;;Nm
+;R_TrqCmd;Global torque command;;N.m
+;R_TrqCmdFrzPos;Torque command is frozen at a positive level
+;R_TrqCmdFrzNeg;Torque command is frozen at a negative level
+;R_TcmdLimPos;Positive limit for torque command;;N.m
+;R_TcmdLimNeg;Negative limit for torque command;;N.m
+;R_TcmdVoltMult;Torque command limiter multiplier due to high Dc-link voltage
+;R_TcmdVoltMultT1;Torque limiter multiplier data-passed to Task1
+;R_TrqRateCalc;Calculated rate of the torque;;Nm/sec
+;R_LclTrqRefPu;Copy of torque reference entered in keypad;;Pu/sec
+;R_LclTrqRateLim;Conver torque rate limit entered in keypad to Nm;;Nm
+
+;R_ContClsCmdT1;Close command for rotor contactor T1;TrueFalseEnum
+;R_RunningT1;Rotor converter is running T1;TrueFalseEnum
+;R_ContEnbStatT1;Rotor enable contactor status T1;TrueFalseEnum
+
+;R_BrgTestL;Total rotor brg phs-to-phs inductance for diag modes;;Henrys
+;R_BthtrImbFlgDb;Rotor dynamic brake thermistor imbalance flag;TrueFalseEnum
+
+;R_IocFlt;Rotor bridge IOC detected on any phase on either bridge;TrueFalseEnum
+;R_DesatMask;Rotor bridge Desat Mask;TrueFalseEnum
+
+;S_VcomAbs;Absolute common mode stator voltage;;Volts
+;S_VcomAbsThrs;Common mode voltage threshold for stator voltage;;Volts
+
+;R_DbPavgTotal;Total power transferred to Db resistors;;Watts
+;R_DbRpavgTotalT3;Total power transferred to Db resistors in task3;;Watts
+;R_DbPdissptTotal;Total power dissipated to ambient from Db resistors;;Watts
+;R_DbRefTemp;Reference temperature for Db transistor thermal model;RefTempEnum
+;R_DbResTempMax;Maximum of Db resistor estimated temperatures;;degC
+;R_DbTrJncTempMax;Maximum of Db transistor junction temperatures;;degC
+
+;DbInh;Dynamic break inhibit scheme;DbInhEnum
+;R_PlsTstStat;TBD_R_PlsTstStat;TrueFalseEnum
+;R_IxLimCal;Torque current limit;;A pk
+
+;R_SpdFbkT3;Rotor speed feedback passed to task3;;Rad/S
+;R_SpdLow;Rotor mechanical speed is low;TrueFalseTyp
+;R_SpdHigh;Rotor mechanical speed is high;TrueFalseTyp
+;R_SpinRdy;Rotor bridge ready for shaft to spin-up;TrueFalseTyp
+;R_RunAct;Rotor run active;TrueFalseTyp
+;R_RunCmd;Rotor run command;TrueFalseTyp
+;R_Running;Rotor running indication;TrueFalseTyp
+;R_RunPrm;Rotor run permissive;TrueFalseTyp
+;R_RunRdy;Rotor ready to run;TrueFalseTyp
+;R_RunReq;Rotor run request;TrueFalseTyp
+;R_SeqSt;Rotor sequencer state;R_SeqStEnum
+;R_SeqStopped;Rotor sequencer stopped;TrueFalseTyp
+;R_StrtPrm;Rotor start permissive;TrueFalseTyp
+;R_ZeroSpd;Rotor zero speed active;TrueFalseTyp
+;R_TrqEnbReq;Rotor torque enable request;TrueFalseTyp
+
+;R_VpeakSqr;Rotor brg1 peak voltage summation squared;;Volt^2
+;R_VbrgUpGn;Rotor raising voltage filter gain
+;R_VbrgDnGn;Rotor falling voltage filter gain
+
+;R_DbSeqTstDone;Rotor Db sequencer test completion indication;TrueFalseTyp
+;R_DbSeqTstCmd;Rotor Db sequencer test command;TrueFalseTyp
+
+;DbDualInh;DB selected to Dual Inhibit;TrueFalseTyp
+;DbRdy;DB ready;TrueFalseTyp
+
+;SCEnbReq;Sync Contactor Enable Request;TrueFalseTyp
+;R_VoffsVld;Rotor Voltage Offset Valid;TrueFalseTyp
+
+;R_DbCelTstCmd;DB cell test command;TrueFalseTyp
+;R_DbPlsTstCmd;DB pulse test command;TrueFalseTyp
+;R_PlsTstCmd;Rotor bridge pulse test command;TrueFalseTyp
+;R_DBGateDsb;DB gate disable;TrueFalseTyp
+;R_K1TempRunPerm;CfcTemp is high enough to run the rotor;TrueFalseTyp
+
+;R_RunRdyVar1;intermediate flag for R_RunRdy/R_SpinRdy;TrueFalseTyp
+;R_MctlTunCmd;Motor tune command;TrueFalseTyp
+;R_CelTstCmd;Cell Test command
+;R_CTDismTmr;R cell test dism tmr;;Sec
+;L_IyrfNHist;Iy ref neg hist
+;L_IyrfPHist;Iy ref pos hist
+;L_IReserve;Reserve current;;A pk;1
+;L_IyCmdRef;Iy reference command;;A pk;1
+;L_IyRefLim;Iy reference limit;;A pk;1
+;L_IyrfErr;Iy reference error;;A pk;1
+;L_IyrfFbk;Iy reference fbk;;A pk
+;L_IyrfIyT2;Internal Iy ref;;A pk;1
+;L_IyrfMaxLim;Iy ref limit max;;A pk;1
+;L_IyrfMinLim;Iy ref limit min;;A pk;1
+;L_IyrfNFrz;Iy ref neg freeze;TrueFalseEnum
+;L_IyrfPFrz;Iy ref pos freeze;TrueFalseEnum
+
+;L_BrgTestL;Total line brg phs-to-phs inductance for diag modes;;Henrys
+;L_BrgTestC;Total line brg phs-to-phs capacitance for diag modes;;Farads
+
+;GmVcomAbs;Absolute common mode voltage in xfmr 690V winding;;Volts
+;GmVcomAbsThrs;Common mode voltage threshold for xfmr 690V winding;;Volts
+;GmVcomDlyTmr;Timer for delaying xfmr 690V common mode voltage protection;;Sec
+
+;Fan1Duty;Fan-1 duty command to the Rebf;;pu
+;Fan2Duty;Fan-2 duty command to the Rebf;;pu
+;Fan1PwrEnb;Power enabled for fan-1 ;TrueFalseEnum
+;Fan2PwrEnb;Power enabled for fan-2;TrueFalseEnum
+
+;GridVabLowIp;line grid voltage Vab low in progress;TrueFalseEnum
+;GridVbcLowIp;line grid voltage Vbc low in progress;TrueFalseEnum
+;GridFltVcomChkDsb;disable the common mode voltage check due to grid event;TrueFalseEnum
+;XfmrSatStartFlg;xfmr saturation starts when grid events is off;TrueFalseEnum
+
+;GmPa;Instantaneous xfmr 690V winding phs-A power;;Watts
+;GmPb;Instantaneous xfmr 690V winding phs-B power;;Watts
+;GmPc;Instantaneous xfmr 690V winding phs-C power;;Watts
+;GmPaT2;Instantaneous xfmr 690V winding phs-A in task2;;Watts
+;GmPbT2;Instantaneous xfmr 690V winding phs-B in task2;;Watts
+;GmPcT2;Instantaneous xfmr 690V winding phs-C in task2;;Watts
+;GmVanT2;TBD_GmVanT2;;V pk
+;GmVbnT2;TBD_GmVbnT2;;V pk
+;GmVcnT2;TBD_GmVcnT2;;V pk
+;L_DSatDx;;TrueFalseEnum
+;DfTestTmr;Dist-filter test timer;;Sec
+;L_CTDismTmr;Line cell test dismissal timer;;Sec
+;L_StopStTmr;Line stop state timer;;Sec
+;L_SeqSt;Line sequencer state;L_SeqStEnum
+;L_CelTstCmd;Line cell test command;TrueFalseTyp
+;L_PlsTstCmd;Line pulse test command;TrueFalseTyp
+;L_RunCmd;Line converter run command;TrueFalseTyp
+;L_Running;Line converter running;TrueFalseTyp
+;L_RunReq;Line converter run request;TrueFalseTyp
+;MvSwGearShuntTrp;Medium-voltage switchgear shunt trip;TrueFalseTyp
+;MvSwGearShuntSep;SEP extra medium-voltage switchgear shunt trip;TrueFalseTyp
+;MvSwGearTrpReq;Request to trip medium-voltage switchgear;TrueFalseTyp
+;Q1OpnReq;Request to open Q1;TrueFalseTyp
+;L_DBPwrEnb;DB bridge is on;TrueFalseEnum
+;L_DbCelTstCmd;DB Line cell test command;TrueFalseTyp
+;L_DbPlsTstCmd;DB Line pulse test command;TrueFalseTyp
+;L_IyrfISetpt;Iy ref cur setpt;;A pk
+;L_IyrfVSetpt;Iy ref volt setpt;;V ln
+;L_IxFbk;Real current fbk;;A pk
+;L_IyFbk;Reactive current fbk;;A pk
+;L_VxFbk;X-axis volt fbk;;V ln
+;L_VyFbk;Y-axis volt fbk;;V ln
+
+;S_IaRms;Stator phs-A current magnitude for Toc protection;;Arms
+;S_IbRms;Stator phs-B current magnitude for Toc protection;;Arms
+;S_IcRms;Stator phs-C current magnitude for Toc protection;;Arms
+
+;S_TocThrDy;Stator over-current dymanic trip threshold;;Amp
+;S_TocAlmOnDy;Stator over-current dymanic alarm on threshold;;Amp
+;S_TocAlmOffDy;Stator over-current dymanic alarm off threshold;;Amp
+
+;S_VabRmsInst;Stator phs-AB voltage calculation;;Arms
+;S_VbcRmsInst;Stator phs-BC voltage calculation;;Arms
+;GmIb;Grid monitor phase B current fbk;;Amps
+;GmVbn;Grid monitor phase B voltage fbk;;Volts
+;S_Ib;Stator current phs-B;;Amps
+;S_Vbc;TBD_S_Vbc
+;S_Ia;Stator current phs-A;;Amps
+;S_Ic;Stator current phs-C;;Amps
+;S_Vab;TBD_S_Vab
+;GmIa;Grid monitor phase A current fbk;;Amps
+;GmIc;Grid monitor phase C current fbk;;Amps
+;GmVan;Grid monitor phase A voltage fbk;;Volts
+;GmVcn;Grid monitor phase C voltage fbk;;Volts
+;S_VOffsVld;S Voltage offset vld;TrueFalseEnum
+;S_IabcGndFil;S Gnd current,coarse;;Amps
+;S_IaOffsCal;S Phs A curr offset;;Amps
+;S_IaRmsMag;S Ia^2 filtered;;Arms^2
+;S_IbOffsCal;S Phs B curr offset;;Amps
+;S_IbRmsMag;S Ib^2 filtered;;Arms^2
+;S_IcOffsCal;S Phs C curr offset;;Amps
+;S_IcRmsMag;S Ic^2 filtered;;Arms^2
+;S_TocHiSelSq;TBD_S_TocHiSelSq;;Arms^2;1
+;S_VabOffsCal;S A-B,Volt offset;;Vll
+;S_VbcOffsCal;S B-C,Volt offset;;Vll
+;S_TocHiSel;Str toc max current;;Arms;1
+;L_Ix;;;A pk
+;L_Iy;;;A pk
+;L_Vx;;;V ln
+;L_Vy;;;V ln
+;L_RegLimSum;TBD_L_RegLimSum
+;L_RegLimHist;Reg limit summary
+;L_RegInLim;;TrueFalseEnum
+
+;L_VdcFil;Line Dc bus voltage filtered;;V dc;1
+;L_IxFil;Line real current filtered;;A pk
+;L_IyFil;Line reactive current filtered;;A pk
+;L_VxFil;Line X-axis voltage feedback filtered;;V lnpk
+;L_VyFil;Line Y-axis voltage feedback filtered;;V lnpk
+;L_IMagFil;Line current magnitude;;A peak;1
+;L_IyHrmFCal;Harmonic filter cur;;A pk;1
+;L_PwrLine;ion Line output pwr;;kW
+;L_PwrLine;Line pwr out,unfil;;Watts
+;L_VMagT2;Line Conv Volt Magn;;V ln
+;L_IdcFil;L DC bus current;;A dc;1
+;L_IMagFil;AC line current;;A pk;1
+;L_IZeroSeq;L Ground current;;Amps
+;L_VarFil;Line conv input VARs;;Var
+;L_VarHrmF;Harmonic filter vars;;Var
+;L_VarLine;Line VARs out,unfil;;Var
+;L_CnvOutPwr;Lin cnv pwrout unfil;;Watts
+;L_CnvPwrFil;Line conv out pwr;;Watts
+;L_DcBusPwr;L DC bus power;;Watts
+;L_IyHrmFFil;Harm filter iy fil;;A pk
+;L_IyVdc;;;A pk
+;L_LineFrqFil;AC line frequency;;Rad/S
+;L_LineMagFil;AC line voltage;;V ln
+;L_PwrLineFil;Line output power;;Watts
+;L_VarCalc;;;Var
+;L_VarLineFil;Line output VARs;;Var
+;L_VdcIxIyDel;;;Vdc
+;L_VdcIxIyFil;;;Vdc
+;L_VdcIxIyMod;;;Vdc
+;L_VdcReg;DC voltage feedback;;V dc
+;L_VMagT2Fil;Line Conv Volt Magn, Filt;;V ln;1
+;L_IMagT1;Line curr mag(fast);;A pk;1
+;L_IxErr2;;;A pk
+;L_IyErr2;;;A pk
+;L_IyregSpill;;;Pu
+;L_IregVnomFf;Ireg voltage fdfwd;;V ln
+;L_IregX;Ireg X U/D;;Pu
+;L_IregY;Ireg Y U/D;;Pu
+;L_IxCmdZ;L Ix command delayed;;A pk
+;L_IxErr2Fil;;;A pk
+;L_IxregDcOut;Ix reg dc reg out
+;L_IxregIxInt;Ireg X integral term;;V ln
+;L_IxregPrp2;;;V ln
+;L_IxregRsOut;Ix reg phs imb comp;;Pu
+;L_IxregSpill;;;Pu
+;L_IxregVOut;Ix reg voltage out;;V ln
+;L_IxregZErr;Ix reg error;;A pk
+;L_IxSpillTot;Ix reg spillover tot;;A pk
+;L_IyCmd0;Reactive cur command;;A pk
+;L_IyCmdZ;L Iy command delayed;;A pk
+;L_IyErr2Fil;;;A pk
+;L_IyregDcOut;Iy reg dc reg out
+;L_IyregIyInt;Ireg Y integral term;;V ln
+;L_IyregPrp2;;;V ln
+;L_IyregRsOut;Iy reg phs imb comp;;Pu
+;L_IyregV2Ff;Iy reg ind V fdfwd;;V ln
+;L_IyregVFf;Ireg Y volt fdfwd;;V ln
+;L_IyregVOut;Iy reg volts out;;V ln
+;L_IyregZErr;Iy reg error;;A pk
+;L_PhImbIp;Phase imbalance in progress
+;L_RsLmZero;;YesNoEnum
+;L_UxCmd;L X axis modulation;;Pu
+;L_UyCmd;L Y axis modulation;;Pu
+;L_IxCmd0;Real cur command;;A pk
+;L_AcLineLoss;Line brg AC voltage loss;TrueFalseEnum
+;L_VabLossSt;Ln Vab loss state
+;L_VabLossTmr;Ln Vab loss timer
+;L_VbcLossSt;Ln Vbc loss state
+;L_VbcLossTmr;Ln Vbc loss timer
+;L_IndTstDone;;TrueFalseEnum
+;LBrgTestDone;;YesNoEnum
+;L_IyTestRms;;;A rms
+;L_LMeasBrg;Measured bridge ind;;Henrys
+;L_LMeasSys;Measured system ind;;Henrys
+;RBrgTestDone;TBD_RBrgTestDone;YesNoEnum
+;L_VlnIn;Nominal input volts;;V ln
+;L_LXfmr;TBD_L_LXfmr
+;L_IrgSpilGnx;Ireg spillover gain
+;L_IxrgCmdGnx;Ix reg command gain
+;L_IxrgFbkGnx;Ix reg feedback gain
+;L_IxrgIntGnx;Ix reg integral gain
+;L_IxrgIntLmx;Ix reg int limit;;V ln
+;L_IxrgULimx;Ix reg U/D limit;;Pu
+;L_IyCmdLimx;Iy reg cmd limit;;A pk
+;L_IyrgCmdGnx;Iy reg cmd gain
+;L_IyrgFbkGnx;Iy reg fbk gain
+;L_IyrgIntGnx;Iy reg int gain
+;L_IyrgIntLmx;Iy reg int limit;;V ln
+;L_IyrgULimx;Iy reg U/D limit;;Pu
+;L_IxLimNx;L_Ix cmd neg limit;;A pk
+;L_IxLimPx;L_Ix cmd pos limit;;A pk
+;L_VdcRefx;DC voltage ref fixed;;V dc
+;L_VdcSlwx;DC voltage slew rate;;V/Sec
+;L_VregIntGnx;Vreg integral gain
+;L_VregPrpGnx;Vreg prop gain
+;L_VregWoGnx;Vreg crossover gain
+;L_VregWoComp;Vreg crossover comp
+;L_MaClsCmd;Line main contactor clos commande;TrueFalseTyp
+;L_MaStatus;Line main contactor status;TrueFalseTyp
+;L_Stopped;Line sequencer stop state;TrueFalseTyp
+;L_DiagMode;Line sequencer diagnostic state;TrueFalseTyp
+;L_RunRdy;Line converter ready to run;TrueFalseTyp
+;L_SpinRdy;Line converter ready to spin;TrueFalseTyp
+
+;DTAFanEnb;DTA fan control able to change state;TrueFalseTyp
+;HeaterEnb;Heating control able to change state;TrueFalseTyp
+;LqdPmpMtrEnb;Liquid pump control able to change state;TrueFalseTyp
+;L_DfQpwrMax;Maximum expected dist-filter reactive power;;Vars
+;L_DfQpwrMin;Minimum expected dist-filter reactive power;;Vars
+;L_DfQpwrLowLvl;Low level of reactive power for declaring open phase;;Vars
+;L_DfPwrMax;Maximum expected dist-filter active power;;Watts
+;L_DfPwrMin;Minimum expected dist-filter active power;;Watts
+;L_DfPwrLowLvl;Low level of active power for declaring open phase;;Watts
+;L_CcstrClsCmd;Dc link charger contactor string close command;TrueFalseTyp
+;L_ChgSt;Dc link charger seq-task state variable
+;L_AcLinePres;Voltage presents in line bridge;TrueFalseTyp
+;L_DfMode;Distortion filter test mode handshaking;DfModeEnum
+;L_DfTestIndx;Distortion filter test index
+;L_DfTestIndxZ1;Distortion filter test index delayed one task
+;L_DfQPwrTmr;Distortion filter reactive power timer;;Sec
+;L_DfPwrgain;Gain for filtering distortion filter active-power
+;L_DfQpwrgain;Gain for filtering distortion filter reactive-power
+;L_MaDeltVoltGn;Gain for filtering squared volt difference across MA
+
+;L_DfPhA0IsZero;Dist filter test-0 phs-A failed;TrueFalseTyp
+;L_DfPhA0IsBad;Dist filter test-0 phs-A zero current;TrueFalseTyp
+;L_DfPhA0QpwAux;Dist filter test-0 phs-A auxiliary reactive pwr;;Vars
+;L_DfPhA0Qpwr;Dist filter test-0 phs-A reactive power;;Vars
+;L_DfPhA1IsZero;Dist filter test-1 phs-A failed;TrueFalseTyp
+;L_DfPhA1IsBad;Dist filter test-1 phs-A zero current;TrueFalseTyp
+;L_DfPhA1QpwAux;Dist filter test-1 phs-A auxiliary reactive pwr;;Vars
+;L_DfPhA1Qpwr;Dist filter test-1 phs-A reactive power;;Vars
+;L_DfPhA2IsZero;Dist filter test-2 phs-A failed;TrueFalseTyp
+;L_DfPhA2IsBad;Dist filter test-2 phs-A zero current;TrueFalseTyp
+;L_DfPhA2QpwAux;Dist filter test-2 phs-A auxiliary reactive pwr;;Vars
+;L_DfPhA2Qpwr;Dist filter test-2 phs-A reactive power;;Vars
+
+;L_DfPhB0IsZero;Dist filter test-0 phs-B failed;TrueFalseTyp
+;L_DfPhB0IsBad;Dist filter test-0 phs-B zero current;TrueFalseTyp
+;L_DfPhB0QpwAux;Dist filter test-0 phs-B auxiliary reactive pwr;;Vars
+;L_DfPhB0Qpwr;Dist filter test-0 phs-B reactive power;;Vars
+;L_DfPhB1IsZero;Dist filter test-1 phs-B failed;TrueFalseTyp
+;L_DfPhB1IsBad;Dist filter test-1 phs-B zero current;TrueFalseTyp
+;L_DfPhB1QpwAux;Dist filter test-1 phs-B auxiliary reactive pwr;;Vars
+;L_DfPhB1Qpwr;Dist filter test-1 phs-B reactive power;;Vars
+;L_DfPhB2IsZero;Dist filter test-2 phs-B failed;TrueFalseTyp
+;L_DfPhB2IsBad;Dist filter test-2 phs-B zero current;TrueFalseTyp
+;L_DfPhB2QpwAux;Dist filter test-2 phs-B auxiliary reactive pwr;;Vars
+;L_DfPhB2Qpwr;Dist filter test-2 phs-B reactive power;;Vars
+
+;L_DfPhC0IsZero;Dist filter test-0 phs-C failed;TrueFalseTyp
+;L_DfPhC0IsBad;Dist filter test-0 phs-C zero current;TrueFalseTyp
+;L_DfPhC0QpwAux;Dist filter test-0 phs-C auxiliary reactive pwr;;Vars
+;L_DfPhC0Qpwr;Dist filter test-0 phs-C reactive power;;Vars
+;L_DfPhC1IsZero;Dist filter test-1 phs-C failed;TrueFalseTyp
+;L_DfPhC1IsBad;Dist filter test-1 phs-C zero current;TrueFalseTyp
+;L_DfPhC1QpwAux;Dist filter test-1 phs-C auxiliary reactive pwr;;Vars
+;L_DfPhC1Qpwr;Dist filter test-1 phs-C reactive power;;Vars
+;L_DfPhC2IsZero;Dist filter test-2 phs-C failed;TrueFalseTyp
+;L_DfPhC2IsBad;Dist filter test-2 phs-C zero current;TrueFalseTyp
+;L_DfPhC2QpwAux;Dist filter test-2 phs-C auxiliary reactive pwr;;Vars
+;L_DfPhC2Qpwr;Dist filter test-2 phs-C reactive power;;Vars
+
+;R1DbTrTmpRdyT2;Dynamic breake #1 transistor temp ready in task2;TrueFalseTyp
+;R2DbTrTmpRdyT2;Dynamic breake #2 transistor temp ready in task2;TrueFalseTyp
+
+
+;EERestAct;EE Reset active;TrueFalseTyp
+
+;TempOk;Temperature OK to Run;TrueFalseTyp
+
+;Q1ClsPulse;Q1 Close Pulse;TrueFalseTyp
+;Q1UVHld;Q1 UV Hold;TrueFalseTyp
+;Q1TripFbk;Q1 Trip Feedback;TrueFalseTyp
+;Q1ShuntTrip;Q1 Shunt Trip;TrueFalseTyp
+
+;KdfClsCmd;KDF Contactor close command;TrueFalseTyp
+;KdfClsFbk;KDF Contactor feedback;TrueFalseTyp
+;Q1Status;Q1 Status;TrueFalseTyp
+;CContOpnCmd;Charge Contactor close command;TrueFalseTyp
+;Brg1TripFltz1;Brg1 trip flt (z-1);TrueFalseEnum
+;L_InnrRegEnb;Inner reg enable;TrueFalseEnum
+;GmLineFltEnb;TBD_GmLineFltEnb;TrueFalseEnum
+;L_BrgPwrEnb;Line bridge is on;TrueFalseEnum
+;L_IOffsVld;Current offset valid boolean
+;L_DbTrTmpRdyT2;DB transistor temperature ready in task2 version;TrueFalseEnum
+;L_ModIndFbk;Modulation index fbk;;V dc
+;R_ModIndFbk;TBD_R_ModIndFbk
+;L_DCLinkInit;Link ready for load
+;L_VrefInMaxL;;TrueFalseEnum
+;L_VdcBstVmag;Vdc boost by vmag
+;L_VdcSetPt;DC volt reference;;V dc
+;L_VregErr;Vreg volt error;;V dc
+;L_VregIxInt;Vreg integral;;A pk
+;L_VregRef;Vreg volt ref;;V dc
+
+;L_VMagT3;Line peak magnitude voltage;;V ln
+;GmAsymRTIp;TBD_GmAsymRTIp;YesNoEnum
+;TransDiagInh;TBD_TransDiagInh;TrueFalseEnum
+;PwrCmdLine;Line power,commanded;;Watts
+;LclTrqRefx;Lcl torque ref;;kNm;2
+;PwrGrid;Grid power,unfil;;Watts
+;QPwrGrid;Grid react pwr unfil;;Var
+;IMagGrid;Grid current,unfil;;A pk
+;IMagGridFil;Grid current;;A pk
+;IxGridCalc;TBD_IxGridCalc;;A pk
+;IyGridCalc;TBD_IyGridCalc;;A pk
+;LclVarRefx;Lcl VAR ref;;kVar;2
+;LvrtCrowBar;Lvrt crowbar active
+;LvrtLowVolt;Lvrt low voltage
+;LvrtOutCntrl;Lvrt out of control
+;LvrtSpdRgRed;Lvrt spd range reduc
+;LvrtTrqLim;Lvrt torque limit
+;PhiCalc;Grid pwr angle unfil;;Rad
+;PhiCalcFil;Grid power angle;;Rad;1
+;PwrGridFil;Grid power;;Watts
+;QPwrGridFil;Grid reactive power;;Var;0
+;TotalLossPwr;Total losses;;Watts
+;WSlip;Slip freqency;;Rad/S
+;IyGrid;TBD_IyGrid;;A pk
+;CoreLossTot;Core loss total;;N*m;3
+;DFIRLoss;IR losses,filter;;Watts;3
+;Gm_IRLoss;IR losses,grid;;Watts;3
+;GmAsymRcvIp;TBD_GmAsymRcvIp;YesNoEnum
+;GmTrqFbk;Torque fdbk,GM;;N*m;3
+;GmTrqFbkFil;Torq fdbk fil,GM;;N*m;3
+;L_IRLoss;IR losses,line;;Watts;3
+;PowerGenAcc;Accum Power Generatd;;MW-Hrs;3
+;PowerUpTmAcc;Accum PowerUp Time;;Hours;1
+;PwrRegErr;Power trim error;;Watts;0
+;PwrRegInt;Grid power reg out;;Watts
+;PwrRegTot;Power reg total;;Watts
+;PwrTrimFF;Power trim feed-f;;Watts
+;R_I2RLossPwr;Rtr I^2 R losses;;Watts
+;R_IRLoss;IR losses,rotor;;Watts;3
+;RunningTmAcc;Accum Running Time;;Hours;1
+;S_I2RLossPwr;Stator I^2 R losses;;Watts
+;S_IRLoss;IR losses,stator;;Watts;3
+;VregNSeqHi;TBD_VregNSeqHi;TrueFalseEnum
+;VregHvMaxSlp;Vreg hv max slope
+;VregHvMinSlp;Vreg hv min slope
+;VregIyLimDyn;Vreg Iy nom lim;;Ipu
+;VregLVIyMnDy;Vreg Iy lv min lim;;Ipu
+;VregLvMaxSlp;Vreg lv max slope
+;VregLvMinSlp;Vreg lv min slope
+;VregMxMnDyn;Vreg max-min dyn;;Ipu
+;GmTrqErrT3;Torque err,GM;;N*m;3
+;GmAsymRcvTmr;TBD_GmAsymRcvTmr;;Sec
+;GmAsymRTTmr;TBD_GmAsymRTTmr;;Sec
+;HvIyMaxDyn;Vreg hv Iy max dyn;;Ipu
+;LvIyMaxDyn;Vreg lv Iy max dyn;;Ipu
+;OpnGrdTmDyn;;;Sec
+;OpnPhsTmDyn1;;;Sec
+;OpnPhsTmDyn2;;;Sec
+;PwrFactFil;Grid power factor
+;TrqPwrTrim;Torq trim,power reg;;N*m;2
+Class
+;L_AeadDin3Fil;Line Aead filtered dig input 3
+;L_AeadDin4Fil;Line Aead filtered dig input 4
+;L_AeadDin5Fil;Line Aead filtered dig input 5
+;L_AeadDin6Fil;Line Aead filtered dig input 6
+;L_AeadDin9Fil;Line Aead filtered dig input 9
+;L_AeadDin10Fl;Line Aead filtered dig input 10
+;L_AeadDin3Gn;Line Aead dig input 3 filter gain
+;L_AeadDin4Gn;Line Aead dig input 4 filter gain
+;L_AeadDin5Gn;Line Aead dig input 5 filter gain
+;L_AeadDin6Gn;Line Aead dig input 6 filter gain
+;L_AeadDin9Gn;Line Aead dig input 9 filter gain
+;L_AeadDin10Gn;Line Aead dig input 10 filter gain
+
+;L_BrgInfcIo1Din3T2;Line brg interf IO1 dig input 3 in task2
+;L_BrgInfcIo1Din4T2;Line brg interf IO1 dig input 4 in task2
+;L_BrgInfcIo1Din5T2;Line brg interf IO1 dig input 5 in task2
+;L_BrgInfcIo1Din6T2;Line brg interf IO1 dig input 6 in task2
+;L_BrgInfcIo1Din9T2;Line brg interf IO1 dig input 9 in task2
+;L_BrgInfcIo1Din10T2;Line brg interf IO1 dig input 10 in task2
+
+;L_AeadDin3;Line Aead dig input 3;TrueFalseTyp
+;L_AeadDin4;Line Aead dig input 4;TrueFalseTyp
+;L_AeadDin5;Line Aead dig input 5;TrueFalseTyp
+;L_AeadDin6;Line Aead dig input 6;TrueFalseTyp
+;L_AeadDin9;Line Aead dig input 9;TrueFalseTyp
+;L_AeadDin10;Line Aead dig input 10;TrueFalseTyp
+
+;L_AeadK1St;Line Aead K1 mirrored state;TrueFalseTyp
+;L_AeadK2St;Line Aead K2 mirrored state;TrueFalseTyp
+;L_AeadK3St;Line Aead K3 mirrored state;TrueFalseTyp
+;L_AeadK4St;Line Aead K4 mirrored state;TrueFalseTyp
+;L_AeadK5St;Line Aead K5 mirrored state;TrueFalseTyp
+;L_AeadK6St;Line Aead K6 mirrored state;TrueFalseTyp
+;L_AeadK7St;Line Aead K7 mirrored state;TrueFalseTyp
+;L_AeadK8St;Line Aead K8 mirrored state;TrueFalseTyp
+;L_AeadK9St;Line Aead K9 mirrored state;TrueFalseTyp
+
+;L_AeadK1Out;Line Aead K1 driving output;TrueFalseTyp
+;L_AeadK2Out;Line Aead K2 driving output;TrueFalseTyp
+;L_AeadK3Out;Line Aead K3 driving output;TrueFalseTyp
+;L_AeadK4Out;Line Aead K4 driving output;TrueFalseTyp
+;L_AeadK5Out;Line Aead K5 driving output;TrueFalseTyp
+;L_AeadK6Out;Line Aead K6 driving output;TrueFalseTyp
+;L_AeadK7Out;Line Aead K7 driving output;TrueFalseTyp
+;L_AeadK8Out;Line Aead K8 driving output;TrueFalseTyp
+;L_AeadK9Out;Line Aead K9 driving output;TrueFalseTyp
+
+;R_AeadDin3Fil;Rotor Aead filtered dig input 3
+;R_AeadDin4Fil;Rotor Aead filtered dig input 4
+;R_AeadDin5Fil;Rotor Aead filtered dig input 5
+;R_AeadDin6Fil;Rotor Aead filtered dig input 6
+;R_AeadDin9Fil;Rotor Aead filtered dig input 9
+;R_AeadDin10Fl;Rotor Aead filtered dig input 10
+;R_AeadDin3Gn;Rotor Aead dig input 3 filter gain
+;R_AeadDin4Gn;Rotor Aead dig input 4 filter gain
+;R_AeadDin5Gn;Rotor Aead dig input 5 filter gain
+;R_AeadDin6Gn;Rotor Aead dig input 6 filter gain
+;R_AeadDin9Gn;Rotor Aead dig input 9 filter gain
+;R_AeadDin10Gn;Rotor Aead dig input 10 filter gain
+
+;R_BrgInfcIo1Din3T2;Rotor brg interf IO1 dig input 3 in task2
+;R_BrgInfcIo1Din4T2;Rotor brg interf IO1 dig input 4 in task2
+;R_BrgInfcIo1Din5T2;Rotor brg interf IO1 dig input 5 in task2
+;R_BrgInfcIo1Din6T2;Rotor brg interf IO1 dig input 6 in task2
+;R_BrgInfcIo1Din9T2;Rotor brg interf IO1 dig input 9 in task2
+;R_BrgInfcIo1Din10T2;Rotor brg interf IO1 dig input 10 in task2
+
+;R_AeadDin3;Rotor Aead dig input 3;TrueFalseTyp
+;R_AeadDin4;Rotor Aead dig input 4;TrueFalseTyp
+;R_AeadDin5;Rotor Aead dig input 5;TrueFalseTyp
+;R_AeadDin6;Rotor Aead dig input 6;TrueFalseTyp
+;R_AeadDin9;Rotor Aead dig input 9;TrueFalseTyp
+;R_AeadDin10;Rotor Aead dig input 10;TrueFalseTyp
+
+;R_AeadK1St;Rotor Aead K1 mirrored state;TrueFalseTyp
+;R_AeadK2St;Rotor Aead K2 mirrored state;TrueFalseTyp
+;R_AeadK3St;Rotor Aead K3 mirrored state;TrueFalseTyp
+;R_AeadK4St;Rotor Aead K4 mirrored state;TrueFalseTyp
+;R_AeadK5St;Rotor Aead K5 mirrored state;TrueFalseTyp
+;R_AeadK6St;Rotor Aead K6 mirrored state;TrueFalseTyp
+;R_AeadK7St;Rotor Aead K7 mirrored state;TrueFalseTyp
+;R_AeadK8St;Rotor Aead K8 mirrored state;TrueFalseTyp
+;R_AeadK9St;Rotor Aead K9 mirrored state;TrueFalseTyp
+
+;R_AeadK1Out;Rotor Aead K1 driving output;TrueFalseTyp
+;R_AeadK2Out;Rotor Aead K2 driving output;TrueFalseTyp
+;R_AeadK3Out;Rotor Aead K3 driving output;TrueFalseTyp
+;R_AeadK4Out;Rotor Aead K4 driving output;TrueFalseTyp
+;R_AeadK5Out;Rotor Aead K5 driving output;TrueFalseTyp
+;R_AeadK6Out;Rotor Aead K6 driving output;TrueFalseTyp
+;R_AeadK7Out;Rotor Aead K7 driving output;TrueFalseTyp
+;R_AeadK8Out;Rotor Aead K8 driving output;TrueFalseTyp
+;R_AeadK9Out;Rotor Aead K9 driving output;TrueFalseTyp
+
+;R_GenAeadDin3Fil;GEN Aead filtered dig input 3
+;R_GenAeadDin4Fil;GEN Aead filtered dig input 4
+;R_GenAeadDin5Fil;GEN Aead filtered dig input 5
+;R_GenAeadDin6Fil;GEN Aead filtered dig input 6
+;R_GenAeadDin9Fil;GEN Aead filtered dig input 9
+;R_GenAeadDin10Fl;GEN Aead filtered dig input 10
+;R_GenAeadDin3Gn;GEN Aead dig input 3 filter gain
+;R_GenAeadDin4Gn;GEN Aead dig input 4 filter gain
+;R_GenAeadDin5Gn;GEN Aead dig input 5 filter gain
+;R_GenAeadDin6Gn;GEN Aead dig input 6 filter gain
+;R_GenAeadDin9Gn;GEN Aead dig input 9 filter gain
+;R_GenAeadDin10Gn;GEN Aead dig input 10 filter gain
+
+;R_BrgInfcIo2Din3T2;Rotor brg interf IO2 dig input 3 in task2
+;R_BrgInfcIo2Din4T2;Rotor brg interf IO2 dig input 4 in task2
+;R_BrgInfcIo2Din5T2;Rotor brg interf IO2 dig input 5 in task2
+;R_BrgInfcIo2Din6T2;Rotor brg interf IO2 dig input 6 in task2
+;R_BrgInfcIo2Din9T2;Rotor brg interf IO2 dig input 9 in task2
+;R_BrgInfcIo2Din10T2;Rotor brg interf IO2 dig input 10 in task2
+
+;R_GenAeadDin3;GEN Aead dig input 3;TrueFalseTyp
+;R_GenAeadDin4;GEN Aead dig input 4;TrueFalseTyp
+;R_GenAeadDin5;GEN Aead dig input 5;TrueFalseTyp
+;R_GenAeadDin6;GEN Aead dig input 6;TrueFalseTyp
+;R_GenAeadDin9;GEN Aead dig input 9;TrueFalseTyp
+;R_GenAeadDin10;GEN Aead dig input 10;TrueFalseTyp
+
+;R_GenAeadK1St;GEN Aead K1 mirrored state;TrueFalseTyp
+;R_GenAeadK2St;GEN Aead K2 mirrored state;TrueFalseTyp
+;R_GenAeadK3St;GEN Aead K3 mirrored state;TrueFalseTyp
+;R_GenAeadK4St;GEN Aead K4 mirrored state;TrueFalseTyp
+;R_GenAeadK5St;GEN Aead K5 mirrored state;TrueFalseTyp
+;R_GenAeadK6St;GEN Aead K6 mirrored state;TrueFalseTyp
+;R_GenAeadK7St;GEN Aead K7 mirrored state;TrueFalseTyp
+;R_GenAeadK8St;GEN Aead K8 mirrored state;TrueFalseTyp
+;R_GenAeadK9St;GEN Aead K9 mirrored state;TrueFalseTyp
+
+;R_GenAeadK1Out;GEN Aead K1 driving output;TrueFalseTyp
+;R_GenAeadK2Out;GEN Aead K2 driving output;TrueFalseTyp
+;R_GenAeadK3Out;GEN Aead K3 driving output;TrueFalseTyp
+;R_GenAeadK4Out;GEN Aead K4 driving output;TrueFalseTyp
+;R_GenAeadK5Out;GEN Aead K5 driving output;TrueFalseTyp
+;R_GenAeadK6Out;GEN Aead K6 driving output;TrueFalseTyp
+;R_GenAeadK7Out;GEN Aead K7 driving output;TrueFalseTyp
+;R_GenAeadK8Out;GEN Aead K8 driving output;TrueFalseTyp
+;R_GenAeadK9Out;GEN Aead K9 driving output;TrueFalseTyp
+
+;GmVmagPuHwTst;Filtered xfmr winding volt for contactor permissive;;Pu
+;S_HwTstVmagLow;Stator volt magnitude is low enough for hw test mode;TrueFalseTyp
+
+;L_RebfLvK1Out;Line Rebf low-volt relay K1 driving output;TrueFalseTyp
+;L_RebfLvK2Out;Line Rebf low-volt relay K2 driving output;TrueFalseTyp
+;L_RebfLvK3Out;Line Rebf low-volt relay K3 driving output;TrueFalseTyp
+
+;L_RebfLvK1OutT3;Line Rebf low-volt relay K1 driving out in task3;TrueFalseTyp
+;L_RebfLvK2OutT3;Line Rebf low-volt relay K2 driving out in task3;TrueFalseTyp
+;L_RebfLvK3OutT3;Line Rebf low-volt relay K3 driving out in task3;TrueFalseTyp
+
+;L_RebfLvK1St;Line Rebf low-volt relay K1 mirrored state;TrueFalseTyp
+;L_RebfLvK2St;Line Rebf low-volt relay K2 mirrored state;TrueFalseTyp
+;L_RebfLvK3St;Line Rebf low-volt relay K3 mirrored state;TrueFalseTyp
+
+;CfcTemp;Converter filter cabinet temperature;;degC
+;PdcTemp;Converter Ac entry cabinet temperature;;degC
+;LqdTemp;Liquid coolant temperature;;degC
+;InletAirTemp;Air inlet temp outside converter control cabinet;;degC
+;GenAeadTemp1;Gen AEAD Thermistor 1 temperature;;degC
+;GenAeadTemp2;Gen AEAD Thermistor 2 temperature;;degC
+;AclfuTemp;Ac line fuse bus temperature;;degC
+;LhslaTemp;Line Hsla card temperature;;degC
+;RhslaTemp;Rotor Hsla card temperature;;degC
+
+
+;LhslaOtDlyAlmFlg;Line Hsla over temperature delayed alarm flag
+;RhslaOtDlyAlmFlg;Rotor Hsla over temperature delayed alarm flag
+
+;HtrFanRunOk;Heater and fan ok to run
+;BridgeNotCold;Global bridge temperature rise ok indication
+;TempRiseOkTmr;Temperature rise ok timer for starting converter;;Cnt
+;TempRiseOkTmrDsp;Temperature rise timer for verifying starting permissive;;Min
+;MaContNotCold;Main contactor temperature rise ok indication
+;HtrFanSupresTmr;Heater and fan suppresion timer ;;Sec
+;BrgLqdTempRise;Bridge baseplate and liquid temperature rise
+;InletAirTempClamp;Clamped air inlet temp for calculating desired rise
+;MinBrgLqdTemp;Minimal bridge baseplate and liquid temperature
+;CcstarNotCold;Filter cabinet rise ok indication for starting converter
+;MinRotor1BpTemp;minimum rotor bridge1 base plate temperature;;degC
+;MinRotor2BpTemp;minimum rotor bridge2 base plate temperature;;degC
+;MinLineBpTemp;minimum line bridge base plate temperature;;degC
+;TempIsValid;thermistor temperature is valid: filter is settled down
+;TempRiseOk2Run;Transistor and liquid temperature rise ok indication for starting converter
+;HtrSoakFastTmrSel;Heater soak timer uses the fast time step
+
+;InletAirOtDlyAlmFlg;air inlet delayed over temperature alarm flag
+;InletAirUtDlyAlmFlg;air inlet delayed under temperature alarm flag
+;CoolantOtDlyAlmFlg;Coolant delayed over temperature alarm flag
+;CoolantUtDlyAlmFlg;Coolant delayed under temperature alarm flag
+;PdcCabEnOtDlyAlmFlg;PDC cable entry over temperature alarm flag
+;PdcCabEnUtDlyAlmFlg;PDC cable entry delayed under temperature alarm flag
+;CfcOtDlyAlmFlg;converter distortion filter delayed over temperature alarm flag
+;PdcOtDlyAlmFlg;Converter Ac entry delayed over temperature alarm flag
+;AclfuOtDlyAlmFlg;Ac line fuse delayed over temperature alarm flag
+;LhslaOtDlyAlmFlg;Line Hsla over temperature delayed alarm flag
+;LhslaUtDlyAlmFlg;Line Hsla under temperature delayed alarm flag
+;RhslaOtDlyAlmFlg;Rotor Hsla over temperature delayed alarm flag
+;RhslaUtDlyAlmFlg;Rotor Hsla under temperature delayed alarm flag
+
+;LhslaOtDlyTrpFlg;Line Hsla over temperature delayed trip flag
+;RhslaOtDlyTrpFlg;Rotor Hsla over temperature delayed trip flag
+;LhslaUtDlyTrpFlg;Line Hsla under temperature delayed trip flag
+;RhslaUtDlyTrpFlg;Rotor Hsla under temperature delayed trip flag
+;InletAirOtDlyTrpFlg;Air inlet over temperature delayed trip flag
+;CoolantOtDlyTrpFlg;Coolant over temperature delayed trip flag
+;PdcCabEnOtDlyTrpFlg;PDC cable entry over temperature delayed trip flag
+;CfcOtDlyTrpFlg;Converter distortion filter over temperature delayed trip flag
+;PdcOtDlyTrpFlg;Converter Ac entry over temperature delayed trip flag
+;AclfuOtDlyTrpFlg;Ac line fuse over temperature delayed trip flag
+
+;AirInThrmDlFlg;Flag for 690 AEAD Din 1 delta resistance alarm
+;LqdThrmDlFlg;Flag for 690 AEAD Din 2 delta resistance alarm
+;GenAeadThrm1DlFlg;Flag for Gen AEAD Din 1 delta resistance alarm
+;GenAeadThrm2DlFlg;Flag for Gen AEAD Din 2 delta resistance alarm
+;PdcCabEnThrmDlFlg;Flag for 6K AEAD Din 8 delta resistance alarm
+;CfcThrmDlFlg;Flag for 6K AEAD Din 2 delta resistance alarm
+;PdcThrmDlFlg;Flag for Gen AEAD Din 7 delta resistance alarm
+;AclfuThrmDlFlg;Flag for Gen AEAD Din 8 delta resistance alarm
+
+;AirInThrmOpnFlg;Flag for 690 AEAD Din 1 Thermistor open (InletAirTemp)
+;LqdThrmOpnFlg;Flag for 690 AEAD Din 7 Thermistor open (LqdTemp)
+;GenAeadThrm1OpnFlg;Flag for 6K AEAD Din 1 Thermistor open
+;GenAeadThrm2OpnFlg;Flag for 6K AEAD Din 2 Thermistor open
+;PdcCabEnThrmOpnFlg;Flag for 6K AEAD Din 8 Thermistor open (PdcCabEntryTemp)
+;CfcThrmOpnFlg;Flag for Gen AEAD Din 2 Thermistor open(CfcTemp)
+;PdcThrmOpnFlg;Flag for Gen AEAD Din 7 Thermistor open(PdcTemp)
+;AclfuThrmOpnFlg;Flag for Gen AEAD Din 8 Thermistor open(AclfuTemp)
+
+;PdcCabEnThrmShrtFlg;Flag for 6K AEAD Din 8 Thermistor short
+;BrgOvrTempFlg;global brg IGBT over temperature flag
+;ThrmOpnFlg;global thermal open flag
+
+;AirInThrmShrtFlg;Flag for Line AEAD Din 1 Thermistor Short (InletAirTemp)
+;CfcThrmShrtFlg;Flag for Line AEAD Din 2 Thermistor Short(CfcTemp)
+;PdcThrmShrtFlg;Flag for Line AEAD Din 7 Thermistor Short(PdcTemp)
+;LqdThrmShrtFlg;Flag for Line AEAD Din 8 Thermistor Short (LqdTemp)
+;GenAeadThrm1ShrtFlg;Flag for Gen AEAD Din 1 Thermistor Short
+;GenAeadThrm2ShrtFlg;Flag for Gen AEAD Din 2 Thermistor Short
+;PdcCabEnThrmShrtFlg;Flag for Gen AEAD Din 8 Thermistor Short (PdcCabEntryTemp)
+;AclfuThrmShrtFlg;Flag for Gen AEAD Din 8 Thermistor Short(AclfuTemp)
+
+;DcLinkHtrSoakTm;The heat soak time in integer;;Cnt
+;DcLinkHtrSoakTmDsp;The heat soak time (min), display only;;Min
+;NomTimeTempRiseOk;Normal heat soak time for temperature rise Ok;;Min
+;MaxTimeTempRiseOk;Maximum heat soak time for temperature rise Ok;;Min
+;DcLinkTempOk;Dc link temperature Ok to prevent frost
+
+;PdcTemp;PDC temperature;;Deg C
+;CfcTemp;CFC temperature;;Deg C
+;MccTemp;MCC temperature;;Deg C
+
+;CfcIsHot;CFC temperature is above threshold
+;CfcIsCool;CFC temperature is below threshold
+;L_DbFanReq;Fan run request from DB
+;EnvOkSealCmd;Environmental OK seal-in relay command;TrueFalseEnum
+;TherBadDlySm;Thermis bad dely sum;TrueFalseEnum
+;ThermisAlmSm;Thermis alarm summry;TrueFalseEnum
+;ThermisDlySm;Thermi dely trip sum;TrueFalseEnum
+;TTripPend;Temperature trp pend;TrueFalseEnum
+;TempDlyTmr;Temp delay trp timer;;Sec
+;TempRngSel;Temperature range selection;ThrmRangeSelEnum
+;TempTrpLatch;Temp delay trp latch;TrueFalseEnum
+;AeadDSRFound;Aead DSR number found;TrueFalseEnum
+;TempA21Frq;TBD_TempA21Frq;;Hz
+;TempA22Frq;TBD_TempA22Frq;;Hz
+;TempB21Frq;TBD_TempB21Frq;;Hz
+;TempB22Frq;TBD_TempB22Frq;;Hz
+;TempC21Frq;TBD_TempC21Frq;;Hz
+;TempC22Frq;TBD_TempC22Frq;;Hz
+
+;R_TocThrDy;Generator over-current dymanic trip threshold;;Amp
+;R_TocAlmOnDy;Generatorr over-current dymanic alarm on threshold;;Amp
+;R_TocAlmOffDy;Generatorr over-current dymanic alarm off threshold;;Amp
+;R_TocThrDy;Rotor bridge over-current dymanic trip threshold;;Amp
+
+;R_VdcFbk;Rotor Dc bus voltage feedback;;Vdc
+;R_VdcFbkRcp;Rotor Dc bus voltage feedback reciprocal;;1/Vdc
+;R_VdcFbkT2;Rotor Dc bus voltage feedback in task2;;Vdc
+;R_VdcFbkT3;Rotor Dc bus voltage feedback in task3;;Vdc
+;R_Vdc;Rotor Dc bus voltage ;;Vdc
+;R_VdcComp;Rotor Dc bus voltage compensated;;Vdc
+;R_VdcCompRcp;Rotor Dc bus voltage compensated reciprocal;;1/Vdc
+
+;R_Vab;Rotor phs-A to phs-B voltage;;Volts
+;R_Vbc;Rotor phs-B to phs-C voltage;;Volts
+;R_Ia;Rotor phs-A current;;Amps
+;R_Ib;Rotor phs-B current;;Amps
+;R_Ic;Rotor phs-C current;;Amps
+
+;R_TocHiSel;Rotor bridge High select for rotor 1 TOC model;;A rms
+;R_IabcMskTmr;TBD_R_IabcMskTmr;;Sec
+;R_IabcGndFil;R Gnd current,coarse;;Amps
+;R_IabcMskAct;TBD_R_IabcMskAct;TrueFalseEnum
+;R_IaRmsMag;R Ia^2 filtered;;Arms^2
+;R_IbRmsMag;R Ib^2 filtered;;Arms^2
+;R_IcRmsMag;R Ic^2 filtered;;Arms^2
+;R_TocHiSelSq;TBD_R_TocHiSelSq;;Arms^2;1
+;R_WRtrSlowT1;TBD_R_WRtrSlowT1;;Rad/S
+;R_SpdFracT1;Tach speed,frct T1;;Rad/S
+;PwrPllWFFT1;TBD_PwrPllWFFT1;;Rad/s
+;R_SpdSlowT1;Tach speed slow,T1;;Rad/S
+;R_DelTm1;Rotor task1 delta time;;Sec
+;R_VdcErr;R & L Vdc difference;;Vlt
+;R_IocMask;TBD_R_IocMask;TrueFalseEnum
+;R_VdcRdy;DC bus charged;TrueFalseEnum
+;R_VdcErrFil;TBD_R_VdcErrFil;;Volts
+;R_BpTempMaxA;TBD_R_BpTempMaxA;;degC
+;R_BpTempMaxB;TBD_R_BpTempMaxB;;degC
+;R_BpTempMaxC;TBD_R_BpTempMaxC;;degC
+;R_BpTempMinA;TBD_R_BpTempMinA;;degC
+;R_BpTempMinB;TBD_R_BpTempMinB;;degC
+;R_BpTempMinC;TBD_R_BpTempMinC;;degC
+;R_BpTemp1;R phs A top bp temp;;degC
+;R_BpTemp2;R phs B top bp temp;;degC
+;R_BpTemp3;R phs C top bp temp;;degC
+;R_BpTemp4;R phs A btm bp temp;;degC
+;R_BpTemp5;R phs B btm bp temp;;degC
+;R_BpTemp6;R phs C btm bp temp;;degC
+;R_OTAlSum;Rotor OT Warning;TrueFalseEnum
+;TempA11Frq;TBD_TempA11Frq;;Hz
+;TempB11Frq;TBD_TempB11Frq;;Hz
+;TempC11Frq;TBD_TempC11Frq;;Hz
+;L_DJncTemp;L Peak Diode temp;;Deg C
+
+;ExecLoadT1;Execution loading of task1 in percent;;%
+;ExecLoadT2;Execution loading of task2 in percent;;%
+;ExecLoadT3;Execution loading of task3 in percent;;%
+;ExecLoad;Execution loading total in percent;;%
+;ExecLoadT1Pk;Execution loading peak of task1 in percent;;%
+;ExecLoadT2Pk;Execution loading peak of task2 in percent;;%
+;ExecLoadT3Pk;Execution loading peak of task3 in percent;;%
+;ExecLoadPk;Execution loading total peak in percent;;%
+;L_VdcFbk;Line DC-link voltage feedback;;V dc
+;L_VdcFbkRcp;Line DC-link voltage fbk reciprocal;;1/Vdc
+;L_Vdc;Line bridge Dc voltage;;V dc
+;L_VdcFbk;L DC bus feedback
+;GmPllWRAF;Gm pll freq RAF;;Rad/S
+;L_VabLineT1;Line Vab T1
+;L_VbcLineT1;Line Vba T1
+;L_VabFil;TBD_L_VabFil;;Hz
+;L_VbcFil;;;Hz
+;L_VdcFbkRcp;DC volts reciprocal;;1/Vdc
+;L_IOCTimeout;Line bridge IOC time-out indication;TrueFalseTyp
+;L_IocRtryCtr;Line bridge IOC retry counter;;Sec
+;PwrDnPs24vTmr;Time being unhealthy for controller power supply 24V;;Sec
+;PwrUpPs24vTmr;Time being healthy for controller power supply 24V;;Sec
+;PwrDnFbkDsb;Unhealthy power supply 24V disabling feedbacks ;TrueFalseTyp
+;Ps24vUpOnce;Controller power supply 24V was healthy once;TrueFalseTyp
+;Ps24vOkT3;Power supply 24V Ok indication passed to task3;TrueFalseTyp
+;L_DbGateDsb;DB enable boolean;TrueFalseEnum
+;L_DBFltGate;;TrueFalseEnum
+;L_DBGtState;;L_DBGtStateEnum
+;L_IabcGndFil;L Gnd current,coarse;;Amps
+;L_DelTm1;Line task1 delta time;;Sec
+;L_BpTemp1;Line phs A top bp temp;;degC
+;L_BpTemp2;Line phs B top bp temp;;degC
+;L_BpTemp3;Line phs C top bp temp;;degC
+;L_BpTemp4;Line phs A btm bp temp;;degC
+;L_BpTemp5;Line phs B btm bp temp;;degC
+;L_BpTemp6;Line phs C btm bp temp;;degC
+;L_CTotx;Total capacitance;;Farads
+;L_OTAlSum;Line OT Warning;TrueFalseEnum
+;L_FpgaFltFbk;TBD_L_FpgaFltFbk;TrueFalseEnum
+
+;L_TocThrDy;Line converter over-current dymanic trip threshold;;Amp
+;L_TocAlmOnDy;Line converter over-current dymanic alarm on threshold;;Amp
+;L_TocAlmOffDy;Line converter over-current dymanic alarm off threshold;;Amp
+
+;L_FuseTocThrDy;ACLFU over-current dymanic trip threshold;;Amp
+;L_FuseTocAlmOnDy;ACLFU over-current dymanic alarm on threshold;;Amp
+;L_FuseTocAlmOffDy;ACLFU over-current dymanic alarm off threshold;;Amp
+;L_IaRmsMag;L Ia^2 filtered;;Arms^2
+;L_IbRmsMag;L Ib^2 filtered;;Arms^2
+;L_IcRmsMag;L Ic^2 filtered;;Arms^2
+;L_TocHiSelSq;TBD_L_TocHiSelSq;;Arms^2;1
+;L_TocHiSel;Line toc max current;;A rms;1
+;VPRPActT3;TBD_VPRPActT3;TrueFalseEnum
+;L_IxFbkT2;;;A pk
+;L_VxFbkT2;;;V ln
+;L_VyFbkT2;;;V ln
+;S_IxFbkT2;Stator Ix fbk T2;;Apk
+;L_IxFbkT3;Torque Current in task 3;;A pk
+;R_IyFbkT2;Flux current,avg;;A pk
+;S_IyFbkT2;Stator Iy fbk T2;;Apk
+;S_VMagT2;Stator Volt mag T2;;Vlnpk;1
+;S_VxFbkT2;Statr X-axis volt T2;;Vln
+;S_VyFbkT2;Statr Y-axis volt T2;;Vln
+;VregCmdT3;Volt reg command T3;;Pu;4
+;GmAngEFbkT2;TBD_GmAngEFbkT2;;Rad
+;GmDscmVMgPT3;TBD_GmDscmVMgPT3;;V ln
+;GmDscmVxNT2;TBD_GmDscmVxNT2;;V ln
+;GmDscmVxNT3;TBD_GmDscmVxNT3;;V ln
+;GmDscmVxPT2;TBD_GmDscmVxPT2;;V ln
+;GmDscmVyNT2;TBD_GmDscmVyNT2;;V ln
+;GmDscmVyNT3;TBD_GmDscmVyNT3;;V ln
+;GmDscmVyPT2;TBD_GmDscmVyPT2;;V ln
+;GmDscmVyPT3;TBD_GmDscmVyPT3;;V ln
+;GmPllVyErrT2;TBD_GmPllVyErrT2;;V ln
+;GmPwrT3;Gm LineXfmrWdg Active power T3;;Watts;0
+;GmQPwrT3;Gm LineXfmrWdg Reactive power T3;;Vars;0
+;L_IMagT2;ion AC current mag;;A pk;1
+;L_IxCmdT2;Ix cmd avg;;A pk
+;L_IyFbkT2;;;A pk
+;L_VabLineT2;Line Vab T2
+;L_VbcLineT2;Line Vba T2
+;R_IxFbkT2;Torque current,avg;;A pk
+;R_IxFbkT3;Torque current,t3;;A pk
+;R_SpdT3;Tach speed,task 3;;Rad/S
+;R_TorSpdInT3;TBD_R_TorSpdInT3;;RPM
+;R_TorSpdSFT3;TBD_R_TorSpdSFT3;;RPM
+;R_TrqCmdInT2;Trq ref post lim T2;;N*m;0
+;R_TrqCmdInT3;Trq ref post lim T3;;N*m;0
+;R_VxFbkT2;Torque axis v fbk T2;;Vln
+;R_VyFbkT2;Flux axis v fbk T2;;Vln
+;S_AngEFbkT2;TBD_S_AngEFbkT2;;Rad
+;S_IxFbkT3;Stator Ix fbk T3;;Apk
+;S_PllErrT2;Stator pll err t2;;Vsqr
+;S_PllWT2;Stator PLL freq T2;;Rad/S
+;S_PllWT2;Stator PLL freq T2;;Rad/S
+;S_VMagT3;Stator Volt mag T3;;Vlnpk;1
+;SpdPwrPllFl2;TBD_SpdPwrPllFl2;;Rad/S
+;GmDscmVMgNT3;TBD_GmDscmVMgNT3;;V ln
+;PwrGridT3;Grid power,T3;;Watts
+;QPwrGridT3;Grid react pwr T3;;Var
+;R_IxVdcGnT1;TBD_R_IxVdcGnT1;;Amp/V
+;R_TrqCalT2;Torque calced,T2;;N*m;0
+;R_TrqCmdTrT2;Trq cmd in xfmr T2;;N*m;0
+;DspToNvToDspCnt;Round trip counter from Dsp to NV back to Dsp in multiples of Task3
+;NvUpdateSt;Nonvolatile control state
+;NvToDspReadReq;Nonvolatile blockware reply to conv Dsp read-request;TrueFalseEnum
+;DspToNvReadReq;Converter Dsp request to NV blockware for reading;TrueFalseEnum
+;DspToNvWriteReq;Converter Dsp request to NV blockware for writing;TrueFalseEnum
+;VarReqEgd;ion Var Request
+
+cBatSimulator;BatVbatSim     ;Battery chopper battery voltage simulated ;;Volts
+cBatSimulator;BatVcSim       ;Battery chopper filter voltage simulated  ;;Volts
+
+cDbSimulator;DbVr1Sim;DB1 resistor cross voltage;;Volt
+cDbSimulator;DbVr2Sim;DB2 resistor cross voltage;;Volt
+
+cDbSimulator;DbI1Sim;DB1 to DC-link Total Current
+cDbSimulator;DbI2Sim;DB2 to DC-link Total Current;;Amp
+;;;;Amp
+
+;R_SimState;Rotor brg simulator state;BrgSimStTyp
+;LclSpdRfxSim;Local speed reference;;RPM
+;R_SpdRefSim;Simulated speed reference;;RPM
+;CoolntTempSim;Simulated coolant temperature;;degC
+
+cXfmrSim;IaXfmrMagSim;Xfmr magnetic current of phase A;;Amp
+cXfmrSim;IbXfmrMagSim;Xfmr magnetic current of phase B;;Amp
+cXfmrSim;IcXfmrMagSim;Xfmr magnetic current of phase C;;Amp
+cXfmrSim;RhfXfmrSim;Xfmr leakage high frequency damping resistor;;Ohm
+cXfmrSim;XfmrFlxAPuSim;Xfmr magnetic flux value in Pu for phase A
+cXfmrSim;XfmrFlxBPuSim;Xfmr magnetic flux value in Pu for phase B
+cXfmrSim;XfmrFlxCPuSim;Xfmr magnetic flux value in Pu for phase C
+
+cSimPlant1x;R_VdcSim;simualted DC link voltage;;Volt
+cSimPlant1x;R_VabSim;rotor voltage A to B feedback simulated;;Volt
+cSimPlant1x;R_VbcSim;rotor voltage B to C feedback simulated;;Volt
+cSimPlant1x;S_FlxXSim;Simulated stator flux X component;;weber
+cSimPlant1x;S_FlxYSim;Simulated stator flux Y component;;weber
+cSimPlant1x;R_FlxXSim;Simulated rotor flux X component;;weber
+cSimPlant1x;R_FlxYSim;Simulated rotor flux Y component;;weber
+cSimPlant1x;R_TrqMtrSim;Motor torque simulated;;N.m
+cSimPlant1x;S_R1Sim;Simulator stator resistance, referred to stator;;Ohm
+cSimPlant1x;R_R2Sim;Simulator stator resistance, referred to rotor;;Ohm
+cSimPlant1x;S_LmSim;Lm for simulator;;Henry
+cSimPlant1x;S_VxMdlSim;Modeled stator X-axis voltage;;Volt
+cSimPlant1x;S_VyMdlSim;Modeled stator Y-axis voltage;;Volt
+cSimPlant1x;S_AngRotSim;Rotation angle for simulated stator voltages;;Volt
+cSimPlant1x;S_VaSim;Simulated stator Va;;Volt
+cSimPlant1x;S_VbSim;Simulated stator Vb;;Volt
+cSimPlant1x;S_VxSim;Simulated x-component motor stator voltage;;Volt
+cSimPlant1x;S_VySim;Simulated y-component motor stator voltage;;Volt
+cSimPlant1x;S_IxSim;Simulated x-component motor stator current;;Amp
+cSimPlant1x;S_IySim;Simulated y-component motor stator current;;Amp
+cSimPlant1x;R_VxSim;Simulated x-component motor rotor voltage;;Volt
+cSimPlant1x;R_VySim;Simulated y-component motor rotor voltage;;Volt
+cSimPlant1x;R_IxSim;Simulated x-component motor rotor current;;Amp
+cSimPlant1x;R_IySim;Simulated y-component motor rotor current;;Amp
+cSimPlant1x;R_AngMechSim;Simulated rotor angular position;;rad
+cSimPlant1x;R_TacZeroSim;Simulated tach marker offset;;rad
+cSimPlant1x;L_VanGridRotSim;Simulated voltage a-neutral rotate;;Volt
+cSimPlant1x;L_VbnGridRotSim;Simulated voltage b-neutral rotate;;Volt
+cSimPlant1x;L_VcnGridRotSim;Simulated voltage c-neutral rotate;;Volt
+cSimPlant1x;L_VanGridSim;simulated voltage a-neutral with flt sim;;Volt
+cSimPlant1x;L_VbnGridSim;simulated voltage b-neutral with flt sim;;Volt
+cSimPlant1x;L_VcnGridSim;simulated voltage c-neutral with flt sim ;;Volt
+cSimPlant1x;L_VabGridSim;Simulated Grid voltage phase a-b with flt sim; ; V ll
+cSimPlant1x;L_VbcGridSim;Simulated Grid voltage phase b-c with flt sim; ; V ll
+cSimPlant1x;L_FlxXGridSim;Simulated grid flux-X;;weber
+cSimPlant1x;L_FlxYGridSim;Simulated grid flux-Y;;weber
+cSimPlant1x;L_ShortIpSim;Short circuit fault in progress;;NA
+cSimPlant1x;L_VxnGShrtTmrSim;Vxn short timer;;sec
+cSimPlant1x;L_VxnDlyTmrSim;Vxn delay timer;;sec
+cSimPlant1x;L_VxGridSim;Simulated,demodulated grid voltage-X;;Volt
+cSimPlant1x;L_VyGridSim;Simulated,demodulated grid voltage-Y;;Volt
+cSimPlant1x;L_IxGridSim;Simulated grid current-X;;Amp
+cSimPlant1x;L_IyGridSim;Simulated grid current-Y;;Amp
+cSimPlant1x;L_IxHrmFSim;Simulated filter current-X;;Amp
+cSimPlant1x;L_IyHrmFSim;Simulated filter current-Y;;Amp
+cSimPlant1x;L_DelAngSim;delta angle for simaultor;;rad
+cSimPlant1x;L_AngGridSim;Simulator grid angle;;rad
+cSimPlant1x;L_WSlwSignSim;Frequency slew sign-init to 1 in s0init;;rad/s
+cSimPlant1x;L_WSlwIntSim;Frequency slew integrator;;rad/s
+cSimPlant1x;L_Wsim;Simaultor angle frequency;;rad/s
+cSimPlant1x;L_RchgEqvSim;Equivalent charging path resistance for simulator;;Ohm
+cSimPlant1x;L_RchgEqvSimRcp;Equivalent charging path resistancerec reciprocal for simulator;;1/Ohm
+cSimPlant1x;L_VrectSim;simulated dc link power;;Volt
+cSimPlant1x;ChargrXdropSim;Simulated x-voltage across charging resistor;;Volt
+cSimPlant1x;ChargrYdropSim;Simulated y-voltage across charging resistor;;Volt
+cSimPlant1x;L_VabLineSim;Simulated line voltage phase a-b with flt sim; ; V ll
+cSimPlant1x;L_VbcLineSim;Simulated line voltage phase b-c with flt sim; ; V ln
+cSimPlant1x;L_VbnGrid;simulated voltage b-neutral with flt sim; ; V ln
+cSimPlant1x;L_VcnGrid;simulated voltage c-neutral with flt sim; ; V ln
+cSimPlant1x;L_VanGrid;simulated voltage a-neutral with flt sim;; V ln
+cSimPlant1x;L_IposSim;Simulated current entering the dc bus; ; V ln
+cSimPlant1x;DcPwrSim;simulated dc link power;;Amp
+cSimPlant1x;L_FlxXSim;x-channel integrator for simulator flux;; Watts
+cSimPlant1x;L_FlxYSim;y-channel integrator for simulator flux;;Amp
+cSimPlant1x;L_IdcSim;simulated dc link current; ; A dc
+cSimPlant1x;L_ILoadSim;Simulated load current;;Amp
+cSimPlant1x;L_IxCalLSim;simulated instant. x-channel current;;Amp
+cSimPlant1x;L_IyCalLSim;simulated instant. y-channel current;;Amp
+cSimPlant1x;L_IxSim;line simulated x-component current;;Amp
+cSimPlant1x;L_IySim;line simulated y-component current;;Amp
+cSimPlant1x;L_VdcWSim;L_Vdc simulated omega for charge, decay;;rad/s
+cSimPlant1x;L_VxErrSim;x-channel error for simulator;; V ln
+cSimPlant1x;L_VxVrSim;x-channel simulator resistor voltage;; V ln
+cSimPlant1x;L_VyErrSim;y-channel error for simulator;; V ln
+cSimPlant1x;L_VyVrSim;y-channel simulator resistor voltage;; V ln
+cSimPlant1x;L_LdPwrSim;Load power for simulator populated via pointer;;watts
+cSimPlant1x;L_PllWNomSim;line pll frequency for simulator;; rad/s
+cSimPlant1x;L_VxBrdgSim;x-channel simulated bridge voltage;; V ln
+cSimPlant1x;L_VyBrdgSim;y-channel simulated bridge voltage;; V ln
+cSimPlant1x;CapDtSim;simulated delta-t divided by capacitance
+cSimPlant1x;L_RCHrmFRcpSim;Simulated 1/(1+((R*C)/dt))
+cSimPlant1x;L_WGrdFrqStpSim;Simulation mode frqeuncy step;; rad/s
+cSimPlant1x;L_VxBrgSim;simulated x-component motor voltage;; V ln
+cSimPlant1x;L_VyBrgSim;simulated y-component motor voltage;; V ln
+cSimPlant1x;S_IxSim;simulated x-component motor stator current;;Amp
+cSimPlant1x;S_IySim;simulated y-component motor stator current;;Amp
+cSimPlant1x;S_VxSim;simulated x-component motor stator voltage;;Volt
+cSimPlant1x;S_VySim;simulated y-component motor stator voltage;;Volt
+cSimPlant1x;R_IxBrgSim;simulated x-component motor rotor brg current;;Amp
+cSimPlant1x;R_IyBrgSim;simulated y-component motor rotor brg current;;Amp
+cSimPlant1x;R_VxBrgSim;simulated x-component motor  rotor brg voltage;;Volt
+cSimPlant1x;R_VyBrgSim;simulated y-component motor rotor brg voltage;;Volt
+cSimPlant1x;R_WRtrSim;simulated rotor angular frequency;;rad/s
+cSimPlant1x;R_TachPosnSim;simulated tach position;;rad
+cSimPlant1x;R_WElecSim;Simulated Output freq, unfil;;rad/s
+cSimPlant1x;S_IaSim;stator phase A current simulated;;Amp
+cSimPlant1x;S_IbSim;stator phase B current simulated;;Amp
+cSimPlant1x;S_IcSim;stator phase C current simulated;;Amp
+cSimPlant1x;L_IaBrgSim;line brg phase A current simulated;;Amp
+cSimPlant1x;L_IbBrgSim;line brg phase B current simulated;;Amp
+cSimPlant1x;L_IcBrgSim;line brg phase C current simulated;;Amp
+cSimPlant1x;L_VabBrgSim;line bridge voltage A to B feedback simulated;;Volt
+cSimPlant1x;L_VbcBrgSim;line bridge voltage B to C feedback simulated;;Volt
+cSimPlant1x;S_VabSim;stator voltage A to B feedback simulated;;Volt
+cSimPlant1x;S_VbcSim;stator voltage B to C feedback simulated;;Volt
+cSimPlant1x;R_SpdSim;Simulated generator speed;;rad/s
+cSimPlant1x;L_VxLineSim;Simulated,demodulated line voltage-x;;l-l
+cSimPlant1x;L_VyLineSim;Simulated,demodulated line voltage-y;;l-l
+cSimPlant1x;L_VdcSim;simulated dc link voltage feedback;;Volt
+
+cSimPlant1x;GEvtReadySim;grid event test ready;YesNoTyp
+cSimPlant1x;GEvtStateSim;grid event state variable;GEvtStateEnum
+cSimPlant1x;GEvtRdyTmrSim;grid event test ready timer;;sec
+cSimPlant1x;GEvtDlyTmrSim;grid event timer;;sec
+
+cSimPlant1x;L_RchgEqv1SimRcp;Equivalent charging path resistance reciprocal when Q1 open;;1/Ohm
+cSimPlant1x;L_RchgEqv2SimRcp;Equivalent charging path resistance reciprocal when Q1 closed;;1/Ohm
+
+cSimPlant1x;L_RgridExtSim;Simulated grid resistance referring to line side;;Ohm
+cSimPlant1x;L_LgridExtSim;Simulated grid inductance referring to line side;;Henry
+cSimPlant1x;L_RdfBldRcpSim;Simulated line filter capacitor leakage resistance;;1/Ohm
+cSimPlant1x;L_IaChgSim;Simluated phase A charging current;;Amp
+cSimPlant1x;L_IbChgSim;Simluated phase B charging current;;Amp
+cSimPlant1x;L_IcChgSim;Simluated phase C charging current;;Amp
+cSimPlant1x;L_IxChgSim;Simluated x-component charging current;;Amp
+cSimPlant1x;L_IyChgSim;Simluated y-component charging current;;Amp
+cSimPlant1x;L_RdfRcpSim;Simulated line side distortion filter resistance reciprocal;;1/Ohm
+cSimPlant1x;L_CdfRcpSim;Simulated line side distortion filter capacitance reciprocal;;1/F
+cSimPlant1x;L_VanChgSim;Simulated phase A charing voltage;;Vln
+cSimPlant1x;L_VbnChgSim;Simulated phase B charing voltage;;Vln
+cSimPlant1x;L_VcnChgSim;Simulated phase C charing voltage;;Vln
+cSimPlant1x;L_ChgAngSelSim;Simulated charing angle selection
+
+cSimPlant1x;StartEnb;start loop cut in ;YesNoTyp
+cSimPlant1x;HVRTEnb;HVRT enabled;YesNoTyp
+cSimPlant1x;LShortEnb;Local short enabled;YesNoTyp
+cSimPlant1x;RShortEnb;remote short enabled;YesNoTyp
+cSimPlant1x;RSPhaseState;phase state in remote short;PhsActTyp
+cSimPlant1x;LSPhaseState;phase state in local short;PhsActTyp
+cSimPlant1x;L_LLshortSim;local short inductance referring to line side;;Henry
+cSimPlant1x;L_LRshortSim;remote short inductance referring to line side;;Henry
+
+cSimPlant1x;L_LgridSptLSim;Grid inductance on the left side of remote short point;;Henry
+cSimPlant1x;L_LgridSptRSim;Grid inductance on the right side of remote short point;;Henry
+cSimPlant1x;L_VaXfmrMgSim;Xfmr primary side voltage phase A (line to neutral);;Volt
+cSimPlant1x;L_VbXfmrMgSim;Xfmr primary side voltage phase B (line to neutral);;Volt
+cSimPlant1x;L_VcXfmrMgSim;Xfmr primary side voltage phase C (line to neutral);;Volt
+cSimPlant1x;L_VaXfmrSecSim;Xfmr secondary side voltage phase A (line to neutral);;Volt
+cSimPlant1x;L_VbXfmrSecSim;Xfmr secondary side voltage phase B (line to neutral);;Volt
+cSimPlant1x;L_VcXfmrSecSim;Xfmr secondary side voltage phase C (line to neutral);;Volt
+
+cSimPlant1x;S_IMagSim;simulated stator magnitizing current;;Amp
+cSimPlant1x;S_FlxMSimFil;simulated stator flux filtered;;Wb
+cSimPlant1x;S_IndM;simulated DFIG magnitizing impedance
+
+cSimPlant1x;SCEnb;Series compensation enable ;YesNoTyp
+cSimPlant1x;AsymmEnb;Asynchronous grid event enable;YesNoTyp
+cThrmstrSim;Brg1BpFrqSim ;Simulated bridge-1 base-plate vco frequency;;Hz
+cThrmstrSim;Brg2BpFrqSim,;Simulated bridge-2 base-plate vco frequency;;Hz
+cThrmstrSim;CoolntFrqLwSim;Simulated coolant temperature low-range vco frequency;;Hz
+cThrmstrSim;CoolntFrqHiSim;Simulated coolant temperature high-range vco frequency;;Hz
+cThrmstrSim;BrgVcoFrqMax;Bridge Vco freq corresponding to max input voltage;;Hz
+cThrmstrSim;IoVcoLwFrqMax;Io Vco freq corresponding to low-range max input voltage;;Hz
+cThrmstrSim;IoVcoHiFrqMax;Io Vco freq corresponding to high-range max input voltage;;Hz
+cThrmstrSim;VcoVoltFrqSclRcp;Vco voltage over frequency scale reciprocal;;Hz/V
+cThrmstrSim;BrgRangTablDelt;Bridge delta voltage per each table data-point;;V/Indx
+cThrmstrSim;IoLwVoltPerPnt;Io low-range delta voltage per each table data-point;;V/Indx
+cThrmstrSim;IoHiVoltPerPnt;Io high-range delta voltage per each table data-point;;V/Indx
+cThrmstrSim;IoVoltPerTemp;Io delta voltage per each temperature datum;;V/degC
+
+cBrgCurShrSim;CshVaSim;Rotor cummulative voltage phs-A;;Volt
+cBrgCurShrSim;CshVbSim;Rotor cummulative voltage phs-B;;Volt
+cBrgCurShrSim;CshVcSim;Rotor cummulative voltage phs-C;;Volt
+
+cBrgCurShrSim;CshIalSim;Rotor alpha current component;;Amp
+cBrgCurShrSim;CshIbeSim;Rotor beta current component;;Amp
+
+cBrgCurShrSim;CshI0CrsSim;Rotor common mode cross-current;;Amp
+cBrgCurShrSim;CshIalCrsSim;Rotor alpha cross-current component;;Amp
+cBrgCurShrSim;CshIbeCrsSim;Rotor beta  cross-current component;;Amp
+
+cBrgCurShrSim;CshIaTotBrg1Sim;Rotor brg1 total phs-A current;;Amp
+cBrgCurShrSim;CshIbTotBrg1Sim;Rotor brg1 total phs-B current;;Amp
+cBrgCurShrSim;CshIcTotBrg1Sim;Rotor brg1 total phs-C current;;Amp
+cBrgCurShrSim;CshIalBrg1Sim;Rotor brg1 alpha current;;Amp
+cBrgCurShrSim;CshIbeBrg1Sim;Rotor brg1 beta current;;Amp
+
+cBrgCurShrSim;CshIaTotBrg2Sim;Rotor brg2 total phs-A current;;Amp
+cBrgCurShrSim;CshIbTotBrg2Sim;Rotor brg2 total phs-B current;;Amp
+cBrgCurShrSim;CshIcTotBrg2Sim;Rotor brg2 total phs-C current;;Amp
+cBrgCurShrSim;CshIalBrg2Sim;Rotor brg2 alpha current;;Amp
+cBrgCurShrSim;CshIbeBrg2Sim;Rotor brg2 beta current;;Amp
+
+cBrgCurShrSim;CshVaSatBrg1Sim;Rotor brg1 distort due to saturation volt phs-A;;Volt
+cBrgCurShrSim;CshVbSatBrg1Sim;Rotor brg1 distort due to saturation volt phs-B;;Volt
+cBrgCurShrSim;CshVcSatBrg1Sim;Rotor brg1 distort due to saturation volt phs-C;;Volt
+
+cBrgCurShrSim;CshVaSatBrg2Sim;Rotor brg2 distort due to saturation volt phs-A;;Volt
+cBrgCurShrSim;CshVbSatBrg2Sim;Rotor brg2 distort due to saturation volt phs-B;;Volt
+cBrgCurShrSim;CshVcSatBrg2Sim;Rotor brg2 distort due to saturation volt phs-C;;Volt
+
+cBrgCurShrSim;CshVaOutBrg1Sim;Rotor brg1 distorted output volt phs-A;;Volt
+cBrgCurShrSim;CshVbOutBrg1Sim;Rotor brg1 distorted output volt phs-B;;Volt
+cBrgCurShrSim;CshVcOutBrg1Sim;Rotor brg1 distorted output volt phs-C;;Volt
+
+cBrgCurShrSim;CshVaOutBrg2Sim;Rotor brg2 distorted output volt phs-A;;Volt
+cBrgCurShrSim;CshVbOutBrg2Sim;Rotor brg2 distorted output volt phs-B;;Volt
+cBrgCurShrSim;CshVcOutBrg2Sim;Rotor brg2 distorted output volt phs-C;;Volt
+
+cBrgCurShrSim;CshV0OutBrg1Sim, ;Rotor brg1 common mode volt;;Volt
+cBrgCurShrSim;CshValOutBrg1Sim,;Rotor brg1 alpha  volt component;;Volt
+cBrgCurShrSim;CshVbeOutBrg1Sim,;Rotor brg1 beta volt component;;Volt
+
+cBrgCurShrSim;CshV0OutBrg2Sim;Rotor brg2 common mode volt;;Volt
+cBrgCurShrSim;CshValOutBrg2Sim;Rotor brg2 alpha volt component;;Volt
+cBrgCurShrSim;CshVbeOutBrg2Sim;Rotor brg2 beta volt component;;Volt
+
+cBrgCurShrSim;CshV0CrsSim;Rotor common mode differential-volt;;Volt
+
+cBrgCurShrSim;CshValNrmSim;Rotor cummulative mode alpha volt;;Volt
+cBrgCurShrSim;CshVbeNrmSim;Rotor cummulative mode beta volt;;Volt
+
+cBrgCurShrSim;CshValCrsSim;Rotor normal mode alpha-differential-volt;;Volt
+cBrgCurShrSim;CshVbeCrsSim;Rotor normal mode beta-differential-volt;;Volt
+
+cBrgCurShrSim;CshValCrsLdelSim;Rotor alpha cross-volt due to inductance asymmetry;;Volt
+cBrgCurShrSim;CshValCrsRdelSim;Rotor alpha cross-volt due to resistance asymmetry;;Volt
+cBrgCurShrSim;CshValCrsTotSim;Rotor total normal mode alpha cross-volt;;Volt
+
+cBrgCurShrSim;CshVbeCrsLdelSim;Rotor beta cross-volt due to inductance asymmetry;;Volt
+cBrgCurShrSim;CshVbeCrsRdelSim;Rotor beta cross-volt due to resistance asymmetry;;Volt
+cBrgCurShrSim;CshVbeCrsTotSim;Rotor total normal mode beta cross-volt;;Volt

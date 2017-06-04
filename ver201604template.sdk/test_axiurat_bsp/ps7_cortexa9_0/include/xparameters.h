@@ -15,8 +15,8 @@
 
 #include "xparameters_ps.h"
 
-#define STDIN_BASEADDRESS 0xE0000000
-#define STDOUT_BASEADDRESS 0xE0000000
+#define STDIN_BASEADDRESS 0x42C00000
+#define STDOUT_BASEADDRESS 0x42C00000
 
 /******************************************************************/
 
