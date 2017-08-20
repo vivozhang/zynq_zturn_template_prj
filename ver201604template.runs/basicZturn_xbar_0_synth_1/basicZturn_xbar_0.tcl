@@ -11,21 +11,21 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.cache/wt [current_project]
-set_property parent.project_path C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.xpr [current_project]
+set_property webtalk.parent_dir C:/ver201604template/ver201604template.cache/wt [current_project]
+set_property parent.project_path C:/ver201604template/ver201604template.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part myir.com:mys-7z020:part0:2.1 [current_project]
 set_property ip_repo_paths {
   c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/Vivado_project_on_Zturn/with_new_board_def_file/ip_repo/addition_1.0
-  c:/Xilinx/Vivado/2016.4/data/ip/partners/diligent
   c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/Vivado_project_on_Zturn/with_new_board_def_file/ip_repo/myip_add_1.0
+  c:/Xilinx/Vivado/2016.4/data/ip/partners/diligent
 } [current_project]
-set_property ip_output_repo c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.cache/ip [current_project]
+set_property ip_output_repo c:/ver201604template/ver201604template.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_ip -quiet C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0.xci
-set_property is_locked true [get_files C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0.xci]
+read_ip -quiet C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0.xci
+set_property is_locked true [get_files C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0.xci]
 
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
@@ -33,7 +33,7 @@ foreach dcp [get_files -quiet -all *.dcp] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 
-set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1 -new_name basicZturn_xbar_0 -ip [get_ips basicZturn_xbar_0]]
+set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir C:/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1 -new_name basicZturn_xbar_0 -ip [get_ips basicZturn_xbar_0]]
 
 if { $cached_ip eq {} } {
 
@@ -68,32 +68,32 @@ write_checkpoint -force -noxdef basicZturn_xbar_0.dcp
 catch { report_utilization -file basicZturn_xbar_0_utilization_synth.rpt -pb basicZturn_xbar_0_utilization_synth.pb }
 
 if { [catch {
-  file copy -force C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0.dcp C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0.dcp
+  file copy -force C:/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0.dcp C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_stub.v
+  write_verilog -force -mode synth_stub C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_stub.vhdl
+  write_vhdl -force -mode synth_stub C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_sim_netlist.v
+  write_verilog -force -mode funcsim C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -103,46 +103,46 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0.dcp C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0.dcp
+  file copy -force C:/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0.dcp C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0_stub.v C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_stub.v
+  file rename -force C:/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0_stub.v C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0_stub.vhdl C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_stub.vhdl
+  file rename -force C:/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0_stub.vhdl C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0_sim_netlist.v C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_sim_netlist.v
+  file rename -force C:/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0_sim_netlist.v C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0_sim_netlist.vhdl C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_sim_netlist.vhdl
+  file rename -force C:/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0_sim_netlist.vhdl C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 }; # end if cached_ip 
 
-if {[file isdir C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.ip_user_files/ip/basicZturn_xbar_0]} {
+if {[file isdir C:/ver201604template/ver201604template.ip_user_files/ip/basicZturn_xbar_0]} {
   catch { 
-    file copy -force C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_stub.v C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.ip_user_files/ip/basicZturn_xbar_0
+    file copy -force C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_stub.v C:/ver201604template/ver201604template.ip_user_files/ip/basicZturn_xbar_0
   }
 }
 
-if {[file isdir C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.ip_user_files/ip/basicZturn_xbar_0]} {
+if {[file isdir C:/ver201604template/ver201604template.ip_user_files/ip/basicZturn_xbar_0]} {
   catch { 
-    file copy -force C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_stub.vhdl C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.ip_user_files/ip/basicZturn_xbar_0
+    file copy -force C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0_stub.vhdl C:/ver201604template/ver201604template.ip_user_files/ip/basicZturn_xbar_0
   }
 }

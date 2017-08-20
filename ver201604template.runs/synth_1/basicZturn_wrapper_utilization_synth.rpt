@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Fri May 05 01:59:38 2017
+| Date         : Sat Jul 29 22:43:02 2017
 | Host         : DESKTOP-UTEFEFF running 64-bit major release  (build 9200)
 | Command      : report_utilization -file basicZturn_wrapper_utilization_synth.rpt -pb basicZturn_wrapper_utilization_synth.pb
 | Design       : basicZturn_wrapper
@@ -178,6 +178,7 @@ Table of Contents
 |              Ref Name             | Used |
 +-----------------------------------+------+
 | basicZturn_xbar_0                 |    1 |
+| basicZturn_xadc_wiz_0_0           |    1 |
 | basicZturn_rst_ps7_0_100M_0       |    1 |
 | basicZturn_processing_system7_0_0 |    1 |
 | basicZturn_axi_uartlite_0_0       |    1 |

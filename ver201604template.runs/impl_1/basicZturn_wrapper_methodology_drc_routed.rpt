@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Fri May 05 02:01:11 2017
+| Date         : Sat Jul 29 22:44:47 2017
 | Host         : DESKTOP-UTEFEFF running 64-bit major release  (build 9200)
 | Command      : report_methodology -file basicZturn_wrapper_methodology_drc_routed.rpt -rpx basicZturn_wrapper_methodology_drc_routed.rpx
 | Design       : basicZturn_wrapper
@@ -42,113 +42,113 @@ Related violations: <none>
 XDCC-2#1 Warning
 Scoped Non-Timing constraint/property overwritten  
 A new XDC property PACKAGE_PIN on rgb_led_tri_o[0] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
-New Source: C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 33)
-Previous Source: c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0_board.xdc (Line: 3)
+New Source: C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 33)
+Previous Source: c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0_board.xdc (Line: 3)
 Related violations: <none>
 
 XDCC-2#2 Warning
 Scoped Non-Timing constraint/property overwritten  
 A new XDC property PACKAGE_PIN on rgb_led_tri_o[1] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
-New Source: C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 25)
-Previous Source: c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0_board.xdc (Line: 5)
+New Source: C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 25)
+Previous Source: c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0_board.xdc (Line: 5)
 Related violations: <none>
 
 XDCC-2#3 Warning
 Scoped Non-Timing constraint/property overwritten  
 A new XDC property PACKAGE_PIN on rgb_led_tri_o[2] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
-New Source: C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 26)
-Previous Source: c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0_board.xdc (Line: 7)
+New Source: C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 26)
+Previous Source: c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0_board.xdc (Line: 7)
 Related violations: <none>
 
 XDCH-2#1 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.100 ns has been defined on port 'i2c0_scl_io' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.100 [get_ports i2c0_scl_io]
-C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 4)
+C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 4)
 Related violations: <none>
 
 XDCH-2#2 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.100 ns has been defined on port 'i2c0_sda_io' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.100 [get_ports i2c0_sda_io]
-C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 6)
+C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 6)
 Related violations: <none>
 
 XDCH-2#3 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.100 ns has been defined on port 'sws_4bits_tri_i[0]' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.100 [get_ports {sws_4bits_tri_i[*]}]
-C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 2)
+C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 2)
 Related violations: <none>
 
 XDCH-2#4 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.100 ns has been defined on port 'sws_4bits_tri_i[1]' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.100 [get_ports {sws_4bits_tri_i[*]}]
-C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 2)
+C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 2)
 Related violations: <none>
 
 XDCH-2#5 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.100 ns has been defined on port 'sws_4bits_tri_i[2]' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.100 [get_ports {sws_4bits_tri_i[*]}]
-C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 2)
+C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 2)
 Related violations: <none>
 
 XDCH-2#6 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.100 ns has been defined on port 'sws_4bits_tri_i[3]' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.100 [get_ports {sws_4bits_tri_i[*]}]
-C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 2)
+C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 2)
 Related violations: <none>
 
 XDCH-2#7 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.200 ns has been defined on port 'uart_rtl_rxd' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.200 [get_ports uart_rtl_rxd]
-C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 46)
+C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 46)
 Related violations: <none>
 
 XDCH-2#8 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.100 ns has been defined on port 'buzzer_tri_o' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.100 [get_ports buzzer_tri_o]
-C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 10)
+C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 10)
 Related violations: <none>
 
 XDCH-2#9 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.100 ns has been defined on port 'i2c0_scl_io' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.100 [get_ports i2c0_scl_io]
-C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 12)
+C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 12)
 Related violations: <none>
 
 XDCH-2#10 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.100 ns has been defined on port 'i2c0_sda_io' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.100 [get_ports i2c0_sda_io]
-C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 14)
+C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 14)
 Related violations: <none>
 
 XDCH-2#11 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.100 ns has been defined on port 'rgb_led_tri_o[0]' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.100 [get_ports {rgb_led_tri_o[*]}]
-C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 8)
+C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 8)
 Related violations: <none>
 
 XDCH-2#12 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.100 ns has been defined on port 'rgb_led_tri_o[1]' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.100 [get_ports {rgb_led_tri_o[*]}]
-C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 8)
+C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 8)
 Related violations: <none>
 
 XDCH-2#13 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.100 ns has been defined on port 'rgb_led_tri_o[2]' relative to clock clk_fpga_0 for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks clk_fpga_0] -max -add_delay 0.100 [get_ports {rgb_led_tri_o[*]}]
-C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 8)
+C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc (Line: 8)
 Related violations: <none>
 
 

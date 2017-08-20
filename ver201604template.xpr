@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.xpr">
+<Project Version="7" Minor="17" Path="C:/ver201604template/ver201604template.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="c4bf8d38ad324c9cb25de5af4097ebaf"/>
@@ -19,9 +19,9 @@
     <Option Name="BoardPart" Val="myir.com:mys-7z020:part0:2.1"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../Vivado_project_on_Zturn/with_new_board_def_file/ip_repo/addition_1.0"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Xilinx/Vivado/2016.4/data/ip/partners/diligent"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../Vivado_project_on_Zturn/with_new_board_def_file/ip_repo/myip_add_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../Users/vivoz/Documents/WORK_FPGA/Xilinx/Vivado_project_on_Zturn/with_new_board_def_file/ip_repo/addition_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../Users/vivoz/Documents/WORK_FPGA/Xilinx/Vivado_project_on_Zturn/with_new_board_def_file/ip_repo/myip_add_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../Xilinx/Vivado/2016.4/data/ip/partners/diligent"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -61,25 +61,12 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_addition_0_0/basicZturn_addition_0_0.xci">
-          <Proxy FileSetName="basicZturn_addition_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_PWM_0_0/basicZturn_PWM_0_0.xci">
-          <Proxy FileSetName="basicZturn_PWM_0_0"/>
+        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_processing_system7_0_0/basicZturn_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_axi_iic_0_0/basicZturn_axi_iic_0_0.xci">
+          <Proxy FileSetName="basicZturn_axi_iic_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_axi_gpio_2_0/basicZturn_axi_gpio_2_0.xci">
           <Proxy FileSetName="basicZturn_axi_gpio_2_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0.xci">
-          <Proxy FileSetName="basicZturn_rst_ps7_0_100M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0.xci">
-          <Proxy FileSetName="basicZturn_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_processing_system7_0_0/basicZturn_processing_system7_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="hdl/basicZturn.v"/>
-        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_axi_iic_0_0/basicZturn_axi_iic_0_0.xci">
-          <Proxy FileSetName="basicZturn_axi_iic_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_xbar_0/basicZturn_xbar_0.xci">
           <Proxy FileSetName="basicZturn_xbar_0"/>
@@ -87,17 +74,31 @@
         <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0.xci">
           <Proxy FileSetName="basicZturn_axi_gpio_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_ps7_0_axi_periph_0/basicZturn_ps7_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_auto_pc_0/basicZturn_auto_pc_0.xci">
-          <Proxy FileSetName="basicZturn_auto_pc_0"/>
+        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0.xci">
+          <Proxy FileSetName="basicZturn_rst_ps7_0_100M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="basicZturn_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_ps7_0_axi_periph_0/basicZturn_ps7_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0.xci">
+          <Proxy FileSetName="basicZturn_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_xadc_wiz_0_0/basicZturn_xadc_wiz_0_0.xci">
+          <Proxy FileSetName="basicZturn_xadc_wiz_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0.xci">
           <Proxy FileSetName="basicZturn_axi_uartlite_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_addition_0_0/basicZturn_addition_0_0.xci">
+          <Proxy FileSetName="basicZturn_addition_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_PWM_0_0/basicZturn_PWM_0_0.xci">
+          <Proxy FileSetName="basicZturn_PWM_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="hdl/basicZturn.v"/>
+        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="basicZturn_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="ip/basicZturn_auto_pc_0/basicZturn_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="hdl/basicZturn.hwdef"/>
-        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="hw_handoff/basicZturn.hwh"/>
         <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="hw_handoff/basicZturn_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="basicZturn.bd" FileRelPathName="hw_handoff/basicZturn.hwh"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/basicZturn/hdl/basicZturn_wrapper.v">
         <FileInfo>
@@ -190,9 +191,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="basicZturn_auto_pc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/basicZturn_auto_pc_0">
+    <FileSet Name="basicZturn_xadc_wiz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/basicZturn_xadc_wiz_0_0">
       <Config>
-        <Option Name="TopModule" Val="basicZturn_auto_pc_0"/>
+        <Option Name="TopModule" Val="basicZturn_xadc_wiz_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -290,15 +291,13 @@
     </Run>
     <Run Id="basicZturn_axi_uartlite_0_0_synth_1" Type="Ft3:Synth" SrcSet="basicZturn_axi_uartlite_0_0" Part="xc7z020clg400-1" ConstrsSet="basicZturn_axi_uartlite_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/basicZturn_axi_uartlite_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="basicZturn_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="basicZturn_auto_pc_0" Part="xc7z020clg400-1" ConstrsSet="basicZturn_auto_pc_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/basicZturn_auto_pc_0_synth_1" IncludeInArchive="true">
+    <Run Id="basicZturn_xadc_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="basicZturn_xadc_wiz_0_0" Part="xc7z020clg400-1" ConstrsSet="basicZturn_xadc_wiz_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/basicZturn_xadc_wiz_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -446,9 +445,7 @@
     </Run>
     <Run Id="basicZturn_axi_uartlite_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="basicZturn_axi_uartlite_0_0" Description="Default settings for Implementation." SynthRun="basicZturn_axi_uartlite_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -461,7 +458,7 @@
       </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="basicZturn_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="basicZturn_auto_pc_0" Description="Default settings for Implementation." SynthRun="basicZturn_auto_pc_0_synth_1" IncludeInArchive="false">
+    <Run Id="basicZturn_xadc_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="basicZturn_xadc_wiz_0_0" Description="Default settings for Implementation." SynthRun="basicZturn_xadc_wiz_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
           <Desc>Default settings for Implementation.</Desc>

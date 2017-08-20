@@ -2,11 +2,11 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Fri May 05 02:04:45 2017
-# Process ID: 22360
-# Current directory: C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1
+# Start of session at: Sat Jul 29 22:47:12 2017
+# Process ID: 1336
+# Current directory: C:/ver201604template/ver201604template.runs/impl_1
 # Command line: vivado.exe -log basicZturn_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source basicZturn_wrapper.tcl -notrace
-# Log file: C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper.vdi
-# Journal file: C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1\vivado.jou
+# Log file: C:/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper.vdi
+# Journal file: C:/ver201604template/ver201604template.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source basicZturn_wrapper.tcl -notrace

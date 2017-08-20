@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc rfile:../../../ver201604template.srcs/constrs_2/new/rate.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc rfile:../../../ver201604template.srcs/constrs_2/new/rate.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_input_delay -clock [get_clocks clk_fpga_0] -min -add_delay 0.100 [get_ports {sws_4bits_tri_i[*]}]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

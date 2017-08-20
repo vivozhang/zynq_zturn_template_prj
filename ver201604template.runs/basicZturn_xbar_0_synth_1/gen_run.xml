@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="basicZturn_xbar_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1493919861">
+<GenRun Id="basicZturn_xbar_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1501339281">
   <File Type="RDS-PROPCONSTRS" Name="basicZturn_xbar_0_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="basicZturn_xbar_0.tcl"/>
   <File Type="RDS-RDS" Name="basicZturn_xbar_0.vds"/>

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Fri May 05 02:00:22 2017
+| Date         : Sat Jul 29 22:43:58 2017
 | Host         : DESKTOP-UTEFEFF running 64-bit major release  (build 9200)
 | Command      : report_drc -file basicZturn_wrapper_drc_opted.rpt
 | Design       : basicZturn_wrapper

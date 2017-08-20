@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-//Date        : Fri May 05 01:54:04 2017
+//Date        : Sat Jul 29 22:41:07 2017
 //Host        : DESKTOP-UTEFEFF running 64-bit major release  (build 9200)
 //Command     : generate_target basicZturn_wrapper.bd
 //Design      : basicZturn_wrapper

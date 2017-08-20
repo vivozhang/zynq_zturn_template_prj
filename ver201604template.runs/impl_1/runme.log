@@ -11,73 +11,78 @@
 source basicZturn_wrapper.tcl -notrace
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_PWM_0_0/basicZturn_PWM_0_0.dcp' for cell 'basicZturn_i/PWM_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_addition_0_0/basicZturn_addition_0_0.dcp' for cell 'basicZturn_i/addition_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0.dcp' for cell 'basicZturn_i/axi_gpio_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0.dcp' for cell 'basicZturn_i/axi_gpio_1'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_2_0/basicZturn_axi_gpio_2_0.dcp' for cell 'basicZturn_i/axi_gpio_2'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_iic_0_0/basicZturn_axi_iic_0_0.dcp' for cell 'basicZturn_i/axi_iic_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0.dcp' for cell 'basicZturn_i/axi_uartlite_0'
-INFO: [Project 1-454] Reading design checkpoint 'C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_processing_system7_0_0/basicZturn_processing_system7_0_0.dcp' for cell 'basicZturn_i/processing_system7_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0.dcp' for cell 'basicZturn_i/rst_ps7_0_100M'
-INFO: [Project 1-454] Reading design checkpoint 'C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0.dcp' for cell 'basicZturn_i/ps7_0_axi_periph/xbar'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_auto_pc_0/basicZturn_auto_pc_0.dcp' for cell 'basicZturn_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_PWM_0_0/basicZturn_PWM_0_0.dcp' for cell 'basicZturn_i/PWM_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_addition_0_0/basicZturn_addition_0_0.dcp' for cell 'basicZturn_i/addition_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0.dcp' for cell 'basicZturn_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0.dcp' for cell 'basicZturn_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_2_0/basicZturn_axi_gpio_2_0.dcp' for cell 'basicZturn_i/axi_gpio_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_iic_0_0/basicZturn_axi_iic_0_0.dcp' for cell 'basicZturn_i/axi_iic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0.dcp' for cell 'basicZturn_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_processing_system7_0_0/basicZturn_processing_system7_0_0.dcp' for cell 'basicZturn_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0.dcp' for cell 'basicZturn_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xadc_wiz_0_0/basicZturn_xadc_wiz_0_0.dcp' for cell 'basicZturn_i/xadc_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0.dcp' for cell 'basicZturn_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_auto_pc_0/basicZturn_auto_pc_0.dcp' for cell 'basicZturn_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2016.4
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_0/gpio_io_o[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_3/basicZturn_axi_gpio_0_0.edf:2704]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_1/gpio_io_o[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_5/basicZturn_axi_gpio_1_0.edf:3367]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_1/gpio_io_o[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_5/basicZturn_axi_gpio_1_0.edf:3374]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_1/gpio_io_o[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_5/basicZturn_axi_gpio_1_0.edf:3381]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3787]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3794]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3801]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3808]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_iic_0/scl_t' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_8/basicZturn_axi_iic_0_0.edf:22476]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_iic_0/sda_t' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_8/basicZturn_axi_iic_0_0.edf:22493]
-Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_processing_system7_0_0/basicZturn_processing_system7_0_0.xdc] for cell 'basicZturn_i/processing_system7_0/inst'
-Finished Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_processing_system7_0_0/basicZturn_processing_system7_0_0.xdc] for cell 'basicZturn_i/processing_system7_0/inst'
-Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0_board.xdc] for cell 'basicZturn_i/axi_gpio_0/U0'
-Finished Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0_board.xdc] for cell 'basicZturn_i/axi_gpio_0/U0'
-Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0.xdc] for cell 'basicZturn_i/axi_gpio_0/U0'
-Finished Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0.xdc] for cell 'basicZturn_i/axi_gpio_0/U0'
-Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0_board.xdc] for cell 'basicZturn_i/rst_ps7_0_100M/U0'
-Finished Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0_board.xdc] for cell 'basicZturn_i/rst_ps7_0_100M/U0'
-Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0.xdc] for cell 'basicZturn_i/rst_ps7_0_100M/U0'
-Finished Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0.xdc] for cell 'basicZturn_i/rst_ps7_0_100M/U0'
-Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0_board.xdc] for cell 'basicZturn_i/axi_gpio_1/U0'
-Finished Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0_board.xdc] for cell 'basicZturn_i/axi_gpio_1/U0'
-Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0.xdc] for cell 'basicZturn_i/axi_gpio_1/U0'
-Finished Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0.xdc] for cell 'basicZturn_i/axi_gpio_1/U0'
-Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_2_0/basicZturn_axi_gpio_2_0_board.xdc] for cell 'basicZturn_i/axi_gpio_2/U0'
-Finished Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_2_0/basicZturn_axi_gpio_2_0_board.xdc] for cell 'basicZturn_i/axi_gpio_2/U0'
-Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_2_0/basicZturn_axi_gpio_2_0.xdc] for cell 'basicZturn_i/axi_gpio_2/U0'
-Finished Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_2_0/basicZturn_axi_gpio_2_0.xdc] for cell 'basicZturn_i/axi_gpio_2/U0'
-Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_iic_0_0/basicZturn_axi_iic_0_0_board.xdc] for cell 'basicZturn_i/axi_iic_0/U0'
-Finished Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_iic_0_0/basicZturn_axi_iic_0_0_board.xdc] for cell 'basicZturn_i/axi_iic_0/U0'
-Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0_board.xdc] for cell 'basicZturn_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0_board.xdc] for cell 'basicZturn_i/axi_uartlite_0/U0'
-Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0.xdc] for cell 'basicZturn_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0.xdc] for cell 'basicZturn_i/axi_uartlite_0/U0'
-Parsing XDC File [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc]
-Finished Parsing XDC File [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc]
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_processing_system7_0_0/basicZturn_processing_system7_0_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_2_0/basicZturn_axi_gpio_2_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_iic_0_0/basicZturn_axi_iic_0_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_auto_pc_0/basicZturn_auto_pc_0.dcp'
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_0/gpio_io_o[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_3/basicZturn_axi_gpio_0_0.edf:2704]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_1/gpio_io_o[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_5/basicZturn_axi_gpio_1_0.edf:3367]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_1/gpio_io_o[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_5/basicZturn_axi_gpio_1_0.edf:3374]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_1/gpio_io_o[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_5/basicZturn_axi_gpio_1_0.edf:3381]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3787]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3794]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3801]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3808]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_iic_0/scl_t' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_8/basicZturn_axi_iic_0_0.edf:22476]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_iic_0/sda_t' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_8/basicZturn_axi_iic_0_0.edf:22493]
+Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_processing_system7_0_0/basicZturn_processing_system7_0_0.xdc] for cell 'basicZturn_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_processing_system7_0_0/basicZturn_processing_system7_0_0.xdc] for cell 'basicZturn_i/processing_system7_0/inst'
+Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0_board.xdc] for cell 'basicZturn_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0_board.xdc] for cell 'basicZturn_i/axi_gpio_0/U0'
+Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0.xdc] for cell 'basicZturn_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0.xdc] for cell 'basicZturn_i/axi_gpio_0/U0'
+Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0_board.xdc] for cell 'basicZturn_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0_board.xdc] for cell 'basicZturn_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0.xdc] for cell 'basicZturn_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0.xdc] for cell 'basicZturn_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0_board.xdc] for cell 'basicZturn_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0_board.xdc] for cell 'basicZturn_i/axi_gpio_1/U0'
+Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0.xdc] for cell 'basicZturn_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0.xdc] for cell 'basicZturn_i/axi_gpio_1/U0'
+Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_2_0/basicZturn_axi_gpio_2_0_board.xdc] for cell 'basicZturn_i/axi_gpio_2/U0'
+Finished Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_2_0/basicZturn_axi_gpio_2_0_board.xdc] for cell 'basicZturn_i/axi_gpio_2/U0'
+Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_2_0/basicZturn_axi_gpio_2_0.xdc] for cell 'basicZturn_i/axi_gpio_2/U0'
+Finished Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_2_0/basicZturn_axi_gpio_2_0.xdc] for cell 'basicZturn_i/axi_gpio_2/U0'
+Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_iic_0_0/basicZturn_axi_iic_0_0_board.xdc] for cell 'basicZturn_i/axi_iic_0/U0'
+Finished Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_iic_0_0/basicZturn_axi_iic_0_0_board.xdc] for cell 'basicZturn_i/axi_iic_0/U0'
+Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0_board.xdc] for cell 'basicZturn_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0_board.xdc] for cell 'basicZturn_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0.xdc] for cell 'basicZturn_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0.xdc] for cell 'basicZturn_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xadc_wiz_0_0/basicZturn_xadc_wiz_0_0.xdc] for cell 'basicZturn_i/xadc_wiz_0/inst'
+Finished Parsing XDC File [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xadc_wiz_0_0/basicZturn_xadc_wiz_0_0.xdc] for cell 'basicZturn_i/xadc_wiz_0/inst'
+Parsing XDC File [C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc]
+Finished Parsing XDC File [C:/ver201604template/ver201604template.srcs/constrs_2/new/rate.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_processing_system7_0_0/basicZturn_processing_system7_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_0_0/basicZturn_axi_gpio_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_rst_ps7_0_100M_0/basicZturn_rst_ps7_0_100M_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_1_0/basicZturn_axi_gpio_1_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/basicZturn_xbar_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_gpio_2_0/basicZturn_axi_gpio_2_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_iic_0_0/basicZturn_axi_iic_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_axi_uartlite_0_0/basicZturn_axi_uartlite_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xadc_wiz_0_0/basicZturn_xadc_wiz_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_auto_pc_0/basicZturn_auto_pc_0.dcp'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 511.352 ; gain = 301.996
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 512.660 ; gain = 302.891
+CRITICAL WARNING: [Pfi 67-13] Hardware Handoff file basicZturn_processing_system7_0_0.hwdef does not exist for instance basicZturn_i/processing_system7_0/inst
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -88,64 +93,64 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.655 . Memory (MB): peak = 522.742 ; gain = 11.391
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.722 . Memory (MB): peak = 524.320 ; gain = 11.660
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
-Implement Debug Cores | Checksum: 126eb8519
+Implement Debug Cores | Checksum: 143ab18d2
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 155680dd6
+Phase 1 Retarget | Checksum: 1e5769ac5
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.769 . Memory (MB): peak = 961.414 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.394 . Memory (MB): peak = 962.969 ; gain = 0.004
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Opt 31-10] Eliminated 153 cells.
-Phase 2 Constant propagation | Checksum: 100510ffc
+INFO: [Opt 31-10] Eliminated 168 cells.
+Phase 2 Constant propagation | Checksum: 1594ed667
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 961.414 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.880 . Memory (MB): peak = 962.969 ; gain = 0.004
 
 Phase 3 Sweep
-INFO: [Opt 31-12] Eliminated 360 unconnected nets.
-INFO: [Opt 31-11] Eliminated 209 unconnected cells.
-Phase 3 Sweep | Checksum: 1c5d1fb87
+INFO: [Opt 31-12] Eliminated 418 unconnected nets.
+INFO: [Opt 31-11] Eliminated 227 unconnected cells.
+Phase 3 Sweep | Checksum: f008d053
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 961.414 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 962.969 ; gain = 0.004
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-12] Eliminated 0 unconnected nets.
 INFO: [Opt 31-11] Eliminated 0 unconnected cells.
-Phase 4 BUFG optimization | Checksum: 1af299d9b
+Phase 4 BUFG optimization | Checksum: 16cc20d7a
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 961.414 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 962.969 ; gain = 0.004
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 961.414 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 1af299d9b
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 962.969 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 16cc20d7a
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 961.414 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 962.969 ; gain = 0.004
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: 1af299d9b
+Ending Power Optimization Task | Checksum: 16cc20d7a
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 961.414 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 962.969 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-42 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+44 Infos, 10 Warnings, 1 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 961.414 ; gain = 450.063
+opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 962.969 ; gain = 450.309
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 961.414 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper_opt.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.100 . Memory (MB): peak = 962.969 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper_opt.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper_drc_opted.rpt.
 INFO: [Chipscope 16-241] No debug cores found in the current design.
 Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
 or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
@@ -164,77 +169,77 @@ Starting Placer Task
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
 
 Phase 1 Placer Initialization
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 961.414 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 961.414 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 962.969 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 962.969 ; gain = 0.000
 
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: dbe83f2f
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1454dbeb0
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 985.863 ; gain = 24.449
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 990.340 ; gain = 27.371
 
 Phase 1.2 Build Placer Netlist Model
-Phase 1.2 Build Placer Netlist Model | Checksum: 1ec29d469
+Phase 1.2 Build Placer Netlist Model | Checksum: 16baa18b1
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 985.863 ; gain = 24.449
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 990.340 ; gain = 27.371
 
 Phase 1.3 Constrain Clocks/Macros
-Phase 1.3 Constrain Clocks/Macros | Checksum: 1ec29d469
+Phase 1.3 Constrain Clocks/Macros | Checksum: 16baa18b1
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 985.863 ; gain = 24.449
-Phase 1 Placer Initialization | Checksum: 1ec29d469
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 990.340 ; gain = 27.371
+Phase 1 Placer Initialization | Checksum: 16baa18b1
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 985.863 ; gain = 24.449
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 990.340 ; gain = 27.371
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 1c4e17539
+Phase 2 Global Placement | Checksum: 17fcae66f
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 985.863 ; gain = 24.449
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 990.340 ; gain = 27.371
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1c4e17539
+Phase 3.1 Commit Multi Column Macros | Checksum: 17fcae66f
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 985.863 ; gain = 24.449
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 990.340 ; gain = 27.371
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 25d43e2dd
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1088ca0dd
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 985.863 ; gain = 24.449
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 990.340 ; gain = 27.371
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 20e267606
+Phase 3.3 Area Swap Optimization | Checksum: 12d22b8cc
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 985.863 ; gain = 24.449
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 990.340 ; gain = 27.371
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 20e267606
+Phase 3.4 Pipeline Register Optimization | Checksum: 12d22b8cc
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 985.863 ; gain = 24.449
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 990.340 ; gain = 27.371
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 1f13bfc38
+Phase 3.5 Timing Path Optimizer | Checksum: 5152ea2a
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 985.863 ; gain = 24.449
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 990.340 ; gain = 27.371
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 215e9074a
+Phase 3.6 Small Shape Detail Placement | Checksum: a49fc086
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 985.863 ; gain = 24.449
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 990.340 ; gain = 27.371
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 2072acde7
+Phase 3.7 Re-assign LUT pins | Checksum: bbfacf1a
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 985.863 ; gain = 24.449
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 990.340 ; gain = 27.371
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 2072acde7
+Phase 3.8 Pipeline Register Optimization | Checksum: bbfacf1a
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 985.863 ; gain = 24.449
-Phase 3 Detail Placement | Checksum: 2072acde7
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 990.340 ; gain = 27.371
+Phase 3 Detail Placement | Checksum: bbfacf1a
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 985.863 ; gain = 24.449
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 990.340 ; gain = 27.371
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -242,47 +247,47 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=5.998. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 1e9ab008e
+INFO: [Place 30-746] Post Placement Timing Summary WNS=5.137. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: cf7596ec
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 998.156 ; gain = 36.742
-Phase 4.1 Post Commit Optimization | Checksum: 1e9ab008e
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.066 ; gain = 40.098
+Phase 4.1 Post Commit Optimization | Checksum: cf7596ec
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 998.156 ; gain = 36.742
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.066 ; gain = 40.098
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 1e9ab008e
+Phase 4.2 Post Placement Cleanup | Checksum: cf7596ec
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 998.156 ; gain = 36.742
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.066 ; gain = 40.098
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 1e9ab008e
+Phase 4.3 Placer Reporting | Checksum: cf7596ec
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 998.156 ; gain = 36.742
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.066 ; gain = 40.098
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 1af7c87d4
+Phase 4.4 Final Placement Cleanup | Checksum: 4ddef002
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 998.156 ; gain = 36.742
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1af7c87d4
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.066 ; gain = 40.098
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 4ddef002
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 998.156 ; gain = 36.742
-Ending Placer Task | Checksum: f7747c54
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.066 ; gain = 40.098
+Ending Placer Task | Checksum: 4bd457e8
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 998.156 ; gain = 36.742
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.066 ; gain = 40.098
 INFO: [Common 17-83] Releasing license: Implementation
-58 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+60 Infos, 10 Warnings, 1 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 998.156 ; gain = 36.742
+place_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1003.066 ; gain = 40.098
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.373 . Memory (MB): peak = 998.156 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper_placed.dcp' has been generated.
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 998.156 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 998.156 ; gain = 0.000
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 998.156 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.370 . Memory (MB): peak = 1003.066 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 1003.066 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1003.066 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1003.066 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -294,117 +299,121 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: bcb5ef7e ConstDB: 0 ShapeSum: 3abe8cd6 RouteDB: 0
+Checksum: PlaceDB: 2bc481f7 ConstDB: 0 ShapeSum: 200fd5f1 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 10b68aa5c
+Phase 1 Build RT Design | Checksum: cbb54147
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1143.977 ; gain = 142.820
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1143.434 ; gain = 139.566
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 10b68aa5c
+Phase 2.1 Create Timer | Checksum: cbb54147
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1143.977 ; gain = 142.820
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 1143.434 ; gain = 139.566
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 10b68aa5c
+Phase 2.2 Fix Topology Constraints | Checksum: cbb54147
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1144.188 ; gain = 143.031
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 1144.926 ; gain = 141.059
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 10b68aa5c
+Phase 2.3 Pre Route Cleanup | Checksum: cbb54147
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1144.188 ; gain = 143.031
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 1144.926 ; gain = 141.059
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 15ce66fff
+Phase 2.4 Update Timing | Checksum: cb7ace7d
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 1170.152 ; gain = 168.996
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.008  | TNS=0.000  | WHS=-0.186 | THS=-36.054|
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 1169.555 ; gain = 165.688
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.146  | TNS=0.000  | WHS=-0.191 | THS=-44.308|
 
-Phase 2 Router Initialization | Checksum: 1af9e2680
+Phase 2 Router Initialization | Checksum: d8cfaacf
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 1170.152 ; gain = 168.996
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 1169.555 ; gain = 165.688
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 8264cb07
+Phase 3 Initial Routing | Checksum: 2090b72e5
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 1170.152 ; gain = 168.996
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1169.555 ; gain = 165.688
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 273
- Number of Nodes with overlaps = 9
- Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 338
+ Number of Nodes with overlaps = 6
  Number of Nodes with overlaps = 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: 95c2b977
+Phase 4.1.1 Update Timing | Checksum: 119237ed8
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1170.152 ; gain = 168.996
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.041  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:29 . Memory (MB): peak = 1169.555 ; gain = 165.688
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.834  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 12d8e6d17
+Phase 4.1 Global Iteration 0 | Checksum: 117294a4b
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1170.152 ; gain = 168.996
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:29 . Memory (MB): peak = 1169.555 ; gain = 165.688
 
 Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
 
 Phase 4.2.1 Update Timing
-Phase 4.2.1 Update Timing | Checksum: 2172b5ea3
+Phase 4.2.1 Update Timing | Checksum: 5c0e876c
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1170.152 ; gain = 168.996
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.041  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:29 . Memory (MB): peak = 1169.555 ; gain = 165.688
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.834  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 193bbef12
+Phase 4.2 Global Iteration 1 | Checksum: f868f274
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1170.152 ; gain = 168.996
-Phase 4 Rip-up And Reroute | Checksum: 193bbef12
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:29 . Memory (MB): peak = 1169.555 ; gain = 165.688
+Phase 4 Rip-up And Reroute | Checksum: f868f274
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1170.152 ; gain = 168.996
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:29 . Memory (MB): peak = 1169.555 ; gain = 165.688
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: 193bbef12
+Phase 5.1 Delay CleanUp | Checksum: f868f274
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1170.152 ; gain = 168.996
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1169.555 ; gain = 165.688
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 193bbef12
+Phase 5.2 Clock Skew Optimization | Checksum: f868f274
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1170.152 ; gain = 168.996
-Phase 5 Delay and Skew Optimization | Checksum: 193bbef12
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1169.555 ; gain = 165.688
+Phase 5 Delay and Skew Optimization | Checksum: f868f274
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1170.152 ; gain = 168.996
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1169.555 ; gain = 165.688
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 1a3bcb55b
+Phase 6.1.1 Update Timing | Checksum: 5ab76b8d
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 1170.152 ; gain = 168.996
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.041  | TNS=0.000  | WHS=0.045  | THS=0.000  |
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1169.555 ; gain = 165.688
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.834  | TNS=0.000  | WHS=0.023  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 18bfbbe43
+Phase 6.1 Hold Fix Iter | Checksum: 11975cc44
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 1170.152 ; gain = 168.996
-Phase 6 Post Hold Fix | Checksum: 18bfbbe43
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1169.555 ; gain = 165.688
+Phase 6 Post Hold Fix | Checksum: 11975cc44
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 1170.152 ; gain = 168.996
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1169.555 ; gain = 165.688
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.445273 %
-  Global Horizontal Routing Utilization  = 0.590433 %
+  Global Vertical Routing Utilization    = 0.549084 %
+  Global Horizontal Routing Utilization  = 0.733942 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -413,49 +422,49 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 1e017b358
+Phase 7 Route finalize | Checksum: 11975cc44
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 1170.152 ; gain = 168.996
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1169.555 ; gain = 165.688
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1e017b358
+Phase 8 Verifying routed nets | Checksum: 11975cc44
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 1170.152 ; gain = 168.996
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1169.555 ; gain = 165.688
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 18abf738e
+Phase 9 Depositing Routes | Checksum: 17c0dbdba
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 1170.152 ; gain = 168.996
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1169.555 ; gain = 165.688
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=5.041  | TNS=0.000  | WHS=0.045  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=4.834  | TNS=0.000  | WHS=0.023  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 18abf738e
+Phase 10 Post Router Timing | Checksum: 17c0dbdba
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 1170.152 ; gain = 168.996
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1169.555 ; gain = 165.688
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 1170.152 ; gain = 168.996
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1169.555 ; gain = 165.688
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-72 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+74 Infos, 10 Warnings, 1 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 1170.152 ; gain = 171.996
+route_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:32 . Memory (MB): peak = 1169.555 ; gain = 166.488
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.468 . Memory (MB): peak = 1170.152 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper_routed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.467 . Memory (MB): peak = 1169.555 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper_routed.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper_drc_routed.rpt.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper_methodology_drc_routed.rpt.
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/ver201604template/ver201604template.runs/impl_1/basicZturn_wrapper_methodology_drc_routed.rpt.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
@@ -464,9 +473,9 @@ Command: report_power -file basicZturn_wrapper_power_routed.rpt -pb basicZturn_w
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-82 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+84 Infos, 10 Warnings, 1 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-INFO: [Common 17-206] Exiting Vivado at Fri May 05 02:01:17 2017...
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 29 22:44:49 2017...
 
 *** Running vivado
     with args -log basicZturn_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source basicZturn_wrapper.tcl -notrace
@@ -482,38 +491,38 @@ Command: open_checkpoint basicZturn_wrapper_routed.dcp
 
 Starting open_checkpoint Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 210.117 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 210.465 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2016.4
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_0/gpio_io_o[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_3/basicZturn_axi_gpio_0_0.edf:2704]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_1/gpio_io_o[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_5/basicZturn_axi_gpio_1_0.edf:3367]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_1/gpio_io_o[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_5/basicZturn_axi_gpio_1_0.edf:3374]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_1/gpio_io_o[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_5/basicZturn_axi_gpio_1_0.edf:3381]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3787]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3794]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3801]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3808]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_iic_0/scl_t' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_8/basicZturn_axi_iic_0_0.edf:22476]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_iic_0/sda_t' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-21852-DESKTOP-UTEFEFF/dcp_8/basicZturn_axi_iic_0_0.edf:22493]
-Parsing XDC File [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-22360-DESKTOP-UTEFEFF/dcp/basicZturn_wrapper_early.xdc]
-Finished Parsing XDC File [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-22360-DESKTOP-UTEFEFF/dcp/basicZturn_wrapper_early.xdc]
-Parsing XDC File [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-22360-DESKTOP-UTEFEFF/dcp/basicZturn_wrapper.xdc]
-Finished Parsing XDC File [C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-22360-DESKTOP-UTEFEFF/dcp/basicZturn_wrapper.xdc]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_0/gpio_io_o[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_3/basicZturn_axi_gpio_0_0.edf:2704]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_1/gpio_io_o[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_5/basicZturn_axi_gpio_1_0.edf:3367]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_1/gpio_io_o[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_5/basicZturn_axi_gpio_1_0.edf:3374]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_1/gpio_io_o[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_5/basicZturn_axi_gpio_1_0.edf:3381]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3787]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3794]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3801]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_gpio_2/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_7/basicZturn_axi_gpio_2_0.edf:3808]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_iic_0/scl_t' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_8/basicZturn_axi_iic_0_0.edf:22476]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'basicZturn_i/axi_iic_0/sda_t' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-8764-DESKTOP-UTEFEFF/dcp_8/basicZturn_axi_iic_0_0.edf:22493]
+Parsing XDC File [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-1336-DESKTOP-UTEFEFF/dcp/basicZturn_wrapper_early.xdc]
+Finished Parsing XDC File [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-1336-DESKTOP-UTEFEFF/dcp/basicZturn_wrapper_early.xdc]
+Parsing XDC File [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-1336-DESKTOP-UTEFEFF/dcp/basicZturn_wrapper.xdc]
+Finished Parsing XDC File [C:/ver201604template/ver201604template.runs/impl_1/.Xil/Vivado-1336-DESKTOP-UTEFEFF/dcp/basicZturn_wrapper.xdc]
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.468 . Memory (MB): peak = 499.992 ; gain = 1.469
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.529 . Memory (MB): peak = 501.938 ; gain = 2.313
 Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.468 . Memory (MB): peak = 499.992 ; gain = 1.469
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.552 . Memory (MB): peak = 501.938 ; gain = 2.313
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2016.4 (64-bit) build 1756540
-open_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 499.992 ; gain = 289.875
+open_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 501.938 ; gain = 291.473
 Command: write_bitstream -force -no_partial_bitfile basicZturn_wrapper.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -536,5 +545,5 @@ INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK 
 INFO: [Common 17-83] Releasing license: Implementation
 14 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 892.074 ; gain = 392.082
-INFO: [Common 17-206] Exiting Vivado at Fri May 05 02:05:33 2017...
+write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 895.031 ; gain = 393.094
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 29 22:47:49 2017...

@@ -2,90 +2,91 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Fri May 05 01:44:25 2017
-# Process ID: 10468
-# Current directory: C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1
+# Start of session at: Sat Jul 29 22:41:24 2017
+# Process ID: 8484
+# Current directory: C:/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1
 # Command line: vivado.exe -log basicZturn_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source basicZturn_xbar_0.tcl
-# Log file: C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0.vds
-# Journal file: C:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1\vivado.jou
+# Log file: C:/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1/basicZturn_xbar_0.vds
+# Journal file: C:/ver201604template/ver201604template.runs/basicZturn_xbar_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source basicZturn_xbar_0.tcl -notrace
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 320.074 ; gain = 110.457
-INFO: [Synth 8-638] synthesizing module 'basicZturn_xbar_0' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/synth/basicZturn_xbar_0.v:59]
-INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_axi_crossbar' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
-INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_crossbar_sasd' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
-INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_decoder' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (2#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' (2#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' (2#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' (2#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_decoder' (3#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
-INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_decerr_slave' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
-INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_decerr_slave' (4#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
-INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_arbiter_sasd' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
-INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_arbiter_sasd' (5#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
-INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_splitter' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
-INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_splitter' (6#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
-INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_splitter__parameterized0' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
-INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_splitter__parameterized0' (6#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (7#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' (8#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (8#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_crossbar_sasd' (9#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
-INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_axi_crossbar' (10#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
-INFO: [Synth 8-256] done synthesizing module 'basicZturn_xbar_0' (11#1) [c:/Users/vivoz/Documents/WORK_FPGA/Xilinx/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/synth/basicZturn_xbar_0.v:59]
-Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 436.371 ; gain = 226.754
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 436.371 ; gain = 226.754
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 320.793 ; gain = 110.527
+INFO: [Synth 8-638] synthesizing module 'basicZturn_xbar_0' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/synth/basicZturn_xbar_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_axi_crossbar' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_crossbar_sasd' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_decoder' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (2#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' (2#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' (2#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' (2#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized6' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized6' (2#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_decoder' (3#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_decerr_slave' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_decerr_slave' (4#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_arbiter_sasd' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_arbiter_sasd' (5#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_splitter' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_splitter' (6#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_splitter__parameterized0' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_splitter__parameterized0' (6#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (7#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' (8#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (8#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_crossbar_sasd' (9#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_axi_crossbar' (10#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-256] done synthesizing module 'basicZturn_xbar_0' (11#1) [c:/ver201604template/ver201604template.srcs/sources_1/bd/basicZturn/ip/basicZturn_xbar_0/synth/basicZturn_xbar_0.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 436.984 ; gain = 226.719
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 436.984 ; gain = 226.719
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 681.984 ; gain = 0.027
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 681.984 ; gain = 472.367
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 681.984 ; gain = 472.367
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 681.984 ; gain = 472.367
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 681.984 ; gain = 472.367
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 681.984 ; gain = 472.367
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 681.984 ; gain = 472.367
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 681.984 ; gain = 472.367
-Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:48 . Memory (MB): peak = 681.984 ; gain = 472.367
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 681.984 ; gain = 472.367
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 681.984 ; gain = 472.367
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 681.984 ; gain = 472.367
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 681.984 ; gain = 472.367
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 681.984 ; gain = 472.367
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 681.984 ; gain = 472.367
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 683.672 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 683.672 ; gain = 473.406
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 683.672 ; gain = 473.406
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 683.672 ; gain = 473.406
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 683.672 ; gain = 473.406
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 683.672 ; gain = 473.406
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 683.672 ; gain = 473.406
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 683.672 ; gain = 473.406
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 683.672 ; gain = 473.406
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 683.672 ; gain = 473.406
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 683.672 ; gain = 473.406
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 683.672 ; gain = 473.406
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 683.672 ; gain = 473.406
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 683.672 ; gain = 473.406
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 683.672 ; gain = 473.406
 
 Report Cell Usage: 
-+------+------+------+
-|      |Cell  |Count |
-+------+------+------+
-|1     |LUT1  |     2|
-|2     |LUT2  |    14|
-|3     |LUT3  |    48|
-|4     |LUT4  |    56|
-|5     |LUT5  |    71|
-|6     |LUT6  |   100|
-|7     |MUXF7 |     4|
-|8     |FDRE  |   136|
-+------+------+------+
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 681.984 ; gain = 472.367
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 681.984 ; gain = 441.930
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    20|
+|3     |LUT3 |    51|
+|4     |LUT4 |    72|
+|5     |LUT5 |    65|
+|6     |LUT6 |   156|
+|7     |FDRE |   138|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 683.672 ; gain = 473.406
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:42 . Memory (MB): peak = 683.672 ; gain = 442.922

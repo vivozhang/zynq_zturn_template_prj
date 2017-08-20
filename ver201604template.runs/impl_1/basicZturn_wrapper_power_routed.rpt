@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Fri May 05 02:01:16 2017
+| Date             : Sat Jul 29 22:44:48 2017
 | Host             : DESKTOP-UTEFEFF running 64-bit major release  (build 9200)
 | Command          : report_power -file basicZturn_wrapper_power_routed.rpt -pb basicZturn_wrapper_power_summary_routed.pb -rpx basicZturn_wrapper_power_routed.rpx
 | Design           : basicZturn_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.666 |
-| Dynamic (W)              | 1.509 |
+| Total On-Chip Power (W)  | 1.668 |
+| Dynamic (W)              | 1.511 |
 | Device Static (W)        | 0.157 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 65.8  |
@@ -49,20 +49,21 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.008 |        4 |       --- |             --- |
-| Slice Logic             |     0.002 |     4018 |       --- |             --- |
-|   LUT as Logic          |     0.002 |     1396 |     53200 |            2.62 |
-|   Register              |    <0.001 |     1837 |    106400 |            1.73 |
+| Clocks                  |     0.009 |        4 |       --- |             --- |
+| Slice Logic             |     0.002 |     4488 |       --- |             --- |
+|   LUT as Logic          |     0.001 |     1584 |     53200 |            2.98 |
+|   Register              |    <0.001 |     2075 |    106400 |            1.95 |
 |   CARRY4                |    <0.001 |       57 |     13300 |            0.43 |
 |   LUT as Shift Register |    <0.001 |       82 |     17400 |            0.47 |
-|   F7/F8 Muxes           |    <0.001 |        6 |     53200 |            0.01 |
-|   Others                |     0.000 |      270 |       --- |             --- |
-| Signals                 |     0.003 |     2959 |       --- |             --- |
+|   F7/F8 Muxes           |    <0.001 |        2 |     53200 |           <0.01 |
+|   Others                |     0.000 |      280 |       --- |             --- |
+| Signals                 |     0.003 |     3337 |       --- |             --- |
 | DSPs                    |     0.000 |        1 |       220 |            0.45 |
 | I/O                     |    <0.001 |       15 |       125 |           12.00 |
+| XADC                    |     0.002 |        1 |       --- |             --- |
 | PS7                     |     1.496 |        1 |       --- |             --- |
 | Static Power            |     0.157 |          |           |                 |
-| Total                   |     1.666 |          |           |                 |
+| Total                   |     1.668 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.027 |       0.012 |      0.015 |
+| Vccint    |       1.000 |     0.028 |       0.014 |      0.015 |
 | Vccaux    |       1.800 |     0.021 |       0.000 |      0.020 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -91,7 +92,7 @@ Table of Contents
 | Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |
 | Vcco_mio0 |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco_mio1 |       1.800 |     0.003 |       0.002 |      0.001 |
-| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
+| Vccadc    |       1.800 |     0.021 |       0.001 |      0.020 |
 +-----------+-------------+-----------+-------------+------------+
 
 
@@ -148,8 +149,8 @@ Table of Contents
 +-----------------------------------------------------------------------------+-----------+
 | Name                                                                        | Power (W) |
 +-----------------------------------------------------------------------------+-----------+
-| basicZturn_wrapper                                                          |     1.509 |
-|   basicZturn_i                                                              |     1.508 |
+| basicZturn_wrapper                                                          |     1.511 |
+|   basicZturn_i                                                              |     1.511 |
 |     PWM_0                                                                   |     0.002 |
 |       inst                                                                  |     0.002 |
 |         PWM_AXI_inst                                                        |    <0.001 |
@@ -223,8 +224,8 @@ Table of Contents
 |               I_SRL_FIFO_RBU_F                                              |    <0.001 |
 |                 CNTR_INCR_DECR_ADDN_F_I                                     |    <0.001 |
 |                 DYNSHREG_F_I                                                |    <0.001 |
-|     processing_system7_0                                                    |     1.496 |
-|       inst                                                                  |     1.496 |
+|     processing_system7_0                                                    |     1.497 |
+|       inst                                                                  |     1.497 |
 |     ps7_0_axi_periph                                                        |     0.005 |
 |       s00_couplers                                                          |     0.004 |
 |         auto_pc                                                             |     0.004 |
@@ -251,9 +252,9 @@ Table of Contents
 |               WR.b_channel_0                                                |    <0.001 |
 |                 bid_fifo_0                                                  |    <0.001 |
 |                 bresp_fifo_0                                                |    <0.001 |
-|       xbar                                                                  |     0.001 |
-|         inst                                                                |     0.001 |
-|           gen_sasd.crossbar_sasd_0                                          |     0.001 |
+|       xbar                                                                  |    <0.001 |
+|         inst                                                                |    <0.001 |
+|           gen_sasd.crossbar_sasd_0                                          |    <0.001 |
 |             addr_arbiter_inst                                               |    <0.001 |
 |             gen_decerr.decerr_slave_inst                                    |    <0.001 |
 |             reg_slice_r                                                     |    <0.001 |
@@ -265,6 +266,14 @@ Table of Contents
 |           ACTIVE_LOW_EXT.ACT_LO_EXT                                         |    <0.001 |
 |         SEQ                                                                 |    <0.001 |
 |           SEQ_COUNTER                                                       |    <0.001 |
+|     xadc_wiz_0                                                              |     0.003 |
+|       inst                                                                  |     0.003 |
+|         AXI_LITE_IPIF_I                                                     |    <0.001 |
+|           I_SLAVE_ATTACHMENT                                                |    <0.001 |
+|             I_DECODER                                                       |    <0.001 |
+|         AXI_XADC_CORE_I                                                     |     0.002 |
+|         INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I                                |    <0.001 |
+|         SOFT_RESET_I                                                        |    <0.001 |
 |   i2c0_scl_iobuf                                                            |     0.000 |
 |   i2c0_sda_iobuf                                                            |     0.000 |
 +-----------------------------------------------------------------------------+-----------+
