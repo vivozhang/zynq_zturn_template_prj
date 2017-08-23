@@ -4,7 +4,9 @@
 lib/CMakeFiles/metal-static.dir/device.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/libmetal_v1_1/src/libmetal/lib/device.c
 lib/CMakeFiles/metal-static.dir/device.c.obj: lib/metal/atomic.h
 lib/CMakeFiles/metal-static.dir/device.c.obj: lib/metal/cache.h
+lib/CMakeFiles/metal-static.dir/device.c.obj: lib/metal/compiler.h
 lib/CMakeFiles/metal-static.dir/device.c.obj: lib/metal/compiler/gcc/atomic.h
+lib/CMakeFiles/metal-static.dir/device.c.obj: lib/metal/compiler/gcc/compiler.h
 lib/CMakeFiles/metal-static.dir/device.c.obj: lib/metal/config.h
 lib/CMakeFiles/metal-static.dir/device.c.obj: lib/metal/device.h
 lib/CMakeFiles/metal-static.dir/device.c.obj: lib/metal/dma.h
@@ -19,7 +21,9 @@ lib/CMakeFiles/metal-static.dir/device.c.obj: lib/metal/utilities.h
 
 lib/CMakeFiles/metal-static.dir/dma.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/libmetal_v1_1/src/libmetal/lib/dma.c
 lib/CMakeFiles/metal-static.dir/dma.c.obj: lib/metal/atomic.h
+lib/CMakeFiles/metal-static.dir/dma.c.obj: lib/metal/compiler.h
 lib/CMakeFiles/metal-static.dir/dma.c.obj: lib/metal/compiler/gcc/atomic.h
+lib/CMakeFiles/metal-static.dir/dma.c.obj: lib/metal/compiler/gcc/compiler.h
 lib/CMakeFiles/metal-static.dir/dma.c.obj: lib/metal/config.h
 lib/CMakeFiles/metal-static.dir/dma.c.obj: lib/metal/device.h
 lib/CMakeFiles/metal-static.dir/dma.c.obj: lib/metal/dma.h
@@ -40,7 +44,9 @@ lib/CMakeFiles/metal-static.dir/init.c.obj: lib/metal/system/generic/sys.h
 
 lib/CMakeFiles/metal-static.dir/io.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/libmetal_v1_1/src/libmetal/lib/io.c
 lib/CMakeFiles/metal-static.dir/io.c.obj: lib/metal/atomic.h
+lib/CMakeFiles/metal-static.dir/io.c.obj: lib/metal/compiler.h
 lib/CMakeFiles/metal-static.dir/io.c.obj: lib/metal/compiler/gcc/atomic.h
+lib/CMakeFiles/metal-static.dir/io.c.obj: lib/metal/compiler/gcc/compiler.h
 lib/CMakeFiles/metal-static.dir/io.c.obj: lib/metal/config.h
 lib/CMakeFiles/metal-static.dir/io.c.obj: lib/metal/io.h
 lib/CMakeFiles/metal-static.dir/io.c.obj: lib/metal/list.h
@@ -59,7 +65,9 @@ lib/CMakeFiles/metal-static.dir/log.c.obj: lib/metal/system/generic/sys.h
 
 lib/CMakeFiles/metal-static.dir/shmem.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/libmetal_v1_1/src/libmetal/lib/shmem.c
 lib/CMakeFiles/metal-static.dir/shmem.c.obj: lib/metal/atomic.h
+lib/CMakeFiles/metal-static.dir/shmem.c.obj: lib/metal/compiler.h
 lib/CMakeFiles/metal-static.dir/shmem.c.obj: lib/metal/compiler/gcc/atomic.h
+lib/CMakeFiles/metal-static.dir/shmem.c.obj: lib/metal/compiler/gcc/compiler.h
 lib/CMakeFiles/metal-static.dir/shmem.c.obj: lib/metal/config.h
 lib/CMakeFiles/metal-static.dir/shmem.c.obj: lib/metal/io.h
 lib/CMakeFiles/metal-static.dir/shmem.c.obj: lib/metal/list.h
@@ -97,7 +105,9 @@ lib/CMakeFiles/metal-static.dir/system/generic/init.c.obj: lib/metal/utilities.h
 
 lib/CMakeFiles/metal-static.dir/system/generic/io.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/libmetal_v1_1/src/libmetal/lib/system/generic/io.c
 lib/CMakeFiles/metal-static.dir/system/generic/io.c.obj: lib/metal/atomic.h
+lib/CMakeFiles/metal-static.dir/system/generic/io.c.obj: lib/metal/compiler.h
 lib/CMakeFiles/metal-static.dir/system/generic/io.c.obj: lib/metal/compiler/gcc/atomic.h
+lib/CMakeFiles/metal-static.dir/system/generic/io.c.obj: lib/metal/compiler/gcc/compiler.h
 lib/CMakeFiles/metal-static.dir/system/generic/io.c.obj: lib/metal/config.h
 lib/CMakeFiles/metal-static.dir/system/generic/io.c.obj: lib/metal/io.h
 lib/CMakeFiles/metal-static.dir/system/generic/io.c.obj: lib/metal/list.h
@@ -124,7 +134,9 @@ lib/CMakeFiles/metal-static.dir/system/generic/irq.c.obj: lib/metal/system/gener
 
 lib/CMakeFiles/metal-static.dir/system/generic/shmem.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/libmetal_v1_1/src/libmetal/lib/system/generic/shmem.c
 lib/CMakeFiles/metal-static.dir/system/generic/shmem.c.obj: lib/metal/atomic.h
+lib/CMakeFiles/metal-static.dir/system/generic/shmem.c.obj: lib/metal/compiler.h
 lib/CMakeFiles/metal-static.dir/system/generic/shmem.c.obj: lib/metal/compiler/gcc/atomic.h
+lib/CMakeFiles/metal-static.dir/system/generic/shmem.c.obj: lib/metal/compiler/gcc/compiler.h
 lib/CMakeFiles/metal-static.dir/system/generic/shmem.c.obj: lib/metal/config.h
 lib/CMakeFiles/metal-static.dir/system/generic/shmem.c.obj: lib/metal/io.h
 lib/CMakeFiles/metal-static.dir/system/generic/shmem.c.obj: lib/metal/list.h
@@ -148,7 +160,9 @@ lib/CMakeFiles/metal-static.dir/system/generic/time.c.obj: lib/metal/time.h
 
 lib/CMakeFiles/metal-static.dir/system/generic/zynq7/sys.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/libmetal_v1_1/src/libmetal/lib/system/generic/zynq7/sys.c
 lib/CMakeFiles/metal-static.dir/system/generic/zynq7/sys.c.obj: lib/metal/atomic.h
+lib/CMakeFiles/metal-static.dir/system/generic/zynq7/sys.c.obj: lib/metal/compiler.h
 lib/CMakeFiles/metal-static.dir/system/generic/zynq7/sys.c.obj: lib/metal/compiler/gcc/atomic.h
+lib/CMakeFiles/metal-static.dir/system/generic/zynq7/sys.c.obj: lib/metal/compiler/gcc/compiler.h
 lib/CMakeFiles/metal-static.dir/system/generic/zynq7/sys.c.obj: lib/metal/config.h
 lib/CMakeFiles/metal-static.dir/system/generic/zynq7/sys.c.obj: lib/metal/io.h
 lib/CMakeFiles/metal-static.dir/system/generic/zynq7/sys.c.obj: lib/metal/list.h

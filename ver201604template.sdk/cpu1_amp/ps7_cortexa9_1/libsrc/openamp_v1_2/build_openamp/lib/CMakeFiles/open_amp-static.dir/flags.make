@@ -7,7 +7,7 @@ ASM_FLAGS = -g -IC:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa
 
 ASM_DEFINES = 
 
-C_FLAGS = -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles   -DUSE_AMP=1 -IC:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/include -Wall -Wextra -g -IC:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include   
+C_FLAGS = -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles   -DUSE_AMP=1 -DUNDEFINE_FILE_OPS -IC:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/include -Wall -Wextra -g -IC:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include   
 
 C_DEFINES = 
 
@@ -38,4 +38,6 @@ C_DEFINES =
 # Custom flags: lib/CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_remoteproc_a9.c.obj_FLAGS =  
 
 # Custom flags: lib/CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_a9_trampoline.S.obj_FLAGS =  
+
+# Custom flags: lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj_FLAGS =  
 

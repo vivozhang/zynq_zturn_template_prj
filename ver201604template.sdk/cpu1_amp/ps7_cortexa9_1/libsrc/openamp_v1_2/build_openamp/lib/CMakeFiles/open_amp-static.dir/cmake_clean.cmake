@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/open_amp-static.dir/remoteproc/rsc_table_parser.c.obj"
   "CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_remoteproc_a9.c.obj"
   "CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_a9_trampoline.S.obj"
+  "CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj"
   "libopen_amp.pdb"
   "libopen_amp.a"
 )

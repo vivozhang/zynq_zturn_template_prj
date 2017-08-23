@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/cmake/platforms/toolchain.cmake"
   "C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/CMakeLists.txt"
   "C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/common/CMakeLists.txt"
+  "C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/proxy/CMakeLists.txt"
   "C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/remoteproc/CMakeLists.txt"
   "C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/remoteproc/drivers/CMakeLists.txt"
   "C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/rpmsg/CMakeLists.txt"
@@ -73,6 +74,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "lib/rpmsg/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/remoteproc/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/remoteproc/drivers/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/proxy/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

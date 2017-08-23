@@ -58,7 +58,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the compiler during release builds with debug info.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-CMAKE_C_FLAGS:STRING=-O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles   -DUSE_AMP=1 -IC:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/include
+CMAKE_C_FLAGS:STRING=-O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles   -DUSE_AMP=1 -DUNDEFINE_FILE_OPS -IC:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/include
 
 //Flags used by the compiler during debug builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g
@@ -207,7 +207,7 @@ WITH_LIBMETAL_FIND:BOOL=off
 WITH_OBSOLETE:BOOL=OFF
 
 //Build with proxy(access device controlled by other processor)
-WITH_PROXY:BOOL=false
+WITH_PROXY:BOOL=true
 
 //Build with proxy sample applicaitons
 WITH_PROXY_APPS:BOOL=OFF
@@ -325,7 +325,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=7
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

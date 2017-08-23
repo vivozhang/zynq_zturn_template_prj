@@ -37,8 +37,14 @@
 #error "Include metal/irq.h instead of metal/generic/irq.h"
 #endif
 
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #ifndef __METAL_GENERIC_IRQ__H__
 #define __METAL_GENERIC_IRQ__H__
+
 
 /**
  * @brief      default interrupt handler

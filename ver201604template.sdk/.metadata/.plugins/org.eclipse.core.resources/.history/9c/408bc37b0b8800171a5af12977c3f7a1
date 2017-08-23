@@ -1,0 +1,28 @@
+/*
+ * Empty C++ Application
+ */
+#include "xil_printf.h"
+#include "openamp/open_amp.h"
+#include "rsc_table.h"
+#include "platform_info.h"
+#include "xparameters.h"
+
+
+class test{
+public:
+	int a;
+	int b;
+	int add()
+	{
+		return a+b;
+	}
+};
+
+
+int main()
+{
+	test TEST;
+	TEST.a = 45;
+	TEST.b = 90;
+	return TEST.add();
+}

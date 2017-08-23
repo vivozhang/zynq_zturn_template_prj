@@ -15,7 +15,7 @@ BEGIN PROCESSOR
  PARAMETER DRIVER_NAME = cpu_cortexa9
  PARAMETER DRIVER_VER = 2.3
  PARAMETER HW_INSTANCE = ps7_cortexa9_1
- PARAMETER extra_compiler_flags = -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles   -DUSE_AMP=1
+ PARAMETER extra_compiler_flags = -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles   -DUSE_AMP=1 -DUNDEFINE_FILE_OPS
 END
 
 
@@ -301,7 +301,6 @@ BEGIN LIBRARY
  PARAMETER LIBRARY_NAME = openamp
  PARAMETER LIBRARY_VER = 1.2
  PARAMETER PROC_INSTANCE = ps7_cortexa9_1
- PARAMETER WITH_PROXY = false
 END
 
 

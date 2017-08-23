@@ -41,6 +41,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/lib/virtio/cmake_install.cmake")
   include("C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/lib/rpmsg/cmake_install.cmake")
   include("C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/lib/remoteproc/cmake_install.cmake")
+  include("C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/lib/proxy/cmake_install.cmake")
 
 endif()
 

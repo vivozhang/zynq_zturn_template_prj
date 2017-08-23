@@ -146,7 +146,13 @@ metal/processor/arm/atomic.h
 
 lib/metal/cache.h
 
+lib/metal/compiler.h
+metal/compiler/gcc/compiler.h
+-
+
 lib/metal/compiler/gcc/atomic.h
+
+lib/metal/compiler/gcc/compiler.h
 
 lib/metal/condition.h
 metal/mutex.h
@@ -185,6 +191,8 @@ string.h
 -
 stdlib.h
 -
+metal/compiler.h
+lib/metal/metal/compiler.h
 metal/atomic.h
 lib/metal/metal/atomic.h
 metal/sys.h

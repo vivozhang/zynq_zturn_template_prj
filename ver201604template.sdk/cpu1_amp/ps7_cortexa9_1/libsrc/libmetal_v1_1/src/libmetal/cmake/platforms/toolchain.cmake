@@ -1,7 +1,7 @@
 set (CMAKE_SYSTEM_PROCESSOR "arm" CACHE STRING "")
 set (MACHINE "zynq7")
 set (CROSS_PREFIX "arm-none-eabi-" CACHE STRING "")
-set (CMAKE_C_FLAGS "-O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles   -DUSE_AMP=1 -IC:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/include" CACHE STRING "")
+set (CMAKE_C_FLAGS "-O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles   -DUSE_AMP=1 -DUNDEFINE_FILE_OPS -IC:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/include" CACHE STRING "")
 set (CMAKE_SYSTEM_NAME "Generic" CACHE STRING "")
 include (CMakeForceCompiler)
 CMAKE_FORCE_C_COMPILER ("${CROSS_PREFIX}gcc" GNU)

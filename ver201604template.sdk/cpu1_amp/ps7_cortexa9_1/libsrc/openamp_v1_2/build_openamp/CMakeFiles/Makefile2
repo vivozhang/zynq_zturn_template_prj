@@ -71,6 +71,7 @@ lib/all: lib/common/all
 lib/all: lib/virtio/all
 lib/all: lib/rpmsg/all
 lib/all: lib/remoteproc/all
+lib/all: lib/proxy/all
 
 .PHONY : lib/all
 
@@ -80,6 +81,7 @@ lib/clean: lib/common/clean
 lib/clean: lib/virtio/clean
 lib/clean: lib/rpmsg/clean
 lib/clean: lib/remoteproc/clean
+lib/clean: lib/proxy/clean
 
 .PHONY : lib/clean
 
@@ -88,6 +90,7 @@ lib/preinstall: lib/common/preinstall
 lib/preinstall: lib/virtio/preinstall
 lib/preinstall: lib/rpmsg/preinstall
 lib/preinstall: lib/remoteproc/preinstall
+lib/preinstall: lib/proxy/preinstall
 
 .PHONY : lib/preinstall
 
@@ -98,7 +101,7 @@ lib/preinstall: lib/remoteproc/preinstall
 lib/CMakeFiles/open_amp-static.dir/all:
 	$(MAKE) -f lib/CMakeFiles/open_amp-static.dir/build.make lib/CMakeFiles/open_amp-static.dir/depend
 	$(MAKE) -f lib/CMakeFiles/open_amp-static.dir/build.make lib/CMakeFiles/open_amp-static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target open_amp-static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target open_amp-static"
 .PHONY : lib/CMakeFiles/open_amp-static.dir/all
 
 # Include target in all.
@@ -108,7 +111,7 @@ all: lib/CMakeFiles/open_amp-static.dir/all
 
 # Build rule for subdir invocation for target.
 lib/CMakeFiles/open_amp-static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/open_amp-static.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/CMakeFiles 0
 .PHONY : lib/CMakeFiles/open_amp-static.dir/rule
@@ -217,6 +220,24 @@ lib/remoteproc/drivers/clean:
 lib/remoteproc/drivers/preinstall:
 
 .PHONY : lib/remoteproc/drivers/preinstall
+
+#=============================================================================
+# Directory level rules for directory lib/proxy
+
+# Convenience name for "all" pass in the directory.
+lib/proxy/all:
+
+.PHONY : lib/proxy/all
+
+# Convenience name for "clean" pass in the directory.
+lib/proxy/clean:
+
+.PHONY : lib/proxy/clean
+
+# Convenience name for "preinstall" pass in the directory.
+lib/proxy/preinstall:
+
+.PHONY : lib/proxy/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -388,6 +388,30 @@ lib/CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_a9_trampoline.S.obj.p
 lib/CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_a9_trampoline.S.obj.provides.build: lib/CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_a9_trampoline.S.obj
 
 
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: lib/CMakeFiles/open_amp-static.dir/flags.make
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/proxy/rpmsg_retarget.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj"
+	cd C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/lib && C:/Xilinx/SDK/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe  $(C_DEFINES) $(C_FLAGS)   -o CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj   -c C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/proxy/rpmsg_retarget.c
+
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.i"
+	cd C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/lib && C:/Xilinx/SDK/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe  $(C_DEFINES) $(C_FLAGS)   -E C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/proxy/rpmsg_retarget.c > CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.i
+
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.s"
+	cd C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/lib && C:/Xilinx/SDK/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe  $(C_DEFINES) $(C_FLAGS)   -S C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/proxy/rpmsg_retarget.c -o CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.s
+
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj.requires:
+
+.PHONY : lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj.requires
+
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj.provides: lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj.requires
+	$(MAKE) -f lib/CMakeFiles/open_amp-static.dir/build.make lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj.provides.build
+.PHONY : lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj.provides
+
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj.provides.build: lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj
+
+
 # Object files for target open_amp-static
 open_amp__static_OBJECTS = \
 "CMakeFiles/open_amp-static.dir/common/hil.c.obj" \
@@ -403,7 +427,8 @@ open_amp__static_OBJECTS = \
 "CMakeFiles/open_amp-static.dir/remoteproc/remoteproc_loader.c.obj" \
 "CMakeFiles/open_amp-static.dir/remoteproc/rsc_table_parser.c.obj" \
 "CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_remoteproc_a9.c.obj" \
-"CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_a9_trampoline.S.obj"
+"CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_a9_trampoline.S.obj" \
+"CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj"
 
 # External object files for target open_amp-static
 open_amp__static_EXTERNAL_OBJECTS =
@@ -422,9 +447,10 @@ lib/libopen_amp.a: lib/CMakeFiles/open_amp-static.dir/remoteproc/remoteproc_load
 lib/libopen_amp.a: lib/CMakeFiles/open_amp-static.dir/remoteproc/rsc_table_parser.c.obj
 lib/libopen_amp.a: lib/CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_remoteproc_a9.c.obj
 lib/libopen_amp.a: lib/CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_a9_trampoline.S.obj
+lib/libopen_amp.a: lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj
 lib/libopen_amp.a: lib/CMakeFiles/open_amp-static.dir/build.make
 lib/libopen_amp.a: lib/CMakeFiles/open_amp-static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking C static library libopen_amp.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C static library libopen_amp.a"
 	cd C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/lib && $(CMAKE_COMMAND) -P CMakeFiles/open_amp-static.dir/cmake_clean_target.cmake
 	cd C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/open_amp-static.dir/link.txt --verbose=$(VERBOSE)
 
@@ -447,6 +473,7 @@ lib/CMakeFiles/open_amp-static.dir/requires: lib/CMakeFiles/open_amp-static.dir/
 lib/CMakeFiles/open_amp-static.dir/requires: lib/CMakeFiles/open_amp-static.dir/remoteproc/rsc_table_parser.c.obj.requires
 lib/CMakeFiles/open_amp-static.dir/requires: lib/CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_remoteproc_a9.c.obj.requires
 lib/CMakeFiles/open_amp-static.dir/requires: lib/CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_a9_trampoline.S.obj.requires
+lib/CMakeFiles/open_amp-static.dir/requires: lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj.requires
 
 .PHONY : lib/CMakeFiles/open_amp-static.dir/requires
 

@@ -1,0 +1,15 @@
+/*
+ * Empty C++ Application
+ */
+
+
+
+
+
+int main()
+{
+	test a;
+	test.a = 809;
+	test.b = 1000;
+	return a.add();
+}

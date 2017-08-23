@@ -1,0 +1,22 @@
+/*
+ * Empty C++ Application
+ */
+
+class test{
+public:
+	int a;
+	int b;
+	int add()
+	{
+		return a+b;
+	}
+};
+
+
+int main()
+{
+	test TEST;
+	TEST.a = 45;
+	TEST.b = 90;
+	return TEST.add();
+}

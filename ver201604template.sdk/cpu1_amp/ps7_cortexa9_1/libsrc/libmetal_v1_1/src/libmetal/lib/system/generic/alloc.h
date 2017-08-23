@@ -42,6 +42,10 @@
 
 #include <stdlib.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 
 static inline void *metal_allocate_memory(unsigned int size)
 {

@@ -3,14 +3,14 @@ The host system is: Windows - 6.2 - AMD64
 Determining if files stdatomic.h exist passed with the following output:
 Change Dir: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Xilinx/SDK/2016.4/gnuwin/bin/make.exe" "cmTC_a465c/fast"
-C:/Xilinx/SDK/2016.4/gnuwin/bin/make.exe -f CMakeFiles/cmTC_a465c.dir/build.make CMakeFiles/cmTC_a465c.dir/build
+Run Build Command:"C:/Xilinx/SDK/2016.4/gnuwin/bin/make.exe" "cmTC_99ad2/fast"
+C:/Xilinx/SDK/2016.4/gnuwin/bin/make.exe -f CMakeFiles/cmTC_99ad2.dir/build.make CMakeFiles/cmTC_99ad2.dir/build
 make.exe[1]: Entering directory `C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a465c.dir/CheckIncludeFiles.c.obj
-C:/Xilinx/SDK/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe   -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles   -DUSE_AMP=1 -IC:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/include -Wall -Wextra -c   -o CMakeFiles/cmTC_a465c.dir/CheckIncludeFiles.c.obj   -c C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
-Linking C executable cmTC_a465c
-C:/Xilinx/SDK/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe  -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles   -DUSE_AMP=1 -IC:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/include -Wall -Wextra -c    "CMakeFiles/cmTC_a465c.dir/CheckIncludeFiles.c.obj"   -o cmTC_a465c  
-arm-none-eabi-gcc.exe: warning: CMakeFiles/cmTC_a465c.dir/CheckIncludeFiles.c.obj: linker input file unused because linking not done
+Building C object CMakeFiles/cmTC_99ad2.dir/CheckIncludeFiles.c.obj
+C:/Xilinx/SDK/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe   -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles   -DUSE_AMP=1 -DUNDEFINE_FILE_OPS -IC:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/include -Wall -Wextra -c   -o CMakeFiles/cmTC_99ad2.dir/CheckIncludeFiles.c.obj   -c C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_99ad2
+C:/Xilinx/SDK/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe  -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles   -DUSE_AMP=1 -DUNDEFINE_FILE_OPS -IC:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/include -Wall -Wextra -c    "CMakeFiles/cmTC_99ad2.dir/CheckIncludeFiles.c.obj"   -o cmTC_99ad2  
+arm-none-eabi-gcc.exe: warning: CMakeFiles/cmTC_99ad2.dir/CheckIncludeFiles.c.obj: linker input file unused because linking not done
 make.exe[1]: Leaving directory `C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp/CMakeFiles/CMakeTmp'
 
 

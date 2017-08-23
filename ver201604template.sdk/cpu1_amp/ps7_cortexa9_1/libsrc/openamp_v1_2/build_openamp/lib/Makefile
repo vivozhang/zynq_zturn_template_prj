@@ -264,6 +264,33 @@ common/sh_mem.c.s:
 	cd C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp && $(MAKE) -f lib/CMakeFiles/open_amp-static.dir/build.make lib/CMakeFiles/open_amp-static.dir/common/sh_mem.c.s
 .PHONY : common/sh_mem.c.s
 
+proxy/rpmsg_retarget.obj: proxy/rpmsg_retarget.c.obj
+
+.PHONY : proxy/rpmsg_retarget.obj
+
+# target to build an object file
+proxy/rpmsg_retarget.c.obj:
+	cd C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp && $(MAKE) -f lib/CMakeFiles/open_amp-static.dir/build.make lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj
+.PHONY : proxy/rpmsg_retarget.c.obj
+
+proxy/rpmsg_retarget.i: proxy/rpmsg_retarget.c.i
+
+.PHONY : proxy/rpmsg_retarget.i
+
+# target to preprocess a source file
+proxy/rpmsg_retarget.c.i:
+	cd C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp && $(MAKE) -f lib/CMakeFiles/open_amp-static.dir/build.make lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.i
+.PHONY : proxy/rpmsg_retarget.c.i
+
+proxy/rpmsg_retarget.s: proxy/rpmsg_retarget.c.s
+
+.PHONY : proxy/rpmsg_retarget.s
+
+# target to generate assembly for a file
+proxy/rpmsg_retarget.c.s:
+	cd C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/build_openamp && $(MAKE) -f lib/CMakeFiles/open_amp-static.dir/build.make lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.s
+.PHONY : proxy/rpmsg_retarget.c.s
+
 remoteproc/drivers/zynq_a9_trampoline.obj: remoteproc/drivers/zynq_a9_trampoline.S.obj
 
 .PHONY : remoteproc/drivers/zynq_a9_trampoline.obj
@@ -566,6 +593,9 @@ help:
 	@echo "... common/sh_mem.obj"
 	@echo "... common/sh_mem.i"
 	@echo "... common/sh_mem.s"
+	@echo "... proxy/rpmsg_retarget.obj"
+	@echo "... proxy/rpmsg_retarget.i"
+	@echo "... proxy/rpmsg_retarget.s"
 	@echo "... remoteproc/drivers/zynq_a9_trampoline.obj"
 	@echo "... remoteproc/drivers/zynq_remoteproc_a9.obj"
 	@echo "... remoteproc/drivers/zynq_remoteproc_a9.i"

@@ -1,4 +1,4 @@
-18:43:30 **** Incremental Build of configuration Debug for project cpu0_linux_app ****
+23:28:19 **** Auto Build of configuration Debug for project cpu0_linux_app ****
 make all 
 'Building target: cpu0_linux_app.elf'
 'Invoking: ARM v7 Linux gcc linker'
@@ -12,5 +12,5 @@ arm-linux-gnueabihf-size cpu0_linux_app.elf  |tee "cpu0_linux_app.elf.size"
 'Finished building: cpu0_linux_app.elf.size'
 ' '
 
-18:43:31 Build Finished (took 1s.841ms)
+23:28:22 Build Finished (took 2s.811ms)
 

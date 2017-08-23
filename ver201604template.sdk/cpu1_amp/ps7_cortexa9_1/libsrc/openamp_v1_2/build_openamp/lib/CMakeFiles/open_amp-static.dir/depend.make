@@ -19,6 +19,21 @@ lib/CMakeFiles/open_amp-static.dir/common/sh_mem.c.obj: C:/ver201604template/ver
 lib/CMakeFiles/open_amp-static.dir/common/sh_mem.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/env.h
 lib/CMakeFiles/open_amp-static.dir/common/sh_mem.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/sh_mem.h
 
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/compiler.h
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/env.h
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/firmware.h
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/hil.h
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/open_amp.h
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/remoteproc.h
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/rpmsg.h
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/rpmsg_core.h
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/rpmsg_retarget.h
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/sh_mem.h
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/virtio.h
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/virtio_ring.h
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/virtqueue.h
+lib/CMakeFiles/open_amp-static.dir/proxy/rpmsg_retarget.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/proxy/rpmsg_retarget.c
+
 lib/CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_remoteproc_a9.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/env.h
 lib/CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_remoteproc_a9.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/firmware.h
 lib/CMakeFiles/open_amp-static.dir/remoteproc/drivers/zynq_remoteproc_a9.c.obj: C:/ver201604template/ver201604template.sdk/cpu1_amp/ps7_cortexa9_1/libsrc/openamp_v1_2/src/open-amp/lib/include/openamp/hil.h
