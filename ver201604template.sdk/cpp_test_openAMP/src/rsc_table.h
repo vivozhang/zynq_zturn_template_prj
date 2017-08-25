@@ -34,13 +34,13 @@
 #ifndef RSC_TABLE_H_
 #define RSC_TABLE_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include <stddef.h>
 #include "openamp/open_amp.h"
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 #define NO_RESOURCE_ENTRIES         8
 

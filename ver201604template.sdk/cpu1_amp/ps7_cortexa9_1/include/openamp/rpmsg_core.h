@@ -30,6 +30,10 @@
 #ifndef _RPMSG_CORE_H_
 #define _RPMSG_CORE_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "openamp/compiler.h"
 #include "openamp/env.h"
 #include "openamp/virtio.h"
@@ -201,5 +205,9 @@ void rpmsg_rdev_read_config(struct virtio_device *dev, uint32_t offset,
 void rpmsg_rdev_write_config(struct virtio_device *dev, uint32_t offset,
 			     void *src, int length);
 void rpmsg_rdev_reset(struct virtio_device *dev);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif				/* _RPMSG_CORE_H_ */

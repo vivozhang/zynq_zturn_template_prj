@@ -30,6 +30,10 @@
 #ifndef FIRMWARE_H
 #define FIRMWARE_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "openamp/env.h"
 #include <stdint.h>
 
@@ -45,4 +49,8 @@ struct firmware_info {
 int config_get_firmware(char *fw_name, uintptr_t *start_addr,
 			unsigned int *size);
 
+#ifdef __cplusplus
+}
+#endif
+			
 #endif

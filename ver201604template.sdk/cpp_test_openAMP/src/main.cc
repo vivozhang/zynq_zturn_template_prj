@@ -74,10 +74,7 @@
 **************************************************************************************/
 
 #include "xil_printf.h"
-
-extern "C" {
 #include "openamp/open_amp.h"
-}
 
 #include "rsc_table.h"
 #include "platform_info.h"
@@ -124,14 +121,15 @@ static void rpmsg_channel_deleted(struct rpmsg_channel *rp_chnl);
 static void rpmsg_read_cb(struct rpmsg_channel *, void *, int, void *,
 			  unsigned long);
 
-/* External functions */
-extern int init_system(void);
-extern void cleanup_system(void);
+
 
 // timer related function prototype
 void TimerIntrHandler(void *CallBackRef);
 static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
 
+/* External functions */
+extern int init_system(void);
+extern void cleanup_system(void);
 
 XScuTimer Timer;
 
@@ -181,20 +179,22 @@ int app(struct hil_proc *hproc)
 	int status = 0;
 
 	/* Initialize framework */
-	LPRINTF("Try to init remoteproc resource\n");
+	LPRINTF("Try to init remoteproc resource\n\r");
 	status = remoteproc_resource_init(&rsc_info, hproc,
 				     rpmsg_channel_created,
 				     rpmsg_channel_deleted, rpmsg_read_cb,
 				     &proc, 0);
 
 	if (RPROC_SUCCESS != status) {
-		LPERROR("Failed  to initialize remoteproc resource.\n");
+		LPERROR("Failed  to initialize remoteproc resource.\n\r");
+		xil_printf("Error code is: %d!!\r\n",status);
+
 		return -1;
 	}
 
-	LPRINTF("Init remoteproc resource done\n");
+	LPRINTF("Init remoteproc resource done\n\r");
 
-	LPRINTF("Waiting for events...\n");
+	LPRINTF("Waiting for events...\n\r");
 
 	printf("Callback ->ICDISER[0:2]:  %x,%x,%x\r\n",Xil_In32(0xF8F01100),Xil_In32(0xF8F01104),Xil_In32(0xF8F01108));
 	printf("Interrupt active:ICDABR0: %x,%x,%x\r\n",Xil_In32(0xF8F01300),Xil_In32(0xF8F01304),Xil_In32(0xF8F01308));
@@ -207,7 +207,7 @@ int app(struct hil_proc *hproc)
 	} while (!evt_chnl_deleted);
 
 	/* disable interrupts and free resources */
-	LPRINTF("De-initializating remoteproc resource\n");
+	LPRINTF("De-initializating remoteproc resource\n\r");
 	remoteproc_resource_deinit(proc);
 
 	return 0;
@@ -313,7 +313,7 @@ int main(void)
 	test.set_b(5);
 	int temp = test.getab();
 
-	LPRINTF("Starting application...\n");
+	xil_printf("Timer: %d!!\r\n",temp);
 
 	/* Initialize HW system components */
 	init_system();
@@ -324,17 +324,17 @@ int main(void)
 	/* Create HIL proc */
 	hproc = platform_create_proc(proc_id);
 	if (!hproc) {
-		LPERROR("Failed to create hil proc.\n");
+		LPERROR("Failed to create hil proc.\n\r");
 	} else {
 		rsc_info.rsc_tab = (resource_table*)get_resource_table((int)rsc_id, &rsc_info.size);
 		if (!rsc_info.rsc_tab) {
-			LPERROR("Failed to get resource table data.\n");
+			LPERROR("Failed to get resource table data.\n\r");
 		} else {
 			status = app(hproc);
 		}
 	}
 
-	LPRINTF("Stopping application...\n");
+	LPRINTF("Stopping application...\n\r");
 	cleanup_system();
 
 	/* Suspend processor execution */
@@ -359,7 +359,7 @@ void TimerIntrHandler(void *CallBackRef)
 	 */
 	if (XScuTimer_IsExpired(TimerInstancePtr)) {
 
-		xil_printf("Timer: %d!!\r\n",counter);
+		xil_printf("Timer: %d!!\r\n",counter++);
 		//printf("Callback ->ICDISER[0:2]:  %x,%x,%x\r\n",Xil_In32(0xF8F01100),Xil_In32(0xF8F01104),Xil_In32(0xF8F01108));
 		//printf("Interrupt active:ICDABR0: %x,%x,%x\r\n",Xil_In32(0xF8F01300),Xil_In32(0xF8F01304),Xil_In32(0xF8F01308));
 		//printf("ICDIPTR3:15/14 ->ICDIPTR7:29:%x,%x\r\n",Xil_In32(0xF8F0180C),Xil_In32(0xF8F0181C));

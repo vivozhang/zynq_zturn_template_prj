@@ -41,7 +41,10 @@
  *       interface is used by both RPMSG and remoteproc components.
  *
  ***************************************************************************/
-
+#ifdef __cplusplus
+extern "C" {
+#endif
+ 
 #include "openamp/virtio.h"
 #include "openamp/firmware.h"
 #include "metal/list.h"
@@ -575,5 +578,9 @@ struct hil_platform_ops {
 #define         HIL_MEM_WRITE8(addr,data)   *(volatile unsigned char *)(addr) = (unsigned char)(data)
 #define         HIL_MEM_WRITE16(addr,data)  *(volatile unsigned short *)(addr) = (unsigned short)(data)
 #define         HIL_MEM_WRITE32(addr,data)  *(volatile unsigned long *)(addr) = (unsigned long)(data)
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif				/* _HIL_H_ */

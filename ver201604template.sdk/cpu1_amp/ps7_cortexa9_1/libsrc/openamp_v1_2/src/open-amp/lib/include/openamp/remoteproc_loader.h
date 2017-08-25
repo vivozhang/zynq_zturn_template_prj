@@ -45,6 +45,11 @@
 #ifndef REMOTEPROC_LOADER_H_
 #define REMOTEPROC_LOADER_H_
 
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "openamp/remoteproc.h"
 
 /**
@@ -90,5 +95,10 @@ void *remoteproc_get_load_address(struct remoteproc_loader *loader);
 
 /* Supported loaders */
 extern int elf_loader_init(struct remoteproc_loader *loader);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif				/* REMOTEPROC_LOADER_H_ */

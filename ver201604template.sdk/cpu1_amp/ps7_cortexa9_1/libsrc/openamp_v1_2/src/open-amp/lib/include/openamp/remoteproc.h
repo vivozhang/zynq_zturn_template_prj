@@ -35,6 +35,10 @@
 #ifndef REMOTEPROC_H
 #define REMOTEPROC_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "openamp/rpmsg.h"
 #include "openamp/firmware.h"
 /**
@@ -474,5 +478,9 @@ int remoteproc_boot(struct remote_proc *rproc);
  * @param returns - status of function execution
  */
 int remoteproc_shutdown(struct remote_proc *rproc);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif				/* REMOTEPROC_H_ */

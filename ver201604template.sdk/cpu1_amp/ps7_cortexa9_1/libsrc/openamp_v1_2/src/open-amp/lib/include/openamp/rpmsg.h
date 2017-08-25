@@ -36,6 +36,10 @@
 #ifndef _RPMSG_H_
 #define _RPMSG_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "openamp/rpmsg_core.h"
 
 /* The feature bitmap for virtio rpmsg */
@@ -582,5 +586,10 @@ struct rpmsg_channel *rpmsg_create_channel(struct remote_device *rdev,
  *
  */
 void rpmsg_delete_channel(struct rpmsg_channel *rp_chnl);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif				/* _RPMSG_H_ */

@@ -1,6 +1,10 @@
 #ifndef _COMPILER_H_
 #define _COMPILER_H_
 
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * Copyright (c) 2014, Mentor Graphics Corporation
  * All rights reserved.
@@ -78,6 +82,10 @@
 #else
 /* There is no default definition here to avoid wrong structures packing in case of not supported compiler */
 #error Please implement the structure packing macros for your compiler here!
+#endif
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif /* _COMPILER_H_ */

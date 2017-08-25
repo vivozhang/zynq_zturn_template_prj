@@ -39,10 +39,8 @@
  *       information for OpenAMP.
  *
  **************************************************************************/
-extern "C" {
-#include "openamp/hil.h"
-}
 
+#include "openamp/hil.h"
 #include "platform_info.h"
 #include "metal/atomic.h"
 

@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sat Jul 29 22:47:01 2017">
+<application name="pa" timeStamp="Fri Aug 25 07:45:48 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="f434f24cb7a348f298b6b8b27e81614a" type="ProjectID"/>
 <property name="ProjectIteration" value="33" type="ProjectIteration"/>
@@ -26,7 +26,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CreateBlockDesign" value="1" type="JavaHandler"/>
 <property name="CreateInterfaceDefinitionHandler" value="1" type="JavaHandler"/>
 <property name="CreateTopHDL" value="2" type="JavaHandler"/>
-<property name="CustomizeRSBBlock" value="28" type="JavaHandler"/>
+<property name="CustomizeRSBBlock" value="29" type="JavaHandler"/>
 <property name="EditDelete" value="6" type="JavaHandler"/>
 <property name="EditProperties" value="5" type="JavaHandler"/>
 <property name="HighglightDefaultColor" value="1" type="JavaHandler"/>
@@ -57,14 +57,14 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ToolsOptions" value="1" type="JavaHandler"/>
 <property name="UpgradeIP" value="2" type="JavaHandler"/>
 <property name="ValidateRSBDesign" value="10" type="JavaHandler"/>
-<property name="ViewTaskImplementation" value="17" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="18" type="JavaHandler"/>
 <property name="XdcCreateClock" value="1" type="JavaHandler"/>
 <property name="XdcSetMaximumDelay" value="3" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
 <property name="AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS" value="2" type="GuiResourceData"/>
 <property name="AbstractFileView_RELOAD" value="2" type="GuiResourceData"/>
-<property name="AbstractSearchablePanel_SHOW_SEARCH" value="7" type="GuiResourceData"/>
+<property name="AbstractSearchablePanel_SHOW_SEARCH" value="8" type="GuiResourceData"/>
 <property name="AddRepositoryInfoDialog_OK" value="3" type="GuiResourceData"/>
 <property name="AdvClkConfigTreeTablePanel_TREE_TABLE" value="4" type="GuiResourceData"/>
 <property name="ApplyRSBMultiAutomationDialog_CHECKBOX_TREE" value="16" type="GuiResourceData"/>
@@ -96,13 +96,13 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditXdcPanel_EDIT_FROM_THRU_TO_TABLE" value="3" type="GuiResourceData"/>
 <property name="ExpReportTreePanel_EXP_REPORT_TREE_TABLE" value="4" type="GuiResourceData"/>
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="29" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="219" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="222" type="GuiResourceData"/>
 <property name="FilterToolBar_HIDE_ALL" value="2" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="55" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="56" type="GuiResourceData"/>
 <property name="GICTreeTablePanel_GIC_TREE_TABLE" value="5" type="GuiResourceData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiResourceData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="2" type="GuiResourceData"/>
-<property name="GettingStartedView_RECENT_PROJECTS" value="4" type="GuiResourceData"/>
+<property name="GettingStartedView_RECENT_PROJECTS" value="5" type="GuiResourceData"/>
 <property name="HACGCIPSymbol_SHOW_DISABLED_PORTS" value="2" type="GuiResourceData"/>
 <property name="HCodeEditor_SEARCH_TEXT_COMBO_BOX" value="1" type="GuiResourceData"/>
 <property name="HPopupTitle_CLOSE" value="1" type="GuiResourceData"/>
@@ -195,7 +195,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PAViews_PATH_TABLE" value="2" type="GuiResourceData"/>
 <property name="PAViews_SCHEMATIC" value="1" type="GuiResourceData"/>
 <property name="PackagePinsView_GROUP_BY_IO_BANK" value="2" type="GuiResourceData"/>
-<property name="PackageTreePanel_PACKAGE_TREE_PANEL" value="139" type="GuiResourceData"/>
+<property name="PackageTreePanel_PACKAGE_TREE_PANEL" value="141" type="GuiResourceData"/>
 <property name="PackagerStepsPanel_PACKAGER_STEPS_LIST" value="14" type="GuiResourceData"/>
 <property name="PartChooser_BOARDS" value="6" type="GuiResourceData"/>
 <property name="PathMenu_SET_FALSE_PATH" value="9" type="GuiResourceData"/>
@@ -242,7 +242,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SystemBuilderView_ADD_IP" value="11" type="GuiResourceData"/>
 <property name="SystemBuilderView_EXPAND_COLLAPSE" value="1" type="GuiResourceData"/>
 <property name="SystemTab_SHOW_IP_STATUS" value="1" type="GuiResourceData"/>
-<property name="SystemTreeView_SYSTEM_TREE" value="62" type="GuiResourceData"/>
+<property name="SystemTreeView_SYSTEM_TREE" value="75" type="GuiResourceData"/>
 <property name="TaskBanner_CLOSE" value="12" type="GuiResourceData"/>
 <property name="TimingConstraintsWizard_GOTO_CONSTRAINTS_SUMMARY_PAGE" value="2" type="GuiResourceData"/>
 <property name="TimingItemFlatTablePanel_FLOORPLANNING" value="1" type="GuiResourceData"/>
@@ -253,6 +253,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="XdcCategoryTree_XDC_CATEGORY_TREE" value="9" type="GuiResourceData"/>
 <property name="XdcEditorView_APPLY_ALL_CHANGES_TO_XDC_CONSTRAINTS" value="1" type="GuiResourceData"/>
 <property name="XdcViewerTreeTablePanel_XDC_VIEWER_TREE_TABLE" value="12" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="12" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="9" type="TclMode"/>
 </item>
 </section>
 </application>

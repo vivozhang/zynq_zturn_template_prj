@@ -46,6 +46,10 @@
 #ifndef SH_MEM_H_
 #define SH_MEM_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "openamp/env.h"
 #include "metal/mutex.h"
 
@@ -88,5 +92,9 @@ void sh_mem_delete_pool(struct sh_mem_pool *pool);
 void *sh_mem_get_buffer(struct sh_mem_pool *pool);
 void sh_mem_free_buffer(void *ptr, struct sh_mem_pool *pool);
 int get_first_zero_bit(unsigned long value);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif				/* SH_MEM_H_ */

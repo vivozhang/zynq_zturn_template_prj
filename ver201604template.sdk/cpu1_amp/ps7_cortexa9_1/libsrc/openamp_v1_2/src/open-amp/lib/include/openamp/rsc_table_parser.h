@@ -30,6 +30,10 @@
 #ifndef RSC_TABLE_PARSER_H
 #define RSC_TABLE_PARSER_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "openamp/remoteproc.h"
 #include "openamp/env.h"
 #include "openamp/hil.h"
@@ -49,5 +53,10 @@ int handle_trace_rsc(struct remote_proc *rproc, void *rsc);
 int handle_dev_mem_rsc(struct remote_proc *rproc, void *rsc);
 int handle_vdev_rsc(struct remote_proc *rproc, void *rsc);
 int handle_mmu_rsc(struct remote_proc *rproc, void *rsc);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif				/* RSC_TABLE_PARSER_H */

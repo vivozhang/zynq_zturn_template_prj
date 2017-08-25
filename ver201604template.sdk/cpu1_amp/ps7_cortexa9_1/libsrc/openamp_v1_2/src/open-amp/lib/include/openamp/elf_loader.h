@@ -30,6 +30,10 @@
 #ifndef ELF_LOADER_H_
 #define ELF_LOADER_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "openamp/remoteproc_loader.h"
 
 /* ELF base types - 32-bit. */
@@ -222,5 +226,9 @@ int elf_loader_attach_firmware(struct remoteproc_loader *loader,
 			       void *firmware);
 int elf_loader_detach_firmware(struct remoteproc_loader *loader);
 void *elf_get_load_address(struct remoteproc_loader *loader);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif				/* ELF_LOADER_H_ */

@@ -28,6 +28,13 @@
  *
  * $FreeBSD$
  */
+ 
+ 
+#ifdef __cplusplus
+extern "C" {
+#endif
+ 
+
 
 #include <stdint.h>
 typedef uint8_t boolean;
@@ -231,5 +238,9 @@ void virtqueue_notification(struct virtqueue *vq);
 uint32_t virtqueue_get_desc_size(struct virtqueue *vq);
 
 uint32_t virtqueue_get_buffer_length(struct virtqueue *vq, uint16_t idx);
+
+ #ifdef __cplusplus
+}
+#endif
 
 #endif				/* VIRTQUEUE_H_ */

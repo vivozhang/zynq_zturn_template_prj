@@ -2,6 +2,10 @@
 #include "metal/mutex.h"
 #include "metal/atomic.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* RPC response buffer size */
 #define RPC_BUFF_SIZE 512
 
@@ -47,3 +51,8 @@ struct _sys_rpc {
 int rpmsg_retarget_init(struct rpmsg_channel *rp_chnl, rpc_shutdown_cb cb);
 int rpmsg_retarget_deinit(struct rpmsg_channel *rp_chnl);
 int rpmsg_retarget_send(void *data, int len);
+
+
+#ifdef __cplusplus
+}
+#endif

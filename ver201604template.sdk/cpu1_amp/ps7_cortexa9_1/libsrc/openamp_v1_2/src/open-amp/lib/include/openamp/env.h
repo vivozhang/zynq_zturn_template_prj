@@ -60,6 +60,10 @@
 #ifndef _ENV_H_
 #define _ENV_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdio.h>
 
 #define openamp_print(format, ...) printf(format, ##__VA_ARGS__)
@@ -68,6 +72,10 @@
 #define openamp_dbg(format, ...) openamp_print("DEBUG: " format, ##__VA_ARGS__)
 #else
 #define openamp_dbg(...)
+#endif
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif				/* _ENV_H_ */
