@@ -148,9 +148,10 @@ int main(int argc, char *argv[])
 					{
 					printf("Sum is: %d\n",recv_data.elements[i]);
 					}
+				break;
 				}
             else
-            	break;
+            	usleep(20);
 			//if(recv_data.elements[0]==1)
 			//	break;
 		}   //end while

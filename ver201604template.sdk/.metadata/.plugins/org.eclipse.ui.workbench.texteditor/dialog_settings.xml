@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="hil_set_vring_ipi" key="selection"/>
+		<item value="status" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="-3004"/>
 			<item value="hil_set_vring_ipi"/>
 			<item value="hil_set_vdev"/>
 			<item value="0x00001100"/>
@@ -15,7 +16,6 @@
 			<item value="XPAR_SCUGIC_0_DEVICE_ID"/>
 			<item value="vivozhang-demo-channel"/>
 			<item value="typedef unsigned int uint32"/>
-			<item value="sysmgr"/>
 		</list>
 		<list key="replacehistory">
 		</list>

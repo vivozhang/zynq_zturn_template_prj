@@ -1,4 +1,4 @@
-01:12:11 **** Incremental Build of configuration Debug for project cpp_test_openAMP ****
+00:58:21 **** Build of configuration Debug for project cpp_test_openAMP ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -11,47 +11,48 @@ arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helper.o" -mcpu=co
 'Invoking: ARM v7 g++ compiler'
 arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_amp/ps7_cortexa9_1/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
 ../src/main.cc: In function 'unsigned int SUM_ALL(data_array*)':
-../src/main.cc:171:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/main.cc:175:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
   for(int i=0; i<INPUT->size; i++)
                 ^
 ../src/main.cc: In function 'int app(hil_proc*)':
-../src/main.cc:199:112: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:203:112: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
   printf("Callback ->ICDISER[0:2]:  %x,%x,%x\r\n",Xil_In32(0xF8F01100),Xil_In32(0xF8F01104),Xil_In32(0xF8F01108));
                                                                                                                 ^
-../src/main.cc:199:112: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
-../src/main.cc:199:112: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'u32 {aka long unsigned int}' [-Wformat=]
-../src/main.cc:199:112: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
-../src/main.cc:199:112: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
-../src/main.cc:199:112: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'u32 {aka long unsigned int}' [-Wformat=]
-../src/main.cc:200:112: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:203:112: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:203:112: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:203:112: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:203:112: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:203:112: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:204:112: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
   printf("Interrupt active:ICDABR0: %x,%x,%x\r\n",Xil_In32(0xF8F01300),Xil_In32(0xF8F01304),Xil_In32(0xF8F01308));
                                                                                                                 ^
-../src/main.cc:200:112: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
-../src/main.cc:200:112: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'u32 {aka long unsigned int}' [-Wformat=]
-../src/main.cc:200:112: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
-../src/main.cc:200:112: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
-../src/main.cc:200:112: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'u32 {aka long unsigned int}' [-Wformat=]
-../src/main.cc:201:91: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:204:112: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:204:112: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:204:112: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:204:112: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:204:112: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:205:91: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
   printf("ICDIPTR3:15/14 ->ICDIPTR7:29:%x,%x\r\n",Xil_In32(0xF8F0180C),Xil_In32(0xF8F0181C));
                                                                                            ^
-../src/main.cc:201:91: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
-../src/main.cc:201:91: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
-../src/main.cc:201:91: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
-../src/main.cc:202:50: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:205:91: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:205:91: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:205:91: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:206:50: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
   printf("SGI:ICDSGIR:%x\r\n",Xil_In32(0xF8F01F00));
                                                   ^
-../src/main.cc:202:50: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc:206:50: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.cc: In function 'void TimerIntrHandler(void*)':
+../src/main.cc:367:113: warning: operation on 'counter' may be undefined [-Wsequence-point]
+   xil_printf("Timer: %d,%d,%x!!\r\n",counter++,XScuTimer_GetCounterValue(&Timer),Xil_In32(0x20000000+counter*4));
+                                                                                                                 ^
 ../src/main.cc: At global scope:
-../src/main.cc:109:15: warning: 'matrix_array' defined but not used [-Wunused-variable]
+../src/main.cc:113:15: warning: 'matrix_array' defined but not used [-Wunused-variable]
  static matrix matrix_array[NUM_MATRIX];
                ^
-../src/main.cc:110:15: warning: 'matrix_result' defined but not used [-Wunused-variable]
+../src/main.cc:114:15: warning: 'matrix_result' defined but not used [-Wunused-variable]
  static matrix matrix_result;
                ^
-../src/main.cc:377:13: warning: 'void TimerDisableIntrSystem(XScuGic*, u16)' defined but not used [-Wunused-function]
- static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId)
-             ^
-../src/main.cc:151:13: warning: 'void Matrix_Multiply(const matrix*, const matrix*, matrix*)' defined but not used [-Wunused-function]
+../src/main.cc:155:13: warning: 'void Matrix_Multiply(const matrix*, const matrix*, matrix*)' defined but not used [-Wunused-function]
  static void Matrix_Multiply(const matrix *m, const matrix *n, matrix *r)
              ^
 'Finished building: ../src/main.cc'
@@ -65,6 +66,11 @@ arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_info.o" -
                                                 ^
 'Finished building: ../src/platform_info.c'
 ' '
+'Building file: ../src/rsc_table.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rsc_table.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu1_amp/ps7_cortexa9_1/include -MMD -MP -MF"src/rsc_table.d" -MT"src/rsc_table.o" -o "src/rsc_table.o" "../src/rsc_table.c"
+'Finished building: ../src/rsc_table.c'
+' '
 'Building target: cpp_test_openAMP.elf'
 'Invoking: ARM v7 g++ linker'
 arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cpu1_amp/ps7_cortexa9_1/lib -o "cpp_test_openAMP.elf"  ./src/helper.o ./src/main.o ./src/platform_info.o ./src/rsc_table.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group
@@ -73,9 +79,9 @@ arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size cpp_test_openAMP.elf  |tee "cpp_test_openAMP.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 109296	   4592	  50816	 164704	  28360	cpp_test_openAMP.elf
+ 109384	   4592	  50816	 164792	  283b8	cpp_test_openAMP.elf
 'Finished building: cpp_test_openAMP.elf.size'
 ' '
 
-01:12:13 Build Finished (took 1s.952ms)
+00:58:24 Build Finished (took 2s.412ms)
 

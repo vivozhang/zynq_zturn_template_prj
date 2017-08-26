@@ -100,6 +100,10 @@
 #define LPRINTF(format, ...) xil_printf(format, ##__VA_ARGS__)
 #define LPERROR(format, ...) LPRINTF("ERROR: " format, ##__VA_ARGS__)
 
+#define TIMER_IRPT_INTR		XPAR_SCUTIMER_INTR
+
+XScuGic xInterruptController;
+
 typedef struct _matrix {
 	unsigned int size;
 	unsigned int elements[MAX_SIZE][MAX_SIZE];
@@ -207,6 +211,7 @@ int app(struct hil_proc *hproc)
 	} while (!evt_chnl_deleted);
 
 	/* disable interrupts and free resources */
+	TimerDisableIntrSystem(&xInterruptController,(u16)TIMER_IRPT_INTR);//
 	LPRINTF("De-initializating remoteproc resource\n\r");
 	remoteproc_resource_deinit(proc);
 
@@ -359,7 +364,8 @@ void TimerIntrHandler(void *CallBackRef)
 	 */
 	if (XScuTimer_IsExpired(TimerInstancePtr)) {
 
-		xil_printf("Timer: %d!!\r\n",counter++);
+		xil_printf("Timer: %d,%d,%x!!\r\n",counter++,XScuTimer_GetCounterValue(&Timer),Xil_In32(0x20000000+counter*4));
+
 		//printf("Callback ->ICDISER[0:2]:  %x,%x,%x\r\n",Xil_In32(0xF8F01100),Xil_In32(0xF8F01104),Xil_In32(0xF8F01108));
 		//printf("Interrupt active:ICDABR0: %x,%x,%x\r\n",Xil_In32(0xF8F01300),Xil_In32(0xF8F01304),Xil_In32(0xF8F01308));
 		//printf("ICDIPTR3:15/14 ->ICDIPTR7:29:%x,%x\r\n",Xil_In32(0xF8F0180C),Xil_In32(0xF8F0181C));

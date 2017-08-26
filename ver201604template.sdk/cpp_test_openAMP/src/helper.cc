@@ -47,7 +47,7 @@
 #define TIMER_LOAD_VALUE 0x13d92d40 //0x4ffffff
 
 extern void TimerIntrHandler(void *CallBackRef);
-static XScuGic xInterruptController;
+extern XScuGic xInterruptController;
 
 extern XScuTimer Timer;
 XScuTimer_Config *ConfigPtr;
